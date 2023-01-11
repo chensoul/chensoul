@@ -131,8 +131,7 @@ if __name__ == "__main__":
     releases.sort(key=lambda r: r["published_at"], reverse=True)
     md = "\n".join(
         [
-            "* <a href={url} target='_blank'>{repo} {release}</a> - {published_at}".format(**release)
-            # "* <a href={url} target='_blank'>{repo} {release}</a>".format(**release)
+            "* <a href={url} target='_blank'>{repo}</a>：{release} - {published_at}".format(**release)
             for release in releases[:10]
         ]
     )
@@ -143,9 +142,8 @@ if __name__ == "__main__":
     project_releases_md = "\n".join(
         [
             (
-                "* **[{repo}]({repo_url})**: [{release}]({url})- {published_at}\n"
-                # "* **[{repo}]({repo_url})**: [{release}]({url})\n"
-                "<br>{description}"
+                "* **[{repo}]({repo_url})**: [{release}]({url}) - {published_at}"
+                # "\n<br>{description}"
             ).format(**release)
             for release in releases
         ]
