@@ -60,5 +60,5 @@ Solidity   3 hrs 3 mins   █▋░░░░░░░░░░░░░░░░
 #### 💻 Recent Releases
 
 <!-- recent_releases starts -->
-
+* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github </a> - 2023-01-11
 <!-- recent_releases ends -->
