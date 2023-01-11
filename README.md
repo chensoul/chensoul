@@ -60,5 +60,6 @@ Solidity   3 hrs 3 mins   █▋░░░░░░░░░░░░░░░░
 #### 💻 Recent Releases
 
 <!-- recent_releases starts -->
-* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github </a> - 2023-01-11
+* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github Scrapy 爬取知乎和 Github 用户</a> - 2023-01-11
+* <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab 基于spark、mahout和spring boot构建的推荐系统</a> - 2023-01-11
 <!-- recent_releases ends -->
