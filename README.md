@@ -46,11 +46,21 @@ I want to learn things and become a better person. I enjoy reading, thinking and
 
 <!-- code_time starts -->
 
+```text
+Markdown   11 hrs 46 mins ██████▍░░░░░░░░░░░░░░  30.4%
+Go         11 hrs 29 mins ██████▏░░░░░░░░░░░░░░  29.7%
+Other      3 hrs 58 mins  ██▏░░░░░░░░░░░░░░░░░░  10.3%
+JavaScript 3 hrs 47 mins  ██░░░░░░░░░░░░░░░░░░░   9.8%
+Solidity   3 hrs 3 mins   █▋░░░░░░░░░░░░░░░░░░░   7.9%
+```
+
 <!-- code_time ends -->
 
 
 #### 💻 Recent Releases
 
 <!-- recent_releases starts -->
-
+* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户 - 2023-01-11
+* <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、mahout和spring boot构建的推荐系统 - 2023-01-11
+* <a href=https://github.com/chensoul/chensoul.github.io/releases/tag/v0.0.1 target='_blank'>chensoul.github.io</a>：个人网站发布系统 - 2023-01-11
 <!-- recent_releases ends -->
