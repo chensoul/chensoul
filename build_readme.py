@@ -68,7 +68,7 @@ def fetch_releases(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
-        print('查询 git 仓库结果')
+        print()
         print(json.dumps(data, indent=4))
         print()
         for repo in data["data"]["viewer"]["repositories"]["nodes"]:
@@ -94,6 +94,8 @@ def fetch_releases(oauth_token):
         ]
         after_cursor = data["data"]["viewer"]["repositories"]["pageInfo"]["endCursor"]
     
+    print(releases)
+
     return releases
 
 def fetch_code_time():
@@ -125,7 +127,7 @@ def fetch_blog_entries():
 
 
 if __name__ == "__main__":
-    readme = root / "README.md"
+    readme = root / "content/about.md"
     project_releases = root / "releases.md"
     releases = fetch_releases(TOKEN)
     releases.sort(key=lambda r: r["published_at"], reverse=True)
@@ -141,10 +143,7 @@ if __name__ == "__main__":
     # Write out full project-releases.md file
     project_releases_md = "\n".join(
         [
-            (
-                "* **[{repo}]({repo_url})**: [{release}]({url}) - {published_at}"
-                # "\n<br>{description}"
-            ).format(**release)
+            "* **[{repo}]({repo_url})**：{release} - {published_at}".format(**release)
             for release in releases
         ]
     )
@@ -157,21 +156,22 @@ if __name__ == "__main__":
     )
     project_releases.open("w").write(project_releases_content)
 
-
     code_time_text = "\n```text\n"+fetch_code_time().text+"\n```\n"
+
     rewritten = replace_chunk(rewritten, "code_time", code_time_text)
 
-
     doubans = fetch_douban()[:5]
+
     doubans_md = "\n".join(
         ["* <a href='{url}' target='_blank'>{title}</a> - {published}".format(**item) for item in doubans]
     )
-    rewritten = replace_chunk(rewritten, "douban", doubans_md)
 
+    rewritten = replace_chunk(rewritten, "douban", doubans_md)
 
     entries = fetch_blog_entries()[:6]
     entries_md = "\n".join(
         ["* <a href={url} target='_blank'>{title}</a>".format(**entry) for entry in entries]
     )
     rewritten = replace_chunk(rewritten, "blog", entries_md)
+
     readme.open("w").write(rewritten)
