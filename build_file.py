@@ -130,6 +130,7 @@ def fetch_blog_entries():
 if __name__ == "__main__":
     inputfile = sys.argv[0]
     readme = root.joinpath(inputfile)
+    print(readme.as_uri())
     project_releases = root / "releases.md"
     releases = fetch_releases(TOKEN)
     releases.sort(key=lambda r: r["published_at"], reverse=True)
