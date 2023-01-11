@@ -127,7 +127,7 @@ def fetch_blog_entries():
 
 
 if __name__ == "__main__":
-    readme = root / "content/about.md"
+    readme = root / "README.md"
     project_releases = root / "releases.md"
     releases = fetch_releases(TOKEN)
     releases.sort(key=lambda r: r["published_at"], reverse=True)
