@@ -68,7 +68,7 @@ def fetch_releases(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
-        print()
+        print('查询 git 仓库结果')
         print(json.dumps(data, indent=4))
         print()
         for repo in data["data"]["viewer"]["repositories"]["nodes"]:
@@ -94,8 +94,6 @@ def fetch_releases(oauth_token):
         ]
         after_cursor = data["data"]["viewer"]["repositories"]["pageInfo"]["endCursor"]
     
-    print(releases)
-
     return releases
 
 def fetch_code_time():
@@ -130,6 +128,7 @@ if __name__ == "__main__":
     readme = root / "README.md"
     project_releases = root / "releases.md"
     releases = fetch_releases(TOKEN)
+    print(md)
     releases.sort(key=lambda r: r["published_at"], reverse=True)
     md = "\n".join(
         [
@@ -139,7 +138,6 @@ if __name__ == "__main__":
         ]
     )
     readme_contents = readme.open().read()
-    print(md)
     rewritten = replace_chunk(readme_contents, "recent_releases", md)
 
     # Write out full project-releases.md file
