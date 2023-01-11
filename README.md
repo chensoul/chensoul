@@ -4,7 +4,7 @@
 
 ### Hi there ✋
 
-[![Chensoul Blog](https://img.shields.io/badge/blog-yu-9cf?style=flat-square)](https://blog.chensoul.com)
+[![Blog](https://img.shields.io/badge/Blog-chensoul-9cf?style=flat-square)](https://blog.chensoul.com)
 [![GitHub](https://img.shields.io/github/followers/chensoul?logo=github&style=flat-square)](https://github.com/chensoul)
 [![Twitter](https://img.shields.io/twitter/follow/chenshu_eth?logo=twitter&style=flat-square)](https://twitter.com/chenshu_eth)
 [![Visits Badge](https://badges.strrl.dev/visits/chensoul/chensoul?style=flat-square)](https://github.com/chensoul)
