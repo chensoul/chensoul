@@ -139,6 +139,7 @@ if __name__ == "__main__":
         ]
     )
     readme_contents = readme.open().read()
+    print(md)
     rewritten = replace_chunk(readme_contents, "recent_releases", md)
 
     # Write out full project-releases.md file
