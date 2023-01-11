@@ -161,22 +161,21 @@ if __name__ == "__main__":
     )
     project_releases.open("w").write(project_releases_content)
 
-    code_time_text = "\n```text\n"+fetch_code_time().text+"\n```\n"
 
+    code_time_text = "\n```text\n"+fetch_code_time().text+"\n```\n"
     rewritten = replace_chunk(rewritten, "code_time", code_time_text)
 
-    doubans = fetch_douban()[:5]
 
+    doubans = fetch_douban()[:5]
     doubans_md = "\n".join(
         ["* <a href='{url}' target='_blank'>{title}</a> - {published}".format(**item) for item in doubans]
     )
-
     rewritten = replace_chunk(rewritten, "douban", doubans_md)
+
 
     entries = fetch_blog_entries()[:6]
     entries_md = "\n".join(
         ["* <a href={url} target='_blank'>{title}</a>".format(**entry) for entry in entries]
     )
     rewritten = replace_chunk(rewritten, "blog", entries_md)
-
     readme.open("w").write(rewritten)
