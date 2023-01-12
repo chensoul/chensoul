@@ -43,7 +43,11 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 <!-- waka-box starts -->
 
 ```text
-
+Markdown   12 hrs 52 mins ███████▋░░░░░░░░░░░░░  36.4%
+Go         9 hrs 27 mins  █████▌░░░░░░░░░░░░░░░  26.8%
+JavaScript 3 hrs 43 mins  ██▏░░░░░░░░░░░░░░░░░░  10.6%
+Other      3 hrs 10 mins  █▉░░░░░░░░░░░░░░░░░░░   9.0%
+Solidity   2 hrs 11 mins  █▎░░░░░░░░░░░░░░░░░░░   6.2%
 ```
 
 <!-- waka-box ends -->
