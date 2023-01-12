@@ -40,13 +40,10 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 
 #### 👨🏻‍💻 This Week I Code With
 
-<!-- code_time starts -->
+<!-- waka-box starts -->
 
-```text
-file-weekly-development-breakdown
-```
 
-<!-- code_time ends -->
+<!-- waka-box ends -->
 
 
 #### 💻 Recent Releases
