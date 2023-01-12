@@ -42,10 +42,6 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 
 <!-- waka-box starts -->
 
-```text
-
-```
-
 <!-- waka-box ends -->
 
 
