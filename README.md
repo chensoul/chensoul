@@ -15,9 +15,9 @@
 
 I'm chenshu, a java developer. Love to learn and build things. I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
 
-- 📧 Email: chenshu.eth@gmail.com
 - 😄 Wechat: chenshu_eth
-- 🏠 Home Page: https://blog.chensoul.com
+- 📧 Email: chenshu.eth@gmail.com
+- 🏠 Blog: https://blog.chensoul.com
 - 💼 Telegram: https://t.me/chenshu_eth
 
 
@@ -32,13 +32,13 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 * <a href=https://blog.chensoul.com/posts/doris-cluster-elastic-expansion/ target='_blank'>Doris集群弹性扩缩容</a>
 <!-- blog ends -->
 
-#### 🎧 Recent Digests
+#### 🎧 Recent Interests
 
 <!-- douban starts -->
 * <a href='http://movie.douban.com/subject/4811774/' target='_blank'>想看阿凡达：水之道</a>
 <!-- douban ends -->
 
-#### 👨🏻‍💻 This Week I Code With
+#### 👨🏻‍💻 Recent Codings
 
 <!-- waka-box starts -->
 
