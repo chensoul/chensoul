@@ -43,11 +43,7 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 <!-- waka-box starts -->
 
 ```text
-Markdown   12 hrs 52 mins ███████▋░░░░░░░░░░░░░  36.4%
-Go         9 hrs 27 mins  █████▌░░░░░░░░░░░░░░░  26.8%
-JavaScript 3 hrs 43 mins  ██▏░░░░░░░░░░░░░░░░░░  10.6%
-Other      3 hrs 10 mins  █▉░░░░░░░░░░░░░░░░░░░   9.0%
-Solidity   2 hrs 11 mins  █▎░░░░░░░░░░░░░░░░░░░   6.2%
+Still Gathering Statistics...
 ```
 
 <!-- waka-box ends -->
@@ -56,6 +52,6 @@ Solidity   2 hrs 11 mins  █▎░░░░░░░░░░░░░░░░
 #### 💻 Recent Releases
 
 <!-- recent_releases starts -->
-* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户 - 2023-01-11
-* <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、mahout和spring boot构建的推荐系统 - 2023-01-11
+* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户
+* <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、mahout和spring boot构建的推荐系统
 <!-- recent_releases ends -->
