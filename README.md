@@ -7,9 +7,7 @@
 
 <br />
 
-I'm chenshu, a java developer. Love to learn and build things. Follow me on [GitHub](https://github.com/chensoul). Know me on [Telegram Channel](https://t.me/chenshu_eth).
-
-I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
+I'm chenshu, a java developer. Love to learn and build things. I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
 
 - 📧 Email: chenshu.eth@gmail.com
 - 😄 Wechat: chenshu_eth
