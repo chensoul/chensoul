@@ -42,12 +42,9 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 
 <!-- waka-box starts -->
 
-<<<<<<< HEAD
-=======
 ```text
 
 ```
->>>>>>> abe2204927bc81af25b340479b27e7dea39d90aa
 
 <!-- waka-box ends -->
 
