@@ -43,7 +43,6 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 <!-- code_time starts -->
 
 ```text
-file-weekly-development-breakdown
 ```
 
 <!-- code_time ends -->
