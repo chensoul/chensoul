@@ -5,6 +5,12 @@
 [![Twitter](https://img.shields.io/twitter/follow/chenshu_eth?logo=twitter&style=flat-square)](https://twitter.com/chenshu_eth)
 [![Visits Badge](https://badges.strrl.dev/visits/chensoul/chensoul?style=flat-square)](https://github.com/chensoul)
 
+
+[![Contributions Badge](https://badges.strrl.dev/contributions/all/chensoul?style=flat-square)](https://github.com/chensoul)
+[![Contributions Badge](https://badges.strrl.dev/contributions/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
+[![Commits Badge](https://badges.strrl.dev/commits/weekly/chensoul?style=flat-square)](https://github.com/pseudoyu)
+[![Issues and PRs Badge](https://badges.strrl.dev/issues-and-prs/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
+
 <br />
 
 I'm chenshu, a java developer. Love to learn and build things. I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
@@ -14,12 +20,6 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 - 🏠 Home Page: https://blog.chensoul.com
 - 💼 Telegram: https://t.me/chenshu_eth
 
-#### 🔨 Coding Activities
-
-[![Contributions Badge](https://badges.strrl.dev/contributions/all/chensoul?style=flat-square)](https://github.com/chensoul)
-[![Contributions Badge](https://badges.strrl.dev/contributions/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
-[![Commits Badge](https://badges.strrl.dev/commits/weekly/chensoul?style=flat-square)](https://github.com/pseudoyu)
-[![Issues and PRs Badge](https://badges.strrl.dev/issues-and-prs/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
 
 #### 📰 Recent Posts
 
