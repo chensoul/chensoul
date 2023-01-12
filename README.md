@@ -23,10 +23,6 @@ I want to learn things and become a better person. I enjoy reading, thinking and
 [![Commits Badge](https://badges.strrl.dev/commits/weekly/chensoul?style=flat-square)](https://github.com/pseudoyu)
 [![Issues and PRs Badge](https://badges.strrl.dev/issues-and-prs/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
 
-
-[![My GitHub stats](https://github-readme-stats.vercel.app/api?username=chensoul&show_icons=true&count_private=false&theme=cobalt)](https://github.com/anuraghazra/github-readme-stats)
-
-
 #### 📰 Recent Posts
 
 <!-- blog starts -->
