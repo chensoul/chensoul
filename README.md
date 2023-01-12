@@ -35,11 +35,7 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 #### 🎧 Recent Digests
 
 <!-- douban starts -->
-* <a href='http://movie.douban.com/subject/26946524/' target='_blank'>想看人民公仆 第一季</a> - 2023-01-12
-* <a href='http://www.douban.com/game/25884401/' target='_blank'>想玩海市蜃楼之馆 ファタモルガーナの館</a> - 2023-01-12
-* <a href='http://movie.douban.com/subject/35674355/' target='_blank'>在看中国奇谭</a> - 2023-01-10
-* <a href='http://movie.douban.com/subject/26761416/' target='_blank'>想看至暗时刻</a> - 2023-01-07
-* <a href='http://movie.douban.com/subject/35699947/' target='_blank'>在看台湾犯罪故事</a> - 2023-01-05
+
 <!-- douban ends -->
 
 #### 👨🏻‍💻 This Week I Code With
@@ -62,5 +58,4 @@ Solidity   2 hrs 11 mins  █▎░░░░░░░░░░░░░░░░
 <!-- recent_releases starts -->
 * <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户 - 2023-01-11
 * <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、mahout和spring boot构建的推荐系统 - 2023-01-11
-* <a href=https://github.com/chensoul/chensoul.github.io/releases/tag/v0.0.1 target='_blank'>chensoul.github.io</a>：个人网站发布系统 - 2023-01-11
 <!-- recent_releases ends -->
