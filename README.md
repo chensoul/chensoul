@@ -1,4 +1,4 @@
-### ✋ Who am I 
+### Hi there 👋
 
 [![Blog](https://img.shields.io/badge/Blog-chensoul-9cf?style=flat-square)](https://blog.chensoul.com)
 [![GitHub](https://img.shields.io/github/followers/chensoul?logo=github&style=flat-square)](https://github.com/chensoul)
@@ -7,9 +7,14 @@
 
 <br />
 
-I'm chenshu, Java Developer. Love to learn and build things. Follow me on [GitHub](https://github.com/chensoul). Know me on [Telegram Channel](https://t.me/chenshu_eth).
+I'm chenshu, a java developer. Love to learn and build things. Follow me on [GitHub](https://github.com/chensoul). Know me on [Telegram Channel](https://t.me/chenshu_eth).
 
 I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
+
+- 📧 Email: chenshu.eth@gmail.com
+- 😄 Wechat: chenshu_eth
+- 🏠 Home Page: https://blog.chensoul.com
+- 💼 Telegram: https://t.me/chenshu_eth
 
 #### 🔨 Coding Activities
 
@@ -18,8 +23,9 @@ I want to learn things and become a better person. I enjoy reading, thinking and
 [![Commits Badge](https://badges.strrl.dev/commits/weekly/chensoul?style=flat-square)](https://github.com/pseudoyu)
 [![Issues and PRs Badge](https://badges.strrl.dev/issues-and-prs/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
 
-- 💼 Love open-source
-- 💬 Ask me about anything, [email me](mailto:chenshu.eth@gmail.com)
+
+[![My GitHub stats](https://github-readme-stats.vercel.app/api?username=chensoul&show_icons=true&count_private=false&theme=cobalt)](https://github.com/anuraghazra/github-readme-stats)
+
 
 #### 📰 Recent Posts
 
