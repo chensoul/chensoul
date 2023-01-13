@@ -1,4 +1,4 @@
-### Hi there 👋
+## Hi there 👋
 
 [![Blog](https://img.shields.io/badge/Blog-chensoul-9cf?style=flat-square)](https://blog.chensoul.com)
 [![GitHub](https://img.shields.io/github/followers/chensoul?logo=github&style=flat-square)](https://github.com/chensoul)
@@ -18,10 +18,11 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 - 😄 Wechat: chenshu_eth
 - 📧 Email: chenshu.eth@gmail.com
 - 🏠 Blog: https://blog.chensoul.com
+- 👨🏻‍💻 Github: https://github.com/chensoul
 - 💼 Telegram: https://t.me/chenshu_eth
 
 
-#### 📰 Recent Posts
+### 📰 Recent Posts
 
 <!-- blog starts -->
 * <a href=https://blog.chensoul.com/posts/greenplum-cc-web-install-deploy/ target='_blank'>Greenplum CC Web安装和部署</a>
@@ -32,7 +33,7 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 * <a href=https://blog.chensoul.com/posts/doris-cluster-elastic-expansion/ target='_blank'>Doris集群弹性扩缩容</a>
 <!-- blog ends -->
 
-#### 🎧 Recent Interests
+### 🎧 Recent Interests
 
 <!-- douban starts -->
 * <a href='https://book.douban.com/subject/30468597/' target='_blank'>想读重构（第2版）</a>
@@ -40,7 +41,7 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 * <a href='http://movie.douban.com/subject/4811774/' target='_blank'>想看阿凡达：水之道</a>
 <!-- douban ends -->
 
-#### 👨🏻‍💻 Recent Codings
+### 👨🏻‍💻 Recent Codings
 
 <!-- waka-box starts -->
 
@@ -51,7 +52,7 @@ Still Gathering Statistics...
 <!-- waka-box ends -->
 
 
-#### 💻 Recent Releases
+### 💻 Recent Releases
 
 <!-- recent_releases starts -->
 * <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户
