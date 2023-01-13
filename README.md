@@ -21,19 +21,21 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 - 👨🏻‍💻 Github: https://github.com/chensoul
 - 💼 Telegram: https://t.me/chenshu_eth
 
+![picture](https://blog.chensoul.com/images/dino.gif)
 
-### 📰 Recent Posts
+
+### 📰 最新文章
 
 <!-- blog starts -->
-* <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-cc-web-install-deploy/ target='_blank'>Greenplum CC Web安装和部署</a>
-* <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-install-deploy/ target='_blank'>Greenplum安装和部署</a>
-* <a href=https://blog.chensoul.com/posts/2022/08/19/postgresql-install-deploy/ target='_blank'>PostgreSql安装和部署</a>
-* <a href=https://blog.chensoul.com/posts/2022/08/19/mysql-install-deploy/ target='_blank'>MySql安装和部署</a>
-* <a href=https://blog.chensoul.com/posts/2022/08/19/using-images-in-blog/ target='_blank'>博客中如何使用图床服务</a>
-* <a href=https://blog.chensoul.com/posts/2022/08/18/doris-cluster-elastic-expansion/ target='_blank'>Doris集群弹性扩缩容</a>
+* <a href=https://blog.chensoul.com/posts/greenplum-cc-web-install-deploy/ target='_blank'>Greenplum CC Web安装和部署</a>
+* <a href=https://blog.chensoul.com/posts/greenplum-install-deploy/ target='_blank'>Greenplum安装和部署</a>
+* <a href=https://blog.chensoul.com/posts/postgresql-install-deploy/ target='_blank'>PostgreSql安装和部署</a>
+* <a href=https://blog.chensoul.com/posts/mysql-install-deploy/ target='_blank'>MySql安装和部署</a>
+* <a href=https://blog.chensoul.com/posts/using-images-in-blog/ target='_blank'>博客中如何使用图床服务</a>
+* <a href=https://blog.chensoul.com/posts/doris-cluster-elastic-expansion/ target='_blank'>Doris集群弹性扩缩容</a>
 <!-- blog ends -->
 
-### 🎧 Recent Interests
+### 🎧 最近阅读观影
 
 <!-- douban starts -->
 * <a href='https://book.douban.com/subject/30468597/' target='_blank'>想读重构（第2版）</a>
@@ -41,7 +43,7 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 * <a href='http://movie.douban.com/subject/4811774/' target='_blank'>想看阿凡达：水之道</a>
 <!-- douban ends -->
 
-### 👨🏻‍💻 Recent Codings
+### 👨🏻‍💻 最近编程时间统计
 
 <!-- waka-box starts -->
 
@@ -52,7 +54,7 @@ Still Gathering Statistics...
 <!-- waka-box ends -->
 
 
-### 💻 Recent Releases
+### 💻 最近开源项目发布
 
 <!-- recent_releases starts -->
 * <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户
