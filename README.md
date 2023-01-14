@@ -16,7 +16,7 @@
 I'm chenshu, a java developer. Love to learn and build things. I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
 
 - 😄 Wechat: chenshu_eth
-- 📧 Email: chenshu.eth@gmail.com
+- 📧 Email: chensoul.eth@gmail.com
 - 🏠 Blog: https://blog.chensoul.com
 - 👨🏻‍💻 Github: https://github.com/chensoul
 - 💼 Telegram: https://t.me/chenshu_eth
