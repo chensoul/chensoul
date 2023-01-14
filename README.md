@@ -2,13 +2,13 @@
 
 [![Blog](https://img.shields.io/badge/Blog-chensoul-9cf?style=flat-square)](https://blog.chensoul.com)
 [![GitHub](https://img.shields.io/github/followers/chensoul?logo=github&style=flat-square)](https://github.com/chensoul)
-[![Twitter](https://img.shields.io/twitter/follow/chenshu_eth?logo=twitter&style=flat-square)](https://twitter.com/chenshu_eth)
+[![Twitter](https://img.shields.io/twitter/follow/chensoul_eth?logo=twitter&style=flat-square)](https://twitter.com/chensoul_eth)
 [![Visits Badge](https://badges.strrl.dev/visits/chensoul/chensoul?style=flat-square)](https://github.com/chensoul)
 
 
 [![Contributions Badge](https://badges.strrl.dev/contributions/all/chensoul?style=flat-square)](https://github.com/chensoul)
 [![Contributions Badge](https://badges.strrl.dev/contributions/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
-[![Commits Badge](https://badges.strrl.dev/commits/weekly/chensoul?style=flat-square)](https://github.com/pseudoyu)
+[![Commits Badge](https://badges.strrl.dev/commits/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
 [![Issues and PRs Badge](https://badges.strrl.dev/issues-and-prs/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
 
 <br />
@@ -19,7 +19,7 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 - 📧 Email: chensoul.eth@gmail.com
 - 🏠 Blog: https://blog.chensoul.com
 - 👨🏻‍💻 Github: https://github.com/chensoul
-- 💼 Telegram: https://t.me/chenshu_eth
+- 💼 Telegram: https://t.me/chensoul_eth
 
 ![picture](https://blog.chensoul.com/images/dino.gif)
 
