@@ -19,7 +19,7 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 - 📧 Email: chensoul.eth@gmail.com
 - 🏠 Blog: https://blog.chensoul.com
 - 👨🏻‍💻 Github: https://github.com/chensoul
-- 💼 Telegram: https://t.me/chenshu_eth
+- 💼 Telegram: https://t.me/chensoul_eth
 
 ![picture](https://blog.chensoul.com/images/dino.gif)
 
