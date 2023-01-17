@@ -28,7 +28,7 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 
 <!-- blog starts -->
 * <a href=https://blog.chensoul.com/posts/2023/01/15/weekly_review_2/ target='_blank'>周报#2｜博客重构</a>
-* <a href=https://blog.chensoul.com/posts/2023/01/08/weekly_review_1/ target='_blank'>周报#1｜开始写周报</a>
+* <a href=https://blog.chensoul.com/posts/2023/01/08/weekly_review_1/ target='_blank'>周报#1｜开始写周报、冥想</a>
 * <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-cc-web-install-deploy/ target='_blank'>Greenplum CC Web安装和部署</a>
 * <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-install-deploy/ target='_blank'>Greenplum安装和部署</a>
 * <a href=https://blog.chensoul.com/posts/2022/08/19/postgresql-install-deploy/ target='_blank'>PostgreSql安装和部署</a>
