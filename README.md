@@ -43,7 +43,7 @@ I'm chensoul, a java developer. Love to learn and build things. I want to learn 
 <!-- recent_releases starts -->
 * <a href=https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1 target='_blank'>learning-hadoop</a>：学习 hadoop 示例代码
 * <a href=https://github.com/chensoul/learning-spark/releases/tag/v0.0.1 target='_blank'>learning-spark</a>：学习 spark 示例代码
-* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户
+* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy爬取知乎、Github用户
 * <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、spring boot构建推荐系统
 <!-- recent_releases ends -->
 
