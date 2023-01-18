@@ -21,7 +21,7 @@ enjoy reading, thinking and writing in my leisure time.
 - 👨🏻‍💻 Github: https://github.com/chensoul
 - 💼 Telegram: https://t.me/chensoulshare
 
-### My actions 🌟
+### My Activities 🌟
 
 <table style="width: auto">
 <tr>
@@ -35,7 +35,7 @@ enjoy reading, thinking and writing in my leisure time.
 
 <td valign="top" width="50%">
 
-#### 👨🏻‍💻 Product Releases
+#### 🏂 Product Releases
 
 <!-- recent_releases starts -->
 * <a href=https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1 target='_blank'>learning-hadoop</a>：学习 hadoop 示例代码
@@ -64,7 +64,7 @@ enjoy reading, thinking and writing in my leisure time.
 
 <td valign="top" width="50%">
 
-#### 💼 Recent Digests
+#### 🤾‍ Recent Digests
 
 <!-- douban starts -->
 * <a href='https://book.douban.com/subject/30468597/' target='_blank'>想读重构（第2版）</a>
