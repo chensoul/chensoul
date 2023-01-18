@@ -39,15 +39,10 @@ enjoy reading, thinking and writing in my leisure time.
 #### 💻 <a href="https://github.com/chensoul/chensoul/blob/main/releases.md" target="_blank">Product Releases</a>
 
 <!-- recent_releases starts -->
-
-* <a href=https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1 target='_blank'>learning-hadoop</a>：学习
-  hadoop 示例代码
-* <a href=https://github.com/chensoul/learning-spark/releases/tag/v0.0.1 target='_blank'>learning-spark</a>：学习 spark
-  示例代码
-* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>
-  ：Scrapy爬取知乎、Github用户
+* <a href=https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1 target='_blank'>learning-hadoop</a>：学习 hadoop 示例代码
+* <a href=https://github.com/chensoul/learning-spark/releases/tag/v0.0.1 target='_blank'>learning-spark</a>：学习 spark 示例代码
+* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy爬取知乎、Github用户
 * <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、spring boot构建推荐系统
-
 <!-- recent_releases ends -->
 
 </td>
@@ -59,14 +54,11 @@ enjoy reading, thinking and writing in my leisure time.
 #### 📰 Recent Blog
 
 <!-- blog starts -->
-
 * <a href=https://blog.chensoul.com/posts/2023/01/15/weekly_review_2/ target='_blank'>周报 #2｜博客重构</a>
 * <a href=https://blog.chensoul.com/posts/2023/01/08/weekly_review_1/ target='_blank'>周报 #1｜开始写周报、冥想</a>
-* <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-cc-web-install-deploy/ target='_blank'>Greenplum CC
-  Web安装和部署</a>
+* <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-cc-web-install-deploy/ target='_blank'>Greenplum CC Web安装和部署</a>
 * <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-install-deploy/ target='_blank'>Greenplum安装和部署</a>
 * <a href=https://blog.chensoul.com/posts/2022/08/19/postgresql-install-deploy/ target='_blank'>PostgreSql安装和部署</a>
-
 <!-- blog ends -->
 
 </td>
@@ -76,11 +68,9 @@ enjoy reading, thinking and writing in my leisure time.
 #### 🎧 Recent Digests
 
 <!-- douban starts -->
-
 * <a href='https://book.douban.com/subject/30468597/' target='_blank'>想读重构（第2版）</a>
 * <a href='http://movie.douban.com/subject/35891542/' target='_blank'>看过绝望主夫</a>
 * <a href='http://movie.douban.com/subject/4811774/' target='_blank'>想看阿凡达：水之道</a>
-
 <!-- douban ends -->
 
 </td>
