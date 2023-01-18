@@ -13,7 +13,7 @@
 
 <br />
 
-I'm chenshu, a java developer. Love to learn and build things. I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
+I'm chensoul, a java developer. Love to learn and build things. I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
 
 - 😄 Wechat: chenshu_eth
 - 📧 Email: chensoul.eth@gmail.com
