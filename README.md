@@ -24,6 +24,13 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 ![picture](https://blog.chensoul.com/images/dino.gif)
 
 
+### 👨🏻‍💻 最近编程
+
+![light](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
+
+![dark](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats_black.svg#gh-dark-mode-only)
+
+
 ### 📰 最新文章
 
 <!-- blog starts -->
@@ -43,13 +50,6 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 * <a href='http://movie.douban.com/subject/35891542/' target='_blank'>看过绝望主夫</a>
 * <a href='http://movie.douban.com/subject/4811774/' target='_blank'>想看阿凡达：水之道</a>
 <!-- douban ends -->
-
-
-### 👨🏻‍💻 最近编程时间统计
-
-![light](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
-
-![dark](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats_black.svg#gh-dark-mode-only)
 
 
 ### 💻 最近开源项目发布
