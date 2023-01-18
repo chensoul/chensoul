@@ -12,7 +12,7 @@
 
 <br />
 
-I'm chensoul, a Java developer based in China Wuhan. Love to learn and build things.  Follow me on [GitHub](https://github.com/chensoul). Know me on [Telegram Channel](https://t.me/chensoulshare).
+I'm chensoul, a Java developer based in China Wuhan. Love to learn and build things.  Follow me on [GitHub](https://github.com/chensoul). Know me on [Telegram Channel](https://t.me/chensoul_share).
 
 I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
 
@@ -20,7 +20,7 @@ I want to learn things and become a better person. I enjoy reading, thinking and
 - 📧 Email: chensoul.eth@gmail.com
 - 🏠 Blog: https://blog.chensoul.com
 - 👨🏻‍💻 Github: https://github.com/chensoul
-- 💼 Telegram: https://t.me/chensoulshare
+- 💼 Telegram: https://t.me/chensoul_share
 
 ### My Activities 🌟
 
