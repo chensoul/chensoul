@@ -12,8 +12,9 @@
 
 <br />
 
-I'm chensoul, a Java developer based in China Wuhan. Love to learn and build things. I want to learn things and become a better person. I
-enjoy reading, thinking and writing in my leisure time.
+I'm chensoul, a Java developer based in China Wuhan. Love to learn and build things.  Follow me on [GitHub](https://github.com/chensoul). Know me on [Telegram Channel](https://t.me/chensoulshare).
+
+I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
 
 - 😄 Wechat: chenshu_eth
 - 📧 Email: chensoul.eth@gmail.com
