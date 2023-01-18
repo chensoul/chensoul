@@ -53,7 +53,7 @@ I'm chensoul, a java developer. Love to learn and build things. I want to learn 
 <tr>
 <td valign="top" width="50%">
 
-#### 📰 <a href="https://blog.chensoul.com" target="_blank">Recent Blog</a>
+#### 📰 Recent Blog
 
 <!-- blog starts -->
 * <a href=https://blog.chensoul.com/posts/2023/01/15/weekly_review_2/ target='_blank'>周报 #2｜博客重构</a>
