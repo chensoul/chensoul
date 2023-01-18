@@ -138,7 +138,7 @@ if __name__ == "__main__":
     md = "\n".join(
         [
             "* <a href={url} target='_blank'>{repo}</a>：{release}".format(**release)
-            for release in releases[:10]
+            for release in releases[:5]
         ]
     )
     readme_contents = readme.open().read()
@@ -171,7 +171,7 @@ if __name__ == "__main__":
     )
     rewritten = replace_chunk(rewritten, "douban", doubans_md)
 
-    entries = fetch_blog_entries()[:6]
+    entries = fetch_blog_entries()[:5]
     entries_md = "\n".join(
         ["* <a href={url} target='_blank'>{title}</a>".format(**entry) for entry in entries]
     )

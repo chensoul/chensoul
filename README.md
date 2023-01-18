@@ -24,14 +24,36 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 ![picture](https://blog.chensoul.com/images/dino.gif)
 
 
-### 👨🏻‍💻 最近编程
+<table width="960px">
+<tr>
+<td valign="top" width="50%">
+
+### 👨🏻‍💻 最近编程统计
 
 ![light](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
 
 ![dark](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats_black.svg#gh-dark-mode-only)
 
+</td>
 
-### 📰 最新文章
+<td valign="top" width="50%">
+
+### 💻 最近项目发布
+
+<!-- recent_releases starts -->
+* <a href=https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1 target='_blank'>learning-hadoop</a>：学习 hadoop 示例代码
+* <a href=https://github.com/chensoul/learning-spark/releases/tag/v0.0.1 target='_blank'>learning-spark</a>：学习 spark 示例代码
+* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户
+* <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、mahout和spring boot构建的推荐系统
+<!-- recent_releases ends -->
+
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="50%">
+
+### 📰 最新博客文章
 
 <!-- blog starts -->
 * <a href=https://blog.chensoul.com/posts/2023/01/15/weekly_review_2/ target='_blank'>周报 #2｜博客重构</a>
@@ -42,6 +64,9 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 * <a href=https://blog.chensoul.com/posts/2022/08/19/mysql-install-deploy/ target='_blank'>MySql安装和部署</a>
 <!-- blog ends -->
 
+</td>
+
+<td valign="top" width="50%">
 
 ### 🎧 最近阅读观影
 
@@ -51,12 +76,7 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 * <a href='http://movie.douban.com/subject/4811774/' target='_blank'>想看阿凡达：水之道</a>
 <!-- douban ends -->
 
+</td>
+</tr>
 
-### 💻 最近开源项目发布
-
-<!-- recent_releases starts -->
-* <a href=https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1 target='_blank'>learning-hadoop</a>：学习 hadoop 示例代码
-* <a href=https://github.com/chensoul/learning-spark/releases/tag/v0.0.1 target='_blank'>learning-spark</a>：学习 spark 示例代码
-* <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户
-* <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、mahout和spring boot构建的推荐系统
-<!-- recent_releases ends -->
+</table>
