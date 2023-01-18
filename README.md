@@ -61,7 +61,6 @@ I'm chensoul, a java developer. Love to learn and build things. I want to learn 
 * <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-cc-web-install-deploy/ target='_blank'>Greenplum CC Web安装和部署</a>
 * <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-install-deploy/ target='_blank'>Greenplum安装和部署</a>
 * <a href=https://blog.chensoul.com/posts/2022/08/19/postgresql-install-deploy/ target='_blank'>PostgreSql安装和部署</a>
-* <a href=https://blog.chensoul.com/posts/2022/08/19/mysql-install-deploy/ target='_blank'>MySql安装和部署</a>
 <!-- blog ends -->
 
 </td>
