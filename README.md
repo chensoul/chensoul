@@ -47,13 +47,9 @@ I'm chenshu, a java developer. Love to learn and build things. I want to learn t
 
 ### 👨🏻‍💻 最近编程时间统计
 
-<!-- waka-box starts -->
+![light](https://raw.githubusercontent.com/chensoul/tw93/chensoul/main/wakatime_weekly_language_stats.svg#gh-light-mode-only)
 
-```text
-Still Gathering Statistics...
-```
-
-<!-- waka-box ends -->
+![dark](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats_black.svg#gh-dark-mode-only)
 
 
 ### 💻 最近开源项目发布
