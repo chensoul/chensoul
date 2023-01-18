@@ -59,6 +59,8 @@ Still Gathering Statistics...
 ### 💻 最近开源项目发布
 
 <!-- recent_releases starts -->
+* <a href=https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1 target='_blank'>learning-hadoop</a>：v0.0.1
+* <a href=https://github.com/chensoul/learning-spark/releases/tag/v0.0.1 target='_blank'>learning-spark</a>：v0.0.1
 * <a href=https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1 target='_blank'>scrapy-zhihu-github</a>：Scrapy 爬取知乎和 Github 用户
 * <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、mahout和spring boot构建的推荐系统
 <!-- recent_releases ends -->
