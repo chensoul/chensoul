@@ -1,4 +1,4 @@
-## Hi there 👋
+### Hi there 👋
 
 [![Blog](https://img.shields.io/badge/Blog-chensoul-9cf?style=flat-square)](https://blog.chensoul.com)
 [![GitHub](https://img.shields.io/github/followers/chensoul?logo=github&style=flat-square)](https://github.com/chensoul)
@@ -28,7 +28,7 @@ I'm chensoul, a java developer. Love to learn and build things. I want to learn 
 <tr>
 <td valign="top" width="50%">
 
-### 👨🏻‍💻 最近编程统计
+#### 👨🏻‍💻 Weekly Development Breakdown
 
 ![light](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
 
@@ -38,7 +38,7 @@ I'm chensoul, a java developer. Love to learn and build things. I want to learn 
 
 <td valign="top" width="50%">
 
-### 💻 最近项目发布
+#### 💻 <a href="https://github.com/chensoul/chensoul/blob/main/releases.md" target="_blank">Product Releases</a>
 
 <!-- recent_releases starts -->
 * <a href=https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1 target='_blank'>learning-hadoop</a>：学习 hadoop 示例代码
@@ -53,7 +53,7 @@ I'm chensoul, a java developer. Love to learn and build things. I want to learn 
 <tr>
 <td valign="top" width="50%">
 
-### 📰 最新博客文章
+#### 📰 <a href="https://blog.chensoul.com" target="_blank">Recent Blog</a>
 
 <!-- blog starts -->
 * <a href=https://blog.chensoul.com/posts/2023/01/15/weekly_review_2/ target='_blank'>周报 #2｜博客重构</a>
@@ -68,7 +68,7 @@ I'm chensoul, a java developer. Love to learn and build things. I want to learn 
 
 <td valign="top" width="50%">
 
-### 🎧 最近阅读观影
+#### 🎧 Recent Digests
 
 <!-- douban starts -->
 * <a href='https://book.douban.com/subject/30468597/' target='_blank'>想读重构（第2版）</a>
