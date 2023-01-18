@@ -67,7 +67,7 @@ I want to learn things and become a better person. I enjoy reading, thinking and
 
 <td valign="top" width="50%">
 
-#### 🤾‍ Recent Digests
+#### 📺‍ Recent Digests
 
 <!-- douban starts -->
 * <a href='https://book.douban.com/subject/30468597/' target='_blank'>想读重构（第2版）</a>
