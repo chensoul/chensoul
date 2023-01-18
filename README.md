@@ -21,8 +21,7 @@ enjoy reading, thinking and writing in my leisure time.
 - 👨🏻‍💻 Github: https://github.com/chensoul
 - 💼 Telegram: https://t.me/chensoulshare
 
-![picture](https://chensoul.oss-cn-hangzhou.aliyuncs.com/images/dino.gif)
-
+### My actions 👋
 
 <table style="width: auto">
 <tr>
@@ -77,3 +76,5 @@ enjoy reading, thinking and writing in my leisure time.
 </tr>
 
 </table>
+
+![picture](https://chensoul.oss-cn-hangzhou.aliyuncs.com/images/dino.gif)
