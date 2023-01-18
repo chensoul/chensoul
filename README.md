@@ -26,7 +26,7 @@ enjoy reading, thinking and writing in my leisure time.
 
 <table style="width: auto">
 <tr>
-<td style="vertical-align: top;width:50%">
+<td valign="top" width="50%">
 
 #### 👨🏻‍💻 Weekly Development Breakdown
 
@@ -34,7 +34,7 @@ enjoy reading, thinking and writing in my leisure time.
 
 </td>
 
-<td style="vertical-align: top;width:50%">
+<td valign="top" width="50%">
 
 #### 💻 <a href="https://github.com/chensoul/chensoul/blob/main/releases.md" target="_blank">Product Releases</a>
 
@@ -49,7 +49,7 @@ enjoy reading, thinking and writing in my leisure time.
 </tr>
 
 <tr>
-<td style="vertical-align: top;width:50%">
+<td valign="top" width="50%">
 
 #### 📰 Recent Blog
 
@@ -63,7 +63,7 @@ enjoy reading, thinking and writing in my leisure time.
 
 </td>
 
-<td style="vertical-align: top;width:50%">
+<td valign="top" width="50%">
 
 #### 🎧 Recent Digests
 
