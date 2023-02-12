@@ -70,7 +70,11 @@ I want to learn things and become a better person. I enjoy reading, thinking and
 #### 📺‍ Recent Digests
 
 <!-- douban starts -->
-
+* <a href='http://movie.douban.com/subject/32493124/' target='_blank'>想看悬崖之上</a>
+* <a href='http://movie.douban.com/subject/35267208/' target='_blank'>看过流浪地球2</a>
+* <a href='http://movie.douban.com/subject/36156235/' target='_blank'>想看重启人生</a>
+* <a href='http://movie.douban.com/subject/25848328/' target='_blank'>想看最后生还者 第一季</a>
+* <a href='http://movie.douban.com/subject/35590262/' target='_blank'>在看粉红理论</a>
 <!-- douban ends -->
 
 </td>
