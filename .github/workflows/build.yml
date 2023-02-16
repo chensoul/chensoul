@@ -36,12 +36,6 @@ jobs:
         run: |-
           python build_readme.py README.md
 
-      - name: Update blog posts
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          max_post_count: "8"
-          feed_list: "https://blog.chensoul.com/index.xml"
-
       - name: Commit and push if changed
         run: |-
           git pull

@@ -26,17 +26,8 @@ I'm chensoul, a Java developer based in China Wuhan. Love to learn and build thi
 
 ## Recent Blog Posts
 
-<!-- BLOG-POST-LIST:START -->
-- [周报 #6｜买车和选号、粉色理论](https://blog.chensoul.com/posts/2023/02/13/weekly_review_6/)
-- [周报 #5｜项目事故、牙疼、Damus](https://blog.chensoul.com/posts/2023/02/07/weekly_review_5/)
-- [周报 #4｜过年、向上管理、工作周总结](https://blog.chensoul.com/posts/2023/01/30/weekly_review_4/)
-- [我的VPS服务部署记录](https://blog.chensoul.com/posts/2023/01/25/notes-about-deploy-services-in-vps/)
-- [周报 #3｜博客定制、VPS部署服务](https://blog.chensoul.com/posts/2023/01/25/weekly_review_3/)
-- [周报 #2｜博客重构](https://blog.chensoul.com/posts/2023/01/15/weekly_review_2/)
-- [周报 #1｜开始写周报、冥想](https://blog.chensoul.com/posts/2023/01/08/weekly_review_1/)
-- [Greenplum CC Web安装和部署](https://blog.chensoul.com/posts/2022/08/19/greenplum-cc-web-install-deploy/)
-<!-- BLOG-POST-LIST:END -->
-
+<!-- blog starts -->
+<!-- blog ends -->
 
 ## Recent Digests
 
