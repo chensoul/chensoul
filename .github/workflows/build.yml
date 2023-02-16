@@ -35,7 +35,6 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |-
           python build_readme.py README.md
-          cat README.md
 
       - name: Update blog posts
         uses: gautamkrishnar/blog-post-workflow@master
