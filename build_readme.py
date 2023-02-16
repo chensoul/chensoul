@@ -171,10 +171,10 @@ if __name__ == "__main__":
     )
     rewritten = replace_chunk(rewritten, "douban", doubans_md)
 
-    entries = fetch_blog_entries()[:5]
-    entries_md = "\n".join(
-        ["* <a href={url} target='_blank'>{title}</a>".format(**entry) for entry in entries]
-    )
-    rewritten = replace_chunk(rewritten, "blog", entries_md)
+    #entries = fetch_blog_entries()[:5]
+    #entries_md = "\n".join(
+    #    ["* <a href={url} target='_blank'>{title}</a>".format(**entry) for entry in entries]
+    #)
+    #rewritten = replace_chunk(rewritten, "blog", entries_md)
 
     readme.open("w").write(rewritten)
