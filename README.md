@@ -15,13 +15,9 @@ I'm chensoul, a Java developer based in China Wuhan. Love to learn and build thi
 
 - 💬 Ask me about **Java、Hadoop**
 
-- 📝 I regularly write articles on [https://blog.chensoul.com](https://blog.chensoul.com)
-
-- 📫 Contact with me :
-	- Wechat: chenshu_eth
-	- Email: chensoul.eth@gmail.com
-	- Github: https://github.com/chensoul
-	- Telegram: https://t.me/chensoul_share
+- 📝 I regularly write articles on [ChenSoul](https://blog.chensoul.com)
+  
+- 📫 You can reach me via WeChat(chenshu_eth)、[Email](mailto:chensoul.eth@gmail.com) 、[Twitter](https://twitter.com/chensoul_eth) or [Telegram Channel](https://t.me/chensoul_share)
 
 
 ## Recent Blog Posts
