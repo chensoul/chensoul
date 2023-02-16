@@ -165,7 +165,7 @@ if __name__ == "__main__":
     #code_time_text = "\n```text\n"+fetch_code_time().text+"\n```\n"
     #rewritten = replace_chunk(rewritten, "waka-box", code_time_text)
 
-    doubans = fetch_douban()[:5]
+    doubans = fetch_douban()[:8]
     doubans_md = "\n".join(
         ["* <a href='{url}' target='_blank'>{title}</a>".format(**item) for item in doubans]
     )
