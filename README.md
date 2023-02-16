@@ -1,44 +1,48 @@
-### Hi there 👋
+## Hi there 👋
 
 [![Blog](https://img.shields.io/badge/Blog-chensoul-9cf?style=flat-square)](https://blog.chensoul.com)
 [![GitHub](https://img.shields.io/github/followers/chensoul?logo=github&style=flat-square)](https://github.com/chensoul)
 [![Twitter](https://img.shields.io/twitter/follow/chensoul_eth?logo=twitter&style=flat-square)](https://twitter.com/chensoul_eth)
 [![Visits Badge](https://badges.strrl.dev/visits/chensoul/chensoul?style=flat-square)](https://github.com/chensoul)
 
-[![Contributions Badge](https://badges.strrl.dev/contributions/all/chensoul?style=flat-square)](https://github.com/chensoul)
-[![Contributions Badge](https://badges.strrl.dev/contributions/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
-[![Commits Badge](https://badges.strrl.dev/commits/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
-[![Issues and PRs Badge](https://badges.strrl.dev/issues-and-prs/weekly/chensoul?style=flat-square)](https://github.com/chensoul)
-
 <br />
 
-I'm chensoul, a Java developer based in China Wuhan. Love to learn and build things.  Follow me on [GitHub](https://github.com/chensoul). Know me on [Telegram Channel](https://t.me/chensoul_share).
+I'm chensoul, a Java developer based in China Wuhan. Love to learn and build things.  
 
-I want to learn things and become a better person. I enjoy reading, thinking and writing in my leisure time.
+- 🌱 I’m currently learning **Go、Python**
 
-- 😄 Wechat: chenshu_eth
-- 📧 Email: chensoul.eth@gmail.com
-- 🏠 Blog: https://blog.chensoul.com
-- 👨🏻‍💻 Github: https://github.com/chensoul
-- 💼 Telegram: https://t.me/chensoul_share
+- 💬 Ask me about **Java、Hadoop**
 
-### My Activities 🌟
+- 📝 I regularly write articles on [https://blog.chensoul.com](https://blog.chensoul.com)
 
-<!-- see https://github.com/tw93/tw93 -->
+- 📫 Contact with me :
+	- Wechat: chenshu_eth
+	- Email: chensoul.eth@gmail.com
+	- Github: https://github.com/chensoul
+	- Telegram: https://t.me/chensoul_share
 
-<table style="width: auto">
-<tr>
-<td valign="top" width="50%">
 
-#### 👨🏻‍💻 Weekly Development Breakdown
+## Recent Blog Posts
 
-![light](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
+<!-- BLOG-POST-LIST:START -->
+* <a href=https://blog.chensoul.com/posts/2023/01/15/weekly_review_2/ target='_blank'>周报 #2｜博客重构</a>
+* <a href=https://blog.chensoul.com/posts/2023/01/08/weekly_review_1/ target='_blank'>周报 #1｜开始写周报、冥想</a>
+* <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-cc-web-install-deploy/ target='_blank'>Greenplum CC Web安装和部署</a>
+* <a href=https://blog.chensoul.com/posts/2022/08/19/greenplum-install-deploy/ target='_blank'>Greenplum安装和部署</a>
+* <a href=https://blog.chensoul.com/posts/2022/08/19/postgresql-install-deploy/ target='_blank'>PostgreSql安装和部署</a>
+<!-- BLOG-POST-LIST:END -->
 
-</td>
 
-<td valign="top" width="50%">
+## Recent Digests
 
-#### 🏂 Product Releases
+<!-- douban starts -->
+* <a href='http://movie.douban.com/subject/35208467/' target='_blank'>看过想见你</a>
+* <a href='http://movie.douban.com/subject/35891542/' target='_blank'>看过绝望主夫</a>
+* <a href='https://book.douban.com/subject/36088824/' target='_blank'>想读我们如何思考</a>
+<!-- douban ends -->
+
+
+## Recent Releases
 
 <!-- recent_releases starts -->
 * <a href=https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1 target='_blank'>learning-hadoop</a>：学习 hadoop 示例代码
@@ -47,39 +51,20 @@ I want to learn things and become a better person. I enjoy reading, thinking and
 * <a href=https://github.com/chensoul/grab/releases/tag/v0.0.1 target='_blank'>grab</a>：基于spark、spring boot构建推荐系统
 <!-- recent_releases ends -->
 
-</td>
-</tr>
 
-<tr>
-<td valign="top" width="50%">
+## Recent a week coding time
 
-#### 🏠 Recent Blog
+![light](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
 
-<!-- blog starts -->
-* <a href=https://blog.chensoul.com/posts/2023/02/13/weekly_review_6/ target='_blank'>周报 #6｜买车和选号、粉色理论</a>
-* <a href=https://blog.chensoul.com/posts/2023/02/07/weekly_review_5/ target='_blank'>周报 #5｜项目事故、牙疼、Damus</a>
-* <a href=https://blog.chensoul.com/posts/2023/01/30/weekly_review_4/ target='_blank'>周报 #4｜过年、向上管理、工作周总结</a>
-* <a href=https://blog.chensoul.com/posts/2023/01/25/notes-about-deploy-services-in-vps/ target='_blank'>我的VPS服务部署记录</a>
-* <a href=https://blog.chensoul.com/posts/2023/01/25/weekly_review_3/ target='_blank'>周报 #3｜博客定制、VPS部署服务</a>
-<!-- blog ends -->
 
-</td>
+## Languages and Tools
 
-<td valign="top" width="50%">
+<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://hadoop.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg" alt="hadoop" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a> </p>
 
-#### 📺‍ Recent Digests
 
-<!-- douban starts -->
-* <a href='http://movie.douban.com/subject/32493124/' target='_blank'>想看悬崖之上</a>
-* <a href='http://movie.douban.com/subject/35267208/' target='_blank'>看过流浪地球2</a>
-* <a href='http://movie.douban.com/subject/36156235/' target='_blank'>想看重启人生</a>
-* <a href='http://movie.douban.com/subject/25848328/' target='_blank'>想看最后生还者 第一季</a>
-* <a href='http://movie.douban.com/subject/35590262/' target='_blank'>在看粉红理论</a>
-<!-- douban ends -->
+## Connect with me
 
-</td>
-</tr>
-
-</table>
-
-![picture](https://chensoul.oss-cn-hangzhou.aliyuncs.com/images/dino.gif)
+<p align="left">
+<a href="https://twitter.com/chensoul_eth" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="chensoul_eth" height="30" width="40" /></a>
+<a href="/https://blog.chensoul.com/index.xml" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg" alt="https://blog.chensoul.com/index.xml" height="30" width="40" /></a>
+</p>
