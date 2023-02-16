@@ -36,9 +36,11 @@ I'm chensoul, a Java developer based in China Wuhan. Love to learn and build thi
 ## Recent Digests
 
 <!-- douban starts -->
-* <a href='http://movie.douban.com/subject/35208467/' target='_blank'>看过想见你</a>
-* <a href='http://movie.douban.com/subject/35891542/' target='_blank'>看过绝望主夫</a>
-* <a href='https://book.douban.com/subject/36088824/' target='_blank'>想读我们如何思考</a>
+* <a href='http://movie.douban.com/subject/32493124/' target='_blank'>想看悬崖之上</a>
+* <a href='http://movie.douban.com/subject/35267208/' target='_blank'>看过流浪地球2</a>
+* <a href='http://movie.douban.com/subject/36156235/' target='_blank'>想看重启人生</a>
+* <a href='http://movie.douban.com/subject/25848328/' target='_blank'>想看最后生还者 第一季</a>
+* <a href='http://movie.douban.com/subject/35590262/' target='_blank'>在看粉红理论</a>
 <!-- douban ends -->
 
 
