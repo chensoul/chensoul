@@ -9,7 +9,7 @@
 
 <br />
 
-I'm chensoul, a Java developer based in China Wuhan. Love to learn and build things.  
+- 👋 I'm chensoul, a Java developer based in China Wuhan
 
 - 🌱 I’m currently learning **Go、Python**
 
