@@ -36,14 +36,14 @@
 ## Recent Digests
 
 <!-- douban starts -->
-- <a href='http://movie.douban.com/subject/32493124/' target='_blank'>想看悬崖之上</a>
-- <a href='http://movie.douban.com/subject/35267208/' target='_blank'>看过流浪地球2</a>
-- <a href='http://movie.douban.com/subject/36156235/' target='_blank'>想看重启人生</a>
-- <a href='http://movie.douban.com/subject/25848328/' target='_blank'>想看最后生还者 第一季</a>
-- <a href='http://movie.douban.com/subject/35590262/' target='_blank'>在看粉红理论</a>
-- <a href='http://movie.douban.com/subject/35513968/' target='_blank'>看过交换人生</a>
-- <a href='http://movie.douban.com/subject/35372742/' target='_blank'>看过无名</a>
-- <a href='http://movie.douban.com/subject/35766491/' target='_blank'>看过满江红</a>
+- <a href='http://movie.douban.com/subject/32493124/' target='_blank'>想看悬崖之上</a> - 2023-02-09
+- <a href='http://movie.douban.com/subject/35267208/' target='_blank'>看过流浪地球2</a> - 2023-02-09
+- <a href='http://movie.douban.com/subject/36156235/' target='_blank'>想看重启人生</a> - 2023-02-09
+- <a href='http://movie.douban.com/subject/25848328/' target='_blank'>想看最后生还者 第一季</a> - 2023-02-09
+- <a href='http://movie.douban.com/subject/35590262/' target='_blank'>在看粉红理论</a> - 2023-02-09
+- <a href='http://movie.douban.com/subject/35513968/' target='_blank'>看过交换人生</a> - 2023-01-23
+- <a href='http://movie.douban.com/subject/35372742/' target='_blank'>看过无名</a> - 2023-01-23
+- <a href='http://movie.douban.com/subject/35766491/' target='_blank'>看过满江红</a> - 2023-01-23
 <!-- douban ends -->
 
 
