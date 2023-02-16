@@ -99,10 +99,10 @@ def fetch_releases(oauth_token):
 
     return releases
 
-# def fetch_code_time():
-#     return httpx.get(
-#         "https://gist.githubusercontent.com/chensoul/9cc9eeda859cfafd25b28ecc986227b8/raw/"
-#     )
+def fetch_code_time():
+    return httpx.get(
+         "https://gist.githubusercontent.com/chensoul/9cc9eeda859cfafd25b28ecc986227b8/raw/"
+    )
 
 def fetch_douban():
     entries = feedparser.parse("https://www.douban.com/feed/people/chensoul/interests")["entries"]
@@ -143,24 +143,6 @@ if __name__ == "__main__":
     )
     readme_contents = readme.open().read()
     rewritten = replace_chunk(readme_contents, "recent_releases", md)
-
-
-    # Write out full releases.md file
-    project_releases_md = "\n".join(
-        [
-            "* **[{repo}]({repo_url})**：{release}".format(**release)
-            for release in releases
-        ]
-    )
-    project_releases_content = project_releases.open().read()
-    project_releases_content = replace_chunk(
-        project_releases_content, "recent_releases", project_releases_md
-    )
-    project_releases_content = replace_chunk(
-        project_releases_content, "release_count", str(len(releases)), inline=True
-    )
-    project_releases.open("w").write(project_releases_content)
-
 
     #code_time_text = "\n```text\n"+fetch_code_time().text+"\n```\n"
     #rewritten = replace_chunk(rewritten, "waka-box", code_time_text)
