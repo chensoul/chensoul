@@ -1,5 +1,6 @@
 python-graphql-client==0.3.0
-httpx
-feedparser
-datetime
+httpx~=0.24.0
+feedparser~=6.0.10
+datetime~=5.1
 
+requests~=2.22.0

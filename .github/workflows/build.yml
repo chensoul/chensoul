@@ -43,5 +43,5 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add -A
-          git commit -m "ci: update profile (automatically)" || exit 0
+          git commit -m "ci: build readme" || exit 0
           git push
