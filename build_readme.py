@@ -99,10 +99,7 @@ def fetch_releases(oauth_token):
 
     return releases
 
-def fetch_code_time():
-    return httpx.get(
-         "https://gist.githubusercontent.com/chensoul/9cc9eeda859cfafd25b28ecc986227b8/raw/"
-    )
+
 
 def fetch_douban():
     entries = feedparser.parse("https://www.douban.com/feed/people/chensoul/interests")["entries"]
@@ -147,12 +144,10 @@ if __name__ == "__main__":
     readme_contents = readme.open().read()
     rewritten = replace_chunk(readme_contents, "recent_releases", md)
 
-    #code_time_text = "\n```text\n"+fetch_code_time().text+"\n```\n"
-    #rewritten = replace_chunk(rewritten, "waka-box", code_time_text)
 
     doubans = fetch_douban()[:8]
     doubans_md = "\n".join(
-        ["- <a href='{url}' target='_blank'>{title}</a> - {published}".format(**item) for item in doubans]
+        ["- <a href='{url}' target='_blank'>{title}</a> {published}".format(**item) for item in doubans]
     )
     rewritten = replace_chunk(rewritten, "douban", doubans_md)
 
