@@ -1,7 +1,6 @@
 name: fetch wakatime
 
 on:
-  push:
   workflow_dispatch:
   schedule:
     - cron: '5 0 * * *'
