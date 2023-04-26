@@ -1,4 +1,4 @@
-name: Wakatime Charts
+name: generate wakatime chart
 
 on:
   workflow_dispatch:
