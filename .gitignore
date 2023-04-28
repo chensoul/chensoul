@@ -15,7 +15,7 @@ node_modules
 
 .hugo_build.lock
 
-.idea 
+.idea
 
 public
 
@@ -45,3 +45,6 @@ Thumbs.db*
 /__wechat.json
 /*.sqlite3
 .db/
+
+
+.env
