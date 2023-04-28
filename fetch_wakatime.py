@@ -19,7 +19,7 @@ def save_history():
         writer.writerows(recent_data)
 
 
-api_key = 'waka_83e91f31-a9ec-4bda-a057-bc6a40ff7f31'
+api_key = 'waka_0bfc7e4e-fe7a-4eaa-bc4a-3d0cc7d6aac6'
 
 
 def save_yesterday():
