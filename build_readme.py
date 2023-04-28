@@ -147,13 +147,13 @@ if __name__ == "__main__":
 
     doubans = fetch_douban()[:8]
     doubans_md = "\n".join(
-        ["- [{title}]({url) {published}".format(**item) for item in doubans]
+        ["- [{title}]({url}) {published}".format(**item) for item in doubans]
     )
     rewritten = replace_chunk(rewritten, "douban", doubans_md)
 
     entries = fetch_blog_entries()[:8]
     entries_md = "\n".join(
-        ["- [{title}]({url)".format(**entry) for entry in entries]
+        ["- [{title}]({url})".format(**entry) for entry in entries]
     )
     rewritten = replace_chunk(rewritten, "blog", entries_md)
 
