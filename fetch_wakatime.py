@@ -3,7 +3,10 @@ import json
 from datetime import datetime, timedelta
 
 import requests
+from dotenv import load_dotenv
 
+load_dotenv()
+api_key = os.getenv('WAKATIME_TOKEN')
 
 def save_history():
     # 读取 JSON 文件
@@ -17,9 +20,6 @@ def save_history():
     with open('data/wakatime.csv', 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(recent_data)
-
-
-api_key = 'waka_0bfc7e4e-fe7a-4eaa-bc4a-3d0cc7d6aac6'
 
 
 def save_yesterday():
