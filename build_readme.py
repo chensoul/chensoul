@@ -94,7 +94,7 @@ def fetch_releases(oauth_token):
             "hasNextPage"
         ]
         after_cursor = data["data"]["viewer"]["repositories"]["pageInfo"]["endCursor"]
-    
+
     print(releases)
 
     return releases
@@ -137,7 +137,7 @@ if __name__ == "__main__":
     releases.sort(key=lambda r: r["published_at"], reverse=True)
     md = "\n".join(
         [
-            "- <a href={url} target='_blank'>{repo}</a>：{release}".format(**release)
+            "- [{repo}](url)：{release}".format(**release)
             for release in releases[:5]
         ]
     )
@@ -147,13 +147,13 @@ if __name__ == "__main__":
 
     doubans = fetch_douban()[:8]
     doubans_md = "\n".join(
-        ["- <a href='{url}' target='_blank'>{title}</a> {published}".format(**item) for item in doubans]
+        ["- [{title}](url) {published}".format(**item) for item in doubans]
     )
     rewritten = replace_chunk(rewritten, "douban", doubans_md)
 
     entries = fetch_blog_entries()[:8]
     entries_md = "\n".join(
-        ["- <a href={url} target='_blank'>{title}</a>".format(**entry) for entry in entries]
+        ["- [{title}](url)".format(**entry) for entry in entries]
     )
     rewritten = replace_chunk(rewritten, "blog", entries_md)
 
