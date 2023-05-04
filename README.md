@@ -8,7 +8,7 @@
 
 - 📝 I regularly write articles on [ChenSoul](https://blog.chensoul.com)
 
-- 📫 You can reach me via WeChat(chenshu_eth)、[Email](mailto:chensoul.eth@gmail.com) 、[Twitter](https://twitter.com/chensoul_eth) or [Telegram Channel](https://t.me/chensoul_share)
+- 📫 You can reach me via WeChat(chenshu_eth)、[Email](mailto:chensoul.eth@gmail.com) 、[Twitter](https://twitter.com/chensoul_eth)、[Github](https://github.com/chensoul) or [Telegram Channel](https://t.me/chensoul_share)
 
 
 ## 最新博客
