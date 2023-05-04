@@ -1,14 +1,5 @@
 ## Hi there 👋
 
-<!-- 参考 https://rahuldkjain.github.io/gh-profile-readme-generator/ -->
-
-[![Blog](https://img.shields.io/badge/Blog-chensoul-9cf?style=flat-square)](https://blog.chensoul.com)
-[![GitHub](https://img.shields.io/github/followers/chensoul?logo=github&style=flat-square)](https://github.com/chensoul)
-[![Twitter](https://img.shields.io/twitter/follow/chensoul_eth?logo=twitter&style=flat-square)](https://twitter.com/chensoul_eth)
-[![Visits Badge](https://badges.strrl.dev/visits/chensoul/chensoul?style=flat-square)](https://github.com/chensoul)
-
-<br />
-
 - 👋 I'm chensoul, a Java developer based in China Wuhan
 
 - 🌱 I’m currently learning **Go、Python**
@@ -16,7 +7,7 @@
 - 💬 Ask me about **Java、Hadoop**
 
 - 📝 I regularly write articles on [ChenSoul](https://blog.chensoul.com)
-  
+
 - 📫 You can reach me via WeChat(chenshu_eth)、[Email](mailto:chensoul.eth@gmail.com) 、[Twitter](https://twitter.com/chensoul_eth) or [Telegram Channel](https://t.me/chensoul_share)
 
 
@@ -64,4 +55,3 @@
 ## 最近一年跑步
 
 [![light](https://raw.githubusercontent.com/chensoul/running_page/master/assets/github_2023.svg#gh-light-mode-only)](https://run.chensoul.com)
-
