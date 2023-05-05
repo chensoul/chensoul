@@ -1,15 +1,16 @@
 ## Hi there 👋
 
-- 👋 I'm chensoul, a Java developer based in China Wuhan
+> 健康，爱情和使命，按照这个顺序，其它的都不重要。
+>               ------ 纳瓦尔
 
-- 🌱 I’m currently learning **Go、Python**
+我是 ChenSoul，一个 Java 软件开发工程师，目前工作在武汉。
 
-- 💬 Ask me about **Java、Hadoop**
-
-- 📝 I regularly write articles on [ChenSoul](https://blog.chensoul.com)
-
-- 📫 You can reach me via WeChat(chenshu_eth)、[Email](mailto:chensoul.eth@gmail.com) 、[Twitter](https://twitter.com/chensoul_eth)、[Github](https://github.com/chensoul) or [Telegram Channel](https://t.me/chensoul_share)
-
+如果你有任何反馈或者希望讨论某个话题，欢迎使用以下方式联系我。
+- WeChat：chenshu_eth
+- [Email](mailto:chensoul.eth@gmail.com)
+- [Github](https://github.com/chensoul)
+- [Twitter](https://twitter.com/chensoul_eth)
+- [Telegram](https://t.me/chensoul_share)
 
 ## 最新博客
 
