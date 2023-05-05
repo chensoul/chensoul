@@ -1,7 +1,6 @@
 ## Hi there 👋
 
-> 健康，爱情和使命，按照这个顺序，其它的都不重要。
->               ------ 纳瓦尔
+> 健康，爱情和使命，按照这个顺序，其它的都不重要。 ------ 纳瓦尔
 
 我是 ChenSoul，一个 Java 软件开发工程师，目前工作在武汉。
 
@@ -9,6 +8,7 @@
 - WeChat：chenshu_eth
 - [Email](mailto:chensoul.eth@gmail.com)
 - [Github](https://github.com/chensoul)
+- [Memos](https://memos.chensoul.com)
 - [Twitter](https://twitter.com/chensoul_eth)
 - [Telegram](https://t.me/chensoul_share)
 
