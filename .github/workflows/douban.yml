@@ -1,9 +1,9 @@
 name: douban
 on:
     workflow_dispatch:
-    push:
-        branches:
-            - main
+    schedule:
+        - cron: '0 * * * *'
+    
 jobs:
     douban:
         name: Douban mark data sync
