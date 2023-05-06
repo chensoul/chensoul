@@ -64,6 +64,7 @@ FIELDS = {
     'Workout': WORKOUT_FIELDS,
 }
 
+
 RECORDS=[
     'BodyFatPercentage',
     'BodyMass',
