@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 import requests
 
-api_key = os.environ.get("WAKATIME_API_KEY", "")
+api_key = os.environ.get("WAKATIME_TOKEN", "")
 print(api_key)
 
 def save_history():
