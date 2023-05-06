@@ -23,19 +23,14 @@
 - [周报-15｜Umami升级到2.0、汉街蜡像馆、使用Strava跑步](https://blog.chensoul.com/posts/2023/04/18/weekly_review_15/)
 - [《Effective Java 3》笔记5：依赖注入优于硬编码资源](https://blog.chensoul.com/posts/2023/04/17/prefer-dependency-injection-to-hardwiring-resources/)
 - [周报-14｜如何学习一门编程语言](https://blog.chensoul.com/posts/2023/04/13/weekly_review_14/)
+- [《Effective Java 3》笔记3：使用私有构造函数或枚举类型创建单例](https://blog.chensoul.com/posts/2023/04/11/enforce-the-singleton-property-with-a-private-constructor-or-an-enum-type/)
+- [周报-13｜健身、记账、更新SSL证书、代码提交百度站点收录](https://blog.chensoul.com/posts/2023/04/04/weekly_review_13/)
 <!-- blog ends -->
 
 ## 最近活动
 
 <!-- douban starts -->
-- [听过我是一只小小鸟](https://music.douban.com/subject/1484683/) 2023-05-06
-- [读过非暴力沟通](https://book.douban.com/subject/3533221/) 2023-05-06
-- [看过长空之王](http://movie.douban.com/subject/35209731/) 2023-04-30
-- [看过人生路不熟](http://movie.douban.com/subject/35653205/) 2023-04-28
-- [想看怒呛人生](http://movie.douban.com/subject/35413042/) 2023-04-27
-- [想读雨中的3分58秒](https://book.douban.com/subject/7916024/) 2023-04-25
-- [想读当我谈跑步时我谈些什么](https://book.douban.com/subject/3369600/) 2023-04-25
-- [想读Node.js后端全程实战](https://book.douban.com/subject/36374893/) 2023-04-24
+
 <!-- douban ends -->
 
 
