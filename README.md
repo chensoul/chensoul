@@ -15,6 +15,7 @@
 ## 最新博客
 
 <!-- blog starts -->
+- [周报-17｜导出苹果健康数据、自动化收集个人数据、FlexyPool动态连接池](https://blog.chensoul.com/posts/2023/05/06/weekly_review_17/)
 - [《Effective Java 3》笔记7：排除过时的对象引用](https://blog.chensoul.com/posts/2023/05/05/eliminate-obsolete-object-references/)
 - [《Effective Java 3》笔记4：用私有构造函数使类不可实例化](https://blog.chensoul.com/posts/2023/05/05/enforce-noninstantiability-with-a-private-constructor/)
 - [周报-16｜《灌篮高手》电影、《春山如笑》话剧](https://blog.chensoul.com/posts/2023/04/25/weekly_review_16/)
@@ -22,7 +23,6 @@
 - [周报-15｜Umami升级到2.0、汉街蜡像馆、使用Strava跑步](https://blog.chensoul.com/posts/2023/04/18/weekly_review_15/)
 - [《Effective Java 3》笔记5：依赖注入优于硬编码资源](https://blog.chensoul.com/posts/2023/04/17/prefer-dependency-injection-to-hardwiring-resources/)
 - [周报-14｜如何学习一门编程语言](https://blog.chensoul.com/posts/2023/04/13/weekly_review_14/)
-- [《Effective Java 3》笔记3：使用私有构造函数或枚举类型创建单例](https://blog.chensoul.com/posts/2023/04/11/enforce-the-singleton-property-with-a-private-constructor-or-an-enum-type/)
 <!-- blog ends -->
 
 ## 最近活动
