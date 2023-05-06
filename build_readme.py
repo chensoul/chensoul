@@ -145,13 +145,13 @@ if __name__ == "__main__":
     rewritten = replace_chunk(readme_contents, "recent_releases", md)
 
 
-    doubans = fetch_douban()[:8]
+    doubans = fetch_douban()[:10]
     doubans_md = "\n".join(
         ["- [{title}]({url}) {published}".format(**item) for item in doubans]
     )
     rewritten = replace_chunk(rewritten, "douban", doubans_md)
 
-    entries = fetch_blog_entries()[:8]
+    entries = fetch_blog_entries()[:10]
     entries_md = "\n".join(
         ["- [{title}]({url})".format(**entry) for entry in entries]
     )
