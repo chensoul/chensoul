@@ -1,5 +1,6 @@
 name: douban
 on:
+    workflow_dispatch:
     schedule:
         -   cron: "30 * * * *"
 
