@@ -1,9 +1,9 @@
 name: douban
 on:
     workflow_dispatch:
-    schedule:
-        -   cron: "30 * * * *"
-
+    push:
+        branches:
+            - main
 jobs:
     douban:
         name: Douban mark data sync
@@ -32,8 +32,12 @@ jobs:
                     type: book
                     format: csv
                     dir: ./data
-            -   name: Commit
-                uses: EndBug/add-and-commit@v8
-                with:
-                    message: 'chore: update douban data'
-                    add: './data'
+            -   name: Commit and push if changed
+                run: |-
+                    git pull
+                    git diff
+                    git config --global user.email "action@github.com"
+                    git config --global user.name "GitHub Action"
+                    git add -A
+                    git commit -m "ci: sync douban" || exit 0
+                    git push
