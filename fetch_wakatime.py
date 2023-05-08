@@ -13,12 +13,12 @@ def save_history():
     # 读取 JSON 文件
     with open('wakatime.json') as f:
         days = json.load(f)["days"]
-        recent_data = [[d["date"], d["grand_total"]["total_seconds"]] for d in days]
+        recent_data = [[d["date"], round(d["grand_total"]["total_seconds"])] for d in days]
 
     print(recent_data)
 
     # 将数据写入 CSV 文件
-    with open('data/wakatime.csv', 'w', newline='') as f:
+    with open('data/coding.csv', 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(recent_data)
 
@@ -50,7 +50,7 @@ def save_yesterday():
                           data=json_data, headers={'Content-Type': 'application/json'})
 
         # 将数据写入 CSV 文件
-        with open('data/wakatime.csv', 'a', newline='') as f:
+        with open('data/coding.csv', 'a', newline='') as f:
             writer = csv.writer(f)
             writer.writerows([[normal_date, cost]])
     else:
