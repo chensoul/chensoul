@@ -3,7 +3,7 @@ name: fetch wakatime
 on:
   workflow_dispatch:
   schedule:
-    - cron: '5 0 * * *'
+    - cron: '0 8 * * *'
 
 jobs:
   build:
