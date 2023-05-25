@@ -13,6 +13,7 @@ client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
 GITHUB_TOKEN = os.environ.get("PERSONAL_TOKEN", "")
 
+
 def replace_chunk(content, marker, chunk, inline=False):
     r = re.compile(
         r"<!\-\- {} starts \-\->.*<!\-\- {} ends \-\->".format(marker, marker),
@@ -23,10 +24,12 @@ def replace_chunk(content, marker, chunk, inline=False):
     chunk = "<!-- {} starts -->{}<!-- {} ends -->".format(marker, chunk, marker)
     return r.sub(chunk, content)
 
+
 def formatGMTime(timestamp):
     GMT_FORMAT = '%a, %d %b %Y %H:%M:%S GMT'
     dateStr = datetime.datetime.strptime(timestamp, GMT_FORMAT) + datetime.timedelta(hours=8)
     return dateStr.date()
+
 
 def make_query(after_cursor=None):
     return """
@@ -56,6 +59,7 @@ query {
 """.replace(
         "AFTER", '"{}"'.format(after_cursor) if after_cursor else "null"
     )
+
 
 def fetch_releases(oauth_token):
     repos = []
@@ -100,7 +104,6 @@ def fetch_releases(oauth_token):
     return releases
 
 
-
 def fetch_douban():
     entries = feedparser.parse("https://www.douban.com/feed/people/chensoul/interests")["entries"]
     return [
@@ -111,6 +114,7 @@ def fetch_douban():
         }
         for item in entries
     ]
+
 
 def fetch_blog_entries():
     entries = feedparser.parse("https://blog.chensoul.com/index.xml")["entries"]
@@ -123,9 +127,11 @@ def fetch_blog_entries():
         for entry in entries
     ]
 
+
 def fetch_memos():
     entries = httpx.get("https://memos.chensoul.com/api/memo?openId=f96cf91e-d692-403d-94ac-94e9347271e2")
     print(entries.json())
+
 
 if __name__ == "__main__":
     inputfile = sys.argv[1]
@@ -143,7 +149,6 @@ if __name__ == "__main__":
     )
     readme_contents = readme.open().read()
     rewritten = replace_chunk(readme_contents, "recent_releases", md)
-
 
     doubans = fetch_douban()[:10]
     doubans_md = "\n".join(
