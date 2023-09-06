@@ -90,7 +90,7 @@ message = '\n\n'.join(all_data)
 
 print(message)
 
-url = f'https://memos.chensoul.com/api/memo?openId=f96cf91e-d692-403d-94ac-94e9347271e2'
+url = f'https://memos.chensoul.com/api/memo?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f'
 payload = {
     "content": message
 }
