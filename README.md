@@ -62,7 +62,7 @@
 
 ## 最近一周编码
 
-![light](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
+![light](https://raw.githubusercontent.com/chensoul/my-data/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
 
 ## 最近一年跑步
 
