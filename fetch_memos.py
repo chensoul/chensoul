@@ -33,6 +33,10 @@ if response.status_code == 200:
     with open('data/memos.csv', 'w', newline=''):
         pass
 
+    with open('data/memos.csv', 'a', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['day', 'time', 'content'])
+
     # 将数据转换为 Markdown 格式，并处理 URL
     for d in recent_data:
         content = d['content']
@@ -40,7 +44,7 @@ if response.status_code == 200:
         created_time = datetime.fromtimestamp(
             d['createdTs'])
         date_str = '{}'.format(created_time.strftime('%Y-%m-%d'))
-        time_str = '{}'.format(created_time.strftime('%Y-%m-%d %H:%M:%S'))
+        time_str = '{}'.format(created_time.strftime('%H:%M:%S'))
 
         content = content.replace(',', '，')
         content = content.replace('\n', "")
