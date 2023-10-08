@@ -35,23 +35,25 @@ if response.status_code == 200:
 
     with open('data/memos.csv', 'a', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['day', 'time', 'content'])
+        writer.writerow(['day', 'time', 'url', 'content'])
 
     # 将数据转换为 Markdown 格式，并处理 URL
     for d in recent_data:
-        content = d['content']
         # if keyword in content:
         created_time = datetime.fromtimestamp(
             d['createdTs'])
         date_str = '{}'.format(created_time.strftime('%Y-%m-%d'))
         time_str = '{}'.format(created_time.strftime('%H:%M:%S'))
 
+        content = d['content']
         content = content.replace(',', '，')
         content = content.replace('\n', "")
+
+        url = 'https://memos.chensoul.com/m/{}'.format(d['id'])
 
         # 将数据写入 CSV 文件
         with open('data/memos.csv', 'a', newline='') as f:
             writer = csv.writer(f)
-            writer.writerows([[date_str, time_str, content]])
+            writer.writerows([[date_str, time_str, url, content]])
 else:
     print('请求失败：', response.status_code)
