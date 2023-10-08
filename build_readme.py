@@ -129,7 +129,7 @@ def fetch_blog_entries():
 
 
 def fetch_memos():
-    entries = httpx.get("https://memos.chensoul.com/api/v1/memo?openId=f96cf91e-d692-403d-94ac-94e9347271e2")
+    entries = httpx.get("https://memos.chensoul.com/api/v1/memo?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
     print(entries.json())
 
 

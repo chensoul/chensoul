@@ -16,6 +16,7 @@ idna==3.4
 lxml==4.9.2
 multidict==4.7.6
 notion-client==2.0.0
+protobuf==4.24.3
 python-dotenv==1.0.0
 python-graphql-client==0.4.3
 pytz==2023.3
