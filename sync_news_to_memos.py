@@ -99,8 +99,14 @@ message = '\n\n'.join(all_data)
 
 print(message)
 
-url = f'https://memos.chensoul.com/api/memo?openId={memos_token}'
+url = f'https://memos.chensoul.com/api/v1/memo'
 payload = {
     "content": message
 }
-response = requests.post(url, json=payload)
+headers = {
+    "Content-Type": "application/json; charset=utf-8",
+    "Authorization": f'Bearer {memos_token}'
+}
+
+# response = requests.post(url, json=payload, headers=headers)
+# print(response)

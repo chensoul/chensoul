@@ -20,7 +20,8 @@ def save_history():
     # 读取 JSON 文件
     with open('wakatime.json') as f:
         days = json.load(f)["days"]
-        recent_data = [[d["date"], round(d["grand_total"]["total_seconds"])] for d in days]
+        recent_data = [
+            [d["date"], round(d["grand_total"]["total_seconds"])] for d in days]
 
     print(recent_data)
 
@@ -43,18 +44,21 @@ def save_yesterday():
 
         day = result['start']
         cost = round(result['cumulative_total']['seconds'])
-        cost_text = result['cumulative_total']['text'].replace("hrs", "小时").replace("mins", "分钟")
+        cost_text = result['cumulative_total']['text'].replace(
+            "hrs", "小时").replace("mins", "分钟")
 
-        date = datetime.strptime(day, '%Y-%m-%dT%H:%M:%SZ') + timedelta(hours=8)
+        date = datetime.strptime(
+            day, '%Y-%m-%dT%H:%M:%SZ') + timedelta(hours=8)
         normal_date = date.strftime('%Y-%m-%d')
 
         if cost > 0:
             china_date_str = date.strftime('%Y年%m月%d日')
-            memos_data = {"content": f"{china_date_str}，今天写代码花了 {cost_text} #wakatime"}
+            memos_data = {
+                "content": f"{china_date_str}，今天写代码花了 {cost_text} #wakatime"}
             json_data = json.dumps(memos_data)
 
-            requests.post(f'https://memos.chensoul.com/api/v1/memo?openId={memos_token}',
-                          data=json_data, headers={'Content-Type': 'application/json'})
+            requests.post(f'https://memos.chensoul.com/api/v1/memo',
+                          data=json_data, headers={'Content-Type': 'application/json', "Authorization": f'Bearer {memos_token}'})
 
         # 将数据写入 CSV 文件
         with open('data/coding.csv', 'a', newline='') as f:

@@ -1,9 +1,9 @@
-name: fetch wakatime
+name: fetch memos
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "58 23 * * *"
 
 jobs:
   build:
@@ -29,11 +29,11 @@ jobs:
         run: |
           python -m pip install -r requirements.txt
 
-      - name: fetch wakatime
+      - name: fetch memos
         env:
-          WAKATIME_TOKEN: ${{ secrets.WAKATIME_TOKEN }}
+          MEMOS_TOKEN: ${{ secrets.MEMOS_TOKEN }}
         run: |-
-          python fetch_wakatime.py
+          python fetch_memos.py
 
       - name: Commit and push if changed
         run: |-
