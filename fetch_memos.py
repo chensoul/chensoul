@@ -48,7 +48,7 @@ if response.status_code == 200:
         content = content.replace(',', '，')
         content = content.replace('\n', "")
 
-        url = 'https://memos.chensoul.com/m/{}'.format(d['id'])
+        url = 'https://memos.chensoul.com/m/{} '.format(d['id'])
 
         # 将数据写入 CSV 文件
         with open('data/memos.csv', 'a', newline='') as f:
