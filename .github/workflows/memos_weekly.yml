@@ -3,7 +3,7 @@ name: sync news to memos
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "5 0 * * *"
 
 jobs:
   build:
@@ -31,5 +31,4 @@ jobs:
 
       - name: Fetch News
         run: |-
-          python
-          # python fetch_news.py
+          python memos.py weekly
