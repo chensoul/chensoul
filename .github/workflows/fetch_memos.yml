@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "58 23 * * *"
 
+env:
+  TZ: Asia/Shanghai
+
 jobs:
   build:
     runs-on: ubuntu-latest
