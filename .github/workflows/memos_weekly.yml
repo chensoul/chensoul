@@ -1,4 +1,4 @@
-name: sync news to memos
+name: create memos weekly
 
 on:
   workflow_dispatch:
