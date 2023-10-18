@@ -41,7 +41,6 @@
 <!-- douban starts -->
 - [看过隐入尘烟](http://movie.douban.com/subject/35131346/) 2023-10-08
 - [看过夏洛特烦恼](http://movie.douban.com/subject/25964071/) 2023-10-08
-- [看过我不是药神](http://movie.douban.com/subject/26752088/) 2023-10-08
 - [看过巨齿鲨2：深渊](http://movie.douban.com/subject/34882958/) 2023-09-06
 - [看过八角笼中](http://movie.douban.com/subject/35765480/) 2023-09-06
 - [想看敢死队4：最终章](http://movie.douban.com/subject/25845297/) 2023-09-06
