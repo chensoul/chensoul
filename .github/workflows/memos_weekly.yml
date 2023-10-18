@@ -29,6 +29,6 @@ jobs:
         run: |
           python -m pip install -r requirements.txt
 
-      - name: Fetch News
+      - name: Run python
         run: |-
           python memos.py weekly
