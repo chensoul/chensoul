@@ -3,10 +3,7 @@ name: create memos diary
 on:
   workflow_dispatch:
   schedule:
-    - cron: "5 0 * * *"
-
-env:
-  TZ: Asia/Shanghai
+    - cron: "5 16 * * *"
 
 jobs:
   build:
