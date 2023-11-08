@@ -3,10 +3,8 @@ name: create memos weekly
 on:
   workflow_dispatch:
   schedule:
-    - cron: "5 0 * * 6"
+    - cron: "1 16 * * 6"
 
-env:
-  TZ: Asia/Shanghai
 
 jobs:
   build:
