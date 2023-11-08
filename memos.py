@@ -14,7 +14,7 @@ url = f'https://memos.chensoul.com/api/v1/memo'
 def create_diary():
     today = datetime.now().date()
 
-    message = f'''**日记｜{today}**
+    message = f'''**日志｜{today}**
 
 **习惯**
 - [ ] 喝水
@@ -24,7 +24,7 @@ def create_diary():
 
 **今天收获了什么**
 
-#日记 
+#日志 
     '''
 
     payload = {
