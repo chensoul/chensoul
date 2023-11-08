@@ -3,7 +3,7 @@ name: fetch wakatime
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "0 15 * * *"
 
 env:
   TZ: Asia/Shanghai
@@ -18,7 +18,7 @@ jobs:
       - name: Setup python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.9
 
       - name: Configure pip caching
         uses: actions/cache@v2
