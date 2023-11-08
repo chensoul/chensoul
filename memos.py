@@ -36,7 +36,7 @@ def create_diary():
     }
 
     response = requests.post(url, json=payload, headers=headers)
-    print(response)
+    print(response.text)
 
 
 def create_weekly():
@@ -66,7 +66,7 @@ def create_weekly():
     }
 
     response = requests.post(url, json=payload, headers=headers)
-    print(response)
+    print(response.text)
 
 
 if __name__ == "__main__":
