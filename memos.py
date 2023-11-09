@@ -12,8 +12,9 @@ url = f'https://memos.chensoul.com/api/v1/memo'
 
 def create_diary():
     today = datetime.now().date()
-
-    message = f'''**日志｜{today}**
+    year = today.year
+    month = today.month
+    message = f'''#日记/{year}/{month} {today.strftime("%Y年%m月%d日")}
 
 **习惯**
 - [ ] 喝水
@@ -22,8 +23,6 @@ def create_diary():
 1. 
 
 **今天收获了什么**
-
-#日志 
     '''
 
     payload = {
@@ -40,20 +39,17 @@ def create_diary():
 
 def create_weekly():
     today = datetime.now().date()
+    year = today.year
     week_number = int(today.strftime("%W")) + 1
 
     last_monday = today - timedelta(days=today.weekday(), weeks=1)
     last_sunday = last_monday + timedelta(days=6)
 
-    message = f'''** 周报{week_number}｜{last_monday} ~ {last_sunday}**
+    message = f'''#周报/{year} 周报{week_number}｜{last_monday} ~ {last_sunday}
 
-**本周计划**
+**本周收获**
 
-**今天做了什么**
-
-**今天收获了什么**
-
-#周报 
+**下周计划**
     '''
 
     payload = {
