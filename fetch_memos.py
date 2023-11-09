@@ -1,4 +1,3 @@
-import zoneinfo
 import requests
 import json
 import time
@@ -15,7 +14,7 @@ url = f'https://memos.chensoul.com/api/v1/memo'
 keyword = '#日记'
 
 # 计算上周一和上周日的日期
-today = datetime.now().astimezone(zoneinfo('Asia/Shanghai')).date()
+today = datetime.now().date()
 last_monday = today - timedelta(days=today.weekday(), weeks=1)
 last_sunday = last_monday + timedelta(days=6)
 

@@ -1,5 +1,4 @@
 from datetime import datetime, timedelta
-from zoneinfo import ZoneInfo
 import sys
 import requests
 from dotenv import load_dotenv
@@ -12,7 +11,7 @@ url = f'https://memos.chensoul.com/api/v1/memo'
 
 
 def create_diary():
-    today = datetime.now().astimezone(ZoneInfo('Asia/Shanghai')).date()
+    today = datetime.now().date()
 
     message = f'''**日志｜{today}**
 
@@ -40,7 +39,7 @@ def create_diary():
 
 
 def create_weekly():
-    today = datetime.now().astimezone(ZoneInfo('Asia/Shanghai')).date()
+    today = datetime.now().date()
     week_number = int(today.strftime("%W")) + 1
 
     last_monday = today - timedelta(days=today.weekday(), weeks=1)
