@@ -5,6 +5,8 @@ on:
   schedule:
     - cron: "10 16 * * 6"
 
+env:
+  TZ: Asia/Shanghai
 
 jobs:
   build:
