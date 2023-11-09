@@ -3,7 +3,7 @@ name: fetch memos
 on:
   workflow_dispatch:
   schedule:
-    - cron: "58 23 * * *"
+    - cron: "0 16 * * *"
 
 env:
   TZ: Asia/Shanghai
