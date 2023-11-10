@@ -24,6 +24,8 @@
 ## 最新博客
 
 <!-- blog starts -->
+- [[译]《分布式系统：为了乐趣和利益》1.高层分布式系统](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-01/)
+- [[译]《分布式系统：为了乐趣和利益》介绍](https://blog.chensoul.com/posts/2023/11/09/distributed-systems-intro/)
 - [JHipster安装和介绍](https://blog.chensoul.com/posts/2023/11/02/jhipster-intro/)
 - [Java设计模式：Circuit Breaker](https://blog.chensoul.com/posts/2023/10/26/java-design-patterns-circuit-breaker/)
 - [Java设计模式：Chain](https://blog.chensoul.com/posts/2023/10/16/java-design-patterns-chain/)
@@ -32,8 +34,6 @@
 - [[译]关于 HTTP 您需要了解的一切](https://blog.chensoul.com/posts/2023/10/12/http-in-depth/)
 - [前端学习路线图](https://blog.chensoul.com/posts/2023/10/12/frontend-roadmap/)
 - [[译]DevOps 和测试人员的 Git 面试问题](https://blog.chensoul.com/posts/2023/10/12/git-interview-questions/)
-- [[译]Spring Security 面试问题](https://blog.chensoul.com/posts/2023/10/12/spring-security-interview-questions/)
-- [Java设计模式：Caching](https://blog.chensoul.com/posts/2023/09/25/java-design-patterns-cahcing/)
 <!-- blog ends -->
 
 ## 最近活动
