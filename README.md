@@ -24,6 +24,7 @@
 ## 最新博客
 
 <!-- blog starts -->
+- [分布式基础知识](https://blog.chensoul.com/posts/2023/11/14/distributed-system-basic/)
 - [[译]给年轻的工程师们的关于分布式系统的一些笔记](https://blog.chensoul.com/posts/2023/11/10/notes-on-distributed-systems-for-young-bloods/)
 - [[译]《分布式系统：为了乐趣和利益》6.进一步阅读和附录](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-06/)
 - [[译]《分布式系统：为了乐趣和利益》5.复制：弱一致性模型协议](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-05/)
@@ -33,7 +34,6 @@
 - [[译]《分布式系统：为了乐趣和利益》1.高层分布式系统](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-01/)
 - [[译]《分布式系统：为了乐趣和利益》介绍](https://blog.chensoul.com/posts/2023/11/09/distributed-systems-intro/)
 - [JHipster安装和介绍](https://blog.chensoul.com/posts/2023/11/02/jhipster-intro/)
-- [Java设计模式：Circuit Breaker](https://blog.chensoul.com/posts/2023/10/26/java-design-patterns-circuit-breaker/)
 <!-- blog ends -->
 
 ## 最近活动
