@@ -24,6 +24,7 @@
 ## 最新博客
 
 <!-- blog starts -->
+- [如何设计一个短网址服务](https://blog.chensoul.com/posts/2023/11/17/designing-a-url-shortening-service/)
 - [[译]《Grokking the System Design Interview》系统设计主模板](https://blog.chensoul.com/posts/2023/11/16/system-design-master-template/)
 - [[译]《Grokking the System Design Interview》设计类似 TinyURL 的 URL 缩短服务](https://blog.chensoul.com/posts/2023/11/16/designing-a-url-shortening-service/)
 - [[译]《Grokking the System Design Interview》系统设计访谈：分步指南](https://blog.chensoul.com/posts/2023/11/16/sdi-a-step-by-step-guide/)
@@ -33,7 +34,6 @@
 - [[译]《分布式系统：为了乐趣和利益》5.复制：弱一致性模型协议](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-05/)
 - [[译]《分布式系统：为了乐趣和利益》4.复制](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-04/)
 - [[译]《分布式系统：为了乐趣和利益》3.时间及顺序](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-03/)
-- [[译]《分布式系统：为了乐趣和利益》2.抽象层次的上下](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-02/)
 <!-- blog ends -->
 
 ## 最近活动
