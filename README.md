@@ -24,6 +24,8 @@
 ## 最新博客
 
 <!-- blog starts -->
+- [[译]《Grokking the System Design Interview》系统设计主模板](https://blog.chensoul.com/posts/2023/11/16/system-design-master-template/)
+- [[译]《Grokking the System Design Interview》设计类似 TinyURL 的 URL 缩短服务](https://blog.chensoul.com/posts/2023/11/16/designing-a-url-shortening-service/)
 - [[译]《Grokking the System Design Interview》系统设计访谈：分步指南](https://blog.chensoul.com/posts/2023/11/16/sdi-a-step-by-step-guide/)
 - [分布式基础知识](https://blog.chensoul.com/posts/2023/11/14/distributed-system-basic/)
 - [[译]给年轻的工程师们的关于分布式系统的一些笔记](https://blog.chensoul.com/posts/2023/11/10/notes-on-distributed-systems-for-young-bloods/)
@@ -32,8 +34,6 @@
 - [[译]《分布式系统：为了乐趣和利益》4.复制](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-04/)
 - [[译]《分布式系统：为了乐趣和利益》3.时间及顺序](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-03/)
 - [[译]《分布式系统：为了乐趣和利益》2.抽象层次的上下](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-02/)
-- [[译]《分布式系统：为了乐趣和利益》1.高层分布式系统](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-01/)
-- [[译]《分布式系统：为了乐趣和利益》介绍](https://blog.chensoul.com/posts/2023/11/09/distributed-systems-intro/)
 <!-- blog ends -->
 
 ## 最近活动
