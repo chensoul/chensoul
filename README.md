@@ -24,22 +24,31 @@
 ## 最新博客
 
 <!-- blog starts -->
+- [[译]《Grokking the System Design Interview》设计Dropbox](https://blog.chensoul.com/posts/2023/11/24/designing-dropbox/)
+- [[译]《Grokking the System Design Interview》设计Facebook Messenger](https://blog.chensoul.com/posts/2023/11/24/designing-facebook-messenger/)
+- [[译]《Grokking the System Design Interview》设计Instagram](https://blog.chensoul.com/posts/2023/11/24/designing-instagram/)
+- [[译]《Grokking the System Design Interview》设计Pastebin](https://blog.chensoul.com/posts/2023/11/24/designing-pastebin/)
+- [[译]《Grokking the System Design Interview》域名系统](https://blog.chensoul.com/posts/2023/11/17/dns/)
 - [如何设计一个短网址服务](https://blog.chensoul.com/posts/2023/11/17/designing-a-url-shortening-service/)
 - [[译]《Grokking the System Design Interview》系统设计主模板](https://blog.chensoul.com/posts/2023/11/16/system-design-master-template/)
 - [[译]《Grokking the System Design Interview》设计类似 TinyURL 的 URL 缩短服务](https://blog.chensoul.com/posts/2023/11/16/designing-a-url-shortening-service/)
 - [[译]《Grokking the System Design Interview》系统设计访谈：分步指南](https://blog.chensoul.com/posts/2023/11/16/sdi-a-step-by-step-guide/)
 - [分布式基础知识](https://blog.chensoul.com/posts/2023/11/14/distributed-system-basic/)
-- [[译]给年轻的工程师们的关于分布式系统的一些笔记](https://blog.chensoul.com/posts/2023/11/10/notes-on-distributed-systems-for-young-bloods/)
-- [[译]《分布式系统：为了乐趣和利益》6.进一步阅读和附录](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-06/)
-- [[译]《分布式系统：为了乐趣和利益》5.复制：弱一致性模型协议](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-05/)
-- [[译]《分布式系统：为了乐趣和利益》4.复制](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-04/)
-- [[译]《分布式系统：为了乐趣和利益》3.时间及顺序](https://blog.chensoul.com/posts/2023/11/10/distributed-systems-03/)
 <!-- blog ends -->
 
 ## 最近活动
 
 <!-- douban starts -->
-
+- [看过隐入尘烟](http://movie.douban.com/subject/35131346/) 2023-10-08
+- [看过夏洛特烦恼](http://movie.douban.com/subject/25964071/) 2023-10-08
+- [看过我不是药神](http://movie.douban.com/subject/26752088/) 2023-10-08
+- [看过巨齿鲨2：深渊](http://movie.douban.com/subject/34882958/) 2023-09-06
+- [看过八角笼中](http://movie.douban.com/subject/35765480/) 2023-09-06
+- [想看敢死队4：最终章](http://movie.douban.com/subject/25845297/) 2023-09-06
+- [想看坚如磐石](http://movie.douban.com/subject/33447633/) 2023-09-06
+- [看过芭比](http://movie.douban.com/subject/4058939/) 2023-09-06
+- [想看卡特教练](http://movie.douban.com/subject/1309017/) 2023-08-23
+- [想看志愿军：雄兵出击](http://movie.douban.com/subject/35496350/) 2023-06-26
 <!-- douban ends -->
 
 ## 最近发布
