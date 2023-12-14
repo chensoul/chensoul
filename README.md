@@ -24,6 +24,7 @@
 ## 最新博客
 
 <!-- blog starts -->
+- [2023-12-13｜发布到Maven中央仓库的第一个项目](https://blog.chensoul.com/posts/2023/12/13/til/)
 - [2023-12-12｜RMI、Java漏洞安全、Semgrep漏洞检测](https://blog.chensoul.com/posts/2023/12/12/til/)
 - [如何设计一个分布式ID生成器保证ID按时间有序？](https://blog.chensoul.com/posts/2023/12/05/distributed-id-generator/)
 - [[译]《Grokking the System Design Interview》设计Dropbox](https://blog.chensoul.com/posts/2023/11/24/designing-dropbox/)
@@ -33,7 +34,6 @@
 - [[译]《Grokking the System Design Interview》域名系统](https://blog.chensoul.com/posts/2023/11/17/dns/)
 - [如何设计一个短网址服务](https://blog.chensoul.com/posts/2023/11/17/designing-a-url-shortening-service/)
 - [[译]《Grokking the System Design Interview》系统设计主模板](https://blog.chensoul.com/posts/2023/11/16/system-design-master-template/)
-- [[译]《Grokking the System Design Interview》设计类似 TinyURL 的 URL 缩短服务](https://blog.chensoul.com/posts/2023/11/16/designing-a-url-shortening-service/)
 <!-- blog ends -->
 
 ## 最近活动
