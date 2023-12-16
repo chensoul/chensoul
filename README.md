@@ -14,7 +14,7 @@
 
 ### 找到我
 
-- 微信：chenshu_eth
+- 微信：ichensoul
 - [Email](mailto:chensoul.eth@gmail.com)
 - [Blog RSS](https://blog.chensoul.com/index.xml)
 - [Github](https://github.com/chensoul)
