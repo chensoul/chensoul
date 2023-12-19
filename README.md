@@ -24,6 +24,7 @@
 ## 最新博客
 
 <!-- blog starts -->
+- [2023-12-19｜Spring Security OAuth2 配置JWT、Github Actions配置代码扫描](https://blog.chensoul.com/posts/2023/12/19/til/)
 - [2023-12-18｜使用Spring Security实现OAuth2授权和认证](https://blog.chensoul.com/posts/2023/12/18/til/)
 - [2023-12-15｜JNDI InitialContext源码分析、ClassLoader加载机制](https://blog.chensoul.com/posts/2023/12/15/til/)
 - [2023-12-14｜购买新的VPS服务器、最近在做什么](https://blog.chensoul.com/posts/2023/12/14/til/)
@@ -33,7 +34,6 @@
 - [2023-12-12｜RMI、Java漏洞安全、Semgrep漏洞检测](https://blog.chensoul.com/posts/2023/12/12/til/)
 - [如何设计一个分布式ID生成器保证ID按时间有序？](https://blog.chensoul.com/posts/2023/12/05/distributed-id-generator/)
 - [[译]《Grokking the System Design Interview》设计Dropbox](https://blog.chensoul.com/posts/2023/11/24/designing-dropbox/)
-- [[译]《Grokking the System Design Interview》设计Facebook Messenger](https://blog.chensoul.com/posts/2023/11/24/designing-facebook-messenger/)
 <!-- blog ends -->
 
 ## 最近活动
