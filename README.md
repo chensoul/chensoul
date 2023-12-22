@@ -24,6 +24,7 @@
 ## 最新博客
 
 <!-- blog starts -->
+- [2023-12-21｜Spring Security对OAuth2的支持及实现方式](https://blog.chensoul.com/posts/2023/12/21/til/)
 - [2023-12-20｜Maven配置继承和生命周期、源码运行Nacos 2.3.0控制台](https://blog.chensoul.com/posts/2023/12/20/til/)
 - [2023-12-19｜Spring Security OAuth2配置JWT、Github Actions配置代码扫描](https://blog.chensoul.com/posts/2023/12/19/til/)
 - [2023-12-18｜使用Spring Security实现OAuth2授权和认证](https://blog.chensoul.com/posts/2023/12/18/til/)
@@ -33,7 +34,6 @@
 - [[译]《Grokking the System Design Interview》设计Twitter](https://blog.chensoul.com/posts/2023/12/14/designing-twitter/)
 - [2023-12-13｜发布到Maven中央仓库的第一个项目](https://blog.chensoul.com/posts/2023/12/13/til/)
 - [2023-12-12｜RMI、Java漏洞安全、Semgrep漏洞检测](https://blog.chensoul.com/posts/2023/12/12/til/)
-- [如何设计一个分布式ID生成器保证ID按时间有序？](https://blog.chensoul.com/posts/2023/12/05/distributed-id-generator/)
 <!-- blog ends -->
 
 ## 最近活动
