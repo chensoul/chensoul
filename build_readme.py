@@ -117,7 +117,7 @@ def fetch_douban():
 
 
 def fetch_blog_entries():
-    entries = feedparser.parse("https://blog.chensoul.com/index.xml")["entries"]
+    entries = feedparser.parse("https://blog.chensoul.cc/index.xml")["entries"]
     return [
         {
             "title": entry["title"],
@@ -129,7 +129,7 @@ def fetch_blog_entries():
 
 
 def fetch_memos():
-    entries = httpx.get("https://memos.chensoul.com/api/v1/memo?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
+    entries = httpx.get("https://memos.chensoul.cc/api/v1/memo?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
     print(entries.json())
 
 
