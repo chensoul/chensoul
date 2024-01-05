@@ -1,4 +1,4 @@
-## Hi there 👋
+## 👋 Hi there
 
 > 健康，爱情和使命，按照这个顺序，其它的都不重要。 ------ 纳瓦尔
 
@@ -6,21 +6,18 @@
 
 热爱编程，喜欢跑步。读书、健身、定投、帮朋友、陪家人，做一个长期主义者。
 
-### 网站
-
-- 博客：[https://blog.chensoul.cc/](https://blog.chensoul.cc/)
-- 跑步：[https://run.chensoul.cc/](https://run.chensoul.cc/)
-- Memos：[https://memos.chensoul.cc/](https://memos.chensoul.cc/)
-
-### 找到我
+### 如何找到我
 
 - 微信：@ichensoul
 - 邮箱：[ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 - Github：[https://github.com/chensoul](https://github.com/chensoul)
 - Twitter：[https://twitter.com/ichensoul](https://twitter.com/ichensoul)
 - Telegram频道：[https://t.me/chensoul_share](https://t.me/chensoul_share)
+- 博客：[https://blog.chensoul.cc/](https://blog.chensoul.cc/)
+- 跑步：[https://run.chensoul.cc/](https://run.chensoul.cc/)
+- Memos：[https://memos.chensoul.cc/](https://memos.chensoul.cc/)
 
-## 最新博客
+## 博客最近更新
 
 <!-- blog starts -->
 - [2024-01-03｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/03/til/)
@@ -35,7 +32,9 @@
 - [2023-12-15｜JNDI InitialContext源码分析、ClassLoader加载机制](https://blog.chensoul.cc/posts/2023/12/15/til/)
 <!-- blog ends -->
 
-## 最近活动
+更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
+
+## 豆瓣最近活动
 
 <!-- douban starts -->
 - [看过隐入尘烟](http://movie.douban.com/subject/35131346/) 2023-10-08
@@ -50,7 +49,7 @@
 - [想看志愿军：雄兵出击](http://movie.douban.com/subject/35496350/) 2023-06-26
 <!-- douban ends -->
 
-## 最近发布
+## Github最近发布
 
 <!-- recent_releases starts -->
 - [chensoul-parent](https://github.com/chensoul/chensoul-parent/releases/tag/v1.0.4)：v1.0.4
