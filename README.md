@@ -14,12 +14,11 @@
 
 ### 找到我
 
-- 微信：ichensoul
-- [Email](mailto:ichensoul@gmail.com)
-- [Blog RSS](https://blog.chensoul.cc/index.xml)
-- [Github](https://github.com/chensoul)
-- [Twitter](https://twitter.com/ichensoul)
-- [Telegram](https://t.me/chensoul_share)
+- 微信：@ichensoul
+- 邮箱：[ichensoul@gmail.com](mailto:ichensoul@gmail.com)
+- Github：[https://github.com/chensoul](https://github.com/chensoul)
+- Twitter：[https://twitter.com/ichensoul](https://twitter.com/ichensoul)
+- Telegram频道：[https://t.me/chensoul_share](https://t.me/chensoul_share)
 
 ## 最新博客
 
