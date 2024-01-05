@@ -14,8 +14,6 @@
 - Twitter：[https://twitter.com/ichensoul](https://twitter.com/ichensoul)
 - Telegram频道：[https://t.me/chensoul_share](https://t.me/chensoul_share)
 - 博客：[https://blog.chensoul.cc/](https://blog.chensoul.cc/)
-- 跑步：[https://run.chensoul.cc/](https://run.chensoul.cc/)
-- Memos：[https://memos.chensoul.cc/](https://memos.chensoul.cc/)
 
 ## 博客最近更新
 
@@ -66,3 +64,5 @@
 ## 最近一年跑步
 
 [![light](https://raw.githubusercontent.com/chensoul/running_page/master/assets/github_2023.svg#gh-light-mode-only)](https://run.chensoul.cc)
+
+更多内容直接点击：[https://run.chensoul.cc](https://run.chensoul.cc)
