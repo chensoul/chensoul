@@ -8,9 +8,9 @@
 
 ### 网站
 
-- 博客：[https://blog.chensoul.com/](https://blog.chensoul.cc/)
-- 跑步：[https://run.chensoul.com/](https://run.chensoul.cc/)
-- Memos：[https://memos.chensoul.com/](https://memos.chensoul.cc/)
+- 博客：[https://blog.chensoul.cc/](https://blog.chensoul.cc/)
+- 跑步：[https://run.chensoul.cc/](https://run.chensoul.cc/)
+- Memos：[https://memos.chensoul.cc/](https://memos.chensoul.cc/)
 
 ### 找到我
 
