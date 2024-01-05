@@ -8,17 +8,17 @@
 
 ### 网站
 
-- 博客：[https://blog.chensoul.com/](https://blog.chensoul.com/)
-- 跑步：[https://run.chensoul.com/](https://run.chensoul.com/)
-- Memos：[https://memos.chensoul.com/](https://memos.chensoul.com/)
+- 博客：[https://blog.chensoul.com/](https://blog.chensoul.cc/)
+- 跑步：[https://run.chensoul.com/](https://run.chensoul.cc/)
+- Memos：[https://memos.chensoul.com/](https://memos.chensoul.cc/)
 
 ### 找到我
 
 - 微信：ichensoul
-- [Email](mailto:chensoul.eth@gmail.com)
-- [Blog RSS](https://blog.chensoul.com/index.xml)
+- [Email](mailto:ichensoul@gmail.com)
+- [Blog RSS](https://blog.chensoul.cc/index.xml)
 - [Github](https://github.com/chensoul)
-- [Twitter](https://twitter.com/chensoul_eth)
+- [Twitter](https://twitter.com/ichensoul)
 - [Telegram](https://t.me/chensoul_share)
 
 ## 最新博客
