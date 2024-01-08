@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [2024-01-05｜Nginx、正向代理和反向代理](https://blog.chensoul.cc/posts/2024/01/05/til/)
 - [2024-01-04｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/04/til/)
 - [2024-01-03｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/03/til/)
 - [2024-01-02｜雪崩问题、Spring Cloud微服务集成 Sentinel](https://blog.chensoul.cc/posts/2024/01/02/til/)
@@ -27,7 +28,6 @@
 - [2023-12-21｜Spring Security对OAuth2的支持及实现方式](https://blog.chensoul.cc/posts/2023/12/21/til/)
 - [2023-12-20｜Maven配置继承和生命周期、源码运行Nacos 2.3.0控制台](https://blog.chensoul.cc/posts/2023/12/20/til/)
 - [2023-12-19｜Spring Security OAuth2配置JWT、Github Actions配置代码扫描](https://blog.chensoul.cc/posts/2023/12/19/til/)
-- [2023-12-18｜使用Spring Security实现OAuth2授权和认证](https://blog.chensoul.cc/posts/2023/12/18/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
