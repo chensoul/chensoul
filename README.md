@@ -50,12 +50,12 @@
 ## Github最近发布
 
 <!-- recent_releases starts -->
-- [maven-hello-world](https://github.com/chensoul/maven-hello-world/releases/tag/v0.0.32)：v0.0.32
-- [chensoul-parent](https://github.com/chensoul/chensoul-parent/releases/tag/v1.0.4)：v1.0.4
-- [learning-hadoop](https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1)：学习 hadoop 示例代码
-- [learning-spark](https://github.com/chensoul/learning-spark/releases/tag/v0.0.1)：学习 spark 示例代码
 - [scrapy-zhihu-github](https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1)：Scrapy爬取知乎、Github用户
 - [grab](https://github.com/chensoul/grab/releases/tag/v0.0.1)：基于spark、spring boot构建推荐系统
+- [learning-hadoop](https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1)：学习 hadoop 示例代码
+- [learning-spark](https://github.com/chensoul/learning-spark/releases/tag/v0.0.1)：学习 spark 示例代码
+- [chensoul-parent](https://github.com/chensoul/chensoul-parent/releases/tag/v1.0.4)：v1.0.4
+- [maven-hello-world](https://github.com/chensoul/maven-hello-world/releases/tag/v0.0.32)：v0.0.32
 <!-- recent_releases ends -->
 
 ## 最近一周编码
