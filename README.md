@@ -6,7 +6,7 @@
 
 热爱编程，喜欢跑步。读书、健身、定投、帮朋友、陪家人，做一个长期主义者。
 
-### 如何找到我
+## 如何找到我
 
 - 微信：@ichensoul
 - Blog：[https://blog.chensoul.cc/](https://blog.chensoul.cc/)
