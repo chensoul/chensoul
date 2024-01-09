@@ -46,7 +46,7 @@ query {
         name
         description
         url
-        releases(last:1) {
+        releases {
           totalCount
           nodes {
             name
@@ -75,9 +75,9 @@ def fetch_releases(oauth_token):
             query=make_query(after_cursor),
             headers={"Authorization": "Bearer {}".format(oauth_token)},
         )
-        print()
-        print(json.dumps(data, indent=4))
-        print()
+
+        print(data)
+
         for repo in data["data"]["viewer"]["repositories"]["nodes"]:
             if repo["releases"]["totalCount"] and repo["name"] not in repo_names:
                 repos.append(repo)
