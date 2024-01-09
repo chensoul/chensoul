@@ -140,7 +140,7 @@ if __name__ == "__main__":
     project_releases = root / "releases.md"
 
     releases = fetch_releases(GITHUB_TOKEN)
-    releases.sort(key=lambda r: r["published_at"], reverse=True)
+    releases.sort(key=lambda r: r["published_at"], reverse=False)
     md = "\n".join(
         [
             "- [{repo}]({url})：{release}".format(**release)
