@@ -46,7 +46,7 @@ query {
         name
         description
         url
-        releases {
+        releases(first:1) {
           totalCount
           nodes {
             name
