@@ -85,18 +85,12 @@ def fetch_releases(oauth_token):
                         "repo": repo["name"],
                         "repo_url": repo["url"],
                         "description": repo["description"],
-                        "release": repo["releases"]["nodes"][0]["name"]
-                        .replace(repo["name"], "")
-                        .strip(),
-                        "published_at": repo["releases"]["nodes"][0][
-                            "publishedAt"
-                        ].split("T")[0],
-                        "url": repo["releases"]["nodes"][0]["url"],
+                        "release": repo["releases"]["nodes"][:-1]["name"].replace(repo["name"], "").strip(),
+                        "published_at": repo["releases"]["nodes"][:-1]["publishedAt"].split("T")[0],
+                        "url": repo["releases"]["nodes"][:-1]["url"],
                     }
                 )
-        has_next_page = data["data"]["viewer"]["repositories"]["pageInfo"][
-            "hasNextPage"
-        ]
+        has_next_page = data["data"]["viewer"]["repositories"]["pageInfo"]["hasNextPage"]
         after_cursor = data["data"]["viewer"]["repositories"]["pageInfo"]["endCursor"]
 
     print(releases)
@@ -140,7 +134,7 @@ if __name__ == "__main__":
     project_releases = root / "releases.md"
 
     releases = fetch_releases(GITHUB_TOKEN)
-    releases.sort(key=lambda r: r["published_at"], reverse=False)
+    releases.sort(key=lambda r: r["published_at"], reverse=True)
     md = "\n".join(
         [
             "- [{repo}]({url})：{release}".format(**release)
