@@ -9,11 +9,11 @@
 ### 如何找到我
 
 - 微信：@ichensoul
-- 邮箱：[ichensoul@gmail.com](mailto:ichensoul@gmail.com)
+- Blog：[https://blog.chensoul.cc/](https://blog.chensoul.cc/)
+- Email：[ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 - Github：[https://github.com/chensoul](https://github.com/chensoul)
 - Twitter：[https://twitter.com/ichensoul](https://twitter.com/ichensoul)
-- Telegram频道：[https://t.me/chensoul_share](https://t.me/chensoul_share)
-- 博客：[https://blog.chensoul.cc/](https://blog.chensoul.cc/)
+- Telegram Channel：[https://t.me/chensoul_share](https://t.me/chensoul_share)
 
 ## 博客最近更新
 
