@@ -21,13 +21,15 @@ def replace_chunk(content, marker, chunk, inline=False):
     )
     if not inline:
         chunk = "\n{}\n".format(chunk)
-    chunk = "<!-- {} starts -->{}<!-- {} ends -->".format(marker, chunk, marker)
+    chunk = "<!-- {} starts -->{}<!-- {} ends -->".format(
+        marker, chunk, marker)
     return r.sub(chunk, content)
 
 
 def formatGMTime(timestamp):
     GMT_FORMAT = '%a, %d %b %Y %H:%M:%S GMT'
-    dateStr = datetime.datetime.strptime(timestamp, GMT_FORMAT) + datetime.timedelta(hours=8)
+    dateStr = datetime.datetime.strptime(
+        timestamp, GMT_FORMAT) + datetime.timedelta(hours=8)
     return dateStr.date()
 
 
@@ -85,9 +87,9 @@ def fetch_releases(oauth_token):
                         "repo": repo["name"],
                         "repo_url": repo["url"],
                         "description": repo["description"],
-                        "release": repo["releases"]["nodes"][:-1]["name"].replace(repo["name"], "").strip(),
-                        "published_at": repo["releases"]["nodes"][:-1]["publishedAt"].split("T")[0],
-                        "url": repo["releases"]["nodes"][:-1]["url"],
+                        "release": repo["releases"]["nodes"][-1]["name"].replace(repo["name"], "").strip(),
+                        "published_at": repo["releases"]["nodes"][-1]["publishedAt"].split("T")[0],
+                        "url": repo["releases"]["nodes"][-1]["url"],
                     }
                 )
         has_next_page = data["data"]["viewer"]["repositories"]["pageInfo"]["hasNextPage"]
@@ -99,7 +101,8 @@ def fetch_releases(oauth_token):
 
 
 def fetch_douban():
-    entries = feedparser.parse("https://www.douban.com/feed/people/chensoul/interests")["entries"]
+    entries = feedparser.parse(
+        "https://www.douban.com/feed/people/chensoul/interests")["entries"]
     return [
         {
             "title": item["title"],
@@ -123,7 +126,8 @@ def fetch_blog_entries():
 
 
 def fetch_memos():
-    entries = httpx.get("https://memos.chensoul.cc/api/v1/memo?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
+    entries = httpx.get(
+        "https://memos.chensoul.cc/api/v1/memo?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
     print(entries.json())
 
 
