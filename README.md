@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [2024-01-11｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/11/til/)
 - [2024-01-10｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/10/til/)
 - [2024-01-09｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/09/til/)
 - [2024-01-08｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/08/til/)
@@ -27,7 +28,6 @@
 - [2024-01-02｜雪崩问题、Spring Cloud微服务集成 Sentinel](https://blog.chensoul.cc/posts/2024/01/02/til/)
 - [2023-12-28｜今天做了什么](https://blog.chensoul.cc/posts/2023/12/28/til/)
 - [2023-12-27｜今天做了什么](https://blog.chensoul.cc/posts/2023/12/27/til/)
-- [2023-12-22｜今天做了什么](https://blog.chensoul.cc/posts/2023/12/22/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
