@@ -79,7 +79,7 @@ def fetch_releases(oauth_token):
         print(data)
 
         for repo in data["data"]["viewer"]["repositories"]["nodes"]:
-            if repo["releases"]["totalCount"] and repo["name"] not in repo_names:
+            if repo["releases"]["publishedAt"] and repo["name"] not in repo_names:
                 repos.append(repo)
                 repo_names.add(repo["name"])
                 releases.append(
