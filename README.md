@@ -18,6 +18,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [2024-01-23｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/23/til/)
+- [2024-01-22｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/22/til/)
 - [2024-01-18｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/18/til/)
 - [2024-01-17｜MySQL 主从复制、瑞吉外卖项目、集成Springdoc+Javadoc](https://blog.chensoul.cc/posts/2024/01/17/til/)
 - [2024-01-16｜Redis安装](https://blog.chensoul.cc/posts/2024/01/16/til/)
@@ -26,8 +28,6 @@
 - [2024-01-10｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/10/til/)
 - [2024-01-09｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/09/til/)
 - [2024-01-08｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/08/til/)
-- [2024-01-05｜Nginx、正向代理和反向代理](https://blog.chensoul.cc/posts/2024/01/05/til/)
-- [2024-01-04｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/04/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
@@ -50,8 +50,6 @@
 ## Github最近发布
 
 <!-- recent_releases starts -->
-- [chensoul-parent](https://github.com/chensoul/chensoul-parent/releases/tag/v1.0.38)：v1.0.38
-- [maven-hello-world](https://github.com/chensoul/maven-hello-world/releases/tag/v0.0.33)：v0.0.33
 - [learning-hadoop](https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1)：学习 hadoop 示例代码
 - [learning-spark](https://github.com/chensoul/learning-spark/releases/tag/v0.0.1)：学习 spark 示例代码
 - [scrapy-zhihu-github](https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1)：Scrapy爬取知乎、Github用户
