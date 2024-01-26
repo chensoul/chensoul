@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [2024-01-24｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/24/til/)
 - [2024-01-23｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/23/til/)
 - [2024-01-22｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/22/til/)
 - [2024-01-18｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/18/til/)
@@ -27,7 +28,6 @@
 - [2024-01-11｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/11/til/)
 - [2024-01-10｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/10/til/)
 - [2024-01-09｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/09/til/)
-- [2024-01-08｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/08/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
