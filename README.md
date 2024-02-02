@@ -18,6 +18,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [2024-01-30｜Mybatis plus和Jackson配置](https://blog.chensoul.cc/posts/2024/01/30/til/)
+- [2024-01-29｜C4架构模型](https://blog.chensoul.cc/posts/2024/01/29/til/)
 - [2024-01-26｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/26/til/)
 - [2024-01-25｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/25/til/)
 - [2024-01-24｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/24/til/)
@@ -26,8 +28,6 @@
 - [2024-01-18｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/18/til/)
 - [2024-01-17｜MySQL 主从复制、瑞吉外卖项目、集成Springdoc+Javadoc](https://blog.chensoul.cc/posts/2024/01/17/til/)
 - [2024-01-16｜Redis安装](https://blog.chensoul.cc/posts/2024/01/16/til/)
-- [2024-01-15｜Nginx配置结构与指令语法](https://blog.chensoul.cc/posts/2024/01/15/til/)
-- [2024-01-11｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/11/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
