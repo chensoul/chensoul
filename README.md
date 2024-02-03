@@ -18,16 +18,16 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [2024-02-02｜foodie-cloud集成Spring Cloud Config和SpringDoc](https://blog.chensoul.cc/posts/2024/02/02/til/)
+- [2024-02-01｜使用 Spring Initializr 创建项目](https://blog.chensoul.cc/posts/2024/02/01/til/)
+- [2024-01-31｜Redis事务](https://blog.chensoul.cc/posts/2024/01/31/til/)
 - [2024-01-30｜Mybatis plus和Jackson配置](https://blog.chensoul.cc/posts/2024/01/30/til/)
 - [2024-01-29｜C4架构模型](https://blog.chensoul.cc/posts/2024/01/29/til/)
-- [2024-01-26｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/26/til/)
-- [2024-01-25｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/25/til/)
+- [2024-01-26｜foodie-cloud集成Feign](https://blog.chensoul.cc/posts/2024/01/26/til/)
+- [2024-01-25｜Idea和zsh快捷键](https://blog.chensoul.cc/posts/2024/01/25/til/)
 - [2024-01-24｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/24/til/)
 - [2024-01-23｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/23/til/)
 - [2024-01-22｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/22/til/)
-- [2024-01-18｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/18/til/)
-- [2024-01-17｜MySQL 主从复制、瑞吉外卖项目、集成Springdoc+Javadoc](https://blog.chensoul.cc/posts/2024/01/17/til/)
-- [2024-01-16｜Redis安装](https://blog.chensoul.cc/posts/2024/01/16/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
