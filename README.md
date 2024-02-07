@@ -18,7 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
-- [2024-02-05｜Spring Cloud Config使用本地文件和Git仓库作为配置中心](https://blog.chensoul.cc/posts/2024/02/05/til/)
+- [2024-02-05｜Spring Cloud Config快速入门](https://blog.chensoul.cc/posts/2024/02/05/til/)
 - [2024-02-04｜foodie-cloud集成Resilience4j](https://blog.chensoul.cc/posts/2024/02/04/til/)
 - [2024-02-02｜foodie-cloud集成Spring Cloud Config和SpringDoc](https://blog.chensoul.cc/posts/2024/02/02/til/)
 - [2024-02-01｜使用 Spring Initializr 创建项目](https://blog.chensoul.cc/posts/2024/02/01/til/)
