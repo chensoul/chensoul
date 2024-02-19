@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [2024-02-18｜NewRelice应用性能监控、6个Diagrams工具、foodie-food测试](https://blog.chensoul.cc/posts/2024/02/18/til/)
 - [2024-02-05｜Spring Cloud Config快速入门](https://blog.chensoul.cc/posts/2024/02/05/til/)
 - [2024-02-04｜foodie-cloud集成Resilience4j](https://blog.chensoul.cc/posts/2024/02/04/til/)
 - [2024-02-02｜foodie-cloud集成Spring Cloud Config和SpringDoc](https://blog.chensoul.cc/posts/2024/02/02/til/)
@@ -27,7 +28,6 @@
 - [2024-01-29｜C4架构模型](https://blog.chensoul.cc/posts/2024/01/29/til/)
 - [2024-01-26｜foodie-cloud集成Feign](https://blog.chensoul.cc/posts/2024/01/26/til/)
 - [2024-01-25｜Idea和zsh快捷键](https://blog.chensoul.cc/posts/2024/01/25/til/)
-- [2024-01-24｜今天做了什么](https://blog.chensoul.cc/posts/2024/01/24/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
