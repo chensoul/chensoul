@@ -63,6 +63,6 @@
 
 ## 最近一年跑步
 
-[![light](https://raw.githubusercontent.com/chensoul/running_page/master/assets/github_2023.svg#gh-light-mode-only)](https://run.chensoul.cc)
+[![light](https://raw.githubusercontent.com/chensoul/running_page/master/assets/github.svg#gh-light-mode-only)](https://run.chensoul.cc)
 
 更多内容直接点击：[https://run.chensoul.cc](https://run.chensoul.cc)
