@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [TBMQ测试和源码分析](https://blog.chensoul.cc/posts/2024/04/28/thingsboard-tbmq-test/)
 - [ThingsBoard TBMQ本地和通过Docker运行](https://blog.chensoul.cc/posts/2024/04/17/thingsboard-tbmq-local-docker-run/)
 - [2024-02-20｜RateLimitAspect请求限流、调整spring-cloud-examples项目结构](https://blog.chensoul.cc/posts/2024/02/20/til/)
 - [2024-02-19｜foodie-cloud集成Sharding Sphere实现读写分离](https://blog.chensoul.cc/posts/2024/02/19/til/)
@@ -27,7 +28,6 @@
 - [2024-02-02｜foodie-cloud集成Spring Cloud Config和SpringDoc](https://blog.chensoul.cc/posts/2024/02/02/til/)
 - [2024-02-01｜使用 Spring Initializr 创建项目](https://blog.chensoul.cc/posts/2024/02/01/til/)
 - [2024-01-31｜Redis事务](https://blog.chensoul.cc/posts/2024/01/31/til/)
-- [2024-01-30｜Mybatis plus和Jackson配置](https://blog.chensoul.cc/posts/2024/01/30/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
@@ -35,6 +35,7 @@
 ## 豆瓣最近活动
 
 <!-- douban starts -->
+- [看过九龙城寨之围城](http://movie.douban.com/subject/24284175/) 2024-04-28
 - [看过沙丘2](http://movie.douban.com/subject/35575567/) 2024-04-26
 - [看过还是觉得你最好2](http://movie.douban.com/subject/36530235/) 2024-04-26
 - [看过临时劫案](http://movie.douban.com/subject/35491115/) 2024-04-26
@@ -44,7 +45,6 @@
 - [看过热辣滚烫](http://movie.douban.com/subject/36081094/) 2024-04-26
 - [看过你想活出怎样的人生](http://movie.douban.com/subject/26925611/) 2024-04-26
 - [看过隐入尘烟](http://movie.douban.com/subject/35131346/) 2023-10-08
-- [看过夏洛特烦恼](http://movie.douban.com/subject/25964071/) 2023-10-08
 <!-- douban ends -->
 
 ## Github最近发布
