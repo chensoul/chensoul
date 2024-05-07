@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [ThingsBoard的领域模型](https://blog.chensoul.cc/posts/2024/05/07/thingsboard-domain/)
 - [All things about ThingsBoard](https://blog.chensoul.cc/posts/2024/04/29/all-things-about-thingsboard/)
 - [TBMQ测试和源码分析](https://blog.chensoul.cc/posts/2024/04/28/thingsboard-tbmq-test/)
 - [ThingsBoard TBMQ本地和通过Docker运行](https://blog.chensoul.cc/posts/2024/04/17/thingsboard-tbmq-local-docker-run/)
@@ -27,7 +28,6 @@
 - [2024-02-05｜Spring Cloud Config快速入门](https://blog.chensoul.cc/posts/2024/02/05/til/)
 - [2024-02-04｜foodie-cloud集成Resilience4j](https://blog.chensoul.cc/posts/2024/02/04/til/)
 - [2024-02-02｜foodie-cloud集成Spring Cloud Config和SpringDoc](https://blog.chensoul.cc/posts/2024/02/02/til/)
-- [2024-02-01｜使用 Spring Initializr 创建项目](https://blog.chensoul.cc/posts/2024/02/01/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
