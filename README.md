@@ -18,16 +18,16 @@
 ## 博客最近更新
 
 <!-- blog starts -->
-- [ThingsBoard的领域模型](https://blog.chensoul.cc/posts/2024/05/07/thingsboard-domain/)
-- [All things about ThingsBoard](https://blog.chensoul.cc/posts/2024/04/29/all-things-about-thingsboard/)
-- [TBMQ测试和源码分析](https://blog.chensoul.cc/posts/2024/04/28/thingsboard-tbmq-test/)
-- [ThingsBoard TBMQ本地和通过Docker运行](https://blog.chensoul.cc/posts/2024/04/17/thingsboard-tbmq-local-docker-run/)
-- [2024-02-20｜RateLimitAspect请求限流、调整spring-cloud-examples项目结构](https://blog.chensoul.cc/posts/2024/02/20/til/)
-- [2024-02-19｜foodie-cloud集成Sharding Sphere实现读写分离](https://blog.chensoul.cc/posts/2024/02/19/til/)
-- [2024-02-18｜NewRelice应用性能监控、6个Diagrams工具、foodie-food测试](https://blog.chensoul.cc/posts/2024/02/18/til/)
-- [2024-02-05｜Spring Cloud Config快速入门](https://blog.chensoul.cc/posts/2024/02/05/til/)
-- [2024-02-04｜foodie-cloud集成Resilience4j](https://blog.chensoul.cc/posts/2024/02/04/til/)
-- [2024-02-02｜foodie-cloud集成Spring Cloud Config和SpringDoc](https://blog.chensoul.cc/posts/2024/02/02/til/)
+- [[译]什么是 HTTP？](https://blog.chensoul.cc/posts/2024/05/07/http/)
+- [[译]什么是 OAuth？](https://blog.chensoul.cc/posts/2024/05/07/oauth/)
+- [[译]什么是HTTP/3？](https://blog.chensoul.cc/posts/2024/05/07/http3/)
+- [[译]什么是HTTP流式传输？](https://blog.chensoul.cc/posts/2024/05/07/http-streaming/)
+- [[译]什么是Socket.IO？](https://blog.chensoul.cc/posts/2024/05/07/socket-io/)
+- [[译]什么是WebSocket？](https://blog.chensoul.cc/posts/2024/05/07/websockets/)
+- [[译]什么是长轮询？](https://blog.chensoul.cc/posts/2024/05/07/long-polling/)
+- [[译]2024年最好的WebSocket替代品](https://blog.chensoul.cc/posts/2024/05/07/websocket-alternatives/)
+- [[译]HTTP 的演变 – HTTP2 深入探讨](https://blog.chensoul.cc/posts/2024/05/07/http2/)
+- [[译]WebSocket与HTTP：2024年为您的项目选择哪一个](https://blog.chensoul.cc/posts/2024/05/07/websockets-vs-http/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
