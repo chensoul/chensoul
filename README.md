@@ -18,16 +18,16 @@
 ## 博客最近更新
 
 <!-- blog starts -->
-- [[译]什么是 HTTP？](https://blog.chensoul.cc/posts/2024/05/07/http/)
-- [[译]什么是 OAuth？](https://blog.chensoul.cc/posts/2024/05/07/oauth/)
-- [[译]什么是HTTP/3？](https://blog.chensoul.cc/posts/2024/05/07/http3/)
-- [[译]什么是HTTP流式传输？](https://blog.chensoul.cc/posts/2024/05/07/http-streaming/)
-- [[译]什么是Socket.IO？](https://blog.chensoul.cc/posts/2024/05/07/socket-io/)
-- [[译]什么是WebSocket？](https://blog.chensoul.cc/posts/2024/05/07/websockets/)
-- [[译]什么是长轮询？](https://blog.chensoul.cc/posts/2024/05/07/long-polling/)
-- [[译]2024年最好的WebSocket替代品](https://blog.chensoul.cc/posts/2024/05/07/websocket-alternatives/)
-- [[译]HTTP 的演变 – HTTP2 深入探讨](https://blog.chensoul.cc/posts/2024/05/07/http2/)
-- [[译]WebSocket与HTTP：2024年为您的项目选择哪一个](https://blog.chensoul.cc/posts/2024/05/07/websockets-vs-http/)
+- [在Kubernetes集群上安装Rancher](https://blog.chensoul.cc/posts/2024/05/10/install-rancher/)
+- [K8s安装Cert Manager](https://blog.chensoul.cc/posts/2024/05/10/install-cert-manager/)
+- [All things about Drone](https://blog.chensoul.cc/posts/2024/05/09/all-things-about-drone/)
+- [通过k3sup安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s-using-k3sup/)
+- [安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s/)
+- [通过k3d安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s-using-k3d/)
+- [All things about Spring Modulith](https://blog.chensoul.cc/posts/2024/05/09/all-things-about-spring-modulith/)
+- [[译]探索 http2（第 2 部分）：使用 node-http2 核心和 hapijs](https://blog.chensoul.cc/posts/2024/05/08/exploring-http2-part-2-overview/)
+- [[译]探索 http2（第 1 部分）：概述](https://blog.chensoul.cc/posts/2024/05/08/exploring-http2-part-1-overview/)
+- [[译]比较 Socket.IO 和 HTTP：主要区别和用例](https://blog.chensoul.cc/posts/2024/05/08/socketio-vs-http/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
