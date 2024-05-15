@@ -18,6 +18,9 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [Redis安装和部署](https://blog.chensoul.cc/posts/2024/05/14/redis-install/)
+- [使用Argo CD实现持续交付](https://blog.chensoul.cc/posts/2024/05/11/argocd/)
+- [All things about WebSocket](https://blog.chensoul.cc/posts/2024/05/10/all-things-about-websocket/)
 - [在Kubernetes集群上安装Rancher](https://blog.chensoul.cc/posts/2024/05/10/install-rancher/)
 - [K8s安装Cert Manager](https://blog.chensoul.cc/posts/2024/05/10/install-cert-manager/)
 - [All things about Drone](https://blog.chensoul.cc/posts/2024/05/09/all-things-about-drone/)
@@ -25,9 +28,6 @@
 - [安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s/)
 - [通过k3d安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s-using-k3d/)
 - [All things about Spring Modulith](https://blog.chensoul.cc/posts/2024/05/09/all-things-about-spring-modulith/)
-- [[译]探索 http2（第 2 部分）：使用 node-http2 核心和 hapijs](https://blog.chensoul.cc/posts/2024/05/08/exploring-http2-part-2-overview/)
-- [[译]探索 http2（第 1 部分）：概述](https://blog.chensoul.cc/posts/2024/05/08/exploring-http2-part-1-overview/)
-- [[译]比较 Socket.IO 和 HTTP：主要区别和用例](https://blog.chensoul.cc/posts/2024/05/08/socketio-vs-http/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
