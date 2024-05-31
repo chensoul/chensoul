@@ -18,6 +18,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [[译]使用 Spring Boot 构建 RESTful API：集成 DDD 和六边形架构](https://blog.chensoul.cc/posts/2024/05/30/building-a-restful-api-with-spring-boot-integrating-ddd-and-hexagonal-architecture/)
+- [[译]如何组织代码](https://blog.chensoul.cc/posts/2024/05/30/how-to-structure-our-code/)
 - [Redis安装和部署](https://blog.chensoul.cc/posts/2024/05/14/redis-install/)
 - [使用Argo CD实现持续交付](https://blog.chensoul.cc/posts/2024/05/11/argocd/)
 - [All things about WebSocket](https://blog.chensoul.cc/posts/2024/05/10/all-things-about-websocket/)
@@ -26,8 +28,6 @@
 - [All things about Drone](https://blog.chensoul.cc/posts/2024/05/09/all-things-about-drone/)
 - [通过k3sup安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s-using-k3sup/)
 - [安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s/)
-- [通过k3d安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s-using-k3d/)
-- [All things about Spring Modulith](https://blog.chensoul.cc/posts/2024/05/09/all-things-about-spring-modulith/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
