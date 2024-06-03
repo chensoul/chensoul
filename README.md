@@ -35,16 +35,7 @@
 ## 豆瓣最近活动
 
 <!-- douban starts -->
-- [看过九龙城寨之围城](http://movie.douban.com/subject/24284175/) 2024-04-28
-- [看过沙丘2](http://movie.douban.com/subject/35575567/) 2024-04-26
-- [看过还是觉得你最好2](http://movie.douban.com/subject/36530235/) 2024-04-26
-- [看过临时劫案](http://movie.douban.com/subject/35491115/) 2024-04-26
-- [看过哥斯拉大战金刚2：帝国崛起](http://movie.douban.com/subject/35453251/) 2024-04-26
-- [看过周处除三害](http://movie.douban.com/subject/36151692/) 2024-04-26
-- [看过飞驰人生2](http://movie.douban.com/subject/36369452/) 2024-04-26
-- [看过热辣滚烫](http://movie.douban.com/subject/36081094/) 2024-04-26
-- [看过你想活出怎样的人生](http://movie.douban.com/subject/26925611/) 2024-04-26
-- [看过隐入尘烟](http://movie.douban.com/subject/35131346/) 2023-10-08
+
 <!-- douban ends -->
 
 ## Github最近发布
