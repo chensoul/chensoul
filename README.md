@@ -18,16 +18,16 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [[译][译]OAuth2 with Spring 第5部分：使用PKCE保护您的Spring Boot应用程序以增强安全性](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-5-securing-your-spring-boot-application-with-pkce-for-enhanced-security/)
+- [[译]OAuth2 with Spring 第4部分：Spring授权客户端与Google授权服务器的社交登录演示](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-4-spring-authorization-client-social-login-demo-with-google/)
+- [[译]OAuth2 with Spring 第3部分：使用Spring授权服务器授予authorization_code OIDC客户端](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-3-authorizing-oidc-client-with-via-authorization-code-grant-from-spring/)
+- [[译]OAuth2 with Spring 第2部分：授权服务器入门](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-2-getting-started-with-authorization-server/)
+- [[译]OAuth2 with Spring 第1部分：了解基本概念](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-1-knowing-the-basic-concepts/)
 - [[译]使用 Spring Boot 构建 RESTful API：集成 DDD 和六边形架构](https://blog.chensoul.cc/posts/2024/05/30/building-a-restful-api-with-spring-boot-integrating-ddd-and-hexagonal-architecture/)
 - [[译]如何组织代码](https://blog.chensoul.cc/posts/2024/05/30/how-to-structure-our-code/)
 - [Redis安装和部署](https://blog.chensoul.cc/posts/2024/05/14/redis-install/)
 - [使用Argo CD实现持续交付](https://blog.chensoul.cc/posts/2024/05/11/argocd/)
 - [All things about WebSocket](https://blog.chensoul.cc/posts/2024/05/10/all-things-about-websocket/)
-- [在Kubernetes集群上安装Rancher](https://blog.chensoul.cc/posts/2024/05/10/install-rancher/)
-- [K8s安装Cert Manager](https://blog.chensoul.cc/posts/2024/05/10/install-cert-manager/)
-- [All things about Drone](https://blog.chensoul.cc/posts/2024/05/09/all-things-about-drone/)
-- [通过k3sup安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s-using-k3sup/)
-- [安装k3s](https://blog.chensoul.cc/posts/2024/05/09/install-k3s/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
@@ -50,7 +50,7 @@
 ## Github最近发布
 
 <!-- recent_releases starts -->
-- [chensoul-parent](https://github.com/chensoul/chensoul-parent/releases/tag/v1.0.43)：v1.0.43
+- [chensoul-parent](https://github.com/chensoul/chensoul-parent/releases/tag/v1.1.0)：v1.1.0
 - [learning-hadoop](https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1)：学习 hadoop 示例代码
 - [learning-spark](https://github.com/chensoul/learning-spark/releases/tag/v0.0.1)：学习 spark 示例代码
 - [scrapy-zhihu-github](https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1)：Scrapy爬取知乎、Github用户
