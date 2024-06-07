@@ -18,16 +18,16 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [All things about OAuth](https://blog.chensoul.cc/posts/2024/06/06/all-things-about-oauth/)
+- [Spring Boot项目创建docker镜像](https://blog.chensoul.cc/posts/2024/06/06/spring-boot-docker-image/)
+- [JWT](https://blog.chensoul.cc/posts/2024/06/06/jwt/)
+- [OAuth2和OIDC区别](https://blog.chensoul.cc/posts/2024/06/06/oauth2-oidc/)
+- [[译]OAuth2.0服务器](https://blog.chensoul.cc/posts/2024/06/05/oauth2-server/)
+- [[译]OAuth2简化版](https://blog.chensoul.cc/posts/2024/06/05/oauth-2-simplified/)
 - [RFC6749 | OAuth2.0授权框架中文版](https://blog.chensoul.cc/posts/2024/06/05/oauth2/)
 - [[译][译]OAuth2 with Spring 第5部分：使用PKCE保护您的Spring Boot应用程序以增强安全性](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-5-securing-your-spring-boot-application-with-pkce-for-enhanced-security/)
 - [[译]OAuth2 with Spring 第4部分：Spring授权客户端与Google授权服务器的社交登录演示](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-4-spring-authorization-client-social-login-demo-with-google/)
 - [[译]OAuth2 with Spring 第3部分：使用Spring授权服务器授予authorization_code OIDC客户端](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-3-authorizing-oidc-client-with-via-authorization-code-grant-from-spring/)
-- [[译]OAuth2 with Spring 第2部分：授权服务器入门](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-2-getting-started-with-authorization-server/)
-- [[译]OAuth2 with Spring 第1部分：了解基本概念](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-1-knowing-the-basic-concepts/)
-- [[译]使用 Spring Boot 构建 RESTful API：集成 DDD 和六边形架构](https://blog.chensoul.cc/posts/2024/05/30/building-a-restful-api-with-spring-boot-integrating-ddd-and-hexagonal-architecture/)
-- [[译]如何组织代码](https://blog.chensoul.cc/posts/2024/05/30/how-to-structure-our-code/)
-- [Redis安装和部署](https://blog.chensoul.cc/posts/2024/05/14/redis-install/)
-- [使用Argo CD实现持续交付](https://blog.chensoul.cc/posts/2024/05/11/argocd/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
