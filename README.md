@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [搭建本地 Maven 仓库 Artifactory 开源版](https://blog.chensoul.cc/posts/2024/06/25/install-artifactory-oss/)
 - [All things about OAuth](https://blog.chensoul.cc/posts/2024/06/06/all-things-about-oauth/)
 - [Spring Boot项目创建docker镜像](https://blog.chensoul.cc/posts/2024/06/06/spring-boot-docker-image/)
 - [JWT](https://blog.chensoul.cc/posts/2024/06/06/jwt/)
@@ -27,7 +28,6 @@
 - [RFC6749 | OAuth2.0授权框架中文版](https://blog.chensoul.cc/posts/2024/06/05/oauth2/)
 - [[译][译]OAuth2 with Spring 第5部分：使用PKCE保护您的Spring Boot应用程序以增强安全性](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-5-securing-your-spring-boot-application-with-pkce-for-enhanced-security/)
 - [[译]OAuth2 with Spring 第4部分：Spring授权客户端与Google授权服务器的社交登录演示](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-4-spring-authorization-client-social-login-demo-with-google/)
-- [[译]OAuth2 with Spring 第3部分：使用Spring授权服务器授予authorization_code OIDC客户端](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-3-authorizing-oidc-client-with-via-authorization-code-grant-from-spring/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
