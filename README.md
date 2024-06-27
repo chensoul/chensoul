@@ -18,6 +18,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [Tengine动态裁剪图片](https://blog.chensoul.cc/posts/2024/06/26/install-cert-manager/)
+- [搭建本地Maven仓库Nexus](https://blog.chensoul.cc/posts/2024/06/25/install-nexus/)
 - [搭建本地 Maven 仓库 Artifactory 开源版](https://blog.chensoul.cc/posts/2024/06/25/install-artifactory-oss/)
 - [All things about OAuth](https://blog.chensoul.cc/posts/2024/06/06/all-things-about-oauth/)
 - [Spring Boot项目创建docker镜像](https://blog.chensoul.cc/posts/2024/06/06/spring-boot-docker-image/)
@@ -26,8 +28,6 @@
 - [[译]OAuth2.0服务器](https://blog.chensoul.cc/posts/2024/06/05/oauth2-server/)
 - [[译]OAuth2简化版](https://blog.chensoul.cc/posts/2024/06/05/oauth-2-simplified/)
 - [RFC6749 | OAuth2.0授权框架中文版](https://blog.chensoul.cc/posts/2024/06/05/oauth2/)
-- [[译][译]OAuth2 with Spring 第5部分：使用PKCE保护您的Spring Boot应用程序以增强安全性](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-5-securing-your-spring-boot-application-with-pkce-for-enhanced-security/)
-- [[译]OAuth2 with Spring 第4部分：Spring授权客户端与Google授权服务器的社交登录演示](https://blog.chensoul.cc/posts/2024/06/05/oauth2-with-spring-part-4-spring-authorization-client-social-login-demo-with-google/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
