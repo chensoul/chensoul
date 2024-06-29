@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [使用Docker安装和部署Jenkins](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
 - [Tengine动态裁剪图片](https://blog.chensoul.cc/posts/2024/06/26/install-cert-manager/)
 - [搭建本地Maven仓库Nexus](https://blog.chensoul.cc/posts/2024/06/25/install-nexus/)
 - [搭建本地 Maven 仓库 Artifactory 开源版](https://blog.chensoul.cc/posts/2024/06/25/install-artifactory-oss/)
@@ -27,7 +28,6 @@
 - [OAuth2和OIDC区别](https://blog.chensoul.cc/posts/2024/06/06/oauth2-oidc/)
 - [[译]OAuth2.0服务器](https://blog.chensoul.cc/posts/2024/06/05/oauth2-server/)
 - [[译]OAuth2简化版](https://blog.chensoul.cc/posts/2024/06/05/oauth-2-simplified/)
-- [RFC6749 | OAuth2.0授权框架中文版](https://blog.chensoul.cc/posts/2024/06/05/oauth2/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
@@ -35,6 +35,9 @@
 ## 豆瓣最近活动
 
 <!-- douban starts -->
+- [看过维和防暴队](http://movie.douban.com/subject/35371629/) 2024-06-28
+- [看过我才不要和你做朋友呢](http://movie.douban.com/subject/35208466/) 2024-06-28
+- [看过疯狂的麦克斯：狂暴女神](http://movie.douban.com/subject/34996127/) 2024-06-28
 - [看过九龙城寨之围城](http://movie.douban.com/subject/24284175/) 2024-04-28
 - [看过沙丘2](http://movie.douban.com/subject/35575567/) 2024-04-26
 - [看过还是觉得你最好2](http://movie.douban.com/subject/36530235/) 2024-04-26
@@ -42,9 +45,6 @@
 - [看过哥斯拉大战金刚2：帝国崛起](http://movie.douban.com/subject/35453251/) 2024-04-26
 - [看过周处除三害](http://movie.douban.com/subject/36151692/) 2024-04-26
 - [看过飞驰人生2](http://movie.douban.com/subject/36369452/) 2024-04-26
-- [看过热辣滚烫](http://movie.douban.com/subject/36081094/) 2024-04-26
-- [看过你想活出怎样的人生](http://movie.douban.com/subject/26925611/) 2024-04-26
-- [看过隐入尘烟](http://movie.douban.com/subject/35131346/) 2023-10-08
 <!-- douban ends -->
 
 ## Github最近发布
