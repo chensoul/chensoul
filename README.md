@@ -13,7 +13,7 @@
 - Email：[ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 - Github：[https://github.com/chensoul](https://github.com/chensoul)
 - Twitter：[https://twitter.com/ichensoul](https://twitter.com/ichensoul)
-- Telegram Channel：[https://t.me/chensoul_share](https://t.me/chensoul_share)
+- Telegram Channel：[https://t.me/chensouls](https://t.me/chensouls)
 
 ## 博客最近更新
 
