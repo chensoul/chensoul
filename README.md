@@ -18,7 +18,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
-- [使用Docker安装和部署Jenkins](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
+- [使用Docker安装和配置Gitlab](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
+- [使用Docker安装和配置Jenkins](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
 - [Tengine动态裁剪图片](https://blog.chensoul.cc/posts/2024/06/26/install-cert-manager/)
 - [搭建本地Maven仓库Nexus](https://blog.chensoul.cc/posts/2024/06/25/install-nexus/)
 - [搭建本地 Maven 仓库 Artifactory 开源版](https://blog.chensoul.cc/posts/2024/06/25/install-artifactory-oss/)
@@ -27,7 +28,6 @@
 - [JWT](https://blog.chensoul.cc/posts/2024/06/06/jwt/)
 - [OAuth2和OIDC区别](https://blog.chensoul.cc/posts/2024/06/06/oauth2-oidc/)
 - [[译]OAuth2.0服务器](https://blog.chensoul.cc/posts/2024/06/05/oauth2-server/)
-- [[译]OAuth2简化版](https://blog.chensoul.cc/posts/2024/06/05/oauth-2-simplified/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
