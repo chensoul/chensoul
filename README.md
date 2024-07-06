@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [ActiveMQ安装和使用](https://blog.chensoul.cc/posts/2024/07/05/install-activemq/)
 - [使用Docker安装和配置Gitlab](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
 - [使用Docker安装和配置Jenkins](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
 - [Tengine动态裁剪图片](https://blog.chensoul.cc/posts/2024/06/26/install-cert-manager/)
@@ -27,7 +28,6 @@
 - [Spring Boot项目创建docker镜像](https://blog.chensoul.cc/posts/2024/06/06/spring-boot-docker-image/)
 - [JWT](https://blog.chensoul.cc/posts/2024/06/06/jwt/)
 - [OAuth2和OIDC区别](https://blog.chensoul.cc/posts/2024/06/06/oauth2-oidc/)
-- [[译]OAuth2.0服务器](https://blog.chensoul.cc/posts/2024/06/05/oauth2-server/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
