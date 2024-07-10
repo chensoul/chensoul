@@ -18,6 +18,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [使用 Docker 容器化并运行 Spring Boot 应用程序](https://blog.chensoul.cc/posts/2024/07/09/docker-for-spring-boot/)
+- [Docker安装和配置](https://blog.chensoul.cc/posts/2024/07/09/install-docker/)
 - [[译]Minikube 中的 Minions - 面向 Java 开发人员的 Kubernetes 简介](https://blog.chensoul.cc/posts/2024/07/08/minions-in-minikube-a-kubernetes-intro-for-java-de/)
 - [[译]面向 Java 开发人员的 Kubernetes](https://blog.chensoul.cc/posts/2024/07/08/kubernetes-for-java-developers/)
 - [ActiveMQ安装和使用](https://blog.chensoul.cc/posts/2024/07/05/install-activemq/)
@@ -26,8 +28,6 @@
 - [Tengine动态裁剪图片](https://blog.chensoul.cc/posts/2024/06/26/install-cert-manager/)
 - [搭建本地Maven仓库Nexus](https://blog.chensoul.cc/posts/2024/06/25/install-nexus/)
 - [搭建本地 Maven 仓库 Artifactory 开源版](https://blog.chensoul.cc/posts/2024/06/25/install-artifactory-oss/)
-- [All things about OAuth](https://blog.chensoul.cc/posts/2024/06/06/all-things-about-oauth/)
-- [Spring Boot项目创建docker镜像](https://blog.chensoul.cc/posts/2024/06/06/spring-boot-docker-image/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
