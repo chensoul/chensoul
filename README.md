@@ -18,6 +18,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [Minikube快速入门](https://blog.chensoul.cc/posts/2024/07/10/minikube-quick-start/)
+- [Spring Boot集成SpringDoc生成Api文档](https://blog.chensoul.cc/posts/2024/07/10/springdoc-with-spring-boot/)
 - [使用 Docker 容器化并运行 Spring Boot 应用程序](https://blog.chensoul.cc/posts/2024/07/09/docker-for-spring-boot/)
 - [Docker安装和配置](https://blog.chensoul.cc/posts/2024/07/09/install-docker/)
 - [[译]Minikube 中的 Minions - 面向 Java 开发人员的 Kubernetes 简介](https://blog.chensoul.cc/posts/2024/07/08/minions-in-minikube-a-kubernetes-intro-for-java-de/)
@@ -26,8 +28,6 @@
 - [使用Docker安装和配置Gitlab](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
 - [使用Docker安装和配置Jenkins](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
 - [Tengine动态裁剪图片](https://blog.chensoul.cc/posts/2024/06/26/install-cert-manager/)
-- [搭建本地Maven仓库Nexus](https://blog.chensoul.cc/posts/2024/06/25/install-nexus/)
-- [搭建本地 Maven 仓库 Artifactory 开源版](https://blog.chensoul.cc/posts/2024/06/25/install-artifactory-oss/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
@@ -35,16 +35,7 @@
 ## 豆瓣最近活动
 
 <!-- douban starts -->
-- [看过维和防暴队](http://movie.douban.com/subject/35371629/) 2024-06-28
-- [看过我才不要和你做朋友呢](http://movie.douban.com/subject/35208466/) 2024-06-28
-- [看过疯狂的麦克斯：狂暴女神](http://movie.douban.com/subject/34996127/) 2024-06-28
-- [看过九龙城寨之围城](http://movie.douban.com/subject/24284175/) 2024-04-28
-- [看过沙丘2](http://movie.douban.com/subject/35575567/) 2024-04-26
-- [看过还是觉得你最好2](http://movie.douban.com/subject/36530235/) 2024-04-26
-- [看过临时劫案](http://movie.douban.com/subject/35491115/) 2024-04-26
-- [看过哥斯拉大战金刚2：帝国崛起](http://movie.douban.com/subject/35453251/) 2024-04-26
-- [看过周处除三害](http://movie.douban.com/subject/36151692/) 2024-04-26
-- [看过飞驰人生2](http://movie.douban.com/subject/36369452/) 2024-04-26
+
 <!-- douban ends -->
 
 ## Github最近发布
