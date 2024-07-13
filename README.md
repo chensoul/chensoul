@@ -25,7 +25,7 @@
 - [[译]Minikube 中的 Minions - 面向 Java 开发人员的 Kubernetes 简介](https://blog.chensoul.cc/posts/2024/07/08/minions-in-minikube-a-kubernetes-intro-for-java-de/)
 - [[译]面向 Java 开发人员的 Kubernetes](https://blog.chensoul.cc/posts/2024/07/08/kubernetes-for-java-developers/)
 - [ActiveMQ安装和使用](https://blog.chensoul.cc/posts/2024/07/05/install-activemq/)
-- [使用Docker安装和配置Gitlab](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
+- [使用Docker安装和配置Gitlab](https://blog.chensoul.cc/posts/2024/06/26/install-gitlab/)
 - [使用Docker安装和配置Jenkins](https://blog.chensoul.cc/posts/2024/06/26/install-jenkins/)
 - [Tengine动态裁剪图片](https://blog.chensoul.cc/posts/2024/06/26/install-cert-manager/)
 <!-- blog ends -->
