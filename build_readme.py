@@ -11,7 +11,7 @@ import datetime
 root = pathlib.Path(__file__).parent.resolve()
 client = GraphqlClient(endpoint="https://api.github.com/graphql")
 
-GITHUB_TOKEN = os.environ.get("PERSONAL_TOKEN", "")
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 
 def replace_chunk(content, marker, chunk, inline=False):
