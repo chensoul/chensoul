@@ -18,16 +18,16 @@
 ## 博客最近更新
 
 <!-- blog starts -->
-- [GitLab Runner安装和部署](https://blog.chensoul.cc/posts/2024/07/19/gitlab-runner-install/)
-- [将 Maven 站点发布到 GitHub Pages](https://blog.chensoul.cc/posts/2024/07/18/publishing-a-maven-site-to-github-pages/)
-- [Git介绍](https://blog.chensoul.cc/posts/2024/07/15/git/)
-- [Git使用](https://blog.chensoul.cc/posts/2024/07/15/git/)
-- [Gitlab安装和部署-使用yum源](https://blog.chensoul.cc/posts/2024/07/15/install-gitlab-using-yum/)
-- [Minikube快速入门](https://blog.chensoul.cc/posts/2024/07/10/minikube-quick-start/)
-- [Spring Boot集成SpringDoc生成Api文档](https://blog.chensoul.cc/posts/2024/07/10/springdoc-with-spring-boot/)
-- [使用 Docker 容器化并运行 Spring Boot 应用程序](https://blog.chensoul.cc/posts/2024/07/09/docker-for-spring-boot/)
-- [Docker安装和配置](https://blog.chensoul.cc/posts/2024/07/09/install-docker/)
-- [[译]Minikube 中的 Minions - 面向 Java 开发人员的 Kubernetes 简介](https://blog.chensoul.cc/posts/2024/07/08/minions-in-minikube-a-kubernetes-intro-for-java-de/)
+- [[译]完整的 JMS 2.0 教程](https://blog.chensoul.cc/posts/2024/07/23/a-complete-jms-2-0-tutorial/)
+- [[译]JMS 事务的实际应用](https://blog.chensoul.cc/posts/2024/07/23/jms-transactions-in-action/)
+- [[译]使用 JMS 消息确认保证传送](https://blog.chensoul.cc/posts/2024/07/23/guaranteed-delivery-using-jms-message-acknowledgement/)
+- [[译]JMS 消息选择器在过滤消息中的应用](https://blog.chensoul.cc/posts/2024/07/23/jms-message-selectors-in-action-to-filter-messages/)
+- [[译]JMS 发布-订阅消息模型](https://blog.chensoul.cc/posts/2024/07/23/jms-pub-sub-messaging-model/)
+- [[译]JMS 点对点消息传递的实际应用](https://blog.chensoul.cc/posts/2024/07/23/jms-point-to-point-messaging-in-action/)
+- [[译]JMS 消息优先级](https://blog.chensoul.cc/posts/2024/07/23/jms-prioritize-messages/)
+- [[译]JMS 消息模型](https://blog.chensoul.cc/posts/2024/07/23/jms-message-model/)
+- [[译]在 JMS 中发送和接收消息](https://blog.chensoul.cc/posts/2024/07/23/send-and-receive-message-in-jms/)
+- [[译]为 JMS 安装和设置 Glassfish](https://blog.chensoul.cc/posts/2024/07/23/install-and-setup-glassfish-for-jms/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
