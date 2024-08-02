@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [Github Action 发布 Jar 到 Maven 中央仓库](https://blog.chensoul.cc/posts/2024/08/01/publishing-a-jar-to-maven-repository-with-github-action/)
 - [[译]JMS 2.0 的十个好处意味着可以减少代码编写量](https://blog.chensoul.cc/posts/2024/07/24/jms20-means-less-code/)
 - [[译]JMS 2.0 中的新增功能](https://blog.chensoul.cc/posts/2024/07/24/what-is-new-in-jms-2-0/)
 - [[译]JMS 2.0 中的新增功能（第一部分）- 易于使用](https://blog.chensoul.cc/posts/2024/07/24/jms20/)
@@ -27,7 +28,6 @@
 - [[译]使用 JMS 消息确认保证传送](https://blog.chensoul.cc/posts/2024/07/23/guaranteed-delivery-using-jms-message-acknowledgement/)
 - [[译]JMS 消息选择器在过滤消息中的应用](https://blog.chensoul.cc/posts/2024/07/23/jms-message-selectors-in-action-to-filter-messages/)
 - [[译]JMS 发布-订阅消息模型](https://blog.chensoul.cc/posts/2024/07/23/jms-pub-sub-messaging-model/)
-- [[译]JMS 点对点消息传递的实际应用](https://blog.chensoul.cc/posts/2024/07/23/jms-point-to-point-messaging-in-action/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
