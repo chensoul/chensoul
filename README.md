@@ -18,6 +18,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [ActiveMQ源码本地调试运行](https://blog.chensoul.cc/posts/2024/08/09/debug-activemq-source-code/)
 - [[译]数据库分片速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-in-database-sharding/)
 - [[译]数据库扩展策略速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-in-database-scaling/)
 - [[译]关系数据库设计速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-on-relational-database/)
@@ -27,7 +28,6 @@
 - [[译]JMS 2.0 的十个好处意味着可以减少代码编写量](https://blog.chensoul.cc/posts/2024/07/24/jms20-means-less-code/)
 - [[译]JMS 2.0 中的新增功能](https://blog.chensoul.cc/posts/2024/07/24/what-is-new-in-jms-2-0/)
 - [[译]JMS 2.0 中的新增功能（第一部分）- 易于使用](https://blog.chensoul.cc/posts/2024/07/24/jms20/)
-- [[译]JMS 2.0 中的新增功能（第二部分）- 新的消息传送功能](https://blog.chensoul.cc/posts/2024/07/24/jms20/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
