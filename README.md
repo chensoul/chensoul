@@ -50,7 +50,7 @@
 ## Github最近发布
 
 <!-- recent_releases starts -->
-- [spring-boot3-monolith](https://github.com/chensoul/spring-boot3-monolith/releases/tag/v0.0.1)：v0.0.1
+- [chensoul-monolith](https://github.com/chensoul/chensoul-monolith/releases/tag/v0.0.1)：v0.0.1
 - [chensoul-parent](https://github.com/chensoul/chensoul-parent/releases/tag/v1.1.0)：v1.1.0
 - [maven-hello-world](https://github.com/chensoul/maven-hello-world/releases/tag/v0.0.34)：v0.0.34
 - [learning-hadoop](https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1)：学习 hadoop 示例代码
