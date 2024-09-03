@@ -9,7 +9,7 @@ import os
 load_dotenv()
 memos_token = os.getenv('MEMOS_TOKEN')
 
-url = f'https://memos.chensoul.cc/api/v1/memo'
+url = f'https://memos.chensoul.cc/api/v1/memos?pageSize=1000&filter=creator=="users/1"'
 
 keyword = '#日记'
 
@@ -21,12 +21,16 @@ last_sunday = last_monday + timedelta(days=6)
 # 将日期转换为秒
 start_time = int(time.mktime(today.timetuple()))
 
-response = requests.get(url, headers={
-                        'Content-Type': 'application/json', "Authorization": f'Bearer {memos_token}'})
+response = requests.get(url)
+print(response.text)
+
 
 if response.status_code == 200:
     data = json.loads(response.text)
-    recent_data = data
+
+    recent_data = data['memos']
+    print(recent_data)
+
     # recent_data = [d for d in data if start_time <= d['createdTs']]
 
     with open('data/memos.csv', 'w', newline=''):
@@ -39,16 +43,14 @@ if response.status_code == 200:
     # 将数据转换为 Markdown 格式，并处理 URL
     for d in recent_data:
         # if keyword in content:
-        created_time = datetime.fromtimestamp(
-            d['createdTs'])
+        created_time = datetime.fromisoformat(d['createTime'])
         date_str = '{}'.format(created_time.strftime('%Y-%m-%d'))
         time_str = '{}'.format(created_time.strftime('%H:%M:%S'))
 
-        content = d['content']
-        content = content.split('\n')[0].replace(',', '，').replace('**', '')
-        # content = content.replace('\n', "")
+        content = d['content'].reverse()
+        content = content.replace(',', '，').replace('**', '')
 
-        url = 'https://memos.chensoul.cc/m/{} '.format(d['id'])
+        url = 'https://memos.chensoul.cc/m/{} '.format(d['uid'])
 
         # 将数据写入 CSV 文件
         with open('data/memos.csv', 'a', newline='') as f:

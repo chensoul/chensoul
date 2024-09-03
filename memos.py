@@ -7,14 +7,14 @@ import os
 load_dotenv()
 memos_token = os.getenv('MEMOS_TOKEN')
 
-url = f'https://memos.chensoul.cc/api/v1/memo'
+url = f'https://memos.chensoul.cc/api/v1/memos'
 
 
 def create_diary():
     today = datetime.now().date()
     year = today.year
     month = today.month
-    message = f'''#日记/{year}/{month} {today.strftime("%Y年%m月%d日")}
+    message = f'''#日记 {today.strftime("%Y年%m月%d日")}
 
 **习惯**
 - [ ] 喝水
