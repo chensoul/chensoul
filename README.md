@@ -64,7 +64,7 @@
 
 ![light](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
 
-## 最近一年跑步
+## 最近一年运动
 
 [![light](https://raw.githubusercontent.com/chensoul/running_page/master/assets/github.svg#gh-light-mode-only)](https://run.chensoul.cc)
 
