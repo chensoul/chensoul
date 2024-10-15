@@ -19,6 +19,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [[译]Spring Security 和 JWT 入门](https://blog.chensoul.cc/posts/2024/10/15/spring-security-jwt/)
+- [[译]测试 Spring Boot 应用程序：最佳实践和框架](https://blog.chensoul.cc/posts/2024/10/14/testing-spring-boot-applications-best-practices-and-frameworks/)
 - [ActiveMQ源码-BrokerService和PersistenceAdapter](https://blog.chensoul.cc/posts/2024/08/27/activemq-source-code-broker-service/)
 - [ThingsBoard源码编译和Idea运行](https://blog.chensoul.cc/posts/2024/08/27/thingsboard-code-source-compile/)
 - [ActiveMQ源码本地调试运行](https://blog.chensoul.cc/posts/2024/08/09/debug-activemq-source-code/)
@@ -27,8 +29,6 @@
 - [[译]数据库分片速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-in-database-sharding/)
 - [[译]数据库扩展策略速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-in-database-scaling/)
 - [[译]领域驱动设计速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-on-domain-driven-design/)
-- [Github Action 发布 Jar 到 Maven 中央仓库](https://blog.chensoul.cc/posts/2024/08/01/publishing-a-jar-to-maven-repository-with-github-action/)
-- [[译]JMS 2.0 中的新增功能](https://blog.chensoul.cc/posts/2024/07/24/what-is-new-in-jms-2-0/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
