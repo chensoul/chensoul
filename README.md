@@ -10,7 +10,6 @@
 - Blog：[https://blog.chensoul.cc/](https://blog.chensoul.cc/)
 - Email：[ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 - Memos：[https://memos.chensoul.cc/](https://memos.chensoul.cc/)
-- Github：[https://github.com/chensoul](https://github.com/chensoul)
 - Twitter：[https://twitter.com/ichensoul](https://twitter.com/ichensoul)
 - Telegram Channel：[https://t.me/chensouls](https://t.me/chensouls)
 
