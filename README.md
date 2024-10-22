@@ -1,10 +1,8 @@
 ## 👋 Hi there
 
-> 健康，爱情和使命，按照这个顺序，其它的都不重要。 ------ 纳瓦尔
-
-我是 ChenSoul，Java 软件工程师，目前在武汉，曾就职于阿里巴巴、拉手网等互联网公司，现就职于多点，从事新零售、物联网、智能安防方面的开发工作。
-
-热爱[编程](https://blog.chensoul.cc/categories/review/)，喜欢[跑步](https://run.chensoul.cc/)。读书、健身、定投、帮朋友、陪家人，做一个长期主义者。
+- 姓名： ChenSoul，自 2009 年起担任软件工程师，曾就职于阿里巴巴、拉手网等互联网公司。
+- 主要技能：使用 Java、Spring Boot、Spring Cloud、MicroServices、REST API 和 Docker 构建可扩展和分布式应用程序。
+- 兴趣爱好：[编程](https://blog.chensoul.cc/categories/review/)、[跑步](https://run.chensoul.cc/)。
 
 ## 如何找到我
 
