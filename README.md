@@ -1,9 +1,8 @@
 ## 👋 Hi there
 
-- 姓名： ChenSoul。
-- 工作经历：自 2009 年起担任软件工程师，曾就职于阿里巴巴、拉手网等互联网公司，具有构建微服务和模块化整体的实践经验。
-- 主要技能：使用 Java、Spring Boot、Spring Cloud、MicroServices、REST API、Docker 和 Kubernetes 构建可扩展和分布式应用程序。
-- 兴趣爱好：[编程](https://blog.chensoul.cc)、[跑步](https://run.chensoul.cc/)。
+- 💻 工作经历：自 2009 年起担任软件工程师，曾就职于阿里巴巴、拉手网等互联网公司，具有构建微服务和模块化整体的实践经验。
+- 💬 主要技能：使用 Java、Spring Boot、Spring Cloud、MicroServices、REST API、Docker 和 Kubernetes 构建可扩展和分布式应用程序。
+- 🌱 兴趣爱好：[编程](https://blog.chensoul.cc)、[跑步](https://run.chensoul.cc/)。
 
 ## 如何找到我
 
