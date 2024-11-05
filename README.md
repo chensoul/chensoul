@@ -14,16 +14,16 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [2024-11-05｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/05/til/)
+- [Kubernetes Tutorials](https://blog.chensoul.cc/kubernetes-tutorials/)
+- [Spring Boot Tutorials](https://blog.chensoul.cc/tutorials/spring-boot-tutorials/)
+- [Tutorials](https://blog.chensoul.cc/tutorials/)
+- [2024-11-04｜SivaLabs博客文章](https://blog.chensoul.cc/posts/2024/11/04/sivalabs-blog-posts/)
+- [Privacy Policy](https://blog.chensoul.cc/privacy_policy/)
+- [Kafka 基础知识](https://blog.chensoul.cc/posts/2024/10/17/kafka-fundamental/)
 - [[译]Spring Security 和 JWT 入门](https://blog.chensoul.cc/posts/2024/10/15/spring-security-jwt/)
 - [[译]测试 Spring Boot 应用程序：最佳实践和框架](https://blog.chensoul.cc/posts/2024/10/14/testing-spring-boot-applications-best-practices-and-frameworks/)
 - [ActiveMQ源码-BrokerService和PersistenceAdapter](https://blog.chensoul.cc/posts/2024/08/27/activemq-source-code-broker-service/)
-- [ThingsBoard源码编译和Idea运行](https://blog.chensoul.cc/posts/2024/08/27/thingsboard-code-source-compile/)
-- [ActiveMQ源码本地调试运行](https://blog.chensoul.cc/posts/2024/08/09/debug-activemq-source-code/)
-- [[译]关系数据库设计速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-on-relational-database/)
-- [[译]分布式系统速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-on-distributed-systems/)
-- [[译]数据库分片速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-in-database-sharding/)
-- [[译]数据库扩展策略速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-in-database-scaling/)
-- [[译]领域驱动设计速成课程](https://blog.chensoul.cc/posts/2024/08/05/a-crash-course-on-domain-driven-design/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
