@@ -47,7 +47,6 @@
 
 <!-- recent_releases starts -->
 - [chensoul-parent](https://github.com/chensoul/chensoul-parent/releases/tag/v1.1.0)：v1.1.0
-- [maven-hello-world](https://github.com/chensoul/maven-hello-world/releases/tag/v0.0.34)：v0.0.34
 - [learning-hadoop](https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1)：学习 hadoop 示例代码
 - [learning-spark](https://github.com/chensoul/learning-spark/releases/tag/v0.0.1)：学习 spark 示例代码
 - [scrapy-zhihu-github](https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1)：Scrapy爬取知乎、Github用户
