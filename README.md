@@ -15,6 +15,7 @@
 
 <!-- blog starts -->
 - [[译]从JUnit4迁移到JUnit5：权威指南](https://blog.chensoul.cc/posts/2024/11/07/junit-5-migration/)
+- [2024-11-07｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/07/til/)
 - [2024-11-06｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/06/til/)
 - [2024-11-05｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/05/til/)
 - [Kubernetes Tutorials](https://blog.chensoul.cc/kubernetes-tutorials/)
@@ -23,7 +24,6 @@
 - [2024-11-04｜SivaLabs博客文章](https://blog.chensoul.cc/posts/2024/11/04/sivalabs-blog-posts/)
 - [Privacy Policy](https://blog.chensoul.cc/privacy_policy/)
 - [Kafka 基础知识](https://blog.chensoul.cc/posts/2024/10/17/kafka-fundamental/)
-- [[译]Spring Security 和 JWT 入门](https://blog.chensoul.cc/posts/2024/10/15/spring-security-jwt/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
