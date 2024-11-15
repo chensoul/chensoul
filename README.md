@@ -14,6 +14,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [2024-11-14-Quarkus 快速入门](https://blog.chensoul.cc/posts/2024/11/14/quarkus-quick-start/)
+- [2024-11-13｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/13/til/)
 - [[译]从JUnit4迁移到JUnit5：权威指南](https://blog.chensoul.cc/posts/2024/11/07/junit-5-migration/)
 - [2024-11-07｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/07/til/)
 - [2024-11-06｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/06/til/)
@@ -22,8 +24,6 @@
 - [Spring Boot Tutorials](https://blog.chensoul.cc/tutorials/spring-boot-tutorials/)
 - [Tutorials](https://blog.chensoul.cc/tutorials/)
 - [2024-11-04｜SivaLabs博客文章](https://blog.chensoul.cc/posts/2024/11/04/sivalabs-blog-posts/)
-- [Privacy Policy](https://blog.chensoul.cc/privacy_policy/)
-- [Kafka 基础知识](https://blog.chensoul.cc/posts/2024/10/17/kafka-fundamental/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
