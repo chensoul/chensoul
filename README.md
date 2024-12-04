@@ -14,6 +14,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [ThingsBoard源码中的Github Actions](https://blog.chensoul.cc/posts/2024/12/03/github-actions-in-thingsboard/)
+- [ThingsBoard源码中的Security](https://blog.chensoul.cc/posts/2024/12/03/security-in-thingsboard/)
 - [2024-11-14-Quarkus 快速入门](https://blog.chensoul.cc/posts/2024/11/14/quarkus-quick-start/)
 - [2024-11-13｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/13/til/)
 - [[译]从JUnit4迁移到JUnit5：权威指南](https://blog.chensoul.cc/posts/2024/11/07/junit-5-migration/)
@@ -22,8 +24,6 @@
 - [2024-11-05｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/05/til/)
 - [Kubernetes Tutorials](https://blog.chensoul.cc/kubernetes-tutorials/)
 - [Spring Boot Tutorials](https://blog.chensoul.cc/tutorials/spring-boot-tutorials/)
-- [Tutorials](https://blog.chensoul.cc/tutorials/)
-- [2024-11-04｜SivaLabs博客文章](https://blog.chensoul.cc/posts/2024/11/04/sivalabs-blog-posts/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
