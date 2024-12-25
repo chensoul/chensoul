@@ -14,7 +14,7 @@ httpcore==0.18.0
 httpx==0.28.1
 idna==3.4
 multidict==4.7.6
-notion-client==2.0.0
+notion-client==2.3.0
 python-dotenv==1.0.1
 python-graphql-client==0.4.3
 pytz==2023.4
