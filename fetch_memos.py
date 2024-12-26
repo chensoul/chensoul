@@ -38,7 +38,7 @@ if response.status_code == 200:
 
     with open('data/memos.csv', 'a', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['day', 'time', 'url', 'content', 'tags'])
+        writer.writerow(['day', 'time', 'url', 'tags', 'content'])
 
     # 将数据转换为 Markdown 格式，并处理 URL
     for d in recent_data:
@@ -55,6 +55,6 @@ if response.status_code == 200:
         # 将数据写入 CSV 文件
         with open('data/memos.csv', 'a', newline='') as f:
             writer = csv.writer(f)
-            writer.writerows([[date_str, time_str, url, content, tags]])
+            writer.writerows([[date_str, time_str, url, tags, content]])
 else:
     print('请求失败：', response.status_code)
