@@ -43,7 +43,7 @@ if response.status_code == 200:
     # 将数据转换为 Markdown 格式，并处理 URL
     for d in recent_data:
         # if keyword in content:
-        created_time = datetime.fromisoformat(d['createTime'])
+        created_time = datetime.strptime(d['createTime'], "%Y-%m-%dT%H:%M:%SZ")
         date_str = '{}'.format(created_time.strftime('%Y-%m-%d'))
         time_str = '{}'.format(created_time.strftime('%H:%M:%S'))
 
