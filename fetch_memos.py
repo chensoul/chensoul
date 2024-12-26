@@ -47,8 +47,7 @@ if response.status_code == 200:
         date_str = '{}'.format(created_time.strftime('%Y-%m-%d'))
         time_str = '{}'.format(created_time.strftime('%H:%M:%S'))
 
-        content = d['content'].reverse()
-        content = content.replace(',', '，').replace('**', '')
+        content = d['content'].replace(',', '，').replace('**', '')
 
         url = 'https://memos.chensoul.cc/m/{} '.format(d['uid'])
 
