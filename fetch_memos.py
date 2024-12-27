@@ -9,7 +9,7 @@ import os
 load_dotenv()
 memos_token = os.getenv('MEMOS_TOKEN')
 
-url = f'https://memos.chensoul.cc/api/v1/memos?pageSize=1000&filter=creator=="users/1"'
+url = f'https://memos.chensoul.cc/api/v2/memos?pageSize=1000&filter=creator=="users/1"'
 
 keyword = '#日记'
 
