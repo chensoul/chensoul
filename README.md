@@ -31,16 +31,16 @@
 ## 豆瓣最近活动
 
 <!-- douban starts -->
+- [看过雄狮少年](http://movie.douban.com/subject/35144311/) 2024-12-26
+- [看过三大队](http://movie.douban.com/subject/35208463/) 2024-12-26
+- [看过还是觉得你最好](http://movie.douban.com/subject/35503125/) 2024-12-26
+- [看过抓娃娃](http://movie.douban.com/subject/36653918/) 2024-12-26
+- [看过出走的决心](http://movie.douban.com/subject/36587974/) 2024-12-26
+- [看过姥姥的外孙](http://movie.douban.com/subject/36328210/) 2024-12-26
+- [看过年会不能停！](http://movie.douban.com/subject/35725869/) 2024-12-26
+- [看过雄狮少年2](http://movie.douban.com/subject/35883131/) 2024-12-26
+- [看过破·地狱](http://movie.douban.com/subject/36712987/) 2024-12-26
 - [看过维和防暴队](http://movie.douban.com/subject/35371629/) 2024-06-28
-- [看过我才不要和你做朋友呢](http://movie.douban.com/subject/35208466/) 2024-06-28
-- [看过疯狂的麦克斯：狂暴女神](http://movie.douban.com/subject/34996127/) 2024-06-28
-- [看过九龙城寨之围城](http://movie.douban.com/subject/24284175/) 2024-04-28
-- [看过沙丘2](http://movie.douban.com/subject/35575567/) 2024-04-26
-- [看过还是觉得你最好2](http://movie.douban.com/subject/36530235/) 2024-04-26
-- [看过临时劫案](http://movie.douban.com/subject/35491115/) 2024-04-26
-- [看过哥斯拉大战金刚2：帝国崛起](http://movie.douban.com/subject/35453251/) 2024-04-26
-- [看过周处除三害](http://movie.douban.com/subject/36151692/) 2024-04-26
-- [看过飞驰人生2](http://movie.douban.com/subject/36369452/) 2024-04-26
 <!-- douban ends -->
 
 ## Github最近发布
