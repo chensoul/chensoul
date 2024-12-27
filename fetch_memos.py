@@ -48,7 +48,7 @@ if response.status_code == 200:
         time_str = '{}'.format(created_time.strftime('%H:%M:%S'))
 
         content = d['content'].replace(',', '，').replace('**', '')
-        tags = ','.join(d['property']['tags'])
+        tags = '' # ','.join(d['property']['tags'])
 
         url = 'https://memos.chensoul.cc/m/{} '.format(d['uid'])
 
