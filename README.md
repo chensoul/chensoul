@@ -14,6 +14,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [常见分布式 ID 解决方案](https://blog.chensoul.cc/posts/2025/03/28/id-generator/)
 - [如何实现榜单 top N 统计](https://blog.chensoul.cc/posts/2025/02/17/top-n-using-redis/)
 - [什么是限流](https://blog.chensoul.cc/posts/2025/02/14/rate-limit/)
 - [区分偶发性超时和频繁超时的重试策略](https://blog.chensoul.cc/posts/2025/02/14/retry-for-timeout/)
@@ -23,7 +24,6 @@
 - [ThingsBoard源码中的Github Actions](https://blog.chensoul.cc/posts/2024/12/03/github-actions-in-thingsboard/)
 - [ThingsBoard源码中的Security](https://blog.chensoul.cc/posts/2024/12/03/security-in-thingsboard/)
 - [2024-11-14-Quarkus 快速入门](https://blog.chensoul.cc/posts/2024/11/14/quarkus-quick-start/)
-- [2024-11-13｜今天我做了什么](https://blog.chensoul.cc/posts/2024/11/13/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
