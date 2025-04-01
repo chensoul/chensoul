@@ -14,6 +14,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [Canal原理、安装和测试](https://blog.chensoul.cc/posts/2025/03/31/canal-install-test/)
 - [常见分布式 ID 解决方案](https://blog.chensoul.cc/posts/2025/03/28/id-generator/)
 - [如何实现榜单 top N 统计](https://blog.chensoul.cc/posts/2025/02/17/top-n-using-redis/)
 - [什么是限流](https://blog.chensoul.cc/posts/2025/02/14/rate-limit/)
@@ -23,7 +24,6 @@
 - [2024-12-27｜今天我做了什么](https://blog.chensoul.cc/posts/2024/12/27/til/)
 - [ThingsBoard源码中的Github Actions](https://blog.chensoul.cc/posts/2024/12/03/github-actions-in-thingsboard/)
 - [ThingsBoard源码中的Security](https://blog.chensoul.cc/posts/2024/12/03/security-in-thingsboard/)
-- [2024-11-14-Quarkus 快速入门](https://blog.chensoul.cc/posts/2024/11/14/quarkus-quick-start/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
@@ -31,7 +31,16 @@
 ## 豆瓣最近活动
 
 <!-- douban starts -->
-
+- [看过雄狮少年](https://movie.douban.com/subject/35144311/) 2024-12-26
+- [看过三大队](https://movie.douban.com/subject/35208463/) 2024-12-26
+- [看过还是觉得你最好](https://movie.douban.com/subject/35503125/) 2024-12-26
+- [看过抓娃娃](https://movie.douban.com/subject/36653918/) 2024-12-26
+- [看过出走的决心](https://movie.douban.com/subject/36587974/) 2024-12-26
+- [看过姥姥的外孙](https://movie.douban.com/subject/36328210/) 2024-12-26
+- [看过年会不能停！](https://movie.douban.com/subject/35725869/) 2024-12-26
+- [看过雄狮少年2](https://movie.douban.com/subject/35883131/) 2024-12-26
+- [看过破·地狱](https://movie.douban.com/subject/36712987/) 2024-12-26
+- [看过维和防暴队](https://movie.douban.com/subject/35371629/) 2024-06-28
 <!-- douban ends -->
 
 ## Github最近发布
