@@ -31,7 +31,16 @@
 ## 豆瓣最近活动
 
 <!-- douban starts -->
-
+- [看过雄狮少年](https://movie.douban.com/subject/35144311/) 2024-12-26
+- [看过三大队](https://movie.douban.com/subject/35208463/) 2024-12-26
+- [看过还是觉得你最好](https://movie.douban.com/subject/35503125/) 2024-12-26
+- [看过抓娃娃](https://movie.douban.com/subject/36653918/) 2024-12-26
+- [看过出走的决心](https://movie.douban.com/subject/36587974/) 2024-12-26
+- [看过姥姥的外孙](https://movie.douban.com/subject/36328210/) 2024-12-26
+- [看过年会不能停！](https://movie.douban.com/subject/35725869/) 2024-12-26
+- [看过雄狮少年2](https://movie.douban.com/subject/35883131/) 2024-12-26
+- [看过破·地狱](https://movie.douban.com/subject/36712987/) 2024-12-26
+- [看过维和防暴队](https://movie.douban.com/subject/35371629/) 2024-06-28
 <!-- douban ends -->
 
 ## Github最近发布
