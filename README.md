@@ -14,6 +14,8 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [Thingsboard源码中的OAuth2登录实现](https://blog.chensoul.cc/posts/2025/06/06/oauth2-client-login-in-thingsboard/)
+- [Thingsboard源码中的代码片段](https://blog.chensoul.cc/posts/2025/04/30/codes-in-thingsboard/)
 - [使用 Docker 安装 Gitea](https://blog.chensoul.cc/posts/2025/04/08/install-gitea-using-docker/)
 - [Canal原理、安装和测试](https://blog.chensoul.cc/posts/2025/03/31/canal-install-test/)
 - [常见分布式 ID 解决方案](https://blog.chensoul.cc/posts/2025/03/28/id-generator/)
@@ -22,8 +24,6 @@
 - [区分偶发性超时和频繁超时的重试策略](https://blog.chensoul.cc/posts/2025/02/14/retry-for-timeout/)
 - [2024年我的付费软件](https://blog.chensoul.cc/posts/2024/12/31/til/)
 - [Tools](https://blog.chensoul.cc/tools/)
-- [2024-12-27｜今天我做了什么](https://blog.chensoul.cc/posts/2024/12/27/til/)
-- [ThingsBoard源码中的Github Actions](https://blog.chensoul.cc/posts/2024/12/03/github-actions-in-thingsboard/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
