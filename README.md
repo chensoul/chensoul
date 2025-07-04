@@ -6,7 +6,7 @@
 
 ## 如何找到我
 
-- 微信：@ichensoul
+- 微信：ichensoul
 - Email：[ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 - Twitter：[https://twitter.com/ichensoul](https://twitter.com/ichensoul)
 - Telegram Channel：[https://t.me/ichensoul](https://t.me/ichensoul)
