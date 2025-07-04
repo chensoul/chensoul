@@ -9,7 +9,7 @@
 - 微信：@ichensoul
 - Email：[ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 - Twitter：[https://twitter.com/ichensoul](https://twitter.com/ichensoul)
-- Telegram Channel：[https://t.me/chensouls](https://t.me/chensouls)
+- Telegram Channel：[https://t.me/ichensoul](https://t.me/ichensoul)
 
 ## 博客最近更新
 
