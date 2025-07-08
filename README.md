@@ -14,9 +14,6 @@
 ## 博客最近更新
 
 <!-- blog starts -->
-- [Tools](https://blog.chensoul.cc/tools/)
-- [Tutorials](https://blog.chensoul.cc/tutorials/)
-- [About](https://blog.chensoul.cc/about/)
 - [ThingsBoard HTTP Transport 实现方式](https://blog.chensoul.cc/posts/2025/07/02/thingsboard-http-transport/)
 - [Thingsboard源码中的OAuth2登录实现](https://blog.chensoul.cc/posts/2025/06/06/oauth2-client-login-in-thingsboard/)
 - [Thingsboard源码中的代码片段](https://blog.chensoul.cc/posts/2025/04/30/codes-in-thingsboard/)
@@ -24,6 +21,9 @@
 - [Canal原理、安装和测试](https://blog.chensoul.cc/posts/2025/03/31/canal-install-test/)
 - [常见分布式 ID 解决方案](https://blog.chensoul.cc/posts/2025/03/28/id-generator/)
 - [如何实现榜单 top N 统计](https://blog.chensoul.cc/posts/2025/02/17/top-n-using-redis/)
+- [区分偶发性超时和频繁超时的重试策略](https://blog.chensoul.cc/posts/2025/02/14/retry-for-timeout/)
+- [什么是限流](https://blog.chensoul.cc/posts/2025/02/14/rate-limit/)
+- [2024年我的付费软件](https://blog.chensoul.cc/posts/2024/12/31/til/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
