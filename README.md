@@ -46,7 +46,6 @@
 ## Github最近发布
 
 <!-- recent_releases starts -->
-- [todo-demo](https://github.com/chensoul/todo-demo/releases/tag/v0.0.1)：v0.0.1
 - [learning-hadoop](https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1)：学习 hadoop 示例代码
 - [learning-spark](https://github.com/chensoul/learning-spark/releases/tag/v0.0.1)：学习 spark 示例代码
 - [scrapy-zhihu-github](https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1)：Scrapy爬取知乎、Github用户
