@@ -4,7 +4,7 @@ async-timeout==5.0.1
 attrs==25.3.0
 beautifulsoup4==4.12.3
 bs4==0.0.2
-certifi==2024.12.14
+certifi==2025.8.3
 chardet==5.2.0
 charset-normalizer==3.4.1
 DateTime==5.5
