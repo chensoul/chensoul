@@ -14,16 +14,16 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [基于 Spring AI 构建智能餐厅推荐系统：RAG 技术实战](https://blog.chensoul.cc/posts/2025/09/26/spring-ai-restaurant-showcase-rag/)
+- [基于 Spring AI 构建智能餐厅推荐系统：多模型集成的实践指南](https://blog.chensoul.cc/posts/2025/09/25/spring-ai-restaurant-showcase/)
+- [OpenAI API 接口与 Spring AI 对应关系](https://blog.chensoul.cc/posts/2025/09/22/openai-api-with-spring-ai/)
+- [Spring AI ChatClient API 介绍](https://blog.chensoul.cc/posts/2025/09/19/spring-ai-chat-client-api/)
+- [Spring AI 介绍](https://blog.chensoul.cc/posts/2025/09/18/spring-api/)
+- [我的 2025 年开发设置](https://blog.chensoul.cc/posts/2025/08/24/my-development-setup-2025/)
+- [Spring异常处理思路](https://blog.chensoul.cc/posts/2025/07/24/spring-exception/)
+- [ThingsBoard接口设计](https://blog.chensoul.cc/posts/2025/07/24/thingsboard-api/)
 - [Spring 国际化实现](https://blog.chensoul.cc/posts/2025/07/17/spring-i18n/)
 - [RuoYi AI 源码分析](https://blog.chensoul.cc/posts/2025/07/15/ruoyi-ai/)
-- [ThingsBoard HTTP Transport 实现方式](https://blog.chensoul.cc/posts/2025/07/02/thingsboard-http-transport/)
-- [Thingsboard源码中的OAuth2登录实现](https://blog.chensoul.cc/posts/2025/06/06/oauth2-client-login-in-thingsboard/)
-- [Thingsboard源码中的代码片段](https://blog.chensoul.cc/posts/2025/04/30/codes-in-thingsboard/)
-- [使用 Docker 安装 Gitea](https://blog.chensoul.cc/posts/2025/04/08/install-gitea-using-docker/)
-- [Canal原理、安装和测试](https://blog.chensoul.cc/posts/2025/03/31/canal-install-test/)
-- [常见分布式 ID 解决方案](https://blog.chensoul.cc/posts/2025/03/28/id-generator/)
-- [如何实现榜单 top N 统计](https://blog.chensoul.cc/posts/2025/02/17/top-n-using-redis/)
-- [区分偶发性超时和频繁超时的重试策略](https://blog.chensoul.cc/posts/2025/02/14/retry-for-timeout/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
@@ -46,10 +46,7 @@
 ## Github最近发布
 
 <!-- recent_releases starts -->
-- [learning-hadoop](https://github.com/chensoul/learning-hadoop/releases/tag/v0.0.1)：学习 hadoop 示例代码
-- [learning-spark](https://github.com/chensoul/learning-spark/releases/tag/v0.0.1)：学习 spark 示例代码
-- [scrapy-zhihu-github](https://github.com/chensoul/scrapy-zhihu-github/releases/tag/v0.0.1)：Scrapy爬取知乎、Github用户
-- [grab](https://github.com/chensoul/grab/releases/tag/v0.0.1)：基于spark、spring boot构建推荐系统
+
 <!-- recent_releases ends -->
 
 ## 最近一周编码
