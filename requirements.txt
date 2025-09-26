@@ -25,4 +25,4 @@ soupsieve==2.6
 urllib3==2.3.0
 websockets==15.0.1
 yarl==1.19.0
-zope.interface==7.2
+zope.interface==8.0.1
