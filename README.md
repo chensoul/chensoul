@@ -14,6 +14,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [GitHub中配置Renovate自动依赖更新和自动合并PR](https://blog.chensoul.cc/posts/2025/09/28/config-renovate-in-github/)
 - [基于 Spring AI 构建智能餐厅推荐系统：RAG 技术实战](https://blog.chensoul.cc/posts/2025/09/26/spring-ai-restaurant-showcase-rag/)
 - [基于 Spring AI 构建智能餐厅推荐系统：多模型集成的实践指南](https://blog.chensoul.cc/posts/2025/09/25/spring-ai-restaurant-showcase/)
 - [OpenAI API 接口与 Spring AI 对应关系](https://blog.chensoul.cc/posts/2025/09/22/openai-api-with-spring-ai/)
@@ -23,7 +24,6 @@
 - [Spring异常处理思路](https://blog.chensoul.cc/posts/2025/07/24/spring-exception/)
 - [ThingsBoard接口设计](https://blog.chensoul.cc/posts/2025/07/24/thingsboard-api/)
 - [Spring 国际化实现](https://blog.chensoul.cc/posts/2025/07/17/spring-i18n/)
-- [RuoYi AI 源码分析](https://blog.chensoul.cc/posts/2025/07/15/ruoyi-ai/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
@@ -31,16 +31,7 @@
 ## 豆瓣最近活动
 
 <!-- douban starts -->
-- [看过雄狮少年](https://movie.douban.com/subject/35144311/) 2024-12-26
-- [看过三大队](https://movie.douban.com/subject/35208463/) 2024-12-26
-- [看过还是觉得你最好](https://movie.douban.com/subject/35503125/) 2024-12-26
-- [看过抓娃娃](https://movie.douban.com/subject/36653918/) 2024-12-26
-- [看过出走的决心](https://movie.douban.com/subject/36587974/) 2024-12-26
-- [看过姥姥的外孙](https://movie.douban.com/subject/36328210/) 2024-12-26
-- [看过年会不能停！](https://movie.douban.com/subject/35725869/) 2024-12-26
-- [看过雄狮少年2](https://movie.douban.com/subject/35883131/) 2024-12-26
-- [看过破·地狱](https://movie.douban.com/subject/36712987/) 2024-12-26
-- [看过维和防暴队](https://movie.douban.com/subject/35371629/) 2024-06-28
+
 <!-- douban ends -->
 
 ## Github最近发布
