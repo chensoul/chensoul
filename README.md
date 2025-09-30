@@ -32,6 +32,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [Spring AI 让数据库听懂人话：Text2SQL 自然语言查询实践指南](https://blog.chensoul.cc/posts/2025/09/30/spring-ai-text2sql-showcase/)
 - [Spec-Kit 在 Cursor 中的安装和使用指南](https://blog.chensoul.cc/posts/2025/09/29/spec-kit-with-cursor/)
 - [GitHub中配置Renovate自动依赖更新和自动合并PR](https://blog.chensoul.cc/posts/2025/09/28/config-renovate-in-github/)
 - [基于 Spring AI 构建智能餐厅推荐系统：RAG 技术实战](https://blog.chensoul.cc/posts/2025/09/26/spring-ai-restaurant-showcase-rag/)
@@ -41,7 +42,6 @@
 - [Spring AI 介绍](https://blog.chensoul.cc/posts/2025/09/18/spring-api/)
 - [我的 2025 年开发设置](https://blog.chensoul.cc/posts/2025/08/24/my-development-setup-2025/)
 - [Spring Boot异常处理思路](https://blog.chensoul.cc/posts/2025/07/24/spring-exception/)
-- [ThingsBoard接口设计](https://blog.chensoul.cc/posts/2025/07/24/thingsboard-api/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
