@@ -14,6 +14,7 @@
 ## 博客最近更新
 
 <!-- blog starts -->
+- [Spec-Kit 在 Cursor 中的安装和使用指南](https://blog.chensoul.cc/posts/2025/09/29/spec-kit-with-cursor/)
 - [GitHub中配置Renovate自动依赖更新和自动合并PR](https://blog.chensoul.cc/posts/2025/09/28/config-renovate-in-github/)
 - [基于 Spring AI 构建智能餐厅推荐系统：RAG 技术实战](https://blog.chensoul.cc/posts/2025/09/26/spring-ai-restaurant-showcase-rag/)
 - [基于 Spring AI 构建智能餐厅推荐系统：多模型集成的实践指南](https://blog.chensoul.cc/posts/2025/09/25/spring-ai-restaurant-showcase/)
@@ -21,9 +22,8 @@
 - [Spring AI ChatClient API 介绍](https://blog.chensoul.cc/posts/2025/09/19/spring-ai-chat-client-api/)
 - [Spring AI 介绍](https://blog.chensoul.cc/posts/2025/09/18/spring-api/)
 - [我的 2025 年开发设置](https://blog.chensoul.cc/posts/2025/08/24/my-development-setup-2025/)
-- [Spring异常处理思路](https://blog.chensoul.cc/posts/2025/07/24/spring-exception/)
+- [Spring Boot异常处理思路](https://blog.chensoul.cc/posts/2025/07/24/spring-exception/)
 - [ThingsBoard接口设计](https://blog.chensoul.cc/posts/2025/07/24/thingsboard-api/)
-- [Spring 国际化实现](https://blog.chensoul.cc/posts/2025/07/17/spring-i18n/)
 <!-- blog ends -->
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
