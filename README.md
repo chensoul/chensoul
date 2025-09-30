@@ -5,7 +5,7 @@
 ### 🚀 职业经历
 - **2009年至今** - 软件工程师，拥有15年+开发经验
 - **曾就职公司** - 阿里巴巴、拉手网等知名互联网公司
-- **当前状态** - 专注于技术分享和开源贡献
+- **当前状态** - 就职于多点，从事物联网、智能安防相关开发工作
 
 ### 💻 技术专长
 - **后端开发**: Java、Spring Boot、Spring Cloud、Spring AI
@@ -20,14 +20,14 @@
 - **技术分享**: 持续学习并分享编程、软件开发经验
 
 ### 🌐 社交媒体
+- **Blog**: [blog.chensoul.cc](https://blog.chensoul.cc) - 技术文章和思考
 - **GitHub**: [@chensoul](https://github.com/chensoul) - 代码仓库和开源项目
-- **博客**: [blog.chensoul.cc](https://blog.chensoul.cc) - 技术文章和思考
 - **Twitter**: [@ichensoul](https://twitter.com/ichensoul) - 技术动态和分享
+- **Telegram Channel**: [@ichensoul](https://t.me/ichensoul)
 
 ### 📞 联系方式
 - **WeChat**: ichensoul
 - **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
-- **Telegram**: [@ichensoul](https://t.me/ichensoul)
 
 ## 博客最近更新
 
