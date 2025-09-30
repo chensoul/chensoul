@@ -1,15 +1,33 @@
 ## 👋 Hi there
 
-- 💻 工作经历：自 2009 年起担任软件工程师，曾就职于阿里巴巴、拉手网等互联网公司。
-- 💬 主要技能：使用 Java、Spring Boot、Spring Cloud、MicroServices、REST API、Docker 和 Kubernetes 构建可扩展和分布式应用程序。
-- 🌱 兴趣爱好：致力于持续学习，并积极分享在编程、软件开发、持续集成方面的专业知识。
+我是 chensoul，一个来自中国武汉的开发者。关注前沿技术趋势，持续提升技能；定期更新技术博客，分享学习心得。
 
-## 如何找到我
+### 🚀 职业经历
+- **2009年至今** - 软件工程师，拥有15年+开发经验
+- **曾就职公司** - 阿里巴巴、拉手网等知名互联网公司
+- **当前状态** - 专注于技术分享和开源贡献
 
-- 微信：ichensoul
-- Email：[ichensoul@gmail.com](mailto:ichensoul@gmail.com)
-- Twitter：[https://twitter.com/ichensoul](https://twitter.com/ichensoul)
-- Telegram Channel：[https://t.me/ichensoul](https://t.me/ichensoul)
+### 💻 技术专长
+- **后端开发**: Java、Spring Boot、Spring Cloud、Spring AI
+- **微服务架构**: 分布式系统设计、服务治理、API网关
+- **容器化技术**: Docker、Kubernetes、云原生应用
+- **数据库技术**: MySQL、Redis、MongoDB、Kafka
+- **开发工具**: IntelliJ IDEA、Maven、Git、Jenkins
+
+### 🎯 当前关注
+- **AI 技术**: Spring AI、大语言模型应用、Text2SQL
+- **云原生**: Kubernetes、微服务架构、DevOps
+- **技术分享**: 持续学习并分享编程、软件开发经验
+
+### 🌐 社交媒体
+- **GitHub**: [@chensoul](https://github.com/chensoul) - 代码仓库和开源项目
+- **博客**: [blog.chensoul.cc](https://blog.chensoul.cc) - 技术文章和思考
+- **Twitter**: [@ichensoul](https://twitter.com/ichensoul) - 技术动态和分享
+
+### 📞 联系方式
+- **WeChat**: ichensoul
+- **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
+- **Telegram**: [@ichensoul](https://t.me/ichensoul)
 
 ## 博客最近更新
 
