@@ -39,7 +39,7 @@
 - [基于 Spring AI 构建智能餐厅推荐系统：多模型集成的实践指南](https://blog.chensoul.cc/posts/2025/09/25/spring-ai-restaurant-showcase/)
 - [OpenAI API 接口与 Spring AI 对应关系](https://blog.chensoul.cc/posts/2025/09/22/openai-api-with-spring-ai/)
 - [Spring AI ChatClient API 介绍](https://blog.chensoul.cc/posts/2025/09/19/spring-ai-chat-client-api/)
-- [Spring AI 介绍](https://blog.chensoul.cc/posts/2025/09/18/spring-api/)
+- [Spring AI 介绍](https://blog.chensoul.cc/posts/2025/09/18/spring-ai/)
 - [我的 2025 年开发设置](https://blog.chensoul.cc/posts/2025/08/24/my-development-setup-2025/)
 - [Spring Boot异常处理思路](https://blog.chensoul.cc/posts/2025/07/24/spring-exception/)
 <!-- blog ends -->
