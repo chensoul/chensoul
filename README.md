@@ -4,22 +4,11 @@
 
 <img align="right" alt="Chensoul" src="images/coding.gif" width="320px" />
 
-### 🚀 职业经历
+目前状态：
+
 - **2009年至今** - 软件工程师，拥有15年+开发经验
 - **曾就职公司** - 阿里巴巴、拉手网等知名互联网公司
 - **当前状态** - 就职于多点，从事物联网、智能安防相关开发工作
-
-### 💻 技术专长
-- **后端开发**: Java、Spring Boot、Spring Cloud、Spring AI
-- **微服务架构**: 分布式系统设计、服务治理、API网关
-- **容器化技术**: Docker、Kubernetes、云原生应用
-- **数据库技术**: MySQL、Redis、MongoDB、Kafka
-- **开发工具**: IntelliJ IDEA、Maven、Git、Jenkins
-
-### 🎯 当前关注
-- **AI 技术**: Spring AI、大语言模型应用、Text2SQL
-- **云原生**: Kubernetes、微服务架构、DevOps
-- **技术分享**: 持续学习并分享编程、软件开发经验
 
 ## 联系我
 - **WeChat**: ichensoul
