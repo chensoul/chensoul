@@ -1,6 +1,6 @@
 ## Hi there, I'm <a href="https://blog.chensoul.cc" target="_blank" title="Chensoul">Chensoul</a> 👋
 
-<img align="right" alt="Chensoul" src="images/coding.gif" width="320px" />
+<img align="right" alt="Chensoul" src="images/coding.gif" width="300px" />
 
 我是 chensoul，一个来自中国武汉的开发者。关注前沿技术趋势，持续提升技能；定期更新技术博客，分享学习心得。
 
@@ -10,7 +10,7 @@
 - **曾就职公司** - 阿里巴巴、拉手网等知名互联网公司
 - **当前状态** - 就职于多点，从事物联网、智能安防相关开发工作
 
-## 联系我
+联系我：
 - **WeChat**: ichensoul
 - **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 - **Blog**: [blog.chensoul.cc](https://blog.chensoul.cc) 
