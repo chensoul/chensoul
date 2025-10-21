@@ -1,6 +1,8 @@
-## 👋 Hi there
+## Hi there, I'm <a href="https://blog.chensoul.cc" target="_blank" title="Chensoul">Chensoul</a> 👋
 
 我是 chensoul，一个来自中国武汉的开发者。关注前沿技术趋势，持续提升技能；定期更新技术博客，分享学习心得。
+
+<img align="right" alt="Chensoul" src="images/coding.gif" width="320px" />
 
 ### 🚀 职业经历
 - **2009年至今** - 软件工程师，拥有15年+开发经验
@@ -19,17 +21,20 @@
 - **云原生**: Kubernetes、微服务架构、DevOps
 - **技术分享**: 持续学习并分享编程、软件开发经验
 
-### 🌐 社交媒体
-- **Blog**: [blog.chensoul.cc](https://blog.chensoul.cc) - 技术文章和思考
-- **GitHub**: [@chensoul](https://github.com/chensoul) - 代码仓库和开源项目
-- **Twitter**: [@ichensoul](https://twitter.com/ichensoul) - 技术动态和分享
-- **Telegram Channel**: [@ichensoul](https://t.me/ichensoul)
-
-### 📞 联系方式
+## 联系我
 - **WeChat**: ichensoul
 - **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
+- **Blog**: [blog.chensoul.cc](https://blog.chensoul.cc) 
+- **GitHub**: [@chensoul](https://github.com/chensoul)
+- **Twitter**: [@ichensoul](https://twitter.com/ichensoul) 
+- **Telegram Channel**: [@ichensoul](https://t.me/ichensoul)
 
-## 博客最近更新
+## 统计
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=chensoul&theme=github_dark" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chensoul&theme=default&show_icons=true&hide_border=true&layout=compact" alt="Most used programming languages" />
+
+## 博客更新
 
 <!-- blog starts -->
 - [Spring Boot 2.5.8单体应用接入Nacos 1.3.0配置中心完整指南](https://blog.chensoul.cc/posts/2025/10/10/spring-boot-2.5.8-nacos-1.3.0-config-center-integration-guide/)
@@ -46,7 +51,7 @@
 
 更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
 
-## 豆瓣最近活动
+## 豆瓣更新
 
 <!-- douban starts -->
 - [看过雄狮少年](https://movie.douban.com/subject/35144311/) 2024-12-26
