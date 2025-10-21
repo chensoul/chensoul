@@ -1,8 +1,8 @@
 ## Hi there, I'm <a href="https://blog.chensoul.cc" target="_blank" title="Chensoul">Chensoul</a> 👋
 
-我是 chensoul，一个来自中国武汉的开发者。关注前沿技术趋势，持续提升技能；定期更新技术博客，分享学习心得。
-
 <img align="right" alt="Chensoul" src="images/coding.gif" width="320px" />
+
+我是 chensoul，一个来自中国武汉的开发者。关注前沿技术趋势，持续提升技能；定期更新技术博客，分享学习心得。
 
 目前状态：
 
