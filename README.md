@@ -18,10 +18,18 @@
 - **Twitter**: [@ichensoul](https://twitter.com/ichensoul) 
 - **Telegram Channel**: [@ichensoul](https://t.me/ichensoul)
 
-## 统计
+## Github 统计
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=chensoul&theme=github_dark" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chensoul&theme=default&show_icons=true&hide_border=true&layout=compact" alt="Most used programming languages" />
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=chensoul&show_icons=true&count_private=true&theme=tokyonight&hide_border=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chensoul&layout=compact&theme=tokyonight&hide_border=true"/>
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=chensoul&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=chensoul&theme=tokyo-night&hide_border=true" alt="Activity Graph"/>
+</div>
+
 
 ## 博客更新
 
