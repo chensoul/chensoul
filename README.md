@@ -22,6 +22,9 @@
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=chensoul&show_icons=true&count_private=true&theme=tokyonight&hide_border=true"/>
+</div>
+
+<div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chensoul&layout=compact&theme=tokyonight&hide_border=true"/>
   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=chensoul&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 </div>
@@ -30,8 +33,13 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=chensoul&theme=tokyo-night&hide_border=true" alt="Activity Graph"/>
 </div>
 
+## Github最近发布
 
-## 博客更新
+<!-- recent_releases starts -->
+
+<!-- recent_releases ends -->
+
+## 最近[博客](https://blog.chensoul.cc)
 
 <!-- blog starts -->
 - [Spring Boot 2.5.8单体应用接入Nacos 1.3.0配置中心完整指南](https://blog.chensoul.cc/posts/2025/10/10/spring-boot-2.5.8-nacos-1.3.0-config-center-integration-guide/)
@@ -46,26 +54,6 @@
 - [Spring AI 介绍](https://blog.chensoul.cc/posts/2025/09/18/spring-ai/)
 <!-- blog ends -->
 
-更多内容直接点击：[https://blog.chensoul.cc](https://blog.chensoul.cc)
-
-## 豆瓣更新
-
-<!-- douban starts -->
-
-<!-- douban ends -->
-
-## Github最近发布
-
-<!-- recent_releases starts -->
-
-<!-- recent_releases ends -->
-
-## 最近一周编码
-
-![light](https://raw.githubusercontent.com/chensoul/chensoul/main/images/wakatime_weekly_language_stats.svg#gh-light-mode-only)
-
-## 最近一年运动
+## 最近[运动](https://run.chensoul.cc)
 
 [![light](https://raw.githubusercontent.com/chensoul/running_page/master/assets/github.svg#gh-light-mode-only)](https://run.chensoul.cc)
-
-更多内容直接点击：[https://run.chensoul.cc](https://run.chensoul.cc)
