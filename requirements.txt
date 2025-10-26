@@ -15,7 +15,7 @@ httpx==0.28.1
 idna==3.11
 multidict==6.7.0
 notion-client==2.6.0
-python-dotenv==1.2.0
+python-dotenv==1.2.1
 python-graphql-client==0.4.3
 pytz==2025.2
 requests==2.32.5
