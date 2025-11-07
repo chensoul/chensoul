@@ -42,6 +42,7 @@
 ## 最近[博客](https://blog.chensoul.cc)
 
 <!-- blog starts -->
+- [OpenSpec：让 AI 编码助手更懂你的项目规范](https://blog.chensoul.cc/posts/2025/11/07/openspec/)
 - [Spring Boot 2.5.8单体应用接入Nacos 1.3.0配置中心完整指南](https://blog.chensoul.cc/posts/2025/10/10/spring-boot-2.5.8-nacos-1.3.0-config-center-integration-guide/)
 - [使用Docker Model Runner和Spring AI运行AI模型](https://blog.chensoul.cc/posts/2025/10/09/docker-model-runner-spring-ai-local-ai-application/)
 - [Spring AI 让数据库听懂人话：Text2SQL 自然语言查询实践指南](https://blog.chensoul.cc/posts/2025/09/30/spring-ai-text2sql-showcase/)
@@ -51,7 +52,6 @@
 - [基于 Spring AI 构建智能餐厅推荐系统：多模型集成的实践指南](https://blog.chensoul.cc/posts/2025/09/25/spring-ai-restaurant-showcase/)
 - [OpenAI API 接口与 Spring AI 对应关系](https://blog.chensoul.cc/posts/2025/09/22/openai-api-with-spring-ai/)
 - [Spring AI ChatClient API 介绍](https://blog.chensoul.cc/posts/2025/09/19/spring-ai-chat-client-api/)
-- [Spring AI 介绍](https://blog.chensoul.cc/posts/2025/09/18/spring-ai/)
 <!-- blog ends -->
 
 ## 最近[运动](https://run.chensoul.cc)
