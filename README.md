@@ -18,7 +18,7 @@
 - **Twitter**: [@ichensoul](https://twitter.com/ichensoul) 
 - **Telegram Channel**: [@ichensoul](https://t.me/ichensoul)
 
-## 最近[博客](https://blog.chensoul.cc)
+## 最近博客
 
 <!-- blog starts -->
 - [OpenSpec：让 AI 编码助手更懂你的项目规范](https://blog.chensoul.cc/posts/2025/11/07/openspec/)
@@ -32,24 +32,3 @@
 - [OpenAI API 接口与 Spring AI 对应关系](https://blog.chensoul.cc/posts/2025/09/22/openai-api-with-spring-ai/)
 - [Spring AI ChatClient API 介绍](https://blog.chensoul.cc/posts/2025/09/19/spring-ai-chat-client-api/)
 <!-- blog ends -->
-
-## Github最近发布
-
-<!-- recent_releases starts -->
-
-<!-- recent_releases ends -->
-
-## Github 统计
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=chensoul&show_icons=true&count_private=true&theme=tokyonight&hide_border=true"/>
-</div>
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chensoul&layout=compact&theme=tokyonight&hide_border=true"/>
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=chensoul&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
-</div>
-
-## 最近[运动](https://run.chensoul.cc)
-
-[![light](https://raw.githubusercontent.com/chensoul/running_page/master/assets/github.svg#gh-light-mode-only)](https://run.chensoul.cc)
