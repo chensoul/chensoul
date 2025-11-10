@@ -18,27 +18,6 @@
 - **Twitter**: [@ichensoul](https://twitter.com/ichensoul) 
 - **Telegram Channel**: [@ichensoul](https://t.me/ichensoul)
 
-## Github 统计
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=chensoul&show_icons=true&count_private=true&theme=tokyonight&hide_border=true"/>
-</div>
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chensoul&layout=compact&theme=tokyonight&hide_border=true"/>
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=chensoul&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=chensoul&theme=tokyo-night&hide_border=true" alt="Activity Graph"/>
-</div>
-
-## Github最近发布
-
-<!-- recent_releases starts -->
-
-<!-- recent_releases ends -->
-
 ## 最近[博客](https://blog.chensoul.cc)
 
 <!-- blog starts -->
@@ -53,6 +32,23 @@
 - [OpenAI API 接口与 Spring AI 对应关系](https://blog.chensoul.cc/posts/2025/09/22/openai-api-with-spring-ai/)
 - [Spring AI ChatClient API 介绍](https://blog.chensoul.cc/posts/2025/09/19/spring-ai-chat-client-api/)
 <!-- blog ends -->
+
+## Github最近发布
+
+<!-- recent_releases starts -->
+
+<!-- recent_releases ends -->
+
+## Github 统计
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=chensoul&show_icons=true&count_private=true&theme=tokyonight&hide_border=true"/>
+</div>
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chensoul&layout=compact&theme=tokyonight&hide_border=true"/>
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=chensoul&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</div>
 
 ## 最近[运动](https://run.chensoul.cc)
 
