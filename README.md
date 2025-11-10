@@ -1,4 +1,4 @@
-## Hi there, I'm <a href="https://blog.chensoul.cc" target="_blank" title="Chensoul">Chensoul</a> 👋
+## Hi there 👋
 
 <img align="right" alt="Chensoul" src="images/coding.gif" width="300px" />
 
@@ -8,7 +8,6 @@
 - **WeChat**: ichensoul
 - **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 - **Blog**: [blog.chensoul.cc](https://blog.chensoul.cc) 
-- **GitHub**: [@chensoul](https://github.com/chensoul)
 - **Twitter**: [@ichensoul](https://twitter.com/ichensoul) 
 - **Telegram Channel**: [@ichensoul](https://t.me/ichensoul)
 
