@@ -73,11 +73,14 @@ RECORDS=[
     'BodyMassIndex',
     'DistanceWalkingRunning',
     'StepCount',
+    'FlightsClimbed',
     'ActiveEnergyBurned',
-    'FlightsClimbed'
+    'HeartRate'
 ]
 
 special_types = {'BodyMass', 'BodyMassIndex'}
+# 需要计算平均值的类型（而不是求和）
+average_types = {'HeartRate'}
 
 PREFIX_RE = re.compile('^HK.*TypeIdentifier(.+)$')
 ABBREVIATE = True
@@ -206,18 +209,6 @@ class HealthDataExtractor(object):
         self.count_record_types()
         self.count_tags_and_fields()
 
-    def open_for_writing(self):
-        self.handles = {}
-        self.paths = []
-        for kind in (list(self.record_types) + list(self.other_types)):
-            path = os.path.join(self.directory, '%s.csv' % abbreviate(kind))
-            f = open(path, 'w')
-            headerType = (kind if kind in ('Workout', 'ActivitySummary')
-                               else 'Record')
-            f.write(','.join(FIELDS[headerType].keys()) + '\n')
-            self.handles[kind] = f
-            self.report('Opening %s for writing' % path)
-
     def abbreviate_types(self):
         """
         Shorten types by removing common boilerplate text.
@@ -226,28 +217,6 @@ class HealthDataExtractor(object):
             if node.tag == 'Record':
                 if 'type' in node.attrib:
                     node.attrib['type'] = abbreviate(node.attrib['type'])
-
-    def write_records(self):
-        kinds = FIELDS.keys()
-        for node in self.nodes:
-            if node.tag in kinds:
-                attributes = node.attrib
-                kind = attributes['type'] if node.tag == 'Record' else node.tag
-                values = [format_value(attributes.get(field), datatype)
-                          for (field, datatype) in FIELDS[node.tag].items()]
-                line = encode(','.join(values) + '\n')
-                if kind in RECORDS:
-                    self.handles[kind].write(line)
-
-    def close_files(self):
-        for (kind, f) in self.handles.items():
-            f.close()
-            self.report('Written %s data.' % abbreviate(kind))
-
-    def extract(self):
-        self.open_for_writing()
-        self.write_records()
-        self.close_files()
 
     def report_stats(self):
         print('\nTags:\n%s\n' % format_freqs(self.tags))
@@ -268,6 +237,7 @@ class HealthDataExtractor(object):
     def aggregate_records(self):
         """
         Aggregate records by date and type, summing the values.
+        For average_types (like HeartRate), calculate the average instead of sum.
         """
         aggregated_data = {}
         for node in self.nodes:
@@ -286,7 +256,18 @@ class HealthDataExtractor(object):
                         aggregated_data[type_key][date] = {}
                     aggregated_data[type_key][date]['value'] = value
                     aggregated_data[type_key][date]['time'] = time
+                elif type_key in average_types:
+                    # 对于需要计算平均值的类型（如心率），记录所有值和计数
+                    date = start_date.strftime('%Y-%m-%d')
+                    if type_key not in aggregated_data:
+                        aggregated_data[type_key] = {}
+                    if date not in aggregated_data[type_key]:
+                        aggregated_data[type_key][date] = {'sum': 0, 'count': 0, 'time': 0}
+                    aggregated_data[type_key][date]['sum'] += value
+                    aggregated_data[type_key][date]['count'] += 1
+                    aggregated_data[type_key][date]['time'] += time
                 else:    
+                    # 对于累计类型（如步数、卡路里），求和
                     date = start_date.strftime('%Y-%m-%d')
                     if type_key not in aggregated_data:
                         aggregated_data[type_key] = {}
@@ -296,26 +277,113 @@ class HealthDataExtractor(object):
                     aggregated_data[type_key][date]['time'] += time
         return aggregated_data
 
-    def write_aggregated_records(self, aggregated_data):
-        """
-        Write aggregated records to CSV files, sorted by date.
-        """
-        for record_type, dates_values in aggregated_data.items():
-            path = os.path.join(self.directory, f'{record_type}.csv')
-            with open(path, 'w') as f:
-                header = ['startDate', 'value', 'time']
-                f.write(','.join(header) + '\n')
-                # 按照日期升序排列
-                for date in sorted(dates_values.keys()):
-                    total_value = round(dates_values[date]['value'],1)
-                    total_time = dates_values[date]['time']
-                    line = ','.join([date, str(total_value), str(total_time)])
-                    f.write(line + '\n')
-                self.report(f'Written aggregated data for {record_type}.')
 
-    def extract2(self):
+    def export_unified_csv(self):
+        """
+        将所有记录类型按日期聚合到一个统一的 CSV 文件中。
+        对于特殊类型（BodyMass, BodyMassIndex），取当天的最后一个值。
+        对于其他类型，使用已聚合的日累计值。
+        """
         aggregated_data = self.aggregate_records()
-        self.write_aggregated_records(aggregated_data)
+        
+        # 收集所有日期
+        all_dates = set()
+        for record_type, dates_values in aggregated_data.items():
+            if record_type in special_types:
+                # 对于特殊类型，将精确时间戳转换为日期
+                for date_time in dates_values.keys():
+                    try:
+                        # 尝试解析带时间的日期格式
+                        dt = datetime.strptime(date_time, '%Y-%m-%d %H:%M:%S')
+                        all_dates.add(dt.strftime('%Y-%m-%d'))
+                    except ValueError:
+                        # 如果已经是日期格式，直接使用
+                        all_dates.add(date_time)
+            else:
+                # 对于普通类型，日期已经是 YYYY-MM-DD 格式
+                all_dates.update(dates_values.keys())
+        
+        # 按日期排序
+        sorted_dates = sorted(all_dates)
+        
+        # 构建统一的数据结构
+        unified_data = {}
+        for date in sorted_dates:
+            unified_data[date] = {}
+            for record_type in RECORDS:
+                unified_data[date][record_type] = None
+        
+        # 填充数据
+        for record_type, dates_values in aggregated_data.items():
+            if record_type in special_types:
+                # 对于特殊类型，按日期分组，取当天的最后一个值（时间最晚的）
+                date_groups = {}
+                for date_time, value_data in dates_values.items():
+                    try:
+                        dt = datetime.strptime(date_time, '%Y-%m-%d %H:%M:%S')
+                        date = dt.strftime('%Y-%m-%d')
+                    except ValueError:
+                        date = date_time
+                        dt = None
+                    
+                    if date not in date_groups:
+                        date_groups[date] = []
+                    date_groups[date].append((date_time, value_data['value'], dt))
+                
+                # 对每个日期，取时间最晚的值
+                for date, records in date_groups.items():
+                    if records:
+                        # 按时间排序，取最后一个
+                        if any(dt is not None for _, _, dt in records):
+                            # 有有效的时间戳，按时间排序
+                            records.sort(key=lambda x: x[2] if x[2] is not None else datetime.min)
+                            unified_data[date][record_type] = records[-1][1]
+                        else:
+                            # 没有有效时间戳，取最后一个
+                            unified_data[date][record_type] = records[-1][1]
+            elif record_type in average_types:
+                # 对于需要计算平均值的类型（如心率），计算平均值
+                for date, value_data in dates_values.items():
+                    if value_data['count'] > 0:
+                        avg_value = value_data['sum'] / value_data['count']
+                        # 心率输出为整数
+                        unified_data[date][record_type] = int(round(avg_value))
+            else:
+                # 对于普通类型，直接使用聚合值
+                for date, value_data in dates_values.items():
+                    if record_type in ('FlightsClimbed', 'StepCount'):
+                        # FlightsClimbed 和 StepCount 输出为整数
+                        unified_data[date][record_type] = int(round(value_data['value']))
+                    else:
+                        unified_data[date][record_type] = round(value_data['value'], 1)
+        
+        # 写入统一的 CSV 文件
+        output_path = os.path.join(self.directory, 'apple_health.csv')
+        with open(output_path, 'w') as f:
+            # 写入表头
+            header = ['Date'] + RECORDS
+            f.write(','.join(header) + '\n')
+            
+            # 写入数据
+            for i, date in enumerate(sorted_dates):
+                row = [date]
+                for record_type in RECORDS:
+                    value = unified_data[date][record_type]
+                    if value is None:
+                        row.append('')
+                    else:
+                        # FlightsClimbed、StepCount 和 HeartRate 输出为整数格式
+                        if record_type in ('FlightsClimbed', 'StepCount', 'HeartRate'):
+                            row.append(str(int(value)))
+                        else:
+                            row.append(str(value))
+                # 最后一行不添加换行符
+                if i == len(sorted_dates) - 1:
+                    f.write(','.join(row))
+                else:
+                    f.write(','.join(row) + '\n')
+        
+        self.report(f'Written unified CSV file: {output_path}')
 
     def merge_body_mass_index(self):
         """
@@ -418,6 +486,4 @@ if __name__ == '__main__':
         sys.exit(1)
     data = HealthDataExtractor(sys.argv[1])
     data.report_stats()
-    data.extract2()
-    # data.merge_body_mass_index()
-    # data.merge_step_calories_walking_flights()
+    data.export_unified_csv()
