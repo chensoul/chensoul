@@ -15,6 +15,7 @@ httpx==0.28.1
 idna==3.11
 multidict==6.7.0
 notion-client==2.7.0
+pendulum
 python-dotenv==1.2.1
 python-graphql-client==0.4.3
 pytz==2025.2
@@ -26,3 +27,6 @@ urllib3==2.5.0
 websockets==15.0.1
 yarl==1.22.0
 zope.interface==8.1
+pygithub
+pyTelegramBotAPI
+telegramify-markdown
