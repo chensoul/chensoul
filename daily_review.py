@@ -1,17 +1,23 @@
 import argparse
+import os
 import tempfile
 
 import duckdb
 import pendulum
 import requests
 import telebot
+from dotenv import load_dotenv
 from telegramify_markdown import markdownify
+
+load_dotenv(verbose=True)
 
 GET_UP_MESSAGE_TEMPLATE = """今天是 {date}，今年的第 {day_of_year} 天。
 
 {year_progress}
 
-今日诗词: {sentence}
+{sentence}
+
+{coding_info}
 
 {running_info}
 
@@ -23,17 +29,33 @@ SENTENCE_API = "https://v1.jinrishici.com/all"
 DEFAULT_SENTENCE = (
     "赏花归去马如飞\r\n去马如飞酒力微\r\n酒力微醒时已暮\r\n醒时已暮赏花归\r\n"
 )
+DEFAULT_SENTENCE_WITH_INFO = f"{DEFAULT_SENTENCE}\n—— 佚名《回文诗》"
 TIMEZONE = "Asia/Shanghai"
 
 def get_one_sentence():
     try:
         r = requests.get(SENTENCE_API)
         if r.ok:
-            return r.json()["content"]
-        return DEFAULT_SENTENCE
+            data = r.json()
+            content = data.get("content", "")
+            origin = data.get("origin", "")
+            author = data.get("author", "")
+            
+            if content:
+                result = content
+                if origin or author:
+                    info_parts = []
+                    if author:
+                        info_parts.append(author)
+                    if origin:
+                        info_parts.append(f"《{origin}》")
+                    if info_parts:
+                        result += f"\n—— {' '.join(info_parts)}"
+                return result
+        return DEFAULT_SENTENCE_WITH_INFO
     except Exception:
         print("get SENTENCE_API wrong")
-        return DEFAULT_SENTENCE
+        return DEFAULT_SENTENCE_WITH_INFO
 
 def _get_repo_name_from_url(url):
     """从仓库 URL 中提取仓库名称"""
@@ -192,7 +214,7 @@ def get_yesterday_github_activity(github_token=None, username=None):
         if activities:
             # 去重并限制数量
             unique_activities = list(dict.fromkeys(activities))
-            return "GitHub：\n\n" + "\n".join(
+            return "GitHub：\n" + "\n".join(
                 f"• {activity}" for activity in unique_activities[:8]
             )
 
@@ -201,6 +223,39 @@ def get_yesterday_github_activity(github_token=None, username=None):
     except Exception as e:
         print(f"Error getting GitHub activity: {e}")
         return ""
+
+def get_yesterday_coding_time():
+    """获取昨天的编程时间"""
+    try:
+        wakatime_token = os.environ.get("WAKATIME_TOKEN", "")
+        if not wakatime_token:
+            return ""
+
+        yesterday = pendulum.now(TIMEZONE).subtract(days=1)
+        yesterday_date = yesterday.format("YYYY-MM-DD")
+
+        url = f'https://wakatime.com/api/v1/users/current/summaries?api_key={wakatime_token}&start={yesterday_date}&end={yesterday_date}'
+
+        response = requests.get(url)
+
+        if response.status_code == 200:
+            result = response.json()
+            cost = round(result['cumulative_total']['seconds'])
+            cost_text = result['cumulative_total']['text'].replace(
+                "hrs", "小时").replace("mins", "分钟")
+
+            if cost > 0:
+                return f"💻编程统计：\n• 昨天写代码花了 {cost_text}"
+            else:
+                return "💻编程统计：\n• 昨天没写代码"
+        else:
+            print(f"获取 WakaTime 数据失败: {response.status_code}")
+            return ""
+    except Exception as e:
+        print(f"Error getting coding time: {e}")
+        return ""
+
+    return ""
 
 def get_running_distance(username=None):
     try:
@@ -269,7 +324,7 @@ def get_running_distance(username=None):
             else:
                 running_info_parts.append("• 今年没跑")
 
-            return "🏃‍♀️跑步统计：\n\n" + "\n".join(running_info_parts)
+            return "🏃‍♀️跑步统计：\n" + "\n".join(running_info_parts)
 
     except Exception as e:
         print(f"Error getting running data: {e}")
@@ -308,12 +363,13 @@ def make_get_up_message(github_token, username=None):
         print(f"Sentence: {sentence}")
     except Exception as e:
         print(str(e))
-        sentence = DEFAULT_SENTENCE
+        sentence = DEFAULT_SENTENCE_WITH_INFO
 
     now = pendulum.now(TIMEZONE)
     date = now.format("YYYY年MM月DD日")
     day_of_year = get_day_of_year()
     year_progress = get_year_progress()
+    coding_info = get_yesterday_coding_time()
     github_activity = get_yesterday_github_activity(github_token, username)
     running_info = get_running_distance(username)
 
@@ -322,6 +378,7 @@ def make_get_up_message(github_token, username=None):
         date,
         day_of_year,
         year_progress,
+        coding_info,
         github_activity,
         running_info,
     )
@@ -338,6 +395,7 @@ def main(
         date,
         day_of_year,
         year_progress,
+        coding_info,
         github_activity,
         running_info,
     ) = make_get_up_message(github_token, username)
@@ -347,6 +405,7 @@ def main(
         sentence=sentence,
         day_of_year=day_of_year,
         year_progress=year_progress,
+        coding_info=coding_info,
         github_activity=github_activity,
         running_info=running_info,
     )

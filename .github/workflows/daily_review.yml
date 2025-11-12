@@ -1,4 +1,4 @@
-name: GET UP
+name: daily review
 
 on:
   workflow_dispatch:
