@@ -11,14 +11,13 @@ GET_UP_MESSAGE_TEMPLATE = """今天是 {date}，今年的第 {day_of_year} 天�
 
 {year_progress}
 
+今日诗词: {sentence}
+
 {running_info}
 
 {github_activity}
-
-今日诗词: {sentence}
-
 """
-# in 2024-06-15 this one ssl error
+
 SENTENCE_API = "https://v1.jinrishici.com/all"
 
 DEFAULT_SENTENCE = (
@@ -36,11 +35,9 @@ def get_one_sentence():
         print("get SENTENCE_API wrong")
         return DEFAULT_SENTENCE
 
-
 def _get_repo_name_from_url(url):
     """从仓库 URL 中提取仓库名称"""
     return "/".join(url.split("/")[-2:])
-
 
 def _make_api_request(url, headers, params=None):
     """统一的 API 请求函数"""
@@ -52,7 +49,6 @@ def _make_api_request(url, headers, params=None):
             return None, f"API 请求失败: {response.status_code}"
     except Exception as e:
         return None, f"请求出错: {e}"
-
 
 def _process_search_items(items, username, item_type):
     """处理搜索结果（PR 或 Issue）"""
@@ -67,7 +63,6 @@ def _process_search_items(items, username, item_type):
             activities.append(f"{action_text}: [{title}]({url}) ({repo_name})")
 
     return activities
-
 
 def _process_events(events, yesterday_start, yesterday_end):
     """处理用户事件"""
@@ -109,7 +104,6 @@ def _process_events(events, yesterday_start, yesterday_end):
                 activities.append(f"Star 了项目: [{repo_name}]({repo_url})")
 
     return activities
-
 
 def get_yesterday_github_activity(github_token=None, username=None):
     """获取昨天的 GitHub 活动"""
@@ -208,7 +202,6 @@ def get_yesterday_github_activity(github_token=None, username=None):
         print(f"Error getting GitHub activity: {e}")
         return ""
 
-
 def get_running_distance(username=None):
     try:
         if not username:
@@ -284,11 +277,9 @@ def get_running_distance(username=None):
 
     return ""
 
-
 def get_day_of_year():
     now = pendulum.now(TIMEZONE)
     return now.day_of_year
-
 
 def get_year_progress():
     """获取今年的进度条"""
@@ -310,7 +301,6 @@ def get_year_progress():
     progress_bar = "█" * filled_blocks + "░" * empty_blocks
 
     return f"{progress_bar} {progress_percent:.1f}% ({day_of_year}/{total_days})"
-
 
 def make_get_up_message(github_token, username=None):
     try:
@@ -373,7 +363,6 @@ def main(
             )
         except Exception as e:
             print(str(e))
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
