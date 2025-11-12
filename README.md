@@ -25,5 +25,7 @@
 - [Spring AI ChatClient API 介绍](https://blog.chensoul.cc/posts/2025/09/19/spring-ai-chat-client-api/)
 <!-- blog ends -->
 
+## 最近编程
+
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
