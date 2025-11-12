@@ -6,9 +6,9 @@
 
 联系我：
 - **微信**: ichensoul
-- **邮箱**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 - **X**: [@ichensoul](https://twitter.com/ichensoul) 
 - **Tg频道**: [@ichensoul](https://t.me/ichensoul)
+- **邮箱**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 
 ## 最近博客
 
