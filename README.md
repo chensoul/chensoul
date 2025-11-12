@@ -24,3 +24,6 @@
 - [OpenAI API 接口与 Spring AI 对应关系](https://blog.chensoul.cc/posts/2025/09/22/openai-api-with-spring-ai/)
 - [Spring AI ChatClient API 介绍](https://blog.chensoul.cc/posts/2025/09/19/spring-ai-chat-client-api/)
 <!-- blog ends -->
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->

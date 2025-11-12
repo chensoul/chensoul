@@ -131,12 +131,6 @@ def fetch_blog_entries():
     ]
 
 
-def fetch_memos():
-    entries = httpx.get(
-        "https://memos.chensoul.cc/api/v1/memo?openId=bff14007-bcff-4dc2-80ff-5ab9fd61170f")
-    print(entries.json())
-
-
 if __name__ == "__main__":
     inputfile = sys.argv[1]
     readme = root.joinpath(inputfile)
