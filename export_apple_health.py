@@ -481,7 +481,7 @@ class HealthDataExtractor(object):
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print('USAGE: python3 applehealthdata.py /path/to/export.xml',
+        print('USAGE: python3 export_apple_health.py /path/to/export.xml',
               file=sys.stderr)
         sys.exit(1)
     data = HealthDataExtractor(sys.argv[1])
