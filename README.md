@@ -13,11 +13,11 @@
 ## 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [Vibesafe4j 使用 Annotation Processor 实现（编译时代码生成）](https://blog.chensoul.cc/posts/2025/11/13/vibesafe4j-annotation-processor-implementation/)
+- [Vibesafe4j：使用 AI 自动生成 Java 接口实现的革命性框架](https://blog.chensoul.cc/posts/2025/11/13/vibesafe4j-introduction/)
 - [OpenSpec：让 AI 编码助手更懂你的项目规范](https://blog.chensoul.cc/posts/2025/11/07/openspec/)
 - [Spring Boot 2.5.8单体应用接入Nacos 1.3.0配置中心完整指南](https://blog.chensoul.cc/posts/2025/10/10/spring-boot-2.5.8-nacos-1.3.0-config-center-integration-guide/)
 - [使用Docker Model Runner和Spring AI运行AI模型](https://blog.chensoul.cc/posts/2025/10/09/docker-model-runner-spring-ai-local-ai-application/)
-- [Spring AI 让数据库听懂人话：Text2SQL 自然语言查询实践指南](https://blog.chensoul.cc/posts/2025/09/30/spring-ai-text2sql-showcase/)
-- [Spec-Kit 在 Cursor 中的安装和使用指南](https://blog.chensoul.cc/posts/2025/09/29/spec-kit-with-cursor/)
 <!-- BLOG-POST-LIST:END -->
 
 ## 最近编程
