@@ -27,7 +27,7 @@ jobs:
 
       - name: Daily Review
         run: |
-          python daily_review.py chensoul ${{ secrets.GITHUB_TOKEN }}  --tele_token ${{ secrets.TG_TOKEN }} --tele_chat_id ${{ secrets.TG_CHAT_ID }}
+          python daily_review.py chensoul ${{ secrets.GITHUB_TOKEN }}  --wakatime_token ${{ secrets.WAKATIME_TOKEN }} --tele_token ${{ secrets.TG_TOKEN }} --tele_chat_id ${{ secrets.TG_CHAT_ID }}
 
       - name: Commit and push if changed
         run: |-

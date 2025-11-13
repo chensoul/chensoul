@@ -224,10 +224,9 @@ def get_yesterday_github_activity(github_token=None, username=None):
         print(f"Error getting GitHub activity: {e}")
         return ""
 
-def get_yesterday_coding_time():
+def get_yesterday_coding_time(wakatime_token=None):
     """获取昨天的编程时间"""
     try:
-        wakatime_token = os.environ.get("WAKATIME_TOKEN", "")
         if not wakatime_token:
             return ""
 
@@ -357,7 +356,7 @@ def get_year_progress():
 
     return f"{progress_bar} {progress_percent:.1f}% ({day_of_year}/{total_days})"
 
-def make_get_up_message(github_token, username=None):
+def make_get_up_message(github_token, username=None, wakatime_token=None):
     try:
         sentence = get_one_sentence()
         print(f"Sentence: {sentence}")
@@ -369,7 +368,7 @@ def make_get_up_message(github_token, username=None):
     date = now.format("YYYY年MM月DD日")
     day_of_year = get_day_of_year()
     year_progress = get_year_progress()
-    coding_info = get_yesterday_coding_time()
+    coding_info = get_yesterday_coding_time(wakatime_token)
     github_activity = get_yesterday_github_activity(github_token, username)
     running_info = get_running_distance(username)
 
@@ -389,6 +388,7 @@ def main(
     username,
     tele_token,
     tele_chat_id,
+    wakatime_token=None,
 ):
     (
         sentence,
@@ -398,7 +398,7 @@ def main(
         coding_info,
         github_activity,
         running_info,
-    ) = make_get_up_message(github_token, username)
+    ) = make_get_up_message(github_token, username, wakatime_token)
 
     body = GET_UP_MESSAGE_TEMPLATE.format(
         date=date,
@@ -433,10 +433,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--tele_chat_id", help="tele_chat_id", nargs="?", default="", const=""
     )
+    parser.add_argument(
+        "--wakatime_token", help="wakatime_token", nargs="?", default="", const=""
+    )
     options = parser.parse_args()
     main(
         options.github_token,
         options.username,
         options.tele_token,
         options.tele_chat_id,
+        options.wakatime_token if options.wakatime_token else None,
     )
