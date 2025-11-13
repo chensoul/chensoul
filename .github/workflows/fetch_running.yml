@@ -36,7 +36,7 @@ jobs:
 
       - name: Run python
         run: |-
-          python fetch_run.py
+          python fetch_running.py
 
       - name: Commit and push if changed
         run: |-
