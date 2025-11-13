@@ -352,7 +352,7 @@ def get_year_progress():
     filled_blocks = int((day_of_year / total_days) * progress_bar_width)
     empty_blocks = progress_bar_width - filled_blocks
 
-    progress_bar = "▋" * filled_blocks + "░" * empty_blocks
+    progress_bar = "█" * filled_blocks + "░" * empty_blocks
 
     return f"{progress_bar} {progress_percent:.1f}% ({day_of_year}/{total_days})"
 
