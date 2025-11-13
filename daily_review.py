@@ -51,11 +51,11 @@ def get_one_sentence():
                         info_parts.append(f"《{origin}》")
                     if info_parts:
                         result += f"\n—— {' '.join(info_parts)}"
-                return result
-        return DEFAULT_SENTENCE_WITH_INFO
+                return "📜 今日诗词：\n" +result
+        return "📜 今日诗词：\n" + DEFAULT_SENTENCE_WITH_INFO
     except Exception:
         print("get SENTENCE_API wrong")
-        return DEFAULT_SENTENCE_WITH_INFO
+        return "📜 今日诗词：\n" + DEFAULT_SENTENCE_WITH_INFO
 
 def _get_repo_name_from_url(url):
     """从仓库 URL 中提取仓库名称"""
@@ -214,7 +214,7 @@ def get_yesterday_github_activity(github_token=None, username=None):
         if activities:
             # 去重并限制数量
             unique_activities = list(dict.fromkeys(activities))
-            return "GitHub：\n" + "\n".join(
+            return "🐙 GitHub：\n" + "\n".join(
                 f"• {activity}" for activity in unique_activities[:8]
             )
 
@@ -244,9 +244,9 @@ def get_yesterday_coding_time(wakatime_token=None):
                 "hrs", "小时").replace("mins", "分钟")
 
             if cost > 0:
-                return f"💻编程统计：\n• 昨天写代码花了 {cost_text}"
+                return f"⌨️ 编程统计：\n• 昨天写代码花了 {cost_text}"
             else:
-                return "💻编程统计：\n• 昨天没写代码"
+                return "⌨️ 编程统计：\n• 昨天没写代码"
         else:
             print(f"获取 WakaTime 数据失败: {response.status_code}")
             return ""
