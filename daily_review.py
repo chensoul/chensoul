@@ -352,11 +352,10 @@ def get_year_progress():
     filled_blocks = int((day_of_year / total_days) * progress_bar_width)
     empty_blocks = progress_bar_width - filled_blocks
 
-    # 使用更平滑的进度条样式：▓ 和 ░
     progress_bar = "▓" * filled_blocks + "░" * empty_blocks
 
     # 添加 emoji 装饰和更清晰的格式
-    return f"📅 {progress_bar} {progress_percent:.1f}% ({day_of_year}/{total_days} 天)"
+    return f"{progress_bar} {progress_percent:.1f}% ({day_of_year}/{total_days} 天)"
 
 def make_get_up_message(github_token, username=None, wakatime_token=None):
     try:
