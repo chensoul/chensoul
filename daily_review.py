@@ -411,6 +411,8 @@ def main(
         running_info=running_info,
     )
 
+    print(body)
+
     if tele_token and tele_chat_id:
         bot = telebot.TeleBot(tele_token)
         try:
