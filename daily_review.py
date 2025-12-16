@@ -11,15 +11,15 @@ from telegramify_markdown import markdownify
 
 load_dotenv(verbose=True)
 
-GET_UP_MESSAGE_TEMPLATE = """今天是 {date}，今年的第 {day_of_year} 天。
+GET_UP_MESSAGE_TEMPLATE = """🩷今天是 {date}，今年的第 {day_of_year} 天。
 
 {year_progress}
-
-{sentence}
 
 {coding_info}
 
 {running_info}
+
+{sentence}
 
 {github_activity}
 """
@@ -241,7 +241,7 @@ def get_yesterday_coding_time(wakatime_token=None):
             result = response.json()
             cost = round(result['cumulative_total']['seconds'])
             cost_text = result['cumulative_total']['text'].replace(
-                "hrs", "小时").replace("mins", "分钟")
+                "hr", "小时").replace("mins", "分钟")
 
             if cost > 0:
                 return f"⌨️ 编程统计：\n• 昨天写代码花了 {cost_text}"
@@ -355,7 +355,7 @@ def get_year_progress():
     progress_bar = "▓" * filled_blocks + "░" * empty_blocks
 
     # 添加 emoji 装饰和更清晰的格式
-    return f"{progress_bar} {progress_percent:.1f}% ({day_of_year}/{total_days} 天)"
+    return f"{progress_bar} {progress_percent:.1f}% ({day_of_year}/{total_days})"
 
 def make_get_up_message(github_token, username=None, wakatime_token=None):
     try:
