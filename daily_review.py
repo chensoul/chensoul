@@ -1,17 +1,15 @@
 import argparse
-import os
+import re
 import tempfile
 
 import duckdb
 import pendulum
 import requests
 import telebot
-from dotenv import load_dotenv
+from bs4 import BeautifulSoup
 from telegramify_markdown import markdownify
 
-load_dotenv(verbose=True)
-
-GET_UP_MESSAGE_TEMPLATE = """🩷今天是 {date}，今年的第 {day_of_year} 天。
+GET_UP_MESSAGE_TEMPLATE = """🩷 今天是 {date}，今年的第 {day_of_year} 天。{weather_info}
 
 {year_progress}
 
@@ -19,58 +17,142 @@ GET_UP_MESSAGE_TEMPLATE = """🩷今天是 {date}，今年的第 {day_of_year} �
 
 {running_info}
 
-{sentence}
+{github_trending}
 
-{github_activity}
+{oschina_news}
+
+📜 今日诗词：
+{sentence}
 """
 
-SENTENCE_API = "https://v1.jinrishici.com/all"
-
-DEFAULT_SENTENCE = (
-    "赏花归去马如飞\r\n去马如飞酒力微\r\n酒力微醒时已暮\r\n醒时已暮赏花归\r\n"
-)
-DEFAULT_SENTENCE_WITH_INFO = f"{DEFAULT_SENTENCE}\n—— 佚名《回文诗》"
 TIMEZONE = "Asia/Shanghai"
+SENTENCE_API = "https://v2.jinrishici.com/one.json"
+OSCHINA_NEWS_URL = "https://www.oschina.net/news"
+GITHUB_TRENDING_BASE_URL = "https://github.com/trending"
+
+DEFAULT_SENTENCE = """《苦笋》
+赏花归去马如飞，
+去马如飞酒力微，
+酒力微醒时已暮，
+醒时已暮赏花归。
+
+—— 宋·苏轼"""
+
+# HTTP 请求头常量
+DEFAULT_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"
+}
+
+def _get_yesterday_time():
+    """获取昨天的时间对象"""
+    return pendulum.now(TIMEZONE).subtract(days=1)
+
+
+def _safe_request(url, headers=None, params=None, timeout=10, method="get"):
+    """安全的 HTTP 请求包装函数"""
+    try:
+        headers = headers or DEFAULT_HEADERS
+        if method.lower() == "get":
+            response = requests.get(url, headers=headers, params=params, timeout=timeout)
+        else:
+            response = requests.post(url, headers=headers, json=params, timeout=timeout)
+        response.raise_for_status()
+        return response, None
+    except requests.exceptions.RequestException as e:
+        return None, str(e)
+
+
+def get_weather_info(city=None, api_key=None):
+    """获取天气信息（使用高德地图接口）
+    
+    Args:
+        city: 城市名称（中文），如果为 None，则默认武汉
+        api_key: 高德地图 API Key，必需参数
+    
+    Returns:
+        str: 格式化后的天气信息
+    """
+    if city is None:
+        city = "武汉"
+    
+    try:
+        if not api_key:
+            print("未设置高德地图 API Key，无法使用高德地图 API")
+            return ""
+        
+        url = "https://restapi.amap.com/v3/weather/weatherInfo"
+        params = {
+            "key": api_key,
+            "city": city,
+            "extensions": "all"
+        }
+        
+        response, error = _safe_request(url, params=params, timeout=10)
+        if error or not response:
+            return ""
+        
+        data = response.json()
+        
+        if data.get("status") == "1" and data.get("info") == "OK":
+            lives = data.get("lives", [])
+            forecasts = data.get("forecasts", [])
+            
+            if forecasts and forecasts[0].get("casts"):
+                casts = forecasts[0]["casts"]
+                if casts:
+                    today = casts[0]
+                    weather_desc = today.get("dayweather", "未知")
+                    max_temp = today.get("daytemp", "N/A")
+                    min_temp = today.get("nighttemp", "N/A")
+                    return f"{city}天气:  {weather_desc} {min_temp}°C ~ {max_temp}°C"
+            
+            if lives:
+                live = lives[0]
+                weather_desc = live.get("weather", "未知")
+                temp = live.get("temperature", "N/A")
+                return f"{city}天气:  {weather_desc} {temp}°C"
+        
+        return ""
+    except Exception as e:
+        print(f"高德地图 API 调用失败: {e}")
+        return ""
+
 
 def get_one_sentence():
+    """获取今天的一首诗
+
+    使用今日诗词 v2 API 获取完整的诗词内容
+    返回格式：《诗名》\n诗词内容\n\n—— 朝代·作者
+    """
     try:
-        r = requests.get(SENTENCE_API)
+        r = requests.get(SENTENCE_API, timeout=10)
         if r.ok:
             data = r.json()
-            content = data.get("content", "")
-            origin = data.get("origin", "")
-            author = data.get("author", "")
-            
-            if content:
-                result = content
-                if origin or author:
-                    info_parts = []
-                    if author:
-                        info_parts.append(author)
-                    if origin:
-                        info_parts.append(f"《{origin}》")
-                    if info_parts:
-                        result += f"\n—— {' '.join(info_parts)}"
-                return "📜 今日诗词：\n" +result
-        return "📜 今日诗词：\n" + DEFAULT_SENTENCE_WITH_INFO
-    except Exception:
-        print("get SENTENCE_API wrong")
-        return "📜 今日诗词：\n" + DEFAULT_SENTENCE_WITH_INFO
+
+            # 获取诗词来源信息
+            origin = data.get("data", {}).get("origin", {})
+            title = origin.get("title", "")
+            dynasty = origin.get("dynasty", "")
+            author = origin.get("author", "")
+            content_list = origin.get("content", [])
+
+            if content_list and title and author:
+                # 将诗词内容数组合并为字符串（每句一行）
+                content = "\n".join(content_list)
+                # 格式化输出：《诗名》\n内容\n\n—— 朝代·作者
+                poem = f"《{title}》\n{content}\n\n—— {dynasty}·{author}"
+                return poem
+
+        return DEFAULT_SENTENCE
+    except Exception as e:
+        print(f"get SENTENCE_API wrong: {e}")
+        return DEFAULT_SENTENCE
 
 def _get_repo_name_from_url(url):
     """从仓库 URL 中提取仓库名称"""
     return "/".join(url.split("/")[-2:])
-
-def _make_api_request(url, headers, params=None):
-    """统一的 API 请求函数"""
-    try:
-        response = requests.get(url, headers=headers, params=params)
-        if response.status_code == 200:
-            return response.json(), None
-        else:
-            return None, f"API 请求失败: {response.status_code}"
-    except Exception as e:
-        return None, f"请求出错: {e}"
 
 def _process_search_items(items, username, item_type):
     """处理搜索结果（PR 或 Issue）"""
@@ -133,7 +215,7 @@ def get_yesterday_github_activity(github_token=None, username=None):
         return ""
     try:
         # 时间设置
-        yesterday = pendulum.now(TIMEZONE).subtract(days=1)
+        yesterday = _get_yesterday_time()
         yesterday_start = yesterday.start_of("day").in_timezone("UTC")
         yesterday_end = yesterday.end_of("day").in_timezone("UTC")
         yesterday_date = yesterday.format("YYYY-MM-DD")
@@ -152,15 +234,16 @@ def get_yesterday_github_activity(github_token=None, username=None):
 
         # 获取创建的 PR
         search_url = "https://api.github.com/search/issues"
-        pr_data, error = _make_api_request(
+        response, error = _safe_request(
             search_url,
-            headers,
-            {
+            headers=headers,
+            params={
                 "q": f"is:pr is:public involves:{username} created:{yesterday_date}",
                 "per_page": 100,
             },
         )
-        if pr_data:
+        if response:
+            pr_data = response.json()
             activities.extend(
                 _process_search_items(pr_data.get("items", []), username, "pr")
             )
@@ -168,15 +251,16 @@ def get_yesterday_github_activity(github_token=None, username=None):
             print(f"搜索 PR 时出错: {error}")
 
         # 获取创建的 Issue
-        issue_data, error = _make_api_request(
+        response, error = _safe_request(
             search_url,
-            headers,
-            {
+            headers=headers,
+            params={
                 "q": f"is:issue is:public involves:{username} created:{yesterday_date}",
                 "per_page": 100,
             },
         )
-        if issue_data:
+        if response:
+            issue_data = response.json()
             activities.extend(
                 _process_search_items(issue_data.get("items", []), username, "issue")
             )
@@ -184,21 +268,22 @@ def get_yesterday_github_activity(github_token=None, username=None):
             print(f"搜索 Issue 时出错: {error}")
 
         # 获取其他事件（合并、关闭、Star 等）
-        # 检查多页事件，因为 Star 事件可能不在第一页
         events_url = f"https://api.github.com/users/{username}/events"
         all_activities = []
 
         for page in range(1, 4):  # 检查前3页，总共约90个事件
-            page_params = {"page": page, "per_page": 30}
-            events_data, error = _make_api_request(events_url, headers, page_params)
+            response, error = _safe_request(
+                events_url, headers=headers, params={"page": page, "per_page": 30}
+            )
 
             if error:
                 print(f"获取第 {page} 页 Events 时出错: {error}")
                 continue
 
-            if not events_data:
+            if not response:
                 break  # 没有更多事件了
 
+            events_data = response.json()
             page_activities = _process_events(
                 events_data, yesterday_start, yesterday_end
             )
@@ -226,16 +311,19 @@ def get_yesterday_github_activity(github_token=None, username=None):
 
 def get_yesterday_coding_time(wakatime_token=None):
     """获取昨天的编程时间"""
+    if not wakatime_token:
+        return ""
+    
     try:
-        if not wakatime_token:
-            return ""
-
-        yesterday = pendulum.now(TIMEZONE).subtract(days=1)
+        yesterday = _get_yesterday_time()
         yesterday_date = yesterday.format("YYYY-MM-DD")
 
         url = f'https://wakatime.com/api/v1/users/current/summaries?api_key={wakatime_token}&start={yesterday_date}&end={yesterday_date}'
 
-        response = requests.get(url)
+        response, error = _safe_request(url)
+        if error:
+            print(f"获取 WakaTime 数据失败: {error}")
+            return ""
 
         if response.status_code == 200:
             result = response.json()
@@ -244,9 +332,9 @@ def get_yesterday_coding_time(wakatime_token=None):
                 "hr", "小时").replace("mins", "分钟")
 
             if cost > 0:
-                return f"⌨️ 编程统计：\n• 昨天写代码花了 {cost_text}"
+                return f"⌨️ 编程时间：\n• 昨天写代码花了 {cost_text}"
             else:
-                return "⌨️ 编程统计：\n• 昨天没写代码"
+                return "⌨️ 编程时间：\n• 昨天没写代码"
         else:
             print(f"获取 WakaTime 数据失败: {response.status_code}")
             return ""
@@ -254,16 +342,15 @@ def get_yesterday_coding_time(wakatime_token=None):
         print(f"Error getting coding time: {e}")
         return ""
 
-    return ""
-
 def get_running_distance(username=None):
+    """获取跑步距离统计"""
+    if not username:
+        return ""
+    
     try:
-        if not username:
-            return ""
         url = f"https://github.com/{username}/running_page/raw/refs/heads/master/run_page/data.parquet"
-        response = requests.get(url)
-
-        if not response.ok:
+        response, error = _safe_request(url)
+        if error or not response.ok:
             return ""
 
         with tempfile.NamedTemporaryFile() as temp_file:
@@ -272,64 +359,59 @@ def get_running_distance(username=None):
 
             with duckdb.connect() as conn:
                 now = pendulum.now(TIMEZONE)
-                yesterday = now.subtract(days=1)
+                yesterday = _get_yesterday_time()
                 month_start = now.start_of("month")
                 year_start = now.start_of("year")
+                tomorrow = now.add(days=1)
 
-                yesterday_query = f"""
+                # 构建查询的通用部分
+                base_query = """
                 SELECT
                     COUNT(*) as count,
                     ROUND(SUM(distance)/1000, 2) as total_km
-                FROM read_parquet('{temp_file.name}')
-                WHERE DATE(start_date_local) = '{yesterday.to_date_string()}'
+                FROM read_parquet('{file}')
+                WHERE {condition}
                 """
 
-                month_query = f"""
-                SELECT
-                    COUNT(*) as count,
-                    ROUND(SUM(distance)/1000, 2) as total_km
-                FROM read_parquet('{temp_file.name}')
-                WHERE start_date_local >= '{month_start.to_date_string()}'
-                    AND start_date_local < '{now.add(days=1).to_date_string()}'
-                """
+                queries = {
+                    "yesterday": base_query.format(
+                        file=temp_file.name,
+                        condition=f"DATE(start_date_local) = '{yesterday.to_date_string()}'"
+                    ),
+                    "month": base_query.format(
+                        file=temp_file.name,
+                        condition=f"start_date_local >= '{month_start.to_date_string()}' AND start_date_local < '{tomorrow.to_date_string()}'"
+                    ),
+                    "year": base_query.format(
+                        file=temp_file.name,
+                        condition=f"start_date_local >= '{year_start.to_date_string()}' AND start_date_local < '{tomorrow.to_date_string()}'"
+                    )
+                }
 
-                year_query = f"""
-                SELECT
-                    COUNT(*) as count,
-                    ROUND(SUM(distance)/1000, 2) as total_km
-                FROM read_parquet('{temp_file.name}')
-                WHERE start_date_local >= '{year_start.to_date_string()}'
-                    AND start_date_local < '{now.add(days=1).to_date_string()}'
-                """
+                results = {}
+                for key, query in queries.items():
+                    result = conn.execute(query).fetchone()
+                    results[key] = result
 
-                yesterday_result = conn.execute(yesterday_query).fetchone()
-                month_result = conn.execute(month_query).fetchone()
-                year_result = conn.execute(year_query).fetchone()
-
+            # 格式化输出
             running_info_parts = []
+            period_info = [
+                ("yesterday", "昨天", results["yesterday"]),
+                ("month", "本月", results["month"]),
+                ("year", "今年", results["year"]),
+            ]
 
-            if yesterday_result and yesterday_result[0] > 0:
-                running_info_parts.append(f"• 昨天跑了 {yesterday_result[1]} 公里")
-            else:
-                running_info_parts.append("• 昨天没跑")
+            for key, label, result in period_info:
+                if result and result[0] > 0:
+                    running_info_parts.append(f"• {label}跑了 {result[1]} 公里")
+                else:
+                    running_info_parts.append(f"• {label}没跑")
 
-            if month_result and month_result[0] > 0:
-                running_info_parts.append(f"• 本月跑了 {month_result[1]} 公里")
-            else:
-                running_info_parts.append("• 本月没跑")
-
-            if year_result and year_result[0] > 0:
-                running_info_parts.append(f"• 今年跑了 {year_result[1]} 公里")
-            else:
-                running_info_parts.append("• 今年没跑")
-
-            return "🏃‍♀️跑步统计：\n" + "\n".join(running_info_parts)
+            return "🏃‍♀️跑步距离：\n" + "\n".join(running_info_parts)
 
     except Exception as e:
         print(f"Error getting running data: {e}")
         return ""
-
-    return ""
 
 def get_day_of_year():
     now = pendulum.now(TIMEZONE)
@@ -347,40 +429,192 @@ def get_year_progress():
     # 计算进度百分比
     progress_percent = (day_of_year / total_days) * 100
 
-    # 生成进度条 (使用更宽的进度条，24个字符宽度)
-    progress_bar_width = 24
+    # 生成进度条
+    progress_bar_width = 20
     filled_blocks = int((day_of_year / total_days) * progress_bar_width)
     empty_blocks = progress_bar_width - filled_blocks
 
-    progress_bar = "▓" * filled_blocks + "░" * empty_blocks
+    progress_bar = "█" * filled_blocks + "░" * empty_blocks
 
-    # 添加 emoji 装饰和更清晰的格式
     return f"{progress_bar} {progress_percent:.1f}% ({day_of_year}/{total_days})"
 
-def make_get_up_message(github_token, username=None, wakatime_token=None):
+
+def get_oschina_news(limit=5):
+    """获取开源中国最新资讯
+    
+    Args:
+        limit: 返回的资讯数量，默认5条
+    
+    Returns:
+        str: 格式化后的资讯文本
+    """
+    try:
+        response, error = _safe_request(OSCHINA_NEWS_URL, timeout=10)
+        if error:
+            raise Exception(error)
+        
+        soup = BeautifulSoup(response.text, "html.parser")
+        news_list = []
+        seen_urls = set()
+        
+        # 查找所有新闻条目容器（class包含item和news-item）
+        news_items = soup.find_all("div", class_=re.compile(r"item.*news-item|news-item.*item"))
+        
+        for item in news_items:
+            if len(news_list) >= limit:
+                break
+            
+            # 从 data-url 属性获取URL
+            url = item.get("data-url", "")
+            if not url:
+                # 尝试从内部链接获取
+                link = item.find("a", href=re.compile(r"/news/\d+"))
+                if link:
+                    url = link.get("href", "")
+            
+            if not url:
+                continue
+            
+            # 去掉锚点
+            url = url.split("#")[0]
+            
+            # 构建完整URL
+            if url.startswith("/"):
+                url = f"https://www.oschina.net{url}"
+            elif not url.startswith("http"):
+                continue
+            
+            # 去重
+            if url in seen_urls:
+                continue
+            seen_urls.add(url)
+            
+            # 提取标题（从 h3.header .title 或 h3 中）
+            title_elem = item.find("h3", class_="header")
+            if title_elem:
+                title_div = title_elem.find("div", class_="title")
+                if title_div:
+                    title = title_div.get_text(strip=True)
+                else:
+                    title = title_elem.get_text(strip=True)
+            else:
+                title_elem = item.find("h3")
+                title = title_elem.get_text(strip=True) if title_elem else ""
+            
+            if not title or len(title) < 5:
+                continue
+            
+            news_list.append({
+                "title": title,
+                "url": url
+            })
+        
+        if not news_list:
+            return ""
+        
+        # 格式化资讯
+        lines = ["📰 OSChina 最新资讯："]
+        for i, news in enumerate(news_list, 1):
+            lines.append(f"• [{news['title']}]({news['url']})")
+        
+        return "\n".join(lines)
+        
+    except Exception as e:
+        print(f"获取 OSChina 资讯失败: {e}")
+        return ""
+
+
+def get_github_trending(language=None, limit=5):
+    """获取 GitHub Trending 仓库
+    
+    Args:
+        language: 编程语言，如 'python', 'javascript', 'java' 等，None 表示所有语言
+        limit: 返回的仓库数量，默认5个
+    
+    Returns:
+        str: 格式化后的 Trending 信息
+    """
+    try:
+        # 构建 URL
+        if language:
+            url = f"{GITHUB_TRENDING_BASE_URL}/{language}?since=daily&spoken_language_code="
+        else:
+            url = f"{GITHUB_TRENDING_BASE_URL}?since=daily&spoken_language_code="
+        
+        response, error = _safe_request(url, timeout=15)
+        if error:
+            raise Exception(error)
+        
+        soup = BeautifulSoup(response.text, "html.parser")
+        repos = []
+        
+        # GitHub Trending 页面的结构：每个仓库在一个 article 标签中
+        articles = soup.find_all("article", class_="Box-row")
+        
+        for article in articles[:limit]:
+            # 获取仓库名称和链接
+            h2 = article.find("h2", class_="h3")
+            if not h2:
+                continue
+            
+            link = h2.find("a")
+            if not link:
+                continue
+            
+            repo_name = link.get_text(strip=True)
+            repo_url = link.get("href", "")
+            if repo_url.startswith("/"):
+                repo_url = f"https://github.com{repo_url}"
+            
+            repos.append({
+                "name": repo_name,
+                "url": repo_url
+            })
+        
+        if not repos:
+            return ""
+        
+        # 格式化输出
+        lines = ["⭐ GitHub Trending："]
+        for repo in repos:
+            lines.append(f"• [{repo['name']}]({repo['url']})")
+        
+        return "\n".join(lines)
+        
+    except Exception as e:
+        print(f"获取 GitHub Trending 失败: {e}")
+        return ""
+
+
+def make_get_up_message(github_token, username=None, wakatime_token=None, city=None, trending_language=None, amap_api_key=None):
     try:
         sentence = get_one_sentence()
-        print(f"Sentence: {sentence}")
     except Exception as e:
         print(str(e))
-        sentence = DEFAULT_SENTENCE_WITH_INFO
+        sentence = DEFAULT_SENTENCE
 
     now = pendulum.now(TIMEZONE)
     date = now.format("YYYY年MM月DD日")
     day_of_year = get_day_of_year()
     year_progress = get_year_progress()
+    weather_info = get_weather_info(city, amap_api_key)
     coding_info = get_yesterday_coding_time(wakatime_token)
     github_activity = get_yesterday_github_activity(github_token, username)
     running_info = get_running_distance(username)
+    github_trending = get_github_trending(language=trending_language, limit=5)
+    oschina_news = get_oschina_news(limit=5)
 
     return (
         sentence,
         date,
         day_of_year,
         year_progress,
+        weather_info,
         coding_info,
         github_activity,
         running_info,
+        github_trending,
+        oschina_news,
     )
 
 
@@ -390,25 +624,34 @@ def main(
     tele_token,
     tele_chat_id,
     wakatime_token=None,
+    city="武汉",
+    trending_language="java",
+    amap_api_key=None,
 ):
     (
         sentence,
         date,
         day_of_year,
         year_progress,
+        weather_info,
         coding_info,
         github_activity,
         running_info,
-    ) = make_get_up_message(github_token, username, wakatime_token)
+        github_trending,
+        oschina_news,
+    ) = make_get_up_message(github_token, username, wakatime_token, city, trending_language, amap_api_key)
 
     body = GET_UP_MESSAGE_TEMPLATE.format(
         date=date,
         sentence=sentence,
         day_of_year=day_of_year,
         year_progress=year_progress,
+        weather_info=weather_info,
         coding_info=coding_info,
         github_activity=github_activity,
         running_info=running_info,
+        github_trending=github_trending,
+        oschina_news=oschina_news,
     )
 
     print(body)
@@ -439,11 +682,34 @@ if __name__ == "__main__":
     parser.add_argument(
         "--wakatime_token", help="wakatime_token", nargs="?", default="", const=""
     )
-    options = parser.parse_args()
-    main(
-        options.github_token,
-        options.username,
-        options.tele_token,
-        options.tele_chat_id,
-        options.wakatime_token if options.wakatime_token else None,
+    parser.add_argument(
+        "--city", help="城市名称（天气查询，默认：武汉）", nargs="?", default="", const=""
     )
+    parser.add_argument(
+        "--trending_language", help="GitHub Trending 编程语言（默认：java）", nargs="?", default="", const=""
+    )
+    parser.add_argument(
+        "--amap_api_key", help="高德地图 API Key（天气查询）", nargs="?", default="", const=""
+    )
+    options = parser.parse_args()
+    
+    main_kwargs = {
+        "github_token": options.github_token,
+        "username": options.username,
+        "tele_token": options.tele_token,
+        "tele_chat_id": options.tele_chat_id,
+    }
+    
+    if options.wakatime_token:
+        main_kwargs["wakatime_token"] = options.wakatime_token
+    
+    if options.city:
+        main_kwargs["city"] = options.city
+    
+    if options.trending_language:
+        main_kwargs["trending_language"] = options.trending_language
+    
+    if options.amap_api_key:
+        main_kwargs["amap_api_key"] = options.amap_api_key
+    
+    main(**main_kwargs)
