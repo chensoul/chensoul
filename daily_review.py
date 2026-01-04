@@ -17,15 +17,15 @@ GET_UP_MESSAGE_TEMPLATE = """今天是 {date}，今年的第 {day_of_year} 天�
 
 {running_info}
 
-{github_trending}
-
-{oschina_news}
-
 💬 每日名言：
 {quote}
 
 📜 每日诗词：
 {sentence}
+
+{github_trending}
+
+{oschina_news}
 """
 
 TIMEZONE = "Asia/Shanghai"
