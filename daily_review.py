@@ -9,7 +9,7 @@ import telebot
 from bs4 import BeautifulSoup
 from telegramify_markdown import markdownify
 
-GET_UP_MESSAGE_TEMPLATE = """🩷 今天是 {date}，今年的第 {day_of_year} 天。{weather_info}
+GET_UP_MESSAGE_TEMPLATE = """今天是 {date}，今年的第 {day_of_year} 天。{weather_info}
 
 {year_progress}
 
@@ -21,12 +21,16 @@ GET_UP_MESSAGE_TEMPLATE = """🩷 今天是 {date}，今年的第 {day_of_year} 
 
 {oschina_news}
 
-📜 今日诗词：
+💬 每日名言：
+{quote}
+
+📜 每日诗词：
 {sentence}
 """
 
 TIMEZONE = "Asia/Shanghai"
 SENTENCE_API = "https://v2.jinrishici.com/one.json"
+QUOTE_API = "https://api.shadiao.pro/du"
 OSCHINA_NEWS_URL = "https://www.oschina.net/news"
 GITHUB_TRENDING_BASE_URL = "https://github.com/trending"
 
@@ -37,6 +41,8 @@ DEFAULT_SENTENCE = """《苦笋》
 醒时已暮赏花归。
 
 —— 宋·苏轼"""
+
+DEFAULT_QUOTE = "生活不是等待暴风雨过去，而是要学会在雨中跳舞。"
 
 # HTTP 请求头常量
 DEFAULT_HEADERS = {
@@ -149,6 +155,29 @@ def get_one_sentence():
     except Exception as e:
         print(f"get SENTENCE_API wrong: {e}")
         return DEFAULT_SENTENCE
+
+
+def get_daily_quote():
+    """获取每日名言（通过API接口）
+    
+    Returns:
+        str: 每日名言
+    """
+    try:
+        response, error = _safe_request(QUOTE_API, timeout=10)
+        if error or not response:
+            return DEFAULT_QUOTE
+        
+        data = response.json()
+        quote_text = data.get("data", {}).get("text", "")
+        
+        if quote_text:
+            return quote_text
+        
+        return DEFAULT_QUOTE
+    except Exception as e:
+        print(f"获取每日名言失败: {e}")
+        return DEFAULT_QUOTE
 
 def _get_repo_name_from_url(url):
     """从仓库 URL 中提取仓库名称"""
@@ -327,12 +356,54 @@ def get_yesterday_coding_time(wakatime_token=None):
 
         if response.status_code == 200:
             result = response.json()
-            cost = round(result['cumulative_total']['seconds'])
-            cost_text = result['cumulative_total']['text'].replace(
-                "hr", "小时").replace("mins", "分钟")
-
+            cumulative_total = result.get('cumulative_total', {})
+            cost = round(cumulative_total.get('seconds', 0))
+            
             if cost > 0:
-                return f"⌨️ 编程时间：\n• 昨天写代码花了 {cost_text}"
+                # 格式化时间文本
+                cost_text = cumulative_total.get('text', '')
+                cost_text = cost_text.replace("hrs", "小时").replace("hr", "小时")
+                cost_text = cost_text.replace("mins", "分钟").replace("min", "分钟")
+                cost_text = cost_text.replace("secs", "秒").replace("sec", "秒")
+                
+                lines = [f"⌨️ 编程时间：\n• 昨天写代码花了 {cost_text}"]
+                
+                # 获取统计信息
+                data = result.get('data', [])
+                if data and len(data) > 0:
+                    day_data = data[0]
+                    
+                    # 获取编辑器统计信息
+                    editors = day_data.get('editors', [])
+                    if editors:
+                        # 显示前3个编辑器
+                        top_editors = editors[:3]
+                        editor_texts = []
+                        for editor in top_editors:
+                            editor_name = editor.get('name', '')
+                            editor_percent = editor.get('percent', 0)
+                            if editor_name and editor_percent > 0:
+                                editor_texts.append(f"{editor_name} {editor_percent:.0f}%")
+                        
+                        if editor_texts:
+                            lines.append(f"• 使用编辑器：{', '.join(editor_texts)}")
+                    
+                    # 获取语言统计信息
+                    languages = day_data.get('languages', [])
+                    if languages:
+                        # 显示前3个语言
+                        top_languages = languages[:3]
+                        lang_texts = []
+                        for lang in top_languages:
+                            lang_name = lang.get('name', '')
+                            lang_percent = lang.get('percent', 0)
+                            if lang_name and lang_percent > 0:
+                                lang_texts.append(f"{lang_name} {lang_percent:.0f}%")
+                        
+                        if lang_texts:
+                            lines.append(f"• 主要语言：{', '.join(lang_texts)}")
+                
+                return "\n".join(lines)
             else:
                 return "⌨️ 编程时间：\n• 昨天没写代码"
         else:
@@ -593,6 +664,12 @@ def make_get_up_message(github_token, username=None, wakatime_token=None, city=N
         print(str(e))
         sentence = DEFAULT_SENTENCE
 
+    try:
+        quote = get_daily_quote()
+    except Exception as e:
+        print(str(e))
+        quote = DEFAULT_QUOTE
+
     now = pendulum.now(TIMEZONE)
     date = now.format("YYYY年MM月DD日")
     day_of_year = get_day_of_year()
@@ -615,6 +692,7 @@ def make_get_up_message(github_token, username=None, wakatime_token=None, city=N
         running_info,
         github_trending,
         oschina_news,
+        quote,
     )
 
 
@@ -639,6 +717,7 @@ def main(
         running_info,
         github_trending,
         oschina_news,
+        quote,
     ) = make_get_up_message(github_token, username, wakatime_token, city, trending_language, amap_api_key)
 
     body = GET_UP_MESSAGE_TEMPLATE.format(
@@ -652,6 +731,7 @@ def main(
         running_info=running_info,
         github_trending=github_trending,
         oschina_news=oschina_news,
+        quote=quote,
     )
 
     print(body)
