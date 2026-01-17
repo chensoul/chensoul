@@ -5,7 +5,7 @@ duckdb==1.4.3
 idna==3.11
 mistletoe
 pendulum==3.1.0
-pyTelegramBotAPI==4.29.1
+pyTelegramBotAPI==4.30.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.1
 requests==2.32.5
