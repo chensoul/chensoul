@@ -13,6 +13,8 @@ GET_UP_MESSAGE_TEMPLATE = """今天是 {date}，今年的第 {day_of_year} 天�
 
 {year_progress}
 
+{today_index}
+
 {coding_info}
 
 {running_info}
@@ -33,6 +35,10 @@ SENTENCE_API = "https://v2.jinrishici.com/one.json"
 QUOTE_API = "https://api.shadiao.pro/du"
 OSCHINA_NEWS_URL = "https://www.oschina.net/news"
 GITHUB_TRENDING_BASE_URL = "https://github.com/trending"
+COINGECKO_PRICE_URL = "https://api.coingecko.com/api/v3/simple/price"
+# 国内黄金价格：东方财富 AU9999（上海金交所），单位 元/克
+EASTMONEY_GOLD_URL = "https://push2.eastmoney.com/api/qt/stock/get"
+EASTMONEY_GOLD_SECID = "118.AU9999"
 
 DEFAULT_SENTENCE = """《苦笋》
 赏花归去马如飞，
@@ -484,6 +490,60 @@ def get_running_distance(username=None):
         print(f"Error getting running data: {e}")
         return ""
 
+
+def get_today_index():
+    """获取今日指数：黄金（人民币 元/克，国内接口）和比特币（美元）价格。
+
+    Returns:
+        str: 格式化后的今日指数信息
+    """
+    parts = []
+
+    # 黄金价格（东方财富 AU9999，上海金交所，人民币 元/克）
+    try:
+        response, error = _safe_request(
+            EASTMONEY_GOLD_URL,
+            params={
+                "secid": EASTMONEY_GOLD_SECID,
+                "fields": "f57,f58,f43",  # 代码,名称,最新价(现价)
+            },
+            timeout=10,
+        )
+        if not error and response and response.status_code == 200:
+            data = response.json()
+            inner = data.get("data") or {}
+            # f43 为最新价(现价)，单位：分/克，除以 100 得 元/克
+            price_raw = inner.get("f43")
+            if price_raw is not None:
+                price_yuan_per_gram = float(price_raw) / 100
+                parts.append(f"• 黄金：{price_yuan_per_gram:,.2f} 元/克")
+    except Exception as e:
+        print(f"获取黄金价格失败: {e}")
+
+    # 比特币价格（CoinGecko，免费无需 key）
+    try:
+        response, error = _safe_request(
+            COINGECKO_PRICE_URL,
+            params={"ids": "bitcoin", "vs_currencies": "usd"},
+            timeout=10,
+        )
+        if not error and response and response.status_code == 200:
+            data = response.json()
+            btc = data.get("bitcoin", {}).get("usd")
+            if btc is not None:
+                if btc >= 1000:
+                    parts.append(f"• 比特币：${btc:,.0f} USD")
+                else:
+                    parts.append(f"• 比特币：${btc:,.2f} USD")
+    except Exception as e:
+        print(f"获取比特币价格失败: {e}")
+
+    if not parts:
+        return ""
+
+    return "📈 今日指数：\n" + "\n".join(parts)
+
+
 def get_day_of_year():
     now = pendulum.now(TIMEZONE)
     return now.day_of_year
@@ -680,6 +740,7 @@ def make_get_up_message(github_token, username=None, wakatime_token=None, city=N
     running_info = get_running_distance(username)
     github_trending = get_github_trending(language=trending_language, limit=5)
     oschina_news = get_oschina_news(limit=5)
+    today_index = get_today_index()
 
     return (
         sentence,
@@ -693,6 +754,7 @@ def make_get_up_message(github_token, username=None, wakatime_token=None, city=N
         github_trending,
         oschina_news,
         quote,
+        today_index,
     )
 
 
@@ -718,6 +780,7 @@ def main(
         github_trending,
         oschina_news,
         quote,
+        today_index,
     ) = make_get_up_message(github_token, username, wakatime_token, city, trending_language, amap_api_key)
 
     body = GET_UP_MESSAGE_TEMPLATE.format(
@@ -732,6 +795,7 @@ def main(
         github_trending=github_trending,
         oschina_news=oschina_news,
         quote=quote,
+        today_index=today_index,
     )
 
     print(body)
