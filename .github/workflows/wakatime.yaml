@@ -3,7 +3,7 @@ name: WakaTime Readme
 on:
   workflow_dispatch:
   schedule:
-    - cron: "5 22 * * *"
+    - cron: "0 22 * * *"
 
 jobs:
   update-readme:
