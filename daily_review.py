@@ -706,7 +706,7 @@ def get_github_trending(language=None, limit=5):
             return ""
         
         # 格式化输出
-        lines = ["⭐ GitHub Trending："]
+        lines = ["⭐ GitHub Trending For Java："]
         for repo in repos:
             lines.append(f"• [{repo['name']}]({repo['url']})")
         
