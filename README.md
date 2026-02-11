@@ -18,11 +18,11 @@
 ## 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [Spring AI 与多模态和图像](https://blog.chensoul.cc/posts/2026/02/09/spring-ai-with-multimodality-and-images/)
+- [Java 生成式 AI 入门：LangChain4j 与 OpenAI 实战指南](https://blog.chensoul.cc/posts/2026/02/06/getting-started-with-langchain4j/)
 - [Links](https://blog.chensoul.cc/links/)
 - [Spring AI 工具调用](https://blog.chensoul.cc/posts/2026/02/02/spring-ai-tool-calling/)
 - [Spring AI RAG 与向量存储](https://blog.chensoul.cc/posts/2026/02/01/spring-ai-rag-vector-store/)
-- [Spring AI 对话记忆 + SSE 流式回复](https://blog.chensoul.cc/posts/2026/01/04/spring-ai-chat-memory-sse/)
-- [Spring AI 对话记忆](https://blog.chensoul.cc/posts/2026/01/03/spring-ai-chat-memory/)
 <!-- BLOG-POST-LIST:END -->
 
 ## 最近编程
