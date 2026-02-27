@@ -18,11 +18,11 @@
 ## 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [Pig AI 新版体验](https://blog.chensoul.cc/posts/2026/02/27/pigx-ai-512)
 - [Astro主题使用技巧](https://blog.chensoul.cc/posts/2026/02/26/astro-theme-tips)
 - [博客从 Hugo 迁移到 Astro](https://blog.chensoul.cc/posts/2026/02/26/from-hugo-to-astro-blog)
 - [Spring AI 与多模态和图像](https://blog.chensoul.cc/posts/2026/02/09/spring-ai-with-multimodality-and-images)
 - [Java 生成式 AI 入门：LangChain4j 与 OpenAI 实战指南](https://blog.chensoul.cc/posts/2026/02/06/getting-started-with-langchain4j)
-- [Spring AI 工具调用](https://blog.chensoul.cc/posts/2026/02/02/spring-ai-tool-calling)
 <!-- BLOG-POST-LIST:END -->
 
 ## 最近编程
