@@ -9,11 +9,12 @@
 
 我是 chensoul，一个来自中国武汉的开发者，喜欢编程、[跑步](https://run.chensoul.cc/)。不定期更新[博客](https://blog.chensoul.cc)，分享学习心得。
 
-联系我：
-- **微信**: ichensoul
-- **X**: [@ichensoul](https://twitter.com/ichensoul) 
-- **Tg频道**: [@ichensoul](https://t.me/ichensoul)
-- **邮箱**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
+你可以通过以下方式联系我：
+- **WeChat**: ichensoul
+- **X**: [@ichensoul](https://twitter.com/ichensoul)
+- **Github**: [@chensoul](https://twitter.com/chensoul)
+- **Tg**: [@ichensoul](https://t.me/ichensoul)
+- **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 
 ## 最近博客
 
