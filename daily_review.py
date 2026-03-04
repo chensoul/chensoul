@@ -10,7 +10,7 @@ import telebot
 from bs4 import BeautifulSoup
 from telegramify_markdown import markdownify
 
-GET_UP_MESSAGE_TEMPLATE = """今天是 {date}，今年的第 {day_of_year} 天。{weather_info}
+GET_UP_MESSAGE_TEMPLATE = """📅 每日简报 | {date}，今年第 {day_of_year} 天。{weather_info}
 
 {year_progress}
 
@@ -781,7 +781,7 @@ def get_github_trending(language=None, limit=5):
             return ""
         
         # 格式化输出
-        lines = ["⭐ GitHub Trending For Java："]
+        lines = ["⭐ GitHub Java Trending："]
         for repo in repos:
             lines.append(f"• [{repo['name']}]({repo['url']})")
         
