@@ -9,20 +9,21 @@
 
 我是 chensoul，一个来自中国武汉的开发者，喜欢编程、[跑步](https://run.chensoul.cc/)。不定期更新[博客](https://blog.chensoul.cc)，分享学习心得。
 
-联系我：
-- **微信**: ichensoul
-- **X**: [@ichensoul](https://twitter.com/ichensoul) 
-- **Tg频道**: [@ichensoul](https://t.me/ichensoul)
-- **邮箱**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
+你可以通过以下方式联系我：
+- **WeChat**: ichensoul
+- **X**: [@ichensoul](https://twitter.com/ichensoul)
+- **Github**: [@chensoul](https://twitter.com/chensoul)
+- **Tg**: [@ichensoul](https://t.me/ichensoul)
+- **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
 
 ## 最近博客
 
 <!-- BLOG-POST-LIST:START -->
-- [Links](https://blog.chensoul.cc/links/)
-- [Spring AI ToolCallbackProvider 实现类详解](https://blog.chensoul.cc/posts/2025/11/14/spring-ai-toolcallbackprovider/)
-- [使用 Spring AI 构建狗狗领养助手系统：RAG、工具调用与对话记忆实战](https://blog.chensoul.cc/posts/2025/11/13/spring-ai-dog-adoption-showcase/)
-- [Vibesafe4j 使用 Annotation Processor 实现（编译时代码生成）](https://blog.chensoul.cc/posts/2025/11/13/vibesafe4j-annotation-processor-implementation/)
-- [Vibesafe4j：使用 AI 自动生成 Java 接口实现的革命性框架](https://blog.chensoul.cc/posts/2025/11/13/vibesafe4j-introduction/)
+- [Codex CLI 安装、配置、使用与认证指南](https://blog.chensoul.cc/posts/2026/03/03/codex-cli-guide)
+- [Gemini CLI 安装、配置、使用与认证指南](https://blog.chensoul.cc/posts/2026/03/02/gemini-cli-guide)
+- [Pig AI 新版体验](https://blog.chensoul.cc/posts/2026/02/27/pigx-ai-512)
+- [Astro主题使用技巧](https://blog.chensoul.cc/posts/2026/02/26/astro-theme-tips)
+- [博客从 Hugo 迁移到 Astro](https://blog.chensoul.cc/posts/2026/02/26/from-hugo-to-astro-blog)
 <!-- BLOG-POST-LIST:END -->
 
 ## 最近编程
@@ -30,11 +31,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Other           5 hrs 31 mins   🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   49.68 %
-Java            4 hrs 4 mins    🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   36.64 %
-Io              23 mins         🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   03.47 %
-XML             18 mins         🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   02.80 %
-YAML            14 mins         🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   02.16 %
+Other             19 hrs 52 mins        🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   32.38 %
+C++               7 hrs 36 mins         🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   12.39 %
+Astro             7 hrs 27 mins         🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   12.14 %
+Markdown          5 hrs 59 mins         🟩🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   09.76 %
+Text              4 hrs 55 mins         🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   08.03 %
 ```
 
 <!--END_SECTION:waka-->
