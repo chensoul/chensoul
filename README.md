@@ -19,11 +19,11 @@
 ## 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [2026-03-01｜上周总结](https://blog.chensoul.cc/posts/2026/03/05/20260301-week-review)
+- [Claude Code 安装、配置、使用与认证指南](https://blog.chensoul.cc/posts/2026/03/05/claude-code-guide)
 - [OpenClaw 安装、配置与使用指南](https://blog.chensoul.cc/posts/2026/03/04/openclaw-install-config-usage-guide)
 - [Codex CLI 安装、配置、使用与认证指南](https://blog.chensoul.cc/posts/2026/03/03/codex-cli-guide)
 - [Gemini CLI 安装、配置、使用与认证指南](https://blog.chensoul.cc/posts/2026/03/02/gemini-cli-guide)
-- [Pig AI 新版体验](https://blog.chensoul.cc/posts/2026/02/27/pigx-ai-512)
-- [Astro主题使用技巧](https://blog.chensoul.cc/posts/2026/02/26/astro-theme-tips)
 <!-- BLOG-POST-LIST:END -->
 
 ## 最近编程
