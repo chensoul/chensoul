@@ -1,6 +1,6 @@
 beautifulsoup4==4.14.3
 certifi==2026.2.25
-charset-normalizer==3.4.4
+charset-normalizer==3.4.5
 duckdb==1.4.4
 idna==3.11
 mistletoe
