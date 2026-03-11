@@ -8,22 +8,6 @@ from dotenv import load_dotenv
 load_dotenv(verbose=True)
 wakatime_token = os.environ.get("WAKATIME_TOKEN", "")
 
-def save_history():
-    # 读取 JSON 文件
-    with open('wakatime.json') as f:
-        days = json.load(f)["days"]
-        cost_text = result['cumulative_total']['text']
-        recent_data = [
-            [d["date"], round(d["grand_total"]["total_seconds"]), d["grand_total"]["text"]] for d in days]
-
-    print(recent_data)
-
-    # 将数据写入 CSV 文件
-    with open('data/coding.csv', 'w', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerows(recent_data)
-
-
 def save_yesterday():
     today = datetime.now().date()
     yesterday = today - timedelta(days=1)

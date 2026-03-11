@@ -13,8 +13,9 @@
 - **WeChat**: ichensoul
 - **X**: [@ichensoul](https://twitter.com/ichensoul)
 - **Github**: [@chensoul](https://twitter.com/chensoul)
-- **Tg**: [@ichensoul](https://t.me/ichensoul)
+- **Tg Channel**: [@ichensoul](https://t.me/ichensoul)
 - **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
+
 
 ## 最近博客
 

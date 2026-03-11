@@ -943,7 +943,7 @@ def main():
     if run_line:
         overview_lines.append("- 昨日跑步。{}".format(run_line))
     if overview_lines:
-        parts.append("## 🗓️ 今日概览")
+        parts.append("## 📈 今日概览")
         parts.append("")
         parts.extend(overview_lines)
         parts.append("")
@@ -971,6 +971,19 @@ def main():
     return body
 
 
+def _daily_save_path():
+    """返回 data/daily/YYYY/MM/daily_YYYYMMDD.md 的绝对路径（基于脚本所在目录）。"""
+    t = _now()
+    if HAS_PENDULUM:
+        year, month, day = t.year, t.month, t.day
+    else:
+        year, month, day = t.year, t.month, t.day
+    subdir = os.path.join(_script_dir, "data", "daily", str(year), "{:02d}".format(month))
+    os.makedirs(subdir, exist_ok=True)
+    filename = "daily_{}{:02d}{:02d}.md".format(year, month, day)
+    return os.path.join(subdir, filename)
+
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="生成每日简报（与 send_briefing_to_telegram.py 配合发送到 Telegram，支持 GitHub Actions）")
@@ -980,10 +993,15 @@ if __name__ == "__main__":
     if args.verbose:
         logger.setLevel(logging.DEBUG)
     body = main()
+    # 始终保存到 data/daily/YYYY/MM/daily_YYYYMMDD.md
+    daily_path = _daily_save_path()
+    with open(daily_path, "w", encoding="utf-8") as f:
+        f.write(body)
+    logger.info("简报已保存到 %s", daily_path)
     if args.output:
         with open(args.output, "w", encoding="utf-8") as f:
             f.write(body)
         logger.info("简报已写入 %s", args.output)
-    else:
+    if not args.output:
         print(body)
     sys.exit(0)
