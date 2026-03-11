@@ -146,8 +146,7 @@ def main():
         logger.setLevel(logging.DEBUG)
 
     if args.generate:
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        gen = os.path.join(script_dir, "generate_briefing.py")
+        gen = os.path.join(_script_dir, "generate_briefing.py")
         logger.info("正在运行 generate_briefing.py 生成简报")
         try:
             out = subprocess.run(
@@ -155,7 +154,7 @@ def main():
                 capture_output=True,
                 text=True,
                 timeout=120,
-                cwd=script_dir,
+                cwd=_script_dir,
                 env=os.environ,
             )
             if out.returncode != 0:

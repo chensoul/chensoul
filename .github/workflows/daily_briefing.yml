@@ -31,7 +31,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKATIME_TOKEN: ${{ secrets.WAKATIME_TOKEN }}
-          BRIEFING_GITHUB_USERNAME: chensoul
         run: python generate_briefing.py -o briefing.md
 
       - name: Send briefing to Telegram

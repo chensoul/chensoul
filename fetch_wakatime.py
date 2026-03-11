@@ -3,9 +3,21 @@ import json
 import os
 import requests
 from datetime import datetime, timedelta
-from dotenv import load_dotenv
 
-load_dotenv(verbose=True)
+# 从同目录 .env 加载（不依赖 python-dotenv）
+_script_dir = os.path.dirname(os.path.abspath(__file__))
+_env_path = os.path.join(_script_dir, ".env")
+if os.path.isfile(_env_path):
+    with open(_env_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, value = line.partition("=")
+            key = key.strip()
+            if key and key not in os.environ:
+                os.environ[key] = value.strip().strip("'\"")
+
 wakatime_token = os.environ.get("WAKATIME_TOKEN", "")
 
 def save_yesterday():

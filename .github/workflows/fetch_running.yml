@@ -15,26 +15,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v6
 
-      - name: Setup python
-        uses: actions/setup-python@v6
-        with:
-          python-version: 3.14
-
-      - name: Configure pip caching
-        uses: actions/cache@v5
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install python dependencies
+      - name: Download running.json
         run: |
-          python -m pip install -r requirements.txt
-
-      - name: Run python
-        run: |-
-          python fetch_running.py
+          mkdir -p data
+          curl -fsSL "https://raw.githubusercontent.com/chensoul/running_page/master/assets/running.json" -o data/running.json
 
       - name: Commit and push if changed
         run: |-
