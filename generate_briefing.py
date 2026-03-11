@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 """
 每日简报生成脚本（一体版）。
-包含：日期、天气(wttr.in)、Google Tasks、年进度/今日指数/域名/诗词/名言/OSChina/Trending、
+包含：日期、天气(wttr.in)、今日待办(Memos)、年进度/今日指数/域名/诗词/名言/OSChina/Trending、
 GitHub 昨日动态、WakaTime、跑步距离、Hacker News。
 
-Google Tasks（不依赖 google-tasks 技能）：
-- 推荐：GOOGLE_TASKS_REFRESH_TOKEN + GOOGLE_TASKS_CLIENT_ID + GOOGLE_TASKS_CLIENT_SECRET（仅环境变量，每次运行自动用 refresh_token 换新 access_token，无需文件、无需额外依赖）
-- GOOGLE_TASKS_ACCESS_TOKEN：仅 access_token（约 1 小时有效，过期后需自行刷新）
-- GOOGLE_TASKS_CREDENTIALS_FILE + GOOGLE_TASKS_TOKEN_FILE：凭证与 token 文件路径，可自动刷新（需 pip install google-auth 等）
-未设置时回退到 BRIEFING_TASKS_SCRIPT 或默认技能路径。
+今日待办：Memos（MEMOS_API_URL + MEMOS_ACCESS_TOKEN，filter: has_incomplete_tasks == true，
+参考 https://usememos.com/docs/usage/shortcuts）；未设置时回退到 BRIEFING_TASKS_SCRIPT 或默认脚本路径。
 """
 
 import logging
@@ -41,7 +38,7 @@ def _load_env_file(path):
         pass
 
 
-# 默认加载同目录 .env（BRIEFING_*、GOOGLE_TASKS_*、GITHUB_TOKEN 等）
+# 默认加载同目录 .env（BRIEFING_*、MEMOS_*、GITHUB_TOKEN 等）
 _script_dir = os.path.dirname(os.path.abspath(__file__))
 _load_env_file(os.path.join(_script_dir, ".env"))
 
@@ -215,196 +212,54 @@ def section_weather():
     return "## 🌤️ 今日天气\n\n- {}".format(line)
 
 
-# ---------- 3. Google Tasks（不依赖 google-tasks 技能）----------
-# 优先使用环境变量中的凭证或 token，直接调 API；否则再回退到外部脚本
+# ---------- 3. 今日待办：Memos ----------
+# Memos: https://github.com/usememos/memos, API: https://usememos.com/docs/api, 筛选: https://usememos.com/docs/usage/shortcuts
 
-def _fetch_google_tasks_with_token():
+def _fetch_memos_tasks():
     """
-    使用环境变量直接拉取任务，支持自动刷新（无需依赖 google-tasks 技能）。
-    优先级：refresh_token 三件套 > access_token > 凭证文件路径。
-    返回 (success, text)：成功时 text 为带 ⬜ 的任务行，失败为错误信息。
+    从 Memos 拉取含未完成任务的 memo（filter: has_incomplete_tasks == true）。
+    解析 content 中的 - [ ] 行作为待办。返回 (success, text) 或 (None, None) 表示未配置。
     """
-    refresh_token = os.environ.get("GOOGLE_TASKS_REFRESH_TOKEN", "").strip()
-    client_id = os.environ.get("GOOGLE_TASKS_CLIENT_ID", "").strip()
-    client_secret = os.environ.get("GOOGLE_TASKS_CLIENT_SECRET", "").strip()
-    access_token = os.environ.get("GOOGLE_TASKS_ACCESS_TOKEN", "").strip()
-    creds_file = os.environ.get("GOOGLE_TASKS_CREDENTIALS_FILE", "").strip()
-    token_file = os.environ.get("GOOGLE_TASKS_TOKEN_FILE", "").strip()
-
-    # 方式 1：refresh_token + client_id + client_secret（仅环境变量即可，每次运行自动换新 access_token）
-    if refresh_token and client_id and client_secret:
-        logger.debug("Google Tasks: 使用 refresh_token 刷新")
-        access_token, err = _google_refresh_access_token(refresh_token, client_id, client_secret)
-        if err:
-            logger.warning("Google Tasks 刷新 token 失败: %s", err)
-            return (False, err)
-        return _fetch_google_tasks_via_access_token(access_token)
-
-    # 方式 2：仅 access_token（约 1 小时有效，过期后需自行刷新或改用方式 1/3）
-    if access_token:
-        logger.debug("Google Tasks: 使用 access_token")
-        return _fetch_google_tasks_via_access_token(access_token)
-
-    # 方式 3：credentials.json + token.json 路径（自动刷新并写回 token 文件）
-    if creds_file and token_file and os.path.isfile(creds_file) and os.path.isfile(token_file):
-        logger.debug("Google Tasks: 使用 OAuth 文件 %s", token_file)
-        return _fetch_google_tasks_via_oauth_files(creds_file, token_file)
-
-    return (None, None)  # 未配置，由 section_tasks 回退到外部脚本
-
-
-def _google_refresh_access_token(refresh_token, client_id, client_secret):
-    """用 refresh_token 向 Google 换新的 access_token。返回 (access_token, error_message)。"""
-    url = "https://oauth2.googleapis.com/token"
-    body = {
-        "client_id": client_id,
-        "client_secret": client_secret,
-        "refresh_token": refresh_token,
-        "grant_type": "refresh_token",
-    }
-    if HAS_REQUESTS:
-        try:
-            r = requests.post(url, data=body, timeout=15)
-            data = r.json()
-        except Exception as e:
-            return (None, "刷新 token 请求失败: {}".format(e))
-    else:
-        try:
-            import json as _json
-            import urllib.parse
-            req = Request(url, data=urllib.parse.urlencode(body).encode(), method="POST")
-            req.add_header("Content-Type", "application/x-www-form-urlencoded")
-            with urlopen(req, timeout=15) as resp:
-                data = _json.loads(resp.read().decode("utf-8"))
-        except Exception as e:
-            return (None, "刷新 token 请求失败: {}".format(e))
-    if "error" in data:
-        return (None, data.get("error_description", data.get("error", "未知错误")))
-    token = data.get("access_token")
-    if not token:
-        return (None, "未返回 access_token")
-    return (token, None)
-
-
-def _fetch_google_tasks_via_access_token(access_token):
-    """用 Bearer token 调 Tasks API（requests 或 urllib）。"""
-    headers = {"Authorization": "Bearer " + access_token}
-    lists_url = "https://tasks.googleapis.com/tasks/v1/users/@me/lists"
-    r, err = _safe_get(lists_url, headers=headers, timeout=15)
-    if err or not r or r.status_code != 200:
-        logger.warning("Google Tasks API 获取列表失败: %s", err or r.status_code if r else "无响应")
-        return (False, "获取任务列表失败")
+    base_url = os.environ.get("MEMOS_API_URL", "").strip().rstrip("/")
+    token = os.environ.get("MEMOS_ACCESS_TOKEN", "").strip()
+    if not base_url or not token:
+        return (None, None)
+    url = "{}/api/v1/memos".format(base_url)
+    params = {"filter": "has_incomplete_tasks == true", "pageSize": 100}
+    headers = {"Authorization": "Bearer {}".format(token)}
+    r, err = _safe_get(url, params=params, headers=headers, timeout=15)
+    if err or not r:
+        logger.warning("Memos API 请求失败: %s", err or "无响应")
+        return (False, err or "请求失败")
+    if r.status_code != 200:
+        logger.warning("Memos API 返回 %s", r.status_code)
+        return (False, "HTTP {}".format(r.status_code))
     try:
         data = r.json()
-        if "error" in data:
-            return (False, data.get("error", {}).get("message", "API 错误"))
-        items = data.get("items", [])
-    except Exception:
-        return (False, "解析失败")
-    lines = []
-    for list_item in items:
-        list_id = list_item.get("id")
-        list_title = list_item.get("title", "(unnamed)")
-        task_url = "https://tasks.googleapis.com/tasks/v1/lists/{}/tasks?showCompleted=false&maxResults=100".format(list_id)
-        r2, err2 = _safe_get(task_url, headers=headers, timeout=15)
-        if err2 or not r2 or r2.status_code != 200:
-            continue
-        try:
-            task_data = r2.json()
-            tasks = task_data.get("items", [])
-        except Exception:
-            tasks = []
-        for i, task in enumerate(tasks, 1):
-            title = task.get("title", "(no title)")
-            due = (task.get("due") or "").split("T")[0]
-            line = "  {}. ⬜ {}".format(i, title)
-            if due:
-                line += " (due: {})".format(due)
-            lines.append(line)
-    if not lines:
-        return (True, "")
-    return (True, "\n".join(lines[:20]))
-
-
-def _fetch_google_tasks_via_oauth_files(creds_file, token_file):
-    """用 credentials.json + token.json 加载并刷新后调 API。需 google-auth 等依赖。"""
-    try:
-        import json
-        from google.oauth2.credentials import Credentials
-        from google.auth.transport.requests import Request
-        from google_auth_oauthlib.flow import InstalledAppFlow
-        from googleapiclient.discovery import build
-    except ImportError:
-        return (False, "请安装: pip install google-auth-oauthlib google-auth-httplib2 google-api-python-client")
-
-    SCOPES = ["https://www.googleapis.com/auth/tasks"]
-    with open(token_file, "r") as f:
-        token_data = json.load(f)
-    with open(creds_file, "r") as f:
-        creds_data = json.load(f)
-
-    installed = creds_data.get("installed") or creds_data.get("web") or {}
-    client_id = token_data.get("client_id") or installed.get("client_id")
-    client_secret = token_data.get("client_secret") or installed.get("client_secret")
-
-    creds = Credentials(
-        token=token_data.get("access_token"),
-        refresh_token=token_data.get("refresh_token"),
-        token_uri=token_data.get("token_uri", "https://oauth2.googleapis.com/token"),
-        client_id=client_id,
-        client_secret=client_secret,
-        scopes=SCOPES,
-    )
-    if token_data.get("expiry"):
-        from datetime import datetime, timezone
-        try:
-            exp = token_data["expiry"]
-            if exp > 1e10:
-                exp = exp / 1000.0
-            creds.expiry = datetime.fromtimestamp(exp, tz=timezone.utc)
-        except Exception:
-            pass
-
-    if not creds.valid and creds.expired and creds.refresh_token:
-        try:
-            creds.refresh(Request())
-            with open(token_file, "w") as f:
-                f.write(creds.to_json())
-        except Exception as e:
-            return (False, "Token 刷新失败: {}".format(e))
-
-    try:
-        service = build("tasks", "v1", credentials=creds)
-        lists_result = service.tasklists().list(maxResults=100).execute()
-        items = lists_result.get("items", [])
     except Exception as e:
-        return (False, str(e))
-
-    lines = []
-    for list_item in items:
-        list_id = list_item["id"]
-        try:
-            tasks_result = service.tasks().list(
-                tasklist=list_id, showCompleted=False, maxResults=100
-            ).execute()
-            tasks = tasks_result.get("items", [])
-        except Exception:
-            tasks = []
-        for i, task in enumerate(tasks, 1):
-            title = task.get("title", "(no title)")
-            due = (task.get("due") or "").split("T")[0]
-            line = "  {}. ⬜ {}".format(i, title)
-            if due:
-                line += " (due: {})".format(due)
-            lines.append(line)
-    if not lines:
+        logger.warning("Memos 响应解析失败: %s", e)
+        return (False, "解析失败")
+    memos = data.get("memos") if isinstance(data, dict) else []
+    if not isinstance(memos, list):
         return (True, "")
-    return (True, "\n".join(lines[:20]))
+    # 从每个 memo 的 content 中提取 - [ ] 行（未完成任务）
+    task_re = re.compile(r"^\s*-\s*\[\s*\]\s*(.*)$", re.MULTILINE)
+    all_tasks = []
+    for memo in memos:
+        content = (memo.get("content") or "").strip()
+        for m in task_re.finditer(content):
+            line = m.group(1).strip()
+            if line:
+                all_tasks.append(line)
+    if not all_tasks:
+        return (True, "")
+    lines = ["- {}".format(t) for t in all_tasks[:20]]
+    return (True, "\n".join(lines))
 
 
 def section_tasks():
-    # 优先：环境变量凭证 / token，直接 Python 拉取（不依赖 google-tasks 技能）
-    ok, text = _fetch_google_tasks_with_token()
+    # 优先：Memos（MEMOS_API_URL + MEMOS_ACCESS_TOKEN）
+    ok, text = _fetch_memos_tasks()
     if ok is not None:
         if not ok:
             return "## 📋 今日任务\n\n- {}".format(text or "任务获取失败")
@@ -412,7 +267,7 @@ def section_tasks():
             return "## 📋 今日任务\n\n" + text.strip()
         return "## 📋 今日任务\n\n- 没有待办任务，轻松的一天！"
 
-    # 回退：外部脚本（如 google-tasks 技能）
+    # 回退：外部脚本（BRIEFING_TASKS_SCRIPT 或默认路径）
     script = os.environ.get("BRIEFING_TASKS_SCRIPT")
     if not script:
         skill_dir = os.path.expanduser("~/.openclaw/workspace/skills/google-tasks/scripts")
@@ -433,10 +288,21 @@ def section_tasks():
         if "error" in text.lower() or "failed" in text.lower():
             logger.warning("今日任务脚本返回含 error/failed")
             return "## 📋 今日任务\n\n- 任务获取失败（可能需要重新授权）"
-        lines = [l for l in text.strip().splitlines() if "⬜" in l]
-        if not lines:
+        # 支持脚本输出 "  N. ⬜ 任务" 或 "- [ ] 任务" 或 "- 任务"，统一为 - 任务名 格式（与 briefing.md 一致）
+        out_lines = []
+        for l in text.strip().splitlines():
+            line = l.strip()
+            if not line:
+                continue
+            if line.startswith("- ") and "- [ ]" not in line and "⬜" not in line:
+                out_lines.append(line)
+            elif "- [ ]" in line:
+                out_lines.append("- " + line.split("- [ ]", 1)[-1].strip())
+            elif "⬜" in line:
+                out_lines.append("- " + line.split("⬜", 1)[-1].strip())
+        if not out_lines:
             return "## 📋 今日任务\n\n- 没有待办任务，轻松的一天！"
-        task_lines = "\n".join("- " + l.strip() for l in lines[:5])
+        task_lines = "\n".join(out_lines[:20])
         return "## 📋 今日任务\n\n{}".format(task_lines)
     except Exception as e:
         logger.warning("今日任务脚本执行异常: %s", e)

@@ -12,10 +12,9 @@
 你可以通过以下方式联系我：
 - **WeChat**: ichensoul
 - **X**: [@ichensoul](https://twitter.com/ichensoul)
-- **Github**: [@chensoul](https://twitter.com/chensoul)
+- **Github**: [@chensoul](https://github.com/chensoul)
 - **Tg Channel**: [@ichensoul](https://t.me/ichensoul)
 - **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
-
 
 ## 最近博客
 
