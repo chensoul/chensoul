@@ -7,14 +7,17 @@
 
 <img align="right" alt="Chensoul" src="images/coding.gif" width="300px" />
 
-我是 chensoul，一个来自中国武汉的开发者，喜欢编程、[跑步](https://run.chensoul.cc/)。不定期更新[博客](https://blog.chensoul.cc)，分享学习心得。
+你好，我是 ChenSoul，一个来自中国武汉的 Java 开发者，喜欢[编程](https://blog.chensoul.cc/categories/tech)、[跑步](https://run.chensoul.cc/)。
 
-你可以通过以下方式联系我：
-- **WeChat**: ichensoul
-- **X**: [@ichensoul](https://twitter.com/ichensoul)
-- **Github**: [@chensoul](https://github.com/chensoul)
-- **Tg Channel**: [@ichensoul](https://t.me/ichensoul)
-- **Email**: [ichensoul@gmail.com](mailto:ichensoul@gmail.com)
+> 健康，爱情和使命，按照这个顺序，其它的都不重要。 ------纳瓦尔
+
+## 联系我
+
+你可以通过以下方式找到我：[WeChat](https://blog.chensoul.cc/images/my-wechat.webp)、[Telegram](https://t.me/chensoul)、[Github](https://twitter.com/chensoul)、[Twitter](https://twitter.com/ichensoul)，或者给我发送邮件：ichensoul@gmail.com
+
+我在 [VPS](https://blog.chensoul.cc/posts/2023/01/25/notes-about-deploy-services-in-vps)
+上自建了一些服务：[跑步](https://run.chensoul.cc/)、[书签](https://linkding.chensoul.cc/)、[Memos](https://memos.chensoul.cc/)
+，另外我创建了一个 [Telegram Channel](https://t.me/ichensoul)，分享每天的所见、所闻、所感，如果你感兴趣，欢迎加入！👏
 
 ## 最近博客
 
