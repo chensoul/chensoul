@@ -29,7 +29,7 @@
 - [Wiki 笔记｜Langchain4j](https://blog.chensoul.cc/posts/2026/03/11/langchain4j)
 <!-- BLOG-POST-LIST:END -->
 
-## 最近编程
+### 最近编程
 
 <!--START_SECTION:waka-->
 
