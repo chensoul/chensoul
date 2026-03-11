@@ -1,13 +1,15 @@
-# 📅 每日简报 - 2026年03月12日，星期四，今年已过去 19.5% (71/365)
+# 📅 每日简报 - 2026年03月11日 星期三
+
+2026 年已过去 19.2% (70/365)，今年还剩下 295 天，要珍惜时间哦！
 
 ## 📈 今日概览
 
-- 今日天气。Wuhan：雾，12°C - 21°C
-- 今日指数。黄金：1146.10 元/克。比特币：$70,739 USD
-- 今日诗词。章台柳，章台柳，昔日青青今在否？—— 韩翃，《章台柳·寄柳氏》
-- 今日名言。上帝为你关上了一扇门，还会给它加上防盗锁，大插销。
-- 昨日编程。花了 8 小时 51 分钟。Chrome 41%，IntelliJ IDEA 27%，Cursor 23%
-- 昨日跑步。昨天跑了 10.28 公里，本月跑了 52.85 公里，今年跑了 269.64 公里
+- 今日天气。Wuhan：多云，12°C - 21°C
+- 今日指数。黄金 1150.42 元/克。比特币 $69,509 USD
+- 今日诗词。寒食后，酒醒却咨嗟。—— 苏轼《望江南·超然台作》
+- 今日名言。人生不如意，十之有十！
+- 昨日编程。花了 8 小时 18 分钟。Chrome 55%、IntelliJ IDEA 19%、Ghostty 15%
+- 昨日跑步。昨天跑了 10.28 公里；本月跑了 52.85 公里；今年跑了 269.64 公里
 
 ## 📋 今日任务
 
@@ -24,11 +26,11 @@
 
 ## 🔥 Hacker News
 
-- [Don't post generated/AI-edited comments. HN is for conversation between humans.](https://news.ycombinator.com/newsguidelines.html#generated)
-- [The dead Internet is not a theory anymore](https://www.adriankrebs.ch/blog/dead-internet/)
-- [Temporal: A nine-year journey to fix time in JavaScript](https://bloomberg.github.io/js-blog/post/temporal/)
-- [Making WebAssembly a first-class language on the Web](https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/)
-- [I'm glad the Anthropic fight is happening now](https://www.dwarkesh.com/p/dow-anthropic)
+- [Zig – Type Resolution Redesign and Language Changes](https://ziglang.org/devlog/2026/#2026-03-10)
+- [Building a TB-303 from Scratch](https://loopmaster.xyz/tutorials/tb303-from-scratch)
+- [Create value for others and don’t worry about the returns](https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html)
+- [U+237C ⍼ Is Azimuth](https://ionathan.ch/2026/02/16/angzarr.html)
+- [Cloudflare crawl endpoint](https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/)
 
 ---
 ✨ Have a great day!

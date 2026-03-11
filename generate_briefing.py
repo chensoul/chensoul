@@ -107,16 +107,19 @@ def header():
     t = datetime.now(TZ_SHANGHAI)
     date_str = t.strftime("%Y年%m月%d日")
     wd = WEEKDAY_ZH[t.weekday()]
+    first_line = "# 📅 每日简报 - {} {}".format(date_str, wd)
     try:
         start = t.replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0)
         day_of_year = (t - start).days + 1
         year = t.year
         is_leap = (year % 4 == 0 and (year % 100 != 0 or year % 400 == 0))
         total = 366 if is_leap else 365
+        remaining = total - day_of_year
         pct_str = f"{(day_of_year / total) * 100:.1f}%"
-        return "# 📅 每日简报 - {}，{}，今年已过去 {} ({}/{})".format(date_str, wd, pct_str, day_of_year, total)
+        second_line = "{} 年已过去 {} ({}/{})，今年还剩下 {} 天，要珍惜时间哦！".format(year, pct_str, day_of_year, total, remaining)
+        return first_line + "\n\n" + second_line
     except Exception:
-        return "# 📅 每日简报 - {}，{}".format(date_str, wd)
+        return first_line
 
 
 # ---------- 2. 天气 (wttr.in) ----------
@@ -224,7 +227,7 @@ def index_line():
             data = r.json()
             price_raw = (data.get("data") or {}).get("f43")
             if price_raw is not None:
-                parts.append("黄金：{:.2f} 元/克".format(float(price_raw) / 100))
+                parts.append("黄金 {:.2f} 元/克".format(float(price_raw) / 100))
     except Exception:
         pass
     try:
@@ -233,7 +236,7 @@ def index_line():
             data = r.json()
             btc = data.get("bitcoin", {}).get("usd")
             if btc is not None:
-                parts.append("比特币：${:,.0f} USD".format(btc) if btc >= 1000 else "比特币：${:,.2f} USD".format(btc))
+                parts.append("比特币 ${:,.0f} USD".format(btc) if btc >= 1000 else "比特币 ${:,.2f} USD".format(btc))
     except Exception:
         pass
     return "。".join(parts) if parts else ""
@@ -333,7 +336,7 @@ def running_summary():
         parts.append("昨天跑了 {:.2f} 公里".format(sum_y) if sum_y > 0 else "昨天没跑")
         parts.append("本月跑了 {:.2f} 公里".format(sum_m) if sum_m > 0 else "本月没跑")
         parts.append("今年跑了 {:.2f} 公里".format(sum_year) if sum_year > 0 else "今年没跑")
-        return "，".join(parts)
+        return "；".join(parts)
     except Exception as e:
         logger.warning("跑步距离: 异常 %s", e)
         return ""
