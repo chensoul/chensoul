@@ -1,15 +1,9 @@
-beautifulsoup4==4.14.3
-certifi==2026.2.25
-charset-normalizer==3.4.5
-duckdb==1.5.0
-idna==3.11
-mistletoe
-pendulum==3.2.0
-pyTelegramBotAPI==4.32.0
-python-dateutil==2.9.0.post0
-python-dotenv==1.2.2
-requests==2.32.5
-six==1.17.0
-telegramify-markdown==1.0.0
-tzdata==2025.3
-urllib3==2.6.3
+# 每日简报 (generate_briefing.py + send_briefing_to_telegram.py)
+beautifulsoup4>=4.14.0
+duckdb>=1.4.0
+pendulum>=3.2.0
+requests>=2.32.0
+telegramify-markdown>=0.5.0
+
+# 其他脚本 (如 fetch_wakatime.py)
+python-dotenv>=1.2.0

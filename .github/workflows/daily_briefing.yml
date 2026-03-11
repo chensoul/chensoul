@@ -1,0 +1,49 @@
+name: daily briefing
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "50 21 * * *"
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  briefing:
+    name: 每日简报
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate briefing
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WAKATIME_TOKEN: ${{ secrets.WAKATIME_TOKEN }}
+          BRIEFING_GITHUB_USERNAME: chensoul
+        run: python generate_briefing.py -o briefing.md
+
+      - name: Send briefing to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TG_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: python send_briefing_to_telegram.py -i briefing.md
+
+      - name: Commit and push if changed
+        run: |-
+          git pull
+          git diff
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add -A
+          git commit -m "chore: update briefing" || exit 0
+          git push
