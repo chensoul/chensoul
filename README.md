@@ -11,7 +11,7 @@
 
 > 健康，爱情和使命，按照这个顺序，其它的都不重要。 ------纳瓦尔
 
-## 联系我
+### 联系我
 
 你可以通过以下方式找到我：[WeChat](https://blog.chensoul.cc/images/my-wechat.webp)、[Telegram](https://t.me/chensoul)、[Github](https://twitter.com/chensoul)、[Twitter](https://twitter.com/ichensoul)，或者给我发送邮件：ichensoul@gmail.com
 
@@ -19,7 +19,7 @@
 上自建了一些服务：[跑步](https://run.chensoul.cc/)、[书签](https://linkding.chensoul.cc/)、[Memos](https://memos.chensoul.cc/)
 ，另外我创建了一个 [Telegram Channel](https://t.me/ichensoul)，分享每天的所见、所闻、所感，如果你感兴趣，欢迎加入！👏
 
-## 最近博客
+### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
 - [Wiki 笔记｜Architecture](https://blog.chensoul.cc/posts/2026/03/11/architecture)
