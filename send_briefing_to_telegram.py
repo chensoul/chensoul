@@ -17,16 +17,16 @@
   - run: python3 generate_briefing.py -o briefing.md
   - run: python3 send_briefing_to_telegram.py -i briefing.md
     env:
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      TG_TOKEN: ${{ secrets.TG_TOKEN }}
+      TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
 
   # 仅测试输出（不真正发送）
   python3 send_briefing_to_telegram.py -i briefing.md --dry-run
   python3 send_briefing_to_telegram.py --generate --dry-run
 
 环境变量（默认从同目录 .env 加载）：
-  TELEGRAM_BOT_TOKEN  - 必填，Bot 的 token（从 @BotFather 获取）
-  TELEGRAM_CHAT_ID    - 必填，目标对话 ID（私聊或群组）
+  TG_TOKEN     - 必填，Bot 的 token（从 @BotFather 获取）
+  TG_CHAT_ID   - 必填，目标对话 ID（私聊或群组）
   TELEGRAM_PARSE_MODE - 可选，Markdown | MarkdownV2 | HTML，默认 Markdown；设为空则纯文本
 """
 
@@ -137,7 +137,7 @@ def main():
     parser = argparse.ArgumentParser(description="将每日简报发送到 Telegram")
     parser.add_argument("-i", "--input", metavar="FILE", help="从文件读取简报内容（默认从 stdin）")
     parser.add_argument("--generate", action="store_true", help="先运行 generate_briefing.py 生成简报再发送")
-    parser.add_argument("--dry-run", action="store_true", help="仅输出将要发送的内容与分段信息，不调用 Telegram API（无需 TELEGRAM_BOT_TOKEN/CHAT_ID）")
+    parser.add_argument("--dry-run", action="store_true", help="仅输出将要发送的内容与分段信息，不调用 Telegram API（无需 TG_TOKEN/TG_CHAT_ID）")
     parser.add_argument("--parse-mode", default=None, help="Telegram parse_mode: Markdown, MarkdownV2, HTML；空为纯文本。默认从 TELEGRAM_PARSE_MODE 读取，否则 Markdown")
     parser.add_argument("-v", "--verbose", action="store_true", help="输出 DEBUG 级别日志")
     args = parser.parse_args()
@@ -213,10 +213,10 @@ def main():
                 print(file=sys.stderr)
         return
 
-    bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
-    chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+    bot_token = os.environ.get("TG_TOKEN", "").strip()
+    chat_id = os.environ.get("TG_CHAT_ID", "").strip()
     if not bot_token or not chat_id:
-        logger.error("请设置环境变量 TELEGRAM_BOT_TOKEN 和 TELEGRAM_CHAT_ID")
+        logger.error("请设置环境变量 TG_TOKEN 和 TG_CHAT_ID")
         sys.exit(1)
 
     ok, err = send_to_telegram(text, bot_token, chat_id, parse_mode=parse_mode)
