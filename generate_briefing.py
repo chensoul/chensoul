@@ -195,7 +195,7 @@ def poem_line():
         if not content:
             return ""
         if author and origin:
-            return "{}—— {}，《{}》".format(content, author, origin)
+            return "{}—— {}《{}》".format(content, author, origin)
         if author:
             return "{}—— {}".format(content, author)
         if origin:
