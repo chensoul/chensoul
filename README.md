@@ -19,11 +19,11 @@
 ## 最近博客
 
 <!-- BLOG-POST-LIST:START -->
-- [2026-03-08｜上周总结](https://blog.chensoul.cc/posts/2026/03/09/20260308-week-review)
-- [linkding 合并 linkding-cn 代码](https://blog.chensoul.cc/posts/2026/03/06/merge-linkding-cn-to-linkding)
-- [Spring Boot 2 升级到 Spring Boot 3 指南](https://blog.chensoul.cc/posts/2026/03/06/spring-boot-2-to-3-upgrade-guide)
-- [2026-03-01｜上周总结](https://blog.chensoul.cc/posts/2026/03/05/20260301-week-review)
-- [Claude Code 安装、配置、使用与认证指南](https://blog.chensoul.cc/posts/2026/03/05/claude-code-guide)
+- [Wiki 笔记｜Architecture](https://blog.chensoul.cc/posts/2026/03/11/architecture)
+- [Wiki 笔记｜DDD](https://blog.chensoul.cc/posts/2026/03/11/ddd)
+- [Wiki 笔记｜Github](https://blog.chensoul.cc/posts/2026/03/11/github)
+- [Wiki 笔记｜Maven](https://blog.chensoul.cc/posts/2026/03/11/maven)
+- [Wiki 笔记｜Langchain4j](https://blog.chensoul.cc/posts/2026/03/11/langchain4j)
 <!-- BLOG-POST-LIST:END -->
 
 ## 最近编程
