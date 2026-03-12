@@ -1,4 +1,4 @@
-name: daily briefing
+name: daily review
 
 on:
   workflow_dispatch:
@@ -10,8 +10,7 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  briefing:
-    name: 每日简报
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
