@@ -59,7 +59,7 @@ WEATHER_CONDITION_ZH = {
     "Clear": "晴朗", "Sunny": "晴朗",
     "Partly cloudy": "多云", "Partly Cloudy": "多云",
     "Cloudy": "阴天", "Overcast": "阴沉",
-    "Mist": "雾", "Fog": "雾",
+    "Mist": "雾", "Fog": "雾", "Haze": "雾霾",
     "Light rain": "小雨", "Patchy rain possible": "小雨",
     "Moderate rain": "中雨", "Heavy rain": "大雨",
     "Light snow": "小雪", "Moderate snow": "中雪", "Heavy snow": "大雪",
