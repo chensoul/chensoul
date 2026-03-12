@@ -31,7 +31,7 @@ jobs:
         env:
           KEEP_MOBILE: ${{ secrets.KEEP_MOBILE }}
           KEEP_PASSWORD: ${{ secrets.KEEP_PASSWORD }}
-        run: python get_keep_data.py
+        run: python fetch_keep_run.py
 
       - name: Generate briefing
         env:
