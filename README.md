@@ -22,6 +22,7 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [在 GitHub CodeSpace 中安装和使用 OpenClaw](https://blog.chensoul.cc/posts/2026/03/12/install-openclaw-in-github-codespace)
 - [Wiki 笔记｜Architecture](https://blog.chensoul.cc/posts/2026/03/11/architecture)
 - [Wiki 笔记｜DDD](https://blog.chensoul.cc/posts/2026/03/11/ddd)
 - [Wiki 笔记｜Github](https://blog.chensoul.cc/posts/2026/03/11/github)
@@ -29,7 +30,6 @@
 - [Wiki 笔记｜Langchain4j](https://blog.chensoul.cc/posts/2026/03/11/langchain4j)
 - [Wiki 笔记｜Maven](https://blog.chensoul.cc/posts/2026/03/11/maven)
 - [2026-03-08｜上周总结](https://blog.chensoul.cc/posts/2026/03/09/20260308-week-review)
-- [linkding 合并 linkding-cn 代码](https://blog.chensoul.cc/posts/2026/03/06/merge-linkding-cn-to-linkding)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
