@@ -5,9 +5,9 @@
 ## 📈 今日概览
 
 - 今日天气。Wuhan：雾，12°C - 21°C
-- 今日指数。黄金 1146.10 元/克。比特币 $70,275 USD
-- 今日诗词。之子归穷泉，重壤永幽隔。—— 潘安《悼亡诗三首》
-- 今日名言。可以不劳而获的，只有年纪和脂肪。
+- 今日指数。黄金 1146.10 元/克。比特币 $70,249 USD
+- 今日诗词。怒发冲冠，凭栏处、潇潇雨歇。—— 岳飞《满江红·写怀》
+- 今日名言。其实命运，真不是喜欢和你开玩笑，它是很认真的想弄死你。
 - 昨日编程。花了 8 小时 53 分钟。Chrome 40%，IntelliJ IDEA 27%，Cursor 23%
 - 昨日跑步。昨天跑了 6.10 公里；本月跑了 52.85 公里；今年跑了 269.64 公里
 
@@ -15,10 +15,6 @@
 
 - [Rust](https://github.com/chensoul/chensoul/issues/141)
 - [Spring AI](https://github.com/chensoul/chensoul/issues/140)
-
-## 🔖 昨日收藏
-
-- [chenhg5/cc-connect](https://github.com/chenhg5/cc-connect)
 
 ## 📊 GitHub Java Trending
 
