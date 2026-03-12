@@ -406,7 +406,6 @@ def linkding_yesterday_bookmarks():
 # ---------- 5. Hacker News ----------
 def hn_section():
     try:
-        logger.info("Hacker News: 拉取 top stories")
         r, err = _safe_get(HN_TOP, timeout=10)
         if err or not r:
             logger.warning("Hacker News 获取失败: %s", err or "无响应")
@@ -456,11 +455,7 @@ def main():
         logger.info("今日指数: %s", idx_line)
         overview_lines.append("- 今日指数。{}".format(idx_line))
     sent_line = poem_line()
-    if sent_line:
-        overview_lines.append("- 今日诗词。{}".format(sent_line))
-    quote = quote_line()
-    if quote:
-        overview_lines.append("- 今日名言。{}".format(quote))
+
     waka_line = coding_line()
     if waka_line:
         overview_lines.append("- 昨日编程。{}".format(waka_line))
@@ -501,8 +496,18 @@ def main():
     # Hacker News
     parts.append(hn_section())
     parts.append("")
+
+    # 今日诗词（独立小节）
+    if sent_line:
+        parts.append("## 📜 今日诗词")
+        parts.append("")
+        parts.append(sent_line)
+        parts.append("")
+
     parts.append("---")
-    parts.append("✨ Have a great day!")
+
+    quote = quote_line()
+    parts.append("✨ Have a great day! " + quote)
     body = "\n".join(parts)
     logger.info("简报生成完成，共 %d 字符", len(body))
     return body
