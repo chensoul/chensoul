@@ -803,7 +803,7 @@ def format_running_data(
 
         run_data = {
             "date": start_local,
-            "distance": round(distance_km, 2),
+            "distance": int(distance_km * 100) / 100,
             "duration": duration_str,
             "pace": pace,
             "heart_rate": round(avg_hr, 1) if avg_hr else 0,
@@ -841,7 +841,7 @@ def format_running_data(
     if vdot_count > 0:
         stats["avg_vdot"] = round(total_vdot / vdot_count, 1)
     stats["total_duration"] = duration_seconds_to_str(total_seconds)
-    stats["total_distance"] = round(stats["total_distance"], 2)
+    stats["total_distance"] = int(stats["total_distance"] * 100) / 100
     stats["longest_run"] = round(stats["longest_run"], 1)
 
     # 按日期倒序
@@ -947,7 +947,7 @@ def _stats_for_period(
         avg_pace = "--"
     return {
         "total_activities": total_activities,
-        "total_distance": round(total_distance, 2),
+        "total_distance": int(total_distance * 100) / 100,
         "total_duration_hours": round(total_seconds / 3600, 1),
         "avg_pace": avg_pace,
         "avg_heart_rate": round(total_hr / hr_count) if hr_count > 0 else None,
@@ -1037,7 +1037,7 @@ def _recalculate_stats(
     if vdot_count > 0:
         stats["avg_vdot"] = round(total_vdot / vdot_count, 1)
     stats["total_duration"] = duration_seconds_to_str(total_seconds)
-    stats["total_distance"] = round(stats["total_distance"], 2)
+    stats["total_distance"] = int(stats["total_distance"] * 100) / 100
     stats["longest_run"] = round(stats["longest_run"], 1)
     stats["period_stats"] = _calculate_period_stats(runs, vdot_calculator)
     stats["statistics_time"] = datetime.now(TZ_SHANGHAI).strftime("%Y-%m-%d %H:%M:%S")
