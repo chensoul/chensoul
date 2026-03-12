@@ -16,13 +16,14 @@ import zlib
 from datetime import datetime, timedelta, timezone
 from typing import Any, Dict, List, Optional
 
-# Keep API（与 running_page/run_page/keep_sync.py 一致）
-# https://github.com/chensoul/running_page/blob/master/run_page/keep_sync.py
 LOGIN_API = "https://api.gotokeep.com/v1.1/users/login"
 RUN_DATA_API = "https://api.gotokeep.com/pd/v3/stats/detail?dateUnit=all&type={sport_type}&lastDate={last_date}"
 RUN_LOG_API = "https://api.gotokeep.com/pd/v3/{sport_type}log/{run_id}"
 HR_FRAME_THRESHOLD_DECISEC = 100
 TIMESTAMP_THRESHOLD_DECISEC = 3_600_000
+
+# running.json 内所有时间统一用上海时区显示
+TZ_SHANGHAI = timezone(timedelta(hours=8))
 
 
 def _decode_runmap_data(text: str, is_geo: bool = False) -> Any:
@@ -517,20 +518,14 @@ def _keep_api_run_to_row(
     m, s = divmod(remainder, 60)
     moving_time = f"{h}:{m:02d}:{s:02d}"
 
-    # 本地开始时间
+    # 本地开始时间：统一转为上海时区写入 running.json（run["date"]、周期统计一致）
     start_time_ms = api_data.get("startTime") or 0
-    tz_name = api_data.get("timezone") or "Asia/Shanghai"
-    try:
-        from utils import adjust_time
-
-        start_date = datetime.fromtimestamp(start_time_ms / 1000, tz=timezone.utc)
-        start_date_local = adjust_time(start_date, tz_name).strftime(
-            "%Y-%m-%d %H:%M:%S"
-        )
-    except Exception:
-        start_date_local = datetime.fromtimestamp(
-            start_time_ms / 1000, tz=timezone.utc
-        ).strftime("%Y-%m-%d %H:%M:%S")
+    start_date_utc = datetime.fromtimestamp(
+        start_time_ms / 1000, tz=timezone.utc
+    )
+    start_date_local = start_date_utc.astimezone(TZ_SHANGHAI).strftime(
+        "%Y-%m-%d %H:%M:%S"
+    )
 
     heart_rate_data = api_data.get("heartRate") or {}
     avg_hr = heart_rate_data.get("averageHeartRate")
@@ -827,7 +822,6 @@ def format_running_data(
             "training_load": training_load,
             "hr_zone": hr_zone,
             "segments": row.get("segments", []),
-            "laps": row.get("laps", []),
         }
         formatted_runs.append(run_data)
 
@@ -855,8 +849,8 @@ def format_running_data(
 
     # 周期统计
     stats["period_stats"] = _calculate_period_stats(formatted_runs, vdot_calculator)
-    # 统计时间（本次统计生成的时间）
-    stats["statistics_time"] = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S")
+    # 统计时间（上海时区）
+    stats["statistics_time"] = datetime.now(TZ_SHANGHAI).strftime("%Y-%m-%d %H:%M:%S")
 
     return {"stats": stats, "runs": formatted_runs}
 
@@ -865,12 +859,12 @@ def _calculate_period_stats(
     runs: List[Dict[str, Any]],
     vdot_calculator: VDOTCalculator,
 ) -> Dict[str, Any]:
-    now = datetime.now()
-    # 昨日：昨天 00:00 至昨天 23:59:59
+    now = datetime.now(TZ_SHANGHAI)
+    # 昨日：上海时间昨天 00:00 至昨天 23:59:59
     yesterday_date = (now - timedelta(days=1)).date()
     yesterday_start = datetime.combine(yesterday_date, datetime.min.time())
     yesterday_end = datetime.combine(yesterday_date, datetime.max.time())
-    # 当前周：周一 00:00 至今天（ISO 周：周一为第 1 天）
+    # 当前周：周一 00:00 至今天（ISO 周：周一为第 1 天，上海时区）
     days_since_monday = now.isoweekday() - 1
     week_start = (now - timedelta(days=days_since_monday)).replace(
         hour=0, minute=0, second=0, microsecond=0
@@ -879,12 +873,17 @@ def _calculate_period_stats(
     month_start = datetime(now.year, now.month, 1)
     # 当年：1 月 1 日 00:00 至今天
     year_start = datetime(now.year, 1, 1)
+    # 使用 naive datetime 与 run["date"] 解析出的日期比较
+    now_naive = now.replace(tzinfo=None)
+    week_start_naive = week_start.replace(tzinfo=None)
+    month_start_naive = month_start.replace(tzinfo=None)
+    year_start_naive = year_start.replace(tzinfo=None)
     period_ranges = {
         "yesterday": {"start": yesterday_start, "end": yesterday_end},
-        "week": {"start": week_start, "end": now},
-        "month": {"start": month_start, "end": now},
-        "year": {"start": year_start, "end": now},
-        "total": {"start": datetime.min, "end": now},
+        "week": {"start": week_start_naive, "end": now_naive},
+        "month": {"start": month_start_naive, "end": now_naive},
+        "year": {"start": year_start_naive, "end": now_naive},
+        "total": {"start": datetime.min, "end": now_naive},
     }
     result = {}
     for period_name, rng in period_ranges.items():
@@ -900,11 +899,12 @@ def _stats_for_period(
     end_date: datetime,
     vdot_calculator: VDOTCalculator,
 ) -> Dict[str, Any]:
+    """按日期区间筛选 runs。run["date"] 为本地时间字符串（与 TZ_SHANGHAI 一致），此处只比较日期部分。"""
     period_runs = []
     for run in runs:
         try:
             dt_str = run["date"].split(" ")[0]
-            run_date = datetime.strptime(dt_str, "%Y-%m-%d")
+            run_date = datetime.strptime(dt_str, "%Y-%m-%d")  # naive，仅日期 00:00:00
             if start_date <= run_date <= end_date:
                 period_runs.append(run)
         except (ValueError, IndexError):
@@ -1040,7 +1040,7 @@ def _recalculate_stats(
     stats["total_distance"] = round(stats["total_distance"], 2)
     stats["longest_run"] = round(stats["longest_run"], 1)
     stats["period_stats"] = _calculate_period_stats(runs, vdot_calculator)
-    stats["statistics_time"] = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S")
+    stats["statistics_time"] = datetime.now(TZ_SHANGHAI).strftime("%Y-%m-%d %H:%M:%S")
     return stats
 
 
@@ -1056,12 +1056,12 @@ def parse_args():
     p.add_argument(
         "--mobile",
         default=os.environ.get("KEEP_MOBILE", ""),
-        help="Keep 登录手机号（--source=api 时必填，或环境变量 KEEP_MOBILE）",
+        help="Keep 登录手机号（环境变量 KEEP_MOBILE）",
     )
     p.add_argument(
         "--password",
         default=os.environ.get("KEEP_PASSWORD", ""),
-        help="Keep 登录密码（--source=api 时必填，或环境变量 KEEP_PASSWORD）",
+        help="Keep 登录密码（环境变量 KEEP_PASSWORD）",
     )
     p.add_argument(
         "--limit",
@@ -1107,6 +1107,10 @@ def main():
         print(f"  总距离: {s['total_distance']} 公里")
         print(f"  总时长: {s['total_duration']}")
         print(f"  平均配速: {s['avg_pace']}")
+        ps = s.get("period_stats") or {}
+        print(f"  昨日距离: {(ps.get('yesterday') or {}).get('total_distance', 0)} 公里")
+        print(f"  本周距离: {(ps.get('week') or {}).get('total_distance', 0)} 公里")
+        print(f"  本月距离: {(ps.get('month') or {}).get('total_distance', 0)} 公里")
         if s.get("avg_vdot"):
             print(f"  平均 VDOT: {s['avg_vdot']}")
         if s.get("total_training_load"):
