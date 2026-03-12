@@ -128,8 +128,8 @@ def header():
 # ---------- 2. 天气 (wttr.in) ----------
 def weather_line():
     """返回单行天气内容：Wuhan：多云, 12°C - 21°C（中文逗号）。"""
-    city = os.environ.get("BRIEFING_WEATHER_CITY", "Wuhan")
-    logger.debug("获取天气: %s", city)
+    city = os.environ.get("WEATHER_CITY", "Wuhan")
+    logger.info("获取天气: %s", city)
     url = WTTR_URL.format(city=city)
     try:
         r, err = _safe_get(url, timeout=15)
@@ -145,7 +145,9 @@ def weather_line():
         min_t = day.get("mintempC", "N/A")
         max_t = day.get("maxtempC", "N/A")
         cond = WEATHER_CONDITION_ZH.get(cond_en, cond_en)
-        return "{}：{}，{}°C - {}°C".format(city, cond, min_t, max_t)
+        result = "{}：{}，{}°C - {}°C".format(city, cond, min_t, max_t)
+        logger.info("天气: %s", result)
+        return result
     except Exception as e:
         logger.warning("天气解析失败: %s", e)
         return ""
@@ -158,8 +160,10 @@ def tasks_section():
     token = os.environ.get("GITHUB_TOKEN", "").strip()
     owner = (os.environ.get("GITHUB_USERNAME", "").strip() or (os.path.basename(_script_dir) if _script_dir else ""))
     if not token or not owner:
+        logger.info("今日任务: 未配置 GITHUB_TOKEN 或 owner，跳过")
         return "## 📋 今日任务\n\n- 任务功能未配置（需 GITHUB_TOKEN 且在项目目录下运行）"
     repo = "{}/{}".format(owner, owner)
+    logger.info("今日任务: 拉取 %s open issues", repo)
     headers = {"Authorization": "Bearer {}".format(token), "Accept": "application/vnd.github.v3+json"}
     r, err = _safe_get("https://api.github.com/repos/{}/issues".format(repo), params={"state": "open", "per_page": 20}, headers=headers, timeout=15)
     if err or not r:
@@ -179,7 +183,9 @@ def tasks_section():
         if i.get("pull_request") is None and (i.get("title") or "").strip() != "Dependency Dashboard"
     ][:20]
     if not issues:
+        logger.info("今日任务: 无待办，共 0 条")
         return "## 📋 今日任务\n\n- 没有待办任务，轻松的一天！"
+    logger.info("今日任务: 共 %d 条", len(issues))
     lines = ["- [{}]({})".format((i.get("title") or "无标题").strip(), i.get("html_url", "")) for i in issues]
     return "## 📋 今日任务\n\n" + "\n".join(lines)
 
@@ -274,6 +280,7 @@ def github_trending(language=None, limit=5):
         if not repos:
             return None
         lang_label = (language or "all").capitalize()
+        logger.info("GitHub Trending (%s): 获取 %d 条", lang_label, len(repos))
         return lang_label, ["- [{}]({})".format(repo["name"], repo["url"]) for repo in repos]
     except Exception:
         return None
@@ -295,8 +302,10 @@ def coding_line():
         total = result.get("cumulative_total", {})
         seconds = total.get("seconds", 0) or 0
         if seconds <= 0:
+            logger.info("WakaTime: 昨日无编程记录")
             return "昨天没写代码"
         time_str = (total.get("text") or "").replace("hrs", "小时").replace("hr", "小时").replace("mins", "分钟").replace("min", "分钟").replace("secs", "秒").replace("sec", "秒")
+        logger.info("WakaTime: 昨日编程 %s", time_str.strip())
         line = "花了 " + time_str.strip()
         data = result.get("data", [])
         if data:
@@ -339,6 +348,7 @@ def running_summary():
         parts.append("昨天跑了 {:.2f} 公里".format(sum_y) if sum_y > 0 else "昨天没跑")
         parts.append("本月跑了 {:.2f} 公里".format(sum_m) if sum_m > 0 else "本月没跑")
         parts.append("今年跑了 {:.2f} 公里".format(sum_year) if sum_year > 0 else "今年没跑")
+        logger.info("跑步: 昨日 %.2f km, 本月 %.2f km, 今年 %.2f km", sum_y, sum_m, sum_year)
         return "；".join(parts)
     except Exception as e:
         logger.warning("跑步距离: 异常 %s", e)
@@ -348,11 +358,12 @@ def running_summary():
 # ---------- 4.5 Linkding 昨日书签 ----------
 def linkding_yesterday_bookmarks():
     """从 Linkding API 拉取昨日添加的书签。需环境变量 LINKDING_URL、LINKDING_TOKEN。返回 [(title, url), ...]。"""
-    base = (os.environ.get("LINKDING_URL") or "").rstrip("/")
+    base = (os.environ.get("LINKDING_URL") or "https://linkding.chensoul.cc").rstrip("/")
     token = (os.environ.get("LINKDING_TOKEN") or "").strip()
     if not base or not token:
         logger.debug("Linkding: 未配置 LINKDING_URL 或 LINKDING_TOKEN，跳过")
         return []
+    logger.info("Linkding: 拉取昨日书签 %s", base)
     url = base + LINKDING_API_BOOKMARKS
     params = {
         "date_filter_by": "added",
@@ -388,13 +399,14 @@ def linkding_yesterday_bookmarks():
         if len(title) > LINKDING_TITLE_MAX:
             title = title[: LINKDING_TITLE_MAX - 1] + "…"
         out.append((title, link_url))
-    logger.debug("Linkding: 昨日书签 %d 条", len(out))
+    logger.info("Linkding: 昨日书签 %d 条", len(out))
     return out
 
 
 # ---------- 5. Hacker News ----------
 def hn_section():
     try:
+        logger.info("Hacker News: 拉取 top stories")
         r, err = _safe_get(HN_TOP, timeout=10)
         if err or not r:
             logger.warning("Hacker News 获取失败: %s", err or "无响应")
@@ -420,7 +432,7 @@ def hn_section():
             lines.append("- [{}]({})".format(title, url))
         if count == 0:
             lines.append("暂无热门技术资讯")
-        logger.debug("Hacker News: 获取 %d 条", count)
+        logger.info("Hacker News: 获取 %d 条", count)
         return "\n".join(lines)
     except Exception as e:
         logger.warning("Hacker News 异常: %s", e)
@@ -441,6 +453,7 @@ def main():
         overview_lines.append("- 今日天气。{}".format(w))
     idx_line = index_line()
     if idx_line:
+        logger.info("今日指数: %s", idx_line)
         overview_lines.append("- 今日指数。{}".format(idx_line))
     sent_line = poem_line()
     if sent_line:
@@ -459,12 +472,14 @@ def main():
         parts.append("")
         parts.extend(overview_lines)
         parts.append("")
+        logger.info("今日概览: %d 项", len(overview_lines))
 
     # 今日任务
     parts.append(tasks_section())
     parts.append("")
 
     # 昨日收藏（Linkding）
+    logger.info("正在拉取昨日收藏 (Linkding)")
     bookmarks = linkding_yesterday_bookmarks()
     if bookmarks:
         parts.append("## 🔖 昨日收藏")
@@ -474,6 +489,7 @@ def main():
         parts.append("")
 
     # GitHub Trending
+    logger.info("正在拉取 GitHub Trending")
     trend = github_trending(limit=5)
     if trend:
         lang_label, trend_lines = trend
