@@ -36,3 +36,30 @@ curl -s -H "Authorization: Token ${LINKDING_TOKEN}" \
 curl -s -H "Authorization: Token ${LINKDING_TOKEN}" \
   "https://linkding.chensoul.cc/api/bookmarks/?date_filter_by=added&date_filter_type=relative&date_filter_relative_string=this_week&limit=100"
 ```
+
+### 使用 jq 输出 Markdown 链接
+
+每条书签输出为 `- [标题](URL)` 列表格式：
+
+昨日：
+
+```bash
+curl -s -H "Authorization: Token ${LINKDING_TOKEN}" \
+  "https://linkding.chensoul.cc/api/bookmarks/?date_filter_by=added&date_filter_type=relative&date_filter_relative_string=yesterday&limit=100" \
+  | jq -r '.results[]? | "- [\(.title // "无标题")](\(.url))"'
+```
+
+本周：
+
+```bash
+curl -s -H "Authorization: Token ${LINKDING_TOKEN}" \
+  "https://linkding.chensoul.cc/api/bookmarks/?date_filter_by=added&date_filter_type=relative&date_filter_relative_string=this_week&limit=100" \
+  | jq -r '.results[]? | "- [\(.title // "无标题")](\(.url))"'
+```
+
+输出示例：
+
+```markdown
+- [GitHub - user/repo](https://github.com/user/repo)
+- [示例文章](https://example.com/post)
+```
