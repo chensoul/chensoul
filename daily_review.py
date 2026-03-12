@@ -494,7 +494,7 @@ def main():
 
 if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(description="生成每日简报（与 send_briefing_to_telegram.py 配合发送到 Telegram，支持 GitHub Actions）")
+    parser = argparse.ArgumentParser(description="生成每日简报（与 send_daily_to_telegram.py 配合发送到 Telegram，支持 GitHub Actions）")
     parser.add_argument("--output", "-o", metavar="FILE", help="写入文件而非 stdout，便于在 GitHub Actions 中传给下一步")
     parser.add_argument("-v", "--verbose", action="store_true", help="输出 DEBUG 级别日志")
     args = parser.parse_args()

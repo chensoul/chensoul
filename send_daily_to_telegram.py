@@ -4,25 +4,25 @@
 
 用法：
   # 从 stdin 读取简报内容并发送
-  python3 generate_briefing.py | python3 send_briefing_to_telegram.py
+  python3 daily_review.py | python3 send_daily_to_telegram.py
 
   # 从文件读取并发送
-  python3 generate_briefing.py -o briefing.md
-  python3 send_briefing_to_telegram.py -i briefing.md
+  python3 daily_review.py -o briefing.md
+  python3 send_daily_to_telegram.py -i briefing.md
 
   # 生成并发送（一步完成）
-  python3 send_briefing_to_telegram.py --generate
+  python3 send_daily_to_telegram.py --generate
 
   # GitHub Actions 中
-  - run: python3 generate_briefing.py -o briefing.md
-  - run: python3 send_briefing_to_telegram.py -i briefing.md
+  - run: python3 daily_review.py -o briefing.md
+  - run: python3 send_daily_to_telegram.py -i briefing.md
     env:
       TG_TOKEN: ${{ secrets.TG_TOKEN }}
       TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
 
   # 仅测试输出（不真正发送）
-  python3 send_briefing_to_telegram.py -i briefing.md --dry-run
-  python3 send_briefing_to_telegram.py --generate --dry-run
+  python3 send_daily_to_telegram.py -i briefing.md --dry-run
+  python3 send_daily_to_telegram.py --generate --dry-run
 
 环境变量（默认从同目录 .env 加载）：
   TG_TOKEN     - 必填，Bot 的 token（从 @BotFather 获取）
@@ -136,7 +136,7 @@ def main():
     import argparse
     parser = argparse.ArgumentParser(description="将每日简报发送到 Telegram")
     parser.add_argument("-i", "--input", metavar="FILE", help="从文件读取简报内容（默认从 stdin）")
-    parser.add_argument("--generate", action="store_true", help="先运行 generate_briefing.py 生成简报再发送")
+    parser.add_argument("--generate", action="store_true", help="先运行 daily_review.py 生成简报再发送")
     parser.add_argument("--dry-run", action="store_true", help="仅输出将要发送的内容与分段信息，不调用 Telegram API（无需 TG_TOKEN/TG_CHAT_ID）")
     parser.add_argument("--parse-mode", default=None, help="Telegram parse_mode: Markdown, MarkdownV2, HTML；空为纯文本。默认从 TELEGRAM_PARSE_MODE 读取，否则 Markdown")
     parser.add_argument("-v", "--verbose", action="store_true", help="输出 DEBUG 级别日志")
@@ -146,8 +146,8 @@ def main():
         logger.setLevel(logging.DEBUG)
 
     if args.generate:
-        gen = os.path.join(_script_dir, "generate_briefing.py")
-        logger.info("正在运行 generate_briefing.py 生成简报")
+        gen = os.path.join(_script_dir, "daily_review.py")
+        logger.info("正在运行 daily_review.py 生成简报")
         try:
             out = subprocess.run(
                 [sys.executable, gen],
@@ -159,16 +159,16 @@ def main():
             )
             if out.returncode != 0:
                 if out.stderr:
-                    logger.error("generate_briefing.py stderr: %s", out.stderr.strip())
-                logger.error("generate_briefing.py 退出码 %d", out.returncode)
+                    logger.error("daily_review.py stderr: %s", out.stderr.strip())
+                logger.error("daily_review.py 退出码 %d", out.returncode)
                 sys.exit(1)
             text = out.stdout or ""
             logger.info("简报生成完成，长度 %d 字符", len(text.strip()))
         except subprocess.TimeoutExpired:
-            logger.error("generate_briefing.py 执行超时")
+            logger.error("daily_review.py 执行超时")
             sys.exit(1)
         except Exception as e:
-            logger.exception("运行 generate_briefing.py 失败: %s", e)
+            logger.exception("运行 daily_review.py 失败: %s", e)
             sys.exit(1)
     elif args.input:
         if not os.path.isfile(args.input):

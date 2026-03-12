@@ -38,13 +38,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKATIME_TOKEN: ${{ secrets.WAKATIME_TOKEN }}
-        run: python generate_briefing.py -o briefing.md
+        run: python daily_review.py -o briefing.md
 
       - name: Send briefing to Telegram
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-        run: python send_briefing_to_telegram.py -i briefing.md
+        run: python send_daily_to_telegram.py -i briefing.md
 
       - name: Commit and push if changed
         run: |-
