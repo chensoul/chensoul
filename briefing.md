@@ -5,11 +5,11 @@
 ## 📈 今日概览
 
 - 今日天气。Wuhan：雾，12°C - 21°C
-- 今日指数。黄金 1146.10 元/克。比特币 $70,254 USD
-- 今日诗词。一骑红尘妃子笑，无人知是荔枝来。—— 杜牧《过华清宫绝句三首》
-- 今日名言。这年头，哪有不分手的恋爱，只有不伤手的立白。遇事得看开一点。
+- 今日指数。黄金 1146.10 元/克。比特币 $70,275 USD
+- 今日诗词。之子归穷泉，重壤永幽隔。—— 潘安《悼亡诗三首》
+- 今日名言。可以不劳而获的，只有年纪和脂肪。
 - 昨日编程。花了 8 小时 53 分钟。Chrome 40%，IntelliJ IDEA 27%，Cursor 23%
-- 昨日跑步。昨天跑了 10.28 公里；本月跑了 52.85 公里；今年跑了 269.64 公里
+- 昨日跑步。昨天跑了 6.10 公里；本月跑了 52.85 公里；今年跑了 269.64 公里
 
 ## 📋 今日任务
 
@@ -34,7 +34,7 @@
 - [Many SWE-bench-Passing PRs would not be merged](https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/)
 - [Don't post generated/AI-edited comments. HN is for conversation between humans.](https://news.ycombinator.com/newsguidelines.html#generated)
 - [Making WebAssembly a first-class language on the Web](https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/)
-- [Personal Computer by Perplexity](https://www.perplexity.ai/personal-computer-waitlist)
+- [Show HN: I built a tool that watches webpages and exposes changes as RSS](https://sitespy.app)
 
 ---
 ✨ Have a great day!
