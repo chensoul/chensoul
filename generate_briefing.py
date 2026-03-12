@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
 每日简报生成脚本（一体版）。
-包含：日期、天气(wttr.in)、今日待办(GitHub Issues)、今日指数/诗词/名言/Trending、WakaTime、跑步距离、Hacker News。
+包含：日期、天气(wttr.in)、今日待办(GitHub Issues)、今日指数/诗词/名言/Trending、WakaTime、跑步距离、昨日收藏(Linkding)、Hacker News。
 
 今日待办：GitHub Issues（GITHUB_TOKEN + owner：优先 GITHUB_USERNAME，否则脚本所在目录名，拉取 {owner}/{owner} 仓库的 open issues）。
+昨日收藏：需配置 LINKDING_URL（如 https://linkding.chensoul.cc）、LINKDING_TOKEN（Linkding API Token）。
 """
 
 import json
@@ -13,7 +14,7 @@ import re
 import sys
 from datetime import datetime, timedelta, timezone
 from urllib.request import Request, urlopen
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlparse
 
 # Asia/Shanghai = UTC+8
 TZ_SHANGHAI = timezone(timedelta(hours=8))
@@ -75,6 +76,8 @@ EASTMONEY_GOLD_URL = "https://push2.eastmoney.com/api/qt/stock/get"
 EASTMONEY_GOLD_SECID = "118.AU9999"
 COINGECKO_PRICE_URL = "https://api.coingecko.com/api/v3/simple/price"
 GITHUB_TRENDING_BASE = "https://github.com/trending"
+LINKDING_API_BOOKMARKS = "/api/bookmarks/"
+LINKDING_TITLE_MAX = 50  # 书签标题最大字符数，超出截断
 
 
 def _safe_get(url, params=None, headers=None, timeout=10):
@@ -342,6 +345,53 @@ def running_summary():
         return ""
 
 
+# ---------- 4.5 Linkding 昨日书签 ----------
+def linkding_yesterday_bookmarks():
+    """从 Linkding API 拉取昨日添加的书签。需环境变量 LINKDING_URL、LINKDING_TOKEN。返回 [(title, url), ...]。"""
+    base = (os.environ.get("LINKDING_URL") or "").rstrip("/")
+    token = (os.environ.get("LINKDING_TOKEN") or "").strip()
+    if not base or not token:
+        logger.debug("Linkding: 未配置 LINKDING_URL 或 LINKDING_TOKEN，跳过")
+        return []
+    url = base + LINKDING_API_BOOKMARKS
+    params = {
+        "date_filter_by": "added",
+        "date_filter_type": "relative",
+        "date_filter_relative_string": "yesterday",
+        "limit": "100",
+    }
+    headers = {"Authorization": "Token " + token}
+    resp, err = _safe_get(url, params=params, headers=headers, timeout=10)
+    if err or not resp:
+        logger.warning("Linkding 书签: 请求失败 %s", err or "无响应")
+        return []
+    try:
+        data = resp.json()
+    except Exception as e:
+        logger.warning("Linkding 书签: JSON 解析失败 %s", e)
+        return []
+    results = data.get("results") if isinstance(data, dict) else (data if isinstance(data, list) else [])
+    out = []
+    for b in results:
+        if not isinstance(b, dict):
+            continue
+        link_url = (b.get("url") or "").strip()
+        if not link_url:
+            continue
+        parsed = urlparse(link_url)
+        # 仅对 GitHub URL：标题用去域名后的 path
+        if parsed.hostname and "github.com" in parsed.hostname.lower():
+            path = (parsed.path or "").strip("/")
+            title = path if path else (b.get("title") or b.get("website_title") or "").strip() or "无标题"
+        else:
+            title = (b.get("title") or b.get("website_title") or "").strip() or "无标题"
+        if len(title) > LINKDING_TITLE_MAX:
+            title = title[: LINKDING_TITLE_MAX - 1] + "…"
+        out.append((title, link_url))
+    logger.debug("Linkding: 昨日书签 %d 条", len(out))
+    return out
+
+
 # ---------- 5. Hacker News ----------
 def hn_section():
     try:
@@ -413,6 +463,15 @@ def main():
     # 今日任务
     parts.append(tasks_section())
     parts.append("")
+
+    # 昨日收藏（Linkding）
+    bookmarks = linkding_yesterday_bookmarks()
+    if bookmarks:
+        parts.append("## 🔖 昨日收藏")
+        parts.append("")
+        for title, url in bookmarks:
+            parts.append("- [{}]({})".format(title, url))
+        parts.append("")
 
     # GitHub Trending
     trend = github_trending(limit=5)
