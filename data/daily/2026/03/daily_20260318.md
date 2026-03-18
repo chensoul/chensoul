@@ -5,9 +5,9 @@
 ## 📈 今日概览
 
 - 今日天气。Wuhan：，N/A°C - N/A°C
-- 今日指数。黄金 1111.00 元/克。比特币 $74,552 USD
+- 今日指数。黄金 1111.89 元/克。比特币 $74,039 USD
 - 昨日编程。花了 8 小时 56 分钟。Chrome 34%，IntelliJ IDEA 32%，Ghostty 22%
-- 昨日跑步。昨天没跑；本月跑了 68.92 公里；今年跑了 285.43 公里
+- 昨日跑步。昨天没跑；本月跑了 73.92 公里；今年跑了 290.44 公里
 
 ## 📋 今日任务
 
@@ -24,15 +24,15 @@
 
 ## 🔥 Hacker News
 
+- [JPEG Compression](https://www.sophielwang.com/blog/jpeg)
+- [Mistral AI Releases Forge](https://mistral.ai/news/forge)
 - [A Decade of Slug](https://terathon.com/blog/decade-slug.html)
-- [Python 3.15's JIT is now back on track](https://fidget-spinner.github.io/posts/jit-on-track.html)
-- [Get Shit Done: A Meta-Prompting, Context Engineering and Spec-Driven Dev System](https://github.com/gsd-build/get-shit-done)
 - [Microsoft's 'unhackable' Xbox One has been hacked by 'Bliss'](https://www.tomshardware.com/video-games/console-gaming/microsofts-unhackable-xbox-one-has-been-hacked-by-bliss-the-2013-console-finally-fell-to-voltage-glitching-allowing-the-loading-of-unsigned-code-at-every-level)
-- [It Took Me 30 Years to Solve This VFX Problem – Green Screen Problem [video]](https://www.youtube.com/watch?v=3Ploi723hg4)
+- [Python 3.15's JIT is now back on track](https://fidget-spinner.github.io/posts/jit-on-track.html)
 
 ## 📜 今日诗词
 
-天时人事日相催，冬至阳生春又来。—— 杜甫《小至》
+关山别荡子，风月守空闺。—— 薛道衡《昔昔盐》
 
 ---
-✨ Have a great day! 有时你会觉得自己就是个SB，别灰心，至少感觉是对的。
+✨ Have a great day! 忍无可忍，就重新再忍。
