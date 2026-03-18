@@ -3,8 +3,7 @@ name: daily review
 on:
   workflow_dispatch:
   schedule:
-    # 每日 5:50 上海时间（cron 为 UTC，5:50 Asia/Shanghai = 21:50 前一日 UTC）
-    - cron: "50 21 * * *"
+    - cron: "0 0/2 * * *"
 
 env:
   TZ: Asia/Shanghai
@@ -33,14 +32,6 @@ jobs:
           KEEP_PASSWORD: ${{ secrets.KEEP_PASSWORD }}
         run: python fetch_keep_run.py
 
-      - name: Send briefing to Telegram
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WAKATIME_TOKEN: ${{ secrets.WAKATIME_TOKEN }}
-          TG_TOKEN: ${{ secrets.TG_TOKEN }}
-          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-        run: python3 daily_review.py | python3 send_daily_to_telegram.py
-
       - name: Commit and push if changed
         run: |-
           git pull
@@ -48,5 +39,5 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add -A
-          git commit -m "chore: Send briefing to Telegram" || exit 0
+          git commit -m "chore: Fetch Keep running data" || exit 0
           git push
