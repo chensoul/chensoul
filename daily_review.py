@@ -294,7 +294,7 @@ def coding_line():
         return ""
     try:
         yesterday_date = (datetime.now(TZ_SHANGHAI) - timedelta(days=1)).strftime("%Y-%m-%d")
-        url = "https://wakatime.com/api/v1/users/current/summaries?api_key={}&start={}&end={}".format(token, yesterday_date, yesterday_date)
+        url = "https://wakapi.chensoul.cc/api/v1/users/current/summaries?api_key={}&start={}&end={}".format(token, yesterday_date, yesterday_date)
         r, err = _safe_get(url, timeout=10)
         if err or not r or r.status_code != 200:
             return ""

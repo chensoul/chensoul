@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 [![blog](https://img.shields.io/badge/blog-chensoul.cc-9cf?style=flat-square)](https://blog.chensoul.cc)
-[![wakatime](https://wakatime.com/badge/user/2e164599-9a84-4d02-b61d-3c57e57e8735.svg)](https://wakatime.com/@2e164599-9a84-4d02-b61d-3c57e57e8735)
+[![wakapi](https://wakapi.chensoul.cc/api/badge/chensoul/interval:today?label=today)](https://wakapi.chensoul.cc)
 [![GitHub](https://img.shields.io/github/followers/chensoul?logo=github&style=flat-square)](https://github.com/chensoul)
 [![Visits Badge](https://badges.strrl.dev/visits/chensoul/chensoul?style=flat-square)](https://github.com/chensoul)
 
