@@ -11,9 +11,8 @@ jobs:
     steps:
       - uses: athul/waka-readme@master
         with:
-          WAKATIME_API_URL: https://wakapi.chensoul.cc/api
+          API_BASE_URL: https://wakapi.chensoul.cc/api
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_TOKEN }}
-          COMMIT_MESSAGE: Update Wakatime stats
           BLOCKS: "⬜🟨🟩"
           TIME_RANGE: last_7_days
 
