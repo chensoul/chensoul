@@ -24,7 +24,7 @@ def save_yesterday():
     today = datetime.now().date()
     yesterday = today - timedelta(days=1)
 
-    url = f'https://wakapi.chensoul.cc/api/v1/users/current/summaries?api_key={wakatime_token}&start={yesterday}&end={yesterday}'
+    url = f'https://wakatime.com/api/v1/users/current/summaries?api_key={wakatime_token}&start={yesterday}&end={yesterday}'
 
     response = requests.get(url)
 

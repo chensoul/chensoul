@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: athul/waka-readme@master
         with:
-          API_BASE_URL: https://wakapi.chensoul.cc/api
+          API_BASE_URL: https://wakatime.com/api
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_TOKEN }}
           BLOCKS: "⬜🟨🟩"
           TIME_RANGE: last_7_days
