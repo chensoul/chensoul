@@ -22,6 +22,7 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [2026-03-22｜90 天逆袭计划、OpenClaw 生成日报](https://blog.chensoul.cc/posts/2026/03/23/20260322-week-review)
 - [2026-03-15｜每日简报、AI 周报想法与本周分享](https://blog.chensoul.cc/posts/2026/03/16/20260315-week-review)
 - [在 GitHub CodeSpace 中安装和使用 OpenClaw](https://blog.chensoul.cc/posts/2026/03/12/install-openclaw-in-github-codespace)
 - [Wiki 笔记｜Architecture](https://blog.chensoul.cc/posts/2026/03/11/architecture)
@@ -29,7 +30,6 @@
 - [Wiki 笔记｜Github](https://blog.chensoul.cc/posts/2026/03/11/github)
 - [Wiki 笔记｜Java](https://blog.chensoul.cc/posts/2026/03/11/java)
 - [Wiki 笔记｜Langchain4j](https://blog.chensoul.cc/posts/2026/03/11/langchain4j)
-- [Wiki 笔记｜Maven](https://blog.chensoul.cc/posts/2026/03/11/maven)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
