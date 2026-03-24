@@ -22,9 +22,9 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
-- [基于 Linkding 和 RSS 的个人知识管理系统：轻量收藏、快速找回、持续输出](https://blog.chensoul.cc/posts/2026/03/23/linkding-rss-personal-knowledge-management-system)
+- [基于 Linkding 和 RSS 的个人知识管理系统](https://blog.chensoul.cc/posts/2026/03/23/linkding-rss-personal-knowledge-management-system)
 - [2026-03-22｜90 天逆袭计划、OpenClaw 生成日报](https://blog.chensoul.cc/posts/2026/03/23/20260322-week-review)
-- [2026-03-15｜每日简报、AI 周报想法与本周分享](https://blog.chensoul.cc/posts/2026/03/16/20260315-week-review)
+- [2026-03-15｜每日简报、AI 周报想法](https://blog.chensoul.cc/posts/2026/03/16/20260315-week-review)
 - [在 GitHub CodeSpace 中安装和使用 OpenClaw](https://blog.chensoul.cc/posts/2026/03/12/install-openclaw-in-github-codespace)
 - [Wiki 笔记｜Architecture](https://blog.chensoul.cc/posts/2026/03/11/architecture)
 - [Wiki 笔记｜DDD](https://blog.chensoul.cc/posts/2026/03/11/ddd)
