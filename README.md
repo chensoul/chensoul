@@ -22,14 +22,14 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [【译】Netflix 如何在 60 秒内把直播送达 1 亿台设备？](https://blog.chensoul.cc/posts/how-netflix-live-streams-to-100-million)
+- [【译】Anthropic 的 Claude 是如何思考的？](https://blog.chensoul.cc/posts/how-anthropics-claude-thinks)
 - [OpenClaw 是怎么指导我跑步的](https://blog.chensoul.cc/posts/how-openclaw-guides-my-running)
 - [【译】Agentic RAG 是如何工作的？](https://blog.chensoul.cc/posts/how-agentic-rag-works)
 - [gstack：YC CEO 的 AI 工程系统，如何做到 60 天 60 万行代码？](https://blog.chensoul.cc/posts/gstack-skill)
 - [基于 Linkding 和 RSS 的个人知识管理系统](https://blog.chensoul.cc/posts/linkding-rss-personal-knowledge-management-system)
 - [2026-03-22｜90 天逆袭计划、OpenClaw 生成日报](https://blog.chensoul.cc/posts/20260322-week-review)
 - [2026-03-15｜每日简报、AI 周报想法](https://blog.chensoul.cc/posts/20260315-week-review)
-- [在 GitHub CodeSpace 中安装和使用 OpenClaw](https://blog.chensoul.cc/posts/install-openclaw-in-github-codespace)
-- [Wiki 笔记｜Architecture](https://blog.chensoul.cc/posts/architecture)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
