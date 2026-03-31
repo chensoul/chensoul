@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 [![blog](https://img.shields.io/badge/blog-chensoul.cc-9cf?style=flat-square)](https://blog.chensoul.cc)
-[![wakapi](https://wakatime.com/api/badge/chensoul/interval:today?label=today)](https://wakatime.com)
+[![wakatime](https://wakatime.com/api/badge/chensoul/interval:today?label=today)](https://wakatime.com)
 [![GitHub](https://img.shields.io/github/followers/chensoul?logo=github&style=flat-square)](https://github.com/chensoul)
 [![Visits Badge](https://badges.strrl.dev/visits/chensoul/chensoul?style=flat-square)](https://github.com/chensoul)
 
