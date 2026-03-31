@@ -22,14 +22,14 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [Obsidian 的 CEO 是如何做知识管理的](https://blog.chensoul.cc/posts/how-obsidian-ceo-does-knowledge-management)
+- [【译】Roblox 如何在 100 毫秒内用 AI 翻译 16 种语言](https://blog.chensoul.cc/posts/how-roblox-uses-ai-to-translate-16-languages-in-100-milliseconds)
 - [2026-03-29｜翻译技能迭代、重启公众号](https://blog.chensoul.cc/posts/20260329-week-review)
 - [让Claude 和 Codex 告诉我需要哪些工具才能更快地运行](https://blog.chensoul.cc/posts/what-tools-it-needs-for-claude-codex)
 - [IntelliJ IDEA 2026.1，真正有用的只有这 5 个变化](https://blog.chensoul.cc/posts/intellij-idea-2026-1)
 - [【译】Netflix 如何在 60 秒内把直播送达 1 亿台设备？](https://blog.chensoul.cc/posts/how-netflix-live-streams-to-100-million)
 - [【译】Anthropic 的 Claude 是如何思考的？](https://blog.chensoul.cc/posts/how-anthropics-claude-thinks)
 - [OpenClaw 是怎么指导我跑步的](https://blog.chensoul.cc/posts/how-openclaw-guides-my-running)
-- [【译】Agentic RAG 是如何工作的？](https://blog.chensoul.cc/posts/how-agentic-rag-works)
-- [gstack：YC CEO 的 AI 工程系统，如何做到 60 天 60 万行代码？](https://blog.chensoul.cc/posts/gstack-skill)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
