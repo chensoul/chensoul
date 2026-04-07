@@ -23,7 +23,7 @@
 
 <!-- BLOG-POST-LIST:START -->
 - [【译】LLM 上下文工程指南](https://blog.chensoul.cc/translation/a-guide-to-context-engineering-for-llms)
-- [使用 chezmoi 在 macOS 上管理 dotfiles](https://blog.chensoul.cc/posts/chezmoi-dotfiles-macos)
+- [macOS 使用 Chezmoi 管理 Dotfiles 实战](https://blog.chensoul.cc/posts/chezmoi-dotfiles-macos)
 - [Obsidian 的 CEO 是如何做知识管理的](https://blog.chensoul.cc/posts/how-obsidian-ceo-does-knowledge-management)
 - [【译】Roblox 如何在 100 毫秒内用 AI 翻译 16 种语言](https://blog.chensoul.cc/translation/how-roblox-uses-ai-to-translate-16)
 - [2026-03-29｜翻译技能迭代、重启公众号](https://blog.chensoul.cc/briefs/20260329-week-review)
