@@ -22,6 +22,7 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [学 Karpathy 学使用 LLM 搭建 Obsidian 知识库](https://blog.chensoul.cc/posts/build-llm-wiki-with-karpathy)
 - [macOS 使用 Chezmoi 管理 Dotfiles 实战](https://blog.chensoul.cc/posts/chezmoi-dotfiles-macos)
 - [使用 OpenClaw 调用 Claude Code 开发应用](https://blog.chensoul.cc/posts/create-app-with-claude-code-in-openclaw)
 - [2026-04-05｜ AI 翻译英文文章](https://blog.chensoul.cc/briefs/20260405-week-review)
@@ -29,7 +30,6 @@
 - [【译】LLM 上下文工程指南](https://blog.chensoul.cc/translation/a-guide-to-context-engineering-for-llms)
 - [【译】EP209：12 个每位工程师都应了解的 Claude Code 功能](https://blog.chensoul.cc/translation/ep209-12-claude-code-features-every)
 - [【译】Datadog 如何重新定义数据复制](https://blog.chensoul.cc/translation/how-datadog-redefined-data-replication)
-- [【译】Meta 如何将调试变成产品](https://blog.chensoul.cc/translation/how-meta-turned-debugging-into-a)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
