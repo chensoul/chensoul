@@ -22,14 +22,14 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [macOS 使用 Chezmoi 管理 Dotfiles 实战](https://blog.chensoul.cc/posts/chezmoi-dotfiles-macos)
+- [使用 OpenClaw 调用 Claude Code 开发应用](https://blog.chensoul.cc/posts/create-app-with-claude-code-in-openclaw)
+- [2026-04-05｜ AI 翻译英文文章](https://blog.chensoul.cc/briefs/20260405-week-review)
 - [Mac 开发环境配置清单](https://blog.chensoul.cc/posts/mac-development-environment-setup)
 - [【译】LLM 上下文工程指南](https://blog.chensoul.cc/translation/a-guide-to-context-engineering-for-llms)
-- [macOS 使用 Chezmoi 管理 Dotfiles 实战](https://blog.chensoul.cc/posts/chezmoi-dotfiles-macos)
-- [Obsidian 的 CEO 是如何做知识管理的](https://blog.chensoul.cc/posts/how-obsidian-ceo-does-knowledge-management)
-- [【译】Roblox 如何在 100 毫秒内用 AI 翻译 16 种语言](https://blog.chensoul.cc/translation/how-roblox-uses-ai-to-translate-16)
-- [2026-03-29｜翻译技能迭代、重启公众号](https://blog.chensoul.cc/briefs/20260329-week-review)
-- [让Claude 和 Codex 告诉我需要哪些工具才能更快地运行](https://blog.chensoul.cc/posts/what-tools-it-needs-for-claude-codex)
-- [IntelliJ IDEA 2026.1，真正有用的只有这 5 个变化](https://blog.chensoul.cc/posts/intellij-idea-2026-1)
+- [【译】EP209：12 个每位工程师都应了解的 Claude Code 功能](https://blog.chensoul.cc/translation/ep209-12-claude-code-features-every)
+- [【译】Datadog 如何重新定义数据复制](https://blog.chensoul.cc/translation/how-datadog-redefined-data-replication)
+- [【译】Meta 如何将调试变成产品](https://blog.chensoul.cc/translation/how-meta-turned-debugging-into-a)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
