@@ -22,6 +22,7 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [Mac 开发环境配置清单](https://blog.chensoul.cc/posts/mac-development-environment-setup)
 - [【译】LLM 上下文工程指南](https://blog.chensoul.cc/translation/a-guide-to-context-engineering-for-llms)
 - [macOS 使用 Chezmoi 管理 Dotfiles 实战](https://blog.chensoul.cc/posts/chezmoi-dotfiles-macos)
 - [Obsidian 的 CEO 是如何做知识管理的](https://blog.chensoul.cc/posts/how-obsidian-ceo-does-knowledge-management)
@@ -29,7 +30,6 @@
 - [2026-03-29｜翻译技能迭代、重启公众号](https://blog.chensoul.cc/briefs/20260329-week-review)
 - [让Claude 和 Codex 告诉我需要哪些工具才能更快地运行](https://blog.chensoul.cc/posts/what-tools-it-needs-for-claude-codex)
 - [IntelliJ IDEA 2026.1，真正有用的只有这 5 个变化](https://blog.chensoul.cc/posts/intellij-idea-2026-1)
-- [OpenClaw 是怎么指导我跑步的](https://blog.chensoul.cc/posts/how-openclaw-guides-my-running)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
