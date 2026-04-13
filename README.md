@@ -22,14 +22,14 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [从 Vim 到 AI：开发工具这些年](https://blog.chensoul.cc/posts/programming-tools-evolution-timeline)
+- [普通人如何用小龙虾记日记](https://blog.chensoul.cc/posts/how-to-use-xiaolongxia-diary)
 - [SkillsJars：用 Maven 依赖管理 AI Agent Skills](https://blog.chensoul.cc/posts/skillsjars-quickstart)
 - [Skills](https://blog.chensoul.cc/wiki/skills)
 - [学 Karpathy 使用 LLM 搭建 Obsidian 知识库](https://blog.chensoul.cc/posts/build-llm-wiki-with-karpathy)
 - [使用 OpenClaw 调用 Claude Code 开发应用](https://blog.chensoul.cc/posts/create-app-with-claude-code-in-openclaw)
 - [2026-04-05｜AI 翻译英文文章](https://blog.chensoul.cc/briefs/20260405-week-review)
 - [【译】LLM 上下文工程指南](https://blog.chensoul.cc/translation/a-guide-to-context-engineering-for-llms)
-- [【译】EP209：12 个每位工程师都应了解的 Claude Code 功能](https://blog.chensoul.cc/translation/ep209-12-claude-code-features-every)
-- [【译】Datadog 如何重新定义数据复制](https://blog.chensoul.cc/translation/how-datadog-redefined-data-replication)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
