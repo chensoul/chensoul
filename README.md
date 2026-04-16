@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-[![blog](https://img.shields.io/badge/blog-chensoul.cc-9cf?style=flat-square)](https://blog.chensoul.cc)
+[![blog](https://img.shields.io/badge/blog-zhijun-io-9cf?style=flat-square)](https://blog.zhijun.io)
 [![wakatime](https://wakatime.com/badge/user/2e164599-9a84-4d02-b61d-3c57e57e8735.svg)](https://wakatime.com/@2e164599-9a84-4d02-b61d-3c57e57e8735)
 [![GitHub](https://img.shields.io/github/followers/zhijunio?logo=github&style=flat-square)](https://github.com/zhijunio)
 [![Visits Badge](https://badges.strrl.dev/visits/zhijunio/zhijunio?style=flat-square)](https://github.com/zhijunio)
@@ -13,11 +13,11 @@
 
 ### 联系我
 
-你可以通过以下方式找到我：[WeChat](https://blog.chensoul.cc/images/my-wechat.webp)、[Telegram](https://t.me/zhijunio)、[Github](https://twitter.com/zhijunio)、[Twitter](https://twitter.com/zhijunio)，或者给我发送邮件：ichensoul@gmail.com
+你可以通过以下方式找到我：[WeChat](https://blog.chensoul.cc/images/my-wechat.webp)、[Telegram](https://t.me/zhijunio)、[Github](https://twitter.com/zhijunio)、[Twitter](https://twitter.com/zhijunio)，或者给我发送邮件：zhijun.lab@gmail.com
 
 我在 [VPS](https://blog.chensoul.cc/posts/2023/01/25/notes-about-deploy-services-in-vps)
 上自建了一些服务：[跑步](https://run.chensoul.cc/)、[书签](https://linkding.chensoul.cc/)、[Memos](https://memos.chensoul.cc/)
-，另外我创建了一个 [Telegram Channel](https://t.me/zhijunio)，分享每天的所见、所闻、所感，如果你感兴趣，欢迎加入！👏
+，另外我创建了一个 [Telegram Channel](https://t.me/zhijun_share)，分享每天的所见、所闻、所感，如果你感兴趣，欢迎加入！👏
 
 ### 最近博客
 
