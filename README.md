@@ -22,14 +22,14 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
-- [2026-04-12｜OpenClaw 迁移到 Hermes](https://blog.chensoul.cc/briefs/20260412-week-review)
-- [从 Vim 到 AI：开发工具这些年](https://blog.chensoul.cc/posts/programming-tools-evolution-timeline)
-- [普通人如何用小龙虾记日记](https://blog.chensoul.cc/posts/how-to-use-xiaolongxia-diary)
-- [SkillsJars：用 Maven 依赖管理 AI Agent Skills](https://blog.chensoul.cc/posts/skillsjars-quickstart)
-- [Skills](https://blog.chensoul.cc/wiki/skills)
-- [学 Karpathy 使用 LLM 搭建 Obsidian 知识库](https://blog.chensoul.cc/posts/build-llm-wiki-with-karpathy)
-- [使用 OpenClaw 调用 Claude Code 开发应用](https://blog.chensoul.cc/posts/create-app-with-claude-code-in-openclaw)
-- [2026-04-05｜AI 翻译英文文章](https://blog.chensoul.cc/briefs/20260405-week-review)
+- [2026-04-12｜OpenClaw 迁移到 Hermes](https://blog.zhijun.io/briefs/20260412-week-review)
+- [从 Vim 到 AI：开发工具这些年](https://blog.zhijun.io/posts/programming-tools-evolution-timeline)
+- [普通人如何用小龙虾记日记](https://blog.zhijun.io/posts/how-to-use-xiaolongxia-diary)
+- [SkillsJars：用 Maven 依赖管理 AI Agent Skills](https://blog.zhijun.io/posts/skillsjars-quickstart)
+- [Skills](https://blog.zhijun.io/wiki/skills)
+- [学 Karpathy 使用 LLM 搭建 Obsidian 知识库](https://blog.zhijun.io/posts/build-llm-wiki-with-karpathy)
+- [使用 OpenClaw 调用 Claude Code 开发应用](https://blog.zhijun.io/posts/create-app-with-claude-code-in-openclaw)
+- [2026-04-05｜AI 翻译英文文章](https://blog.zhijun.io/briefs/20260405-week-review)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
