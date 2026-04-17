@@ -4,7 +4,7 @@
 包含：日期、天气(wttr.in)、今日待办(GitHub Issues)、今日指数/诗词/名言/Trending、WakaTime、跑步距离、昨日收藏(Linkding)、Hacker News。
 
 今日待办：GitHub Issues（GITHUB_TOKEN + owner：优先 GITHUB_USERNAME，否则脚本所在目录名，拉取 {owner}/{owner} 仓库的 open issues）。
-昨日收藏：需配置 LINKDING_URL（如 https://linkding.chensoul.cc）、LINKDING_TOKEN（Linkding API Token）。
+昨日收藏：需配置 LINKDING_URL（如 https://linkding.zhijun.io）、LINKDING_TOKEN（Linkding API Token）。
 """
 
 import json
@@ -358,7 +358,7 @@ def running_summary():
 # ---------- 4.5 Linkding 昨日书签 ----------
 def linkding_yesterday_bookmarks():
     """从 Linkding API 拉取昨日添加的书签。需环境变量 LINKDING_URL、LINKDING_TOKEN。返回 [(title, url), ...]。"""
-    base = (os.environ.get("LINKDING_URL") or "https://linkding.chensoul.cc").rstrip("/")
+    base = (os.environ.get("LINKDING_URL") or "https://linkding.zhijun.io").rstrip("/")
     token = (os.environ.get("LINKDING_TOKEN") or "").strip()
     if not base or not token:
         logger.debug("Linkding: 未配置 LINKDING_URL 或 LINKDING_TOKEN，跳过")
