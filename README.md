@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-[![blog](https://img.shields.io/badge/blog-zhijun-io-9cf?style=flat-square)](https://blog.zhijun.io)
+[![blog](https://img.shields.io/badge/blog-zhijun-io?style=flat-square)](https://blog.zhijun.io)
 [![wakatime](https://wakatime.com/badge/user/2e164599-9a84-4d02-b61d-3c57e57e8735.svg)](https://wakatime.com/@2e164599-9a84-4d02-b61d-3c57e57e8735)
 [![GitHub](https://img.shields.io/github/followers/zhijunio?logo=github&style=flat-square)](https://github.com/zhijunio)
 [![Visits Badge](https://badges.strrl.dev/visits/zhijunio/zhijunio?style=flat-square)](https://github.com/zhijunio)
