@@ -15,7 +15,7 @@
 
 你可以通过以下方式找到我：[WeChat](https://blog.zhijun.io/images/my-wechat.webp)、[Telegram](https://t.me/zhijunio)、[Github](https://twitter.com/zhijunio)、[Twitter](https://twitter.com/zhijunio)，或者给我发送邮件：zhijun.lab@gmail.com
 
-我在 [VPS](https://blog.zhijun.io/posts/2023/01/25/notes-about-deploy-services-in-vps)
+我在 [VPS](https://blog.zhijun.io/posts/notes-about-deploy-services-in-vps)
 上自建了一些服务：[跑步](https://run.zhijun.io/)、[书签](https://linkding.zhijun.io/)、[Memos](https://memos.zhijun.io/)
 ，另外我创建了一个 [Telegram Channel](https://t.me/zhijun_share)，分享每天的所见、所闻、所感，如果你感兴趣，欢迎加入！👏
 
