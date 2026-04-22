@@ -22,6 +22,7 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [技术文章怎么读，才不会读完就忘？](https://blog.zhijun.io/posts/tech-article-reading-framework)
 - [Docker Buildx 实战指南](https://blog.zhijun.io/posts/docker-buildx-guide)
 - [2026-04-19｜博客域名升级、启动小红书](https://blog.zhijun.io/briefs/20260419-week-review)
 - [2026-04-12｜OpenClaw 迁移到 Hermes](https://blog.zhijun.io/briefs/20260412-week-review)
@@ -29,7 +30,6 @@
 - [普通人如何用小龙虾记日记](https://blog.zhijun.io/posts/how-to-use-xiaolongxia-diary)
 - [SkillsJars：用 Maven 依赖管理 AI Agent Skills](https://blog.zhijun.io/posts/skillsjars-quickstart)
 - [Skills](https://blog.zhijun.io/wiki/skills)
-- [学 Karpathy 使用 LLM 搭建 Obsidian 知识库](https://blog.zhijun.io/posts/build-llm-wiki-with-karpathy)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
