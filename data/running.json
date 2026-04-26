@@ -10,21 +10,21 @@
     "period_stats": {
       "yesterday": {
         "total_activities": 1,
-        "total_distance": 3.02,
-        "total_duration_hours": 0.3,
-        "avg_pace": "6'37\"",
-        "avg_heart_rate": 133,
-        "avg_vdot": 26.5,
-        "total_training_load": 34
+        "total_distance": 5.01,
+        "total_duration_hours": 0.6,
+        "avg_pace": "7'10\"",
+        "avg_heart_rate": null,
+        "avg_vdot": 24.3,
+        "total_training_load": 61
       },
       "week": {
-        "total_activities": 3,
-        "total_distance": 15.05,
-        "total_duration_hours": 1.7,
-        "avg_pace": "6'42\"",
-        "avg_heart_rate": 129,
-        "avg_vdot": 26.4,
-        "total_training_load": 156
+        "total_activities": 0,
+        "total_distance": 0,
+        "total_duration_hours": 0,
+        "avg_pace": "--",
+        "avg_heart_rate": null,
+        "avg_vdot": null,
+        "total_training_load": 0
       },
       "month": {
         "total_activities": 16,
@@ -54,7 +54,7 @@
         "total_training_load": 13490
       }
     },
-    "statistics_time": "2026-04-26 22:39:24"
+    "statistics_time": "2026-04-27 00:34:07"
   },
   "runs": [
     {
