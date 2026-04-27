@@ -9,13 +9,13 @@
     "total_training_load": 13490,
     "period_stats": {
       "yesterday": {
-        "total_activities": 1,
-        "total_distance": 5.01,
-        "total_duration_hours": 0.6,
-        "avg_pace": "7'10\"",
+        "total_activities": 0,
+        "total_distance": 0,
+        "total_duration_hours": 0,
+        "avg_pace": "--",
         "avg_heart_rate": null,
-        "avg_vdot": 24.3,
-        "total_training_load": 61
+        "avg_vdot": null,
+        "total_training_load": 0
       },
       "week": {
         "total_activities": 0,
@@ -54,7 +54,7 @@
         "total_training_load": 13490
       }
     },
-    "statistics_time": "2026-04-27 23:32:42"
+    "statistics_time": "2026-04-28 01:17:24"
   },
   "runs": [
     {
