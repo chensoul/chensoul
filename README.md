@@ -22,6 +22,7 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [2026-04-26｜Cloudflare AI、agent-skills 与飞书任务](https://blog.zhijun.io/briefs/20260426-week-review)
 - [技术文章怎么读，才不会读完就忘？](https://blog.zhijun.io/posts/tech-article-reading-framework)
 - [Docker Buildx 实战指南](https://blog.zhijun.io/posts/docker-buildx-guide)
 - [2026-04-19｜博客域名升级、启动小红书](https://blog.zhijun.io/briefs/20260419-week-review)
@@ -29,7 +30,6 @@
 - [从 Vim 到 AI：开发工具这些年](https://blog.zhijun.io/posts/programming-tools-evolution-timeline)
 - [普通人如何用小龙虾记日记](https://blog.zhijun.io/posts/how-to-use-xiaolongxia-diary)
 - [SkillsJars：用 Maven 依赖管理 AI Agent Skills](https://blog.zhijun.io/posts/skillsjars-quickstart)
-- [Skills](https://blog.zhijun.io/wiki/skills)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
