@@ -22,14 +22,14 @@
 ### 最近博客
 
 <!-- BLOG-POST-LIST:START -->
+- [Superpowers：让 AI 编程不再每次都从头开始](https://blog.zhijun.io/posts/superpowers-discipline-ai-coding)
+- [GSD：让 AI 不再写到一半就忘了的项目管理框架](https://blog.zhijun.io/posts/gsd-get-shit-done-project-framework)
+- [Agent Skills：给 AI 编程助手装上一套靠谱的工程化工作流](https://blog.zhijun.io/posts/agent-skills-install-and-usage-guide)
 - [2026-04-26｜Cloudflare AI、agent-skills 与飞书任务](https://blog.zhijun.io/briefs/20260426-week-review)
 - [技术文章怎么读，才不会读完就忘？](https://blog.zhijun.io/posts/tech-article-reading-framework)
 - [Docker Buildx 实战指南](https://blog.zhijun.io/posts/docker-buildx-guide)
 - [2026-04-19｜博客域名升级、启动小红书](https://blog.zhijun.io/briefs/20260419-week-review)
 - [2026-04-12｜OpenClaw 迁移到 Hermes](https://blog.zhijun.io/briefs/20260412-week-review)
-- [从 Vim 到 AI：开发工具这些年](https://blog.zhijun.io/posts/programming-tools-evolution-timeline)
-- [普通人如何用小龙虾记日记](https://blog.zhijun.io/posts/how-to-use-xiaolongxia-diary)
-- [SkillsJars：用 Maven 依赖管理 AI Agent Skills](https://blog.zhijun.io/posts/skillsjars-quickstart)
 <!-- BLOG-POST-LIST:END -->
 
 ### 最近编程
