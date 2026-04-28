@@ -9,19 +9,19 @@
 
 ### 👨‍💻 关于我
 
-💻 自2009 年起从事软件开发
-🧩 专注于软件架构、模块化系统和可维护性
-⚙️ 设计可扩展的后端系统
-🤖 探索人工智能驱动的开发者工具
-✍️ 在 [Zhijun Blog](https://blog.zhijun.io) 上编写博客
+- 💻 自2009 年起从事软件开发
+- 🧩 专注于软件架构、模块化系统和可维护性
+- ⚙️ 设计可扩展的后端系统
+- 🤖 探索人工智能驱动的开发者工具
+- ✍️ 在 [Zhijun Blog](https://blog.zhijun.io) 上编写博客
 
 🔗 与我联系
-WeChat: [@zhijunio](https://blog.zhijun.io/images/my-wechat.webp)
-Twitter：[@zhijunio](https://twitter.com/zhijunio)
-YouTube：@zhijunio
-Telegram: [@zhijunio](https://t.me/zhijunio)
-Telegram Channel: [zhijun_share](https://t.me/zhijun_share)
 
+- WeChat: [@zhijunio](https://blog.zhijun.io/images/my-wechat.webp)
+- Twitter：[@zhijunio](https://twitter.com/zhijunio)
+- YouTube：@zhijunio
+- Telegram: [@zhijunio](https://t.me/zhijunio)
+- Telegram Channel: [zhijun_share](https://t.me/zhijun_share)
 
 ### 最近博客
 
