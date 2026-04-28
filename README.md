@@ -23,7 +23,7 @@
 - Telegram: [@zhijunio](https://t.me/zhijunio)
 - Telegram Channel: [zhijun_share](https://t.me/zhijun_share)
 
-### Recent Blog
+### ✍️ Recent Blog
 
 <!-- BLOG-POST-LIST:START -->
 - [Superpowers：让 AI 编程不再每次都从头开始](https://blog.zhijun.io/posts/superpowers-discipline-ai-coding)
@@ -36,7 +36,7 @@
 - [2026-04-12｜OpenClaw 迁移到 Hermes](https://blog.zhijun.io/briefs/20260412-week-review)
 <!-- BLOG-POST-LIST:END -->
 
-### Recent Coding
+### 💻 Recent Coding
 
 最近 7 天编码时间统计：
 
