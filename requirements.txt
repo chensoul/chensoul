@@ -1,5 +1,1 @@
-# 简报生成仅用标准库；发送简报、fetch_keep_run（Keep API）等需 requests；跑步从本地 running.json 读取
-# fetch_keep_run 还需：haversine（距离）、pycryptodome（Keep runmap 解码）
 requests>=2.28.0
-haversine>=2.0.0
-pycryptodome>=3.19.0
