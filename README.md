@@ -1,13 +1,13 @@
-## Hi there 👋
-
 [![blog](https://img.shields.io/badge/blog-zhijun-io?style=flat-square)](https://blog.zhijun.io)
 [![wakatime](https://wakatime.com/badge/user/2e164599-9a84-4d02-b61d-3c57e57e8735.svg)](https://wakatime.com/@2e164599-9a84-4d02-b61d-3c57e57e8735)
 [![GitHub](https://img.shields.io/github/followers/zhijunio?logo=github&style=flat-square)](https://github.com/zhijunio)
 [![Visits Badge](https://badges.strrl.dev/visits/zhijunio/zhijunio?style=flat-square)](https://github.com/zhijunio)
 
+## Hi there 👋
+
 🚀 软件工程师 | 🧠 系统设计爱好者 | ✍️ 技术内容创作者
 
-### 👨‍💻 关于我
+### 👨‍💻 About Me
 
 - 💻 自2009 年起从事软件开发
 - 🧩 专注于软件架构、模块化系统和可维护性
@@ -15,7 +15,7 @@
 - 🤖 探索人工智能驱动的开发者工具
 - ✍️ 在 [Zhijun Blog](https://blog.zhijun.io) 上编写博客
 
-🔗 与我联系
+🔗 Connect with me
 
 - WeChat: [@zhijunio](https://blog.zhijun.io/images/my-wechat.webp)
 - Twitter：[@zhijunio](https://twitter.com/zhijunio)
@@ -23,7 +23,7 @@
 - Telegram: [@zhijunio](https://t.me/zhijunio)
 - Telegram Channel: [zhijun_share](https://t.me/zhijun_share)
 
-### 最近博客
+### Recent Blog
 
 <!-- BLOG-POST-LIST:START -->
 - [Superpowers：让 AI 编程不再每次都从头开始](https://blog.zhijun.io/posts/superpowers-discipline-ai-coding)
@@ -36,7 +36,7 @@
 - [2026-04-12｜OpenClaw 迁移到 Hermes](https://blog.zhijun.io/briefs/20260412-week-review)
 <!-- BLOG-POST-LIST:END -->
 
-### 最近编程
+### Recent Coding
 
 最近 7 天编码时间统计：
 
