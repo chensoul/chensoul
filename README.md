@@ -7,6 +7,8 @@
 
 🚀 软件工程师 | 🧠 系统设计爱好者 | ✍️ 技术内容创作者
 
+---
+
 ### 👨‍💻 About Me
 
 - 💻 自2009 年起从事软件开发
@@ -15,13 +17,17 @@
 - 🤖 探索人工智能驱动的开发者工具
 - ✍️ 在 [Zhijun Blog](https://blog.zhijun.io) 上编写博客
 
-🔗 Connect with me
+---
+
+### 🔗 Connect with me
 
 - WeChat: [@zhijunio](https://blog.zhijun.io/images/my-wechat.webp)
 - Twitter：[@zhijunio](https://twitter.com/zhijunio)
-- YouTube：@zhijunio
+- YouTube：[@zhijunio](https://www.youtube.com/zhijunio)
 - Telegram: [@zhijunio](https://t.me/zhijunio)
 - Telegram Channel: [zhijun_share](https://t.me/zhijun_share)
+
+---
 
 ### Recent Blog
 
@@ -35,6 +41,8 @@
 - [2026-04-19｜博客域名升级、启动小红书](https://blog.zhijun.io/briefs/20260419-week-review)
 - [2026-04-12｜OpenClaw 迁移到 Hermes](https://blog.zhijun.io/briefs/20260412-week-review)
 <!-- BLOG-POST-LIST:END -->
+
+---
 
 ### Recent Coding
 
@@ -51,5 +59,7 @@ Astro            2 hrs 14 mins         🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
 ```
 
 <!--END_SECTION:waka-->
+
+---
 
 > ⭐️ 我喜欢构建有用的系统，并乐于分享我在此过程中学到的东西。
