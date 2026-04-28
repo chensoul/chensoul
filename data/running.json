@@ -1,12 +1,12 @@
 {
   "stats": {
-    "total_runs": 262,
-    "total_distance": 1021.89,
-    "total_duration": "130小时43分钟",
+    "total_runs": 263,
+    "total_distance": 1025.91,
+    "total_duration": "131小时10分钟",
     "avg_pace": "7'40\"",
     "longest_run": 15.2,
     "avg_vdot": 23.8,
-    "total_training_load": 13490,
+    "total_training_load": 13536,
     "period_stats": {
       "yesterday": {
         "total_activities": 0,
@@ -18,45 +18,100 @@
         "total_training_load": 0
       },
       "week": {
-        "total_activities": 0,
-        "total_distance": 0,
-        "total_duration_hours": 0,
-        "avg_pace": "--",
-        "avg_heart_rate": null,
-        "avg_vdot": null,
-        "total_training_load": 0
+        "total_activities": 1,
+        "total_distance": 4.01,
+        "total_duration_hours": 0.5,
+        "avg_pace": "6'42\"",
+        "avg_heart_rate": 137,
+        "avg_vdot": 26.2,
+        "total_training_load": 46
       },
       "month": {
-        "total_activities": 16,
-        "total_distance": 88.24,
-        "total_duration_hours": 11.3,
-        "avg_pace": "7'41\"",
+        "total_activities": 17,
+        "total_distance": 92.26,
+        "total_duration_hours": 11.8,
+        "avg_pace": "7'38\"",
         "avg_heart_rate": 132,
-        "avg_vdot": 23.3,
-        "total_training_load": 1113
+        "avg_vdot": 23.5,
+        "total_training_load": 1159
       },
       "year": {
-        "total_activities": 97,
-        "total_distance": 433.08,
-        "total_duration_hours": 54.2,
-        "avg_pace": "7'30\"",
+        "total_activities": 98,
+        "total_distance": 437.1,
+        "total_duration_hours": 54.6,
+        "avg_pace": "7'29\"",
         "avg_heart_rate": 141,
         "avg_vdot": 24.0,
-        "total_training_load": 5922
+        "total_training_load": 5968
       },
       "total": {
-        "total_activities": 262,
-        "total_distance": 1020.59,
-        "total_duration_hours": 128.6,
+        "total_activities": 263,
+        "total_distance": 1024.6,
+        "total_duration_hours": 129.0,
         "avg_pace": "7'33\"",
         "avg_heart_rate": 140,
         "avg_vdot": 23.8,
-        "total_training_load": 13490
+        "total_training_load": 13536
       }
     },
-    "statistics_time": "2026-04-28 06:39:57"
+    "statistics_time": "2026-04-28 09:54:11"
   },
   "runs": [
+    {
+      "date": "2026-04-28 09:11:44",
+      "distance": 4.02,
+      "duration": "27分钟",
+      "pace": "6'46\"",
+      "heart_rate": 137.0,
+      "max_heart_rate": 176,
+      "cadence": 185,
+      "stride_length": 0.84,
+      "avg_power": 177,
+      "max_power": 182,
+      "calories": 320,
+      "elevation_gain": 0.0,
+      "route": "湖北省武汉市",
+      "weather": "",
+      "activity_type": "户外跑步",
+      "workout_name": "Run from keep",
+      "vdot": 26.2,
+      "training_load": 46,
+      "hr_zone": 3,
+      "segments": [
+        {
+          "km": 1,
+          "pace": "6'47\"",
+          "gap": "6'47\"",
+          "heart_rate": 120,
+          "hr_zone": 2,
+          "cadence": 183
+        },
+        {
+          "km": 2,
+          "pace": "6'47\"",
+          "gap": "6'47\"",
+          "heart_rate": 129,
+          "hr_zone": 3,
+          "cadence": 185
+        },
+        {
+          "km": 3,
+          "pace": "6'57\"",
+          "gap": "6'57\"",
+          "heart_rate": 158,
+          "hr_zone": 4,
+          "cadence": 183
+        },
+        {
+          "km": 4,
+          "pace": "6'37\"",
+          "gap": "6'37\"",
+          "heart_rate": 141,
+          "hr_zone": 3,
+          "cadence": 186
+        }
+      ]
+    },
     {
       "date": "2026-04-26 06:42:50",
       "distance": 5.02,
