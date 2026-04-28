@@ -5,6 +5,8 @@
 
 ## Hi there 👋
 
+<img align="right" alt="zhijunio" src="images/coding.gif" width="300px" />
+
 🚀 软件工程师 | 🧠 系统设计爱好者 | ✍️ 技术内容创作者
 
 ### 👨‍💻 About Me
