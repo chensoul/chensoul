@@ -5,19 +5,23 @@
 [![GitHub](https://img.shields.io/github/followers/zhijunio?logo=github&style=flat-square)](https://github.com/zhijunio)
 [![Visits Badge](https://badges.strrl.dev/visits/zhijunio/zhijunio?style=flat-square)](https://github.com/zhijunio)
 
-<img align="right" alt="zhijunio" src="images/coding.gif" width="300px" />
+🚀 软件工程师 | 🧠 系统设计爱好者 | ✍️ 技术内容创作者
 
-你好，我是 zhijunio，一个来自中国武汉的 Java 开发者，喜欢[编程](https://blog.zhijun.io/categories/tech)、[跑步](https://run.zhijun.io/)。
+### 👨‍💻 关于我
 
-> 健康，爱情和使命，按照这个顺序，其它的都不重要。 ------纳瓦尔
+💻 自2009 年起从事软件开发
+🧩 专注于软件架构、模块化系统和可维护性
+⚙️ 设计可扩展的后端系统
+🤖 探索人工智能驱动的开发者工具
+✍️ 在 [Zhijun Blog](https://blog.zhijun.io) 上编写博客
 
-### 联系我
+🔗 与我联系
+WeChat: [@zhijunio](https://blog.zhijun.io/images/my-wechat.webp)
+Twitter：[@zhijunio](https://twitter.com/zhijunio)
+YouTube：@zhijunio
+Telegram: [@zhijunio](https://t.me/zhijunio)
+Telegram Channel: [zhijun_share](https://t.me/zhijun_share)
 
-你可以通过以下方式找到我：[WeChat](https://blog.zhijun.io/images/my-wechat.webp)、[Telegram](https://t.me/zhijunio)、[Github](https://twitter.com/zhijunio)、[Twitter](https://twitter.com/zhijunio)，或者给我发送邮件：zhijun.lab@gmail.com
-
-我在 [VPS](https://blog.zhijun.io/posts/notes-about-deploy-services-in-vps)
-上自建了一些服务：[跑步](https://run.zhijun.io/)、[书签](https://linkding.zhijun.io/)、[Memos](https://memos.zhijun.io/)
-，另外我创建了一个 [Telegram Channel](https://t.me/zhijun_share)，分享每天的所见、所闻、所感，如果你感兴趣，欢迎加入！👏
 
 ### 最近博客
 
@@ -47,3 +51,5 @@ Astro            2 hrs 14 mins         🟩🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
 ```
 
 <!--END_SECTION:waka-->
+
+> ⭐️ 我喜欢构建有用的系统，并乐于分享我在此过程中学到的东西。
