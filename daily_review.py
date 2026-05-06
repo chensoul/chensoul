@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 每日简报生成脚本（一体版）。
-包含：日期、天气(wttr.in)、今日待办(GitHub Issues)、今日指数/诗词/名言/Trending、WakaTime、跑步距离、昨日收藏(Linkding)、Hacker News。
+包含：日期、天气(wttr.in)、今日待办(GitHub Issues)、今日指数/诗词/名言/Trending、WakaTime、跑步距离（zhijunio.github.io public/data/running.json）、昨日收藏(Linkding)、Hacker News。
 
 今日待办：GitHub Issues（GITHUB_TOKEN + owner：优先 GITHUB_USERNAME，否则脚本所在目录名，拉取 {owner}/{owner} 仓库的 open issues）。
 昨日收藏：需配置 LINKDING_URL（如 https://linkding.zhijun.io）、LINKDING_TOKEN（Linkding API Token）。
@@ -78,6 +78,8 @@ COINGECKO_PRICE_URL = "https://api.coingecko.com/api/v3/simple/price"
 GITHUB_TRENDING_BASE = "https://github.com/trending"
 LINKDING_API_BOOKMARKS = "/api/bookmarks/"
 LINKDING_TITLE_MAX = 50  # 书签标题最大字符数，超出截断
+# 与仓库 zhijunio.github.io 中 public/data/running.json 同源（raw 直链，非 blob 页面）
+RUNNING_JSON_URL = "https://raw.githubusercontent.com/zhijunio/zhijunio.github.io/main/public/data/running.json"
 
 
 def _safe_get(url, params=None, headers=None, timeout=10):
@@ -319,17 +321,19 @@ def coding_line():
 
 
 def running_summary():
-    """昨日/本月/今年跑步单行（中文逗号分隔），用于今日概览。从本地 data/running.json 的 stats.period_stats 读取。"""
+    """昨日/本月/今年跑步单行（中文逗号分隔），用于今日概览。从 RUNNING_JSON_URL 的 stats.period_stats 读取。"""
     try:
-        local_json = os.path.join(_script_dir, "data", "running.json")
-        if not os.path.isfile(local_json):
-            logger.debug("跑步距离: 本地 running.json 不存在，跳过")
+        r, err = _safe_get(RUNNING_JSON_URL, timeout=15)
+        if err or not r:
+            logger.warning("跑步距离: 请求失败 %s", err or "无响应")
+            return ""
+        if r.status_code != 200:
+            logger.warning("跑步距离: HTTP %s", r.status_code)
             return ""
         try:
-            with open(local_json, "r", encoding="utf-8") as f:
-                data = json.load(f)
+            data = r.json()
         except Exception as e:
-            logger.warning("跑步距离: 读取本地 JSON 失败: %s", e)
+            logger.warning("跑步距离: 解析 JSON 失败: %s", e)
             return ""
         period = (data.get("stats") or {}).get("period_stats") or {}
         if not period:
