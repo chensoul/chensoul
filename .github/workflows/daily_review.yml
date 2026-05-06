@@ -27,12 +27,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Fetch Keep running data
-        env:
-          KEEP_MOBILE: ${{ secrets.KEEP_MOBILE }}
-          KEEP_PASSWORD: ${{ secrets.KEEP_PASSWORD }}
-        run: python fetch_keep_run.py
-
       - name: Send briefing to Telegram
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
