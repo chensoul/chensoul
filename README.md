@@ -23,6 +23,7 @@
 ### ✍️ Recent Blog
 
 <!-- BLOG-POST-LIST:START -->
+- [2026-05-17｜搭建我的第二大脑](https://blog.zhijun.io/briefs/20260517-weekly)
 - [mattpocock/skills：安装、使用与快速上手示例](https://blog.zhijun.io/posts/mattpocock-skills-guide)
 - [2026-05-10｜Superpowers、GSD、Agent Skills 与双周运营](https://blog.zhijun.io/briefs/20260510-weekly)
 - [Superpowers：让 AI 编程不再每次都从头开始](https://blog.zhijun.io/posts/superpowers-discipline-ai-coding)
@@ -30,7 +31,6 @@
 - [Agent Skills：给 AI 编程助手装上一套靠谱的工程化工作流](https://blog.zhijun.io/posts/agent-skills-install-and-usage-guide)
 - [2026-04-26｜Cloudflare AI、agent-skills 与飞书任务](https://blog.zhijun.io/briefs/20260426-week-review)
 - [技术文章怎么读，才不会读完就忘？](https://blog.zhijun.io/posts/tech-article-reading-framework)
-- [Docker Buildx 实战指南](https://blog.zhijun.io/posts/docker-buildx-guide)
 <!-- BLOG-POST-LIST:END -->
 
 > ⭐️ 我喜欢构建有用的系统，并乐于分享我在此过程中学到的东西。
