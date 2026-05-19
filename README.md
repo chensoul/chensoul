@@ -23,6 +23,7 @@
 ### ✍️ Recent Blog
 
 <!-- BLOG-POST-LIST:START -->
+- [解析 agentic-expense-manager：Agentic 开发的 Spring Boot 脚手架](https://blog.zhijun.io/posts/agentic-expense-manager-learning-guide)
 - [2026-05-17｜搭建我的第二大脑](https://blog.zhijun.io/briefs/20260517-weekly)
 - [mattpocock/skills：安装、使用与快速上手示例](https://blog.zhijun.io/posts/mattpocock-skills-guide)
 - [2026-05-10｜Superpowers、GSD、Agent Skills 与双周运营](https://blog.zhijun.io/briefs/20260510-weekly)
@@ -30,7 +31,6 @@
 - [GSD：让 AI 不再写到一半就忘了的项目管理框架](https://blog.zhijun.io/posts/gsd-get-shit-done-project-framework)
 - [Agent Skills：给 AI 编程助手装上一套靠谱的工程化工作流](https://blog.zhijun.io/posts/agent-skills-install-and-usage-guide)
 - [2026-04-26｜Cloudflare AI、agent-skills 与飞书任务](https://blog.zhijun.io/briefs/20260426-week-review)
-- [技术文章怎么读，才不会读完就忘？](https://blog.zhijun.io/posts/tech-article-reading-framework)
 <!-- BLOG-POST-LIST:END -->
 
 > ⭐️ 我喜欢构建有用的系统，并乐于分享我在此过程中学到的东西。
