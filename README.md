@@ -24,13 +24,13 @@
 
 <!-- BLOG-POST-LIST:START -->
 - [agentic-expense-manager：Spring Boot Agentic 开发脚手架](https://blog.zhijun.io/posts/agentic-expense-manager-learning-guide)
-- [Obsidian + Git 搭建第二大脑：PARA 与书签管理](https://blog.zhijun.io/briefs/20260517-weekly)
+- [Obsidian + Git 搭建第二大脑：PARA 与书签管理](https://blog.zhijun.io/posts/20260517-weekly)
 - [mattpocock/skills 安装与使用：让 AI 助手会干活](https://blog.zhijun.io/posts/mattpocock-skills-guide)
-- [AI Agent 工程化实战：Superpowers、GSD 与 Agent Skills](https://blog.zhijun.io/briefs/20260510-weekly)
+- [AI Agent 工程化实战：Superpowers、GSD 与 Agent Skills](https://blog.zhijun.io/posts/20260510-weekly)
 - [Superpowers 框架实战：用流程规范代替 Prompt 调优](https://blog.zhijun.io/posts/superpowers-discipline-ai-coding)
 - [GSD 框架实战：解决 AI 编程的 context rot 问题](https://blog.zhijun.io/posts/gsd-get-shit-done-project-framework)
 - [Agent Skills 实战：给 AI 编程助手装上工程化工作流](https://blog.zhijun.io/posts/agent-skills-install-and-usage-guide)
-- [Cloudflare Worker AI 接入 + Agent Skills 配置实战](https://blog.zhijun.io/briefs/20260426-week-review)
+- [Cloudflare Worker AI 接入 + Agent Skills 配置实战](https://blog.zhijun.io/posts/20260426-week-review)
 <!-- BLOG-POST-LIST:END -->
 
 > ⭐️ 我喜欢构建有用的系统，并乐于分享我在此过程中学到的东西。
